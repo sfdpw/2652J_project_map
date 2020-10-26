@@ -54,20 +54,7 @@
 2652J_dwg_TCP-07.pdf
 2652J_dwg_TCP-09.pdf
 
-2652J_dwg_WD-2775-06.pdf
-2652J_dwg_WD-2775-07.pdf
-2652J_dwg_WD-2775-08.pdf
-2652J_dwg_WD-2775-08.1.pdf
-2652J_dwg_WD-2775-10.pdf
-2652J_dwg_WD-2775-10.1.pdf
-2652J_dwg_WD-2775-11.pdf
-2652J_dwg_WD-2775-12.pdf
-2652J_dwg_WD-2775-13.pdf
-2652J_dwg_WD-2775-15.pdf
-2652J_dwg_WD-2775-16.pdf
-2652J_dwg_WD-2775-17.pdf
-2652J_dwg_WD-2775-18.pdf
-2652J_dwg_WD-2775-18.1.pdf
+
 
 2652J_dwg_X-01.pdf
 2652J_dwg_X-02.pdf

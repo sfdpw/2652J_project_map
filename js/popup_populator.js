@@ -1,23 +1,38 @@
-function popup_entry_relevant(popup_args)
+
+
+
+
+
+/*################# SHEET ENTRY CREATOR ########################################################## */
+
+
+function popup_sheet_entry_creator(popup_args = null)
 
     {
     
-    var output_string = "";
+  var output_string = "";
+       
+  if (popup_args == null) { output_string = 'none';}
+    
+  else {
+    
     var overlay_checkbox;
-    var file_fold = "";
     var file_name = "";
     var file_name_length = "";
     var file_desc = "";
 
     
-    for (var ii = 0; ii < popup_args.length; ii+=4)
+    for (var ii = 0; ii < popup_args.length; ii+=3)
     
     {
     
     overlay_checkbox = popup_args[ii];
-    file_fold = popup_args[ii+1]
-    file_name = popup_args[ii+2];
-    file_desc = popup_args[ii+3];
+    
+    if(popup_args[ii+1] != null) {file_name = popup_args[ii+1];}
+    
+    file_desc = popup_args[ii+2];
+    
+    
     
     if (overlay_checkbox == null)
     
@@ -27,23 +42,59 @@ function popup_entry_relevant(popup_args)
     
         {output_string = output_string.concat("<input type=\"checkbox\" onchange=\"handleChange(this, ", overlay_checkbox, ");\">&nbsp;")}
         
-    if (file_fold == 'sheet')
-    
-        {        
-        
-        output_string = output_string.concat("<a href=\".\\sheets\\2652J_dwg_", file_name, ".pdf\" target=\"_blank\">", file_name.replace("-0","-"), "<\/a>");  
-        
-        output_string = output_string.concat(" - ", file_desc);
-        
-        }  
-        
-        
-    else if (file_fold == 'spec')
+ 
+               
+    if(popup_args[ii+1] != null) 
     
         {
         
+        
+        output_string = output_string.concat("<a href=\".\\sheets\\2652J_dwg_", file_name, ".pdf\" target=\"_blank\">", (file_name.replace("-0","-")).replace("_rev0"," Rev. "), "<\/a>");  
+        
+             if (popup_args[ii+2] != null ) {output_string = output_string.concat(" - ", file_desc);}
+        
+        }
+        
+        else { if(popup_args[ii+2] != null) {output_string = output_string.concat(file_desc);};}
+         
+     if (ii != popup_args.length)  {output_string = output_string.concat("<br>");}
     
-         for (var jj = 0; jj < list_of_specs.length; jj++)
+    
+     }
+    
+    
+    }
+    
+    return output_string
+     
+    }
+
+
+/*################# SPEC ENTRY CREATOR ########################################################## */
+
+function popup_spec_entry_creator(popup_args = null)
+
+    {
+    
+  var output_string = "";
+       
+  if (popup_args == null) { output_string = 'none';}
+    
+  else {
+    
+    var file_name = "";
+    var file_name_length = "";
+    var file_desc = "";
+
+    
+    for (var ii = 0; ii < popup_args.length; ii+=2)
+    
+    {
+    
+    file_name = popup_args[ii];
+    file_desc = popup_args[ii+1];
+                
+    for (var jj = 0; jj < list_of_specs.length; jj++)
     
             {
     
@@ -64,30 +115,22 @@ function popup_entry_relevant(popup_args)
         
              if (file_desc == null)
              
-             {output_string = output_string.concat("<a href=\".\\specs\\2652J - ", file_name, ".pdf\" target=\"_blank\">", file_name.substring(0,13), "<\/a>",file_name.substring(13,file_name.length)); }
+             {output_string = output_string.concat("<a href=\".\\specs\\2652J - ", file_name, ".pdf\" target=\"_blank\">", file_name.substring(0,file_name_length), "<\/a>",file_name.substring(file_name_length,file_name.length)); }
              
              else 
              
              {output_string = output_string.concat("<a href=\".\\specs\\2652J - ", file_name, ".pdf\" target=\"_blank\">", file_name.substring(0, file_name_length),"<\/a>",' - ',file_desc); }
         
-        }     
-
-
+        
          
      if (ii != popup_args.length)  {output_string = output_string.concat("<br>");}
     
     
     }
     
-    return output_string
-    
-    
-   
-   
-   
     
     }
-
-
-
-
+    
+    return output_string
+     
+    }

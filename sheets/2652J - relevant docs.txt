@@ -5,27 +5,6 @@
 2652J_dwg_AWSS-05.pdf
 2652J_dwg_AWSS-06.pdf
 
-2652J_dwg_MA-D01.pdf
-2652J_dwg_MA-D02.pdf
-2652J_dwg_MA-D03.pdf
-2652J_dwg_MA-D04.pdf
-2652J_dwg_MA-D05.pdf
-2652J_dwg_MA-D06.pdf
-2652J_dwg_MA-D07.pdf
-2652J_dwg_MA-D08.pdf
-2652J_dwg_MA-D09.pdf
-2652J_dwg_MA-D10.pdf
-2652J_dwg_MA-D11.pdf
-2652J_dwg_MA-D12.pdf
-
-2652J_dwg_MA-G01.pdf
-2652J_dwg_MA-G02.pdf
-2652J_dwg_MA-G03.pdf
-2652J_dwg_MA-G04.pdf
-2652J_dwg_MA-G05.pdf
-2652J_dwg_MA-G06.pdf
-2652J_dwg_MA-G07.pdf
-
 2652J_dwg_MA-S1.1.pdf
 2652J_dwg_MA-S1.2.pdf
 2652J_dwg_MA-S1.3.pdf

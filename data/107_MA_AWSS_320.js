@@ -1,4 +1,4 @@
-var MA_rel_sheet_list = null;
+var MA_rel_sheet_list = [,'MA-G02','Project Notes and Key Map',,'MA-G05', 'Mechanical Legend, Abbreviations and General Notes',,'MA-G06','Settlement Monitoring General Notes and Legend',,'MA-G07','Equipment Schedule',,'MA-D01','Hydrant Lateral Profiles',,'MA-D02','Hydrant Lateral Profiles',,'MA-D03','Hydrant Lateral Profiles',,'MA-D04','Gate Valve and Valve Vault Details',,'MA-D05','Gate Valve and Valve Pad Details',,'MA-D06','Pipe Line and Access Point Profile and Details',,'MA-D07','AWSS Details I',,'MA-D08','AWSS Details II',,'MA-D09','AWSS Details III',,'MA-D10','AWSS Details IV',,'MA-D11','AWSS Details V',,'MA-D12','AWSS Details VI'];
 
 var WD_spec_list = null;
 

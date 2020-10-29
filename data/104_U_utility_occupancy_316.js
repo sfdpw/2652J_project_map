@@ -36,3 +36,4 @@ var json_104_U_utility_occupancy_316 = {
 { "type": "Feature", "properties": { "id": "31", "sheet": "<input type=\"checkbox\" onchange=\"handleChange(this, layer_2652J_dwg_U31pdf1_modified_0);\">&nbsp;<a href=\".\\sheets\\2652J_dwg_U-31.pdf\" target=\"_blank\">U-31<\/a>", "relevant": 'none' }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.477660042528115, 37.764176929577815 ], [ -122.477760583651119, 37.765686378061559 ], [ -122.476899685256001, 37.765740254974041 ], [ -122.476791387116364, 37.764238614559552 ], [ -122.477660042528115, 37.764176929577815 ] ] ] ] } },
 ]
 }
+

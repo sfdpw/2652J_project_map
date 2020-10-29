@@ -36,3 +36,4 @@ var json_103_SW_sewer_318 = {
 { "type": "Feature", "properties": { "id": "31", "sheet": "<input type=\"checkbox\" onchange=\"handleChange(this, layer_2652J_dwg_SW31pdf1_modified_69);\">&nbsp;<a href=\".\\sheets\\2652J_dwg_SW-31.pdf\" target=\"_blank\">SW-31<\/a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\".\\sheets\\2652J_dwg_SW-31.1.pdf\" target=\"_blank\">SW-31.1<\/a>", "as_built": 'none', "tcp": 'none', "relevant": 'none' }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.477660042528115, 37.764176929577815 ], [ -122.477760583651119, 37.765686378061559 ], [ -122.476899685256001, 37.765740254974041 ], [ -122.476791387116364, 37.764238614559552 ], [ -122.477660042528115, 37.764176929577815 ] ] ] ] } },
 ]
 }
+

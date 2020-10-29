@@ -35,7 +35,15 @@ function popup_sheet_entry_creator(popup_args = null)
         
     else 
     
-        {output_string = output_string.concat("<input type=\"checkbox\" onchange=\"handleChange(this, ", overlay_checkbox, ");\">&nbsp;")}
+        {
+        
+        
+        
+        output_string = output_string.concat("<input type=\"checkbox\" onchange=\"handleChange(this, ", overlay_checkbox, ");\">&nbsp;")
+        
+
+               
+        }
         
  
                
@@ -129,3 +137,4 @@ function popup_spec_entry_creator(popup_args = null)
     return output_string
      
     }
+

@@ -33,7 +33,5 @@
 2652J_dwg_TCP-07.pdf
 2652J_dwg_TCP-09.pdf
 
-
-
 2652J_dwg_X-01.pdf
 2652J_dwg_X-02.pdf

@@ -109,7 +109,7 @@ var json_104_U_utility_occupancy_316 = {
 
 
 
-{ "type": "Feature", "properties": { "id": "26", "sheet":popup_sheet_entry_creator(['layer_2652J_dwg_U26pdf1_modified_8','U-26', 'layer_2652J_dwg_U26_rev01pdf1_modified_9','U-26_rev01',]), "relevant": popup_sheet_entry_creator() }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.476171034667175, 37.757057640953548 ], [ -122.477123453231769, 37.756995783585516 ], [ -122.477222063258353, 37.758643332123263 ], [ -122.476298124592944, 37.75870556909566 ], [ -122.476171034667175, 37.757057640953548 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "26", "sheet":popup_sheet_entry_creator(['layer_2652J_dwg_U26pdf1_modified_8','U-26',, 'layer_2652J_dwg_U26_rev01pdf1_modified_9','U-26_rev01',]), "relevant": popup_sheet_entry_creator() }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.476171034667175, 37.757057640953548 ], [ -122.477123453231769, 37.756995783585516 ], [ -122.477222063258353, 37.758643332123263 ], [ -122.476298124592944, 37.75870556909566 ], [ -122.476171034667175, 37.757057640953548 ] ] ] ] } },
 
 
 

@@ -141,7 +141,7 @@ var popupContent = '<div class="accordion" id="U_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="U_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#U_collapse_04" aria-expanded="false" aria-controls="U_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#U_collapse_04" aria-expanded="false" aria-controls="U_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="U_collapse_04" class="collapse" aria-labelledby="U_relevant" data-parent="#U_popup">\
@@ -230,7 +230,7 @@ var popupContent = '<div class="accordion" id="U_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="PD_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_04" aria-expanded="false" aria-controls="PD_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_04" aria-expanded="false" aria-controls="PD_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="PD_collapse_04" class="collapse" aria-labelledby="PD_relevant" data-parent="#PD_popup">\
@@ -319,11 +319,22 @@ var popupContent = '<div class="accordion" id="SW_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="SW_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_04" aria-expanded="false" aria-controls="SW_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_04" aria-expanded="false" aria-controls="SW_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="SW_collapse_04" class="collapse" aria-labelledby="SW_relevant" data-parent="#SW_popup">\
                                 <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="SW_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_05" aria-expanded="false" aria-controls="SW_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="SW_collapse_05" class="collapse" aria-labelledby="SW_spec" data-parent="#SW_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
@@ -408,7 +419,7 @@ var popupContent = '<div class="accordion" id="SW_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="L_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_04" aria-expanded="false" aria-controls="L_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_04" aria-expanded="false" aria-controls="L_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="L_collapse_04" class="collapse" aria-labelledby="L_relevant" data-parent="#L_popup">\
@@ -493,24 +504,72 @@ var popupContent = '<div class="accordion" id="SW_popup">\
                                 </div>\
                                 </div>\
 \
+                              <div class="accordion" id="MA_relevant">\
                                 <div class="card">\
-                                <div class="card-header p-0" id="MA_relevant">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04" aria-expanded="false" aria-controls="MA_collapse_04"><strong>Relevant Document(s)</strong></button>\
-                                </h2>\
+                                  <div class="card-header p-0">\
+                                    <h2 class="mb-0">\
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04" aria-expanded="false" aria-controls="MA_collapse_04"><strong>Relevant Sheet(s)</strong>\
+                                      </button>\
+                                    </h2>\
+                                  </div>\
+                                  <div id="MA_collapse_04" class="collapse" aria-labelledby="MA_relevant" data-parent="#MA_popup">\
+                                    <div class="card-body">\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-G">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-1" aria-expanded="false" aria-controls="MA_collapse_04-1"><strong>MA-G - General</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-1" class="collapse" aria-labelledby="MA_relevant-G" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-G'] !== null ? Autolinker.link(feature.properties['relevant_MA-G'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-D">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-2" aria-expanded="false" aria-controls="MA_collapse_04-2"><strong>MA-D - Details</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-2" class="collapse" aria-labelledby="MA_relevant-D" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-D'] !== null ? Autolinker.link(feature.properties['relevant_MA-D'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-AWSS">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-3" aria-expanded="false" aria-controls="MA_collapse_04-3"><strong>AWSS - Standard Details</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-3" class="collapse" aria-labelledby="MA_relevant-AWSS" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-AWSS'] !== null ? Autolinker.link(feature.properties['relevant_MA-AWSS'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-S">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-4" aria-expanded="false" aria-controls="MA_collapse_04-4"><strong>MA - S - Structural</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-4" class="collapse" aria-labelledby="MA_relevant-S" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-S'] !== null ? Autolinker.link(feature.properties['relevant_MA-S'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                    </div>\
+                                  </div>\
                                 </div>\
-                                <div id="MA_collapse_04" class="collapse" aria-labelledby="MA_relevant" data-parent="#MA_popup">\
-                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
+                              </div>\
 \
                                 <div class="card">\
                                 <div class="card-header p-0" id="MA_spec">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_05" aria-expanded="false" aria-controls="MA_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_08" aria-expanded="false" aria-controls="MA_collapse_08"><strong>Relevant Specification(s)</strong></button>\
                                 </h2>\
                                 </div>\
-                                <div id="MA_collapse_05" class="collapse" aria-labelledby="MA_spec" data-parent="#MA_popup">\
+                                <div id="MA_collapse_08" class="collapse" aria-labelledby="MA_spec" data-parent="#MA_popup">\
                                 <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
@@ -595,7 +654,7 @@ var popupContent = '<div class="accordion" id="SW_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="WD_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_04" aria-expanded="false" aria-controls="WD_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_04" aria-expanded="false" aria-controls="WD_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="WD_collapse_04" class="collapse" aria-labelledby="WD_relevant" data-parent="#WD_popup">\
@@ -694,7 +753,7 @@ var popupContent = '<div class="accordion" id="E_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="E_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_04" aria-expanded="false" aria-controls="E_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_04" aria-expanded="false" aria-controls="E_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="E_collapse_04" class="collapse" aria-labelledby="E_relevant" data-parent="#E_popup">\
@@ -783,7 +842,7 @@ var popupContent = '<div class="accordion" id="C_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="C_relevant">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_04" aria-expanded="false" aria-controls="C_collapse_04"><strong>Relevant Document(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_04" aria-expanded="false" aria-controls="C_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="C_collapse_04" class="collapse" aria-labelledby="C_relevant" data-parent="#C_popup">\

@@ -149,6 +149,17 @@ var popupContent = '<div class="accordion" id="U_popup">\
                                 </div>\
                                 </div>\
 \
+                                <div class="card">\
+                                <div class="card-header p-0" id="U_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#U_collapse_05" aria-expanded="false" aria-controls="U_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="U_collapse_05" class="collapse" aria-labelledby="U_spec" data-parent="#U_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
                                 </div>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         } 
@@ -235,6 +246,17 @@ var popupContent = '<div class="accordion" id="U_popup">\
                                 </div>\
                                 <div id="PD_collapse_04" class="collapse" aria-labelledby="PD_relevant" data-parent="#PD_popup">\
                                 <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="PD_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_05" aria-expanded="false" aria-controls="PD_collapse_05"><strong>Relevant Specifications(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="PD_collapse_05" class="collapse" aria-labelledby="PD_spec" data-parent="#PD_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
@@ -424,6 +446,17 @@ var popupContent = '<div class="accordion" id="SW_popup">\
                                 </div>\
                                 <div id="L_collapse_04" class="collapse" aria-labelledby="L_relevant" data-parent="#L_popup">\
                                 <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="L_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_05" aria-expanded="false" aria-controls="L_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="L_collapse_05" class="collapse" aria-labelledby="L_spec" data-parent="#L_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \
@@ -761,6 +794,17 @@ var popupContent = '<div class="accordion" id="E_popup">\
                                 </div>\
                                 </div>\
 \
+                                <div class="card">\
+                                <div class="card-header p-0" id="E_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_05" aria-expanded="false" aria-controls="E_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="E_collapse_05" class="collapse" aria-labelledby="E_spec" data-parent="#E_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
                                 </div>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
@@ -847,6 +891,17 @@ var popupContent = '<div class="accordion" id="C_popup">\
                                 </div>\
                                 <div id="C_collapse_04" class="collapse" aria-labelledby="C_relevant" data-parent="#C_popup">\
                                 <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="C_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_05" aria-expanded="false" aria-controls="C_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="C_collapse_05" class="collapse" aria-labelledby="C_spec" data-parent="#C_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
                                 </div>\
                                 </div>\
 \

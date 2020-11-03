@@ -2,14 +2,3 @@
 2652J_dwg_SFDPW_STR_87171_rev01.pdf
 2652J_dwg_SFMTA_STR-7696_rev03.pdf
 
-2652J_dwg_TCP-01.pdf
-2652J_dwg_TCP-02.pdf
-2652J_dwg_TCP-03.pdf
-2652J_dwg_TCP-04.pdf
-2652J_dwg_TCP-05.pdf
-2652J_dwg_TCP-06.pdf
-2652J_dwg_TCP-07.pdf
-2652J_dwg_TCP-09.pdf
-
-2652J_dwg_X-01.pdf
-2652J_dwg_X-02.pdf

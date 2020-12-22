@@ -1,6 +1,4 @@
-        
-        
-        map.createPane('pane_2652J_dwg_U31pdf1_modified_0');
+  map.createPane('pane_2652J_dwg_U31pdf1_modified_0');
         map.getPane('pane_2652J_dwg_U31pdf1_modified_0').style.zIndex = 100;
         var img_2652J_dwg_U31pdf1_modified_0 = 'data/2652J_dwg_U31pdf1_modified_0.png';
         var img_bounds_2652J_dwg_U31pdf1_modified_0 = [[37.7639769277059,-122.47783255017792],[37.76592957146338,-122.47648009979157]];

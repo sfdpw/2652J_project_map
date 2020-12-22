@@ -1,0 +1,2634 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/L.Control.Locate.min.css">
+
+        <link rel="stylesheet" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .btn {font-size:12px;}
+
+        input[type=checkbox] {transform: scale(1); vertical-align:top;
+}
+
+        </style>
+        
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/popup_populator.js"></script>
+        <script src="js/list_of_specs.js"></script>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/L.Control.Locate.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="data/104_U_utility_occupancy_316.js"></script>
+        <script src="data/106_PD_pavement_delineation_317.js"></script>
+        <script src="data/103_SW_sewer_318.js"></script>
+        <script src="data/100_L_layout_319.js"></script>
+        <script src="data/107_MA_AWSS_320.js"></script>
+        <script src="data/105_WD_321.js"></script>
+        <script src="data/102_E_intersection_electricals_322.js"></script>
+        <script src="data/101_C_const_details_323.js"></script>
+        <script src="data/003_stations_084_324.js"></script>
+        <script src="data/202_SW_mains_0.js"></script>
+        <script src="data/205_shear_bands_1.js"></script>
+        <script src="data/200_laterals_2.js"></script>
+        <script src="data/204_culverts_3.js"></script>
+        <script src="data/203_drains_4.js"></script>
+        <script src="data/201_MHs_5.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+        
+        <script>
+                
+                
+        Array.prototype.insert = function ( index, item ) {this.splice( index, 0, item );};
+
+                
+        var highlightLayer;
+        
+        function highlightFeature(e) {
+            highlightLayer = e.target;
+
+            //if (e.target.feature.geometry.type != 'LineString') {
+            //  highlightLayer.setStyle({
+            //    color: '#ffff00',
+            //  });
+            //} else {
+              highlightLayer.setStyle({
+                color: '#ffff00',
+                fillColor: '#ffff00',
+                fillopacity: 0.5
+              });
+            //}
+        }
+       
+       
+       
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[37.704889835317985,-122.55039402224207],[37.81158314244841,-122.42206914165835]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'feet',
+            secondaryLengthUnit: 'miles',
+            primaryAreaUnit: 'sqfeet',
+            secondaryAreaUnit: 'sqmiles'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {map.setView(new L.LatLng(37.746755, -122.475771), 13);
+
+        }
+        
+        </script>
+        
+        <script src="js/overlay_pane_creator.js"></script>
+        
+        <script>
+        
+        function pop_104_U_utility_occupancy_316(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+ 
+ 
+ 
+var popupContent = '<div class="accordion" id="U_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="U_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#U_collapse_01" aria-expanded="false" aria-controls="U_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="U_collapse_01" class="collapse" aria-labelledby="U_sheet" data-parent="#U_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="U_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#U_collapse_04" aria-expanded="false" aria-controls="U_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="U_collapse_04" class="collapse" aria-labelledby="U_relevant" data-parent="#U_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="U_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#U_collapse_05" aria-expanded="false" aria-controls="U_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="U_collapse_05" class="collapse" aria-labelledby="U_spec" data-parent="#U_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        } 
+
+        function style_104_U_utility_occupancy_316_0() {
+            return {
+                pane: 'pane_104_U_utility_occupancy_316',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(125,139,143,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_104_U_utility_occupancy_316');
+        map.getPane('pane_104_U_utility_occupancy_316').style.zIndex = 600;
+        map.getPane('pane_104_U_utility_occupancy_316').style['mix-blend-mode'] = 'normal';
+        var layer_104_U_utility_occupancy_316 = new L.geoJson(json_104_U_utility_occupancy_316, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_104_U_utility_occupancy_316',
+            layerName: 'layer_104_U_utility_occupancy_316',
+            pane: 'pane_104_U_utility_occupancy_316',
+            onEachFeature: pop_104_U_utility_occupancy_316,
+            style: style_104_U_utility_occupancy_316_0,
+        });
+        bounds_group.addLayer(layer_104_U_utility_occupancy_316);
+        
+        function pop_106_PD_pavement_delineation_317(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+
+            var popupContent = '<div class="accordion" id="PD_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="PD_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_01" aria-expanded="false" aria-controls="PD_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="PD_collapse_01" class="collapse" aria-labelledby="PD_sheet" data-parent="#PD_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="PD_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_02" aria-expanded="false" aria-controls="PD_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="PD_collapse_02" class="collapse" aria-labelledby="PD_AB" data-parent="#PD_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="PD_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_03" aria-expanded="false" aria-controls="PD_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="PD_collapse_03" class="collapse" aria-labelledby="PD_TCP" data-parent="#PD_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="PD_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_04" aria-expanded="false" aria-controls="PD_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="PD_collapse_04" class="collapse" aria-labelledby="PD_relevant" data-parent="#PD_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="PD_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#PD_collapse_05" aria-expanded="false" aria-controls="PD_collapse_05"><strong>Relevant Specifications(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="PD_collapse_05" class="collapse" aria-labelledby="PD_spec" data-parent="#PD_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_106_PD_pavement_delineation_317_0() {
+            return {
+                pane: 'pane_106_PD_pavement_delineation_317',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(229,165,146,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_106_PD_pavement_delineation_317');
+        map.getPane('pane_106_PD_pavement_delineation_317').style.zIndex = 601;
+        map.getPane('pane_106_PD_pavement_delineation_317').style['mix-blend-mode'] = 'normal';
+        var layer_106_PD_pavement_delineation_317 = new L.geoJson(json_106_PD_pavement_delineation_317, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_106_PD_pavement_delineation_317',
+            layerName: 'layer_106_PD_pavement_delineation_317',
+            pane: 'pane_106_PD_pavement_delineation_317',
+            onEachFeature: pop_106_PD_pavement_delineation_317,
+            style: style_106_PD_pavement_delineation_317_0,
+        });
+        bounds_group.addLayer(layer_106_PD_pavement_delineation_317);
+        
+        
+        function pop_103_SW_sewer_318(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+
+var popupContent = '<div class="accordion" id="SW_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="SW_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_01" aria-expanded="false" aria-controls="SW_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="SW_collapse_01" class="collapse" aria-labelledby="SW_sheet" data-parent="#SW_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="SW_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_02" aria-expanded="false" aria-controls="SW_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="SW_collapse_02" class="collapse" aria-labelledby="SW_AB" data-parent="#SW_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="SW_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_03" aria-expanded="false" aria-controls="SW_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="SW_collapse_03" class="collapse" aria-labelledby="SW_TCP" data-parent="#SW_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="SW_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_04" aria-expanded="false" aria-controls="SW_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="SW_collapse_04" class="collapse" aria-labelledby="SW_relevant" data-parent="#SW_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="SW_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_05" aria-expanded="false" aria-controls="SW_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="SW_collapse_05" class="collapse" aria-labelledby="SW_spec" data-parent="#SW_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_103_SW_sewer_318_0() {
+            return {
+                pane: 'pane_103_SW_sewer_318',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(133,182,111,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_103_SW_sewer_318');
+        map.getPane('pane_103_SW_sewer_318').style.zIndex = 602;
+        map.getPane('pane_103_SW_sewer_318').style['mix-blend-mode'] = 'normal';
+        var layer_103_SW_sewer_318 = new L.geoJson(json_103_SW_sewer_318, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_103_SW_sewer_318',
+            layerName: 'layer_103_SW_sewer_318',
+            pane: 'pane_103_SW_sewer_318',
+            onEachFeature: pop_103_SW_sewer_318,
+            style: style_103_SW_sewer_318_0,
+        });
+        bounds_group.addLayer(layer_103_SW_sewer_318);
+        
+        function pop_100_L_layout_319(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+
+            var popupContent = '<div class="accordion" id="L_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="L_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_01" aria-expanded="false" aria-controls="L_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="L_collapse_01" class="collapse" aria-labelledby="L_sheet" data-parent="#L_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="L_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_02" aria-expanded="false" aria-controls="L_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="L_collapse_02" class="collapse" aria-labelledby="L_AB" data-parent="#L_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="L_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_03" aria-expanded="false" aria-controls="L_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="L_collapse_03" class="collapse" aria-labelledby="L_TCP" data-parent="#L_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="L_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_04" aria-expanded="false" aria-controls="L_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="L_collapse_04" class="collapse" aria-labelledby="L_relevant" data-parent="#L_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="L_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#L_collapse_05" aria-expanded="false" aria-controls="L_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="L_collapse_05" class="collapse" aria-labelledby="L_spec" data-parent="#L_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_100_L_layout_319_0() {
+            return {
+                pane: 'pane_100_L_layout_319',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(241,116,0,0.6)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_100_L_layout_319');
+        map.getPane('pane_100_L_layout_319').style.zIndex = 603;
+        map.getPane('pane_100_L_layout_319').style['mix-blend-mode'] = 'normal';
+        var layer_100_L_layout_319 = new L.geoJson(json_100_L_layout_319, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_100_L_layout_319',
+            layerName: 'layer_100_L_layout_319',
+            pane: 'pane_100_L_layout_319',
+            onEachFeature: pop_100_L_layout_319,
+            style: style_100_L_layout_319_0,
+        });
+        bounds_group.addLayer(layer_100_L_layout_319);
+        
+        
+        function pop_107_MA_AWSS_320(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+           var popupContent = '<div class="accordion" id="MA_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="MA_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_01" aria-expanded="false" aria-controls="MA_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="MA_collapse_01" class="collapse" aria-labelledby="MA_sheet" data-parent="#MA_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="MA_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_02" aria-expanded="false" aria-controls="MA_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="MA_collapse_02" class="collapse" aria-labelledby="MA_AB" data-parent="#MA_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="MA_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_03" aria-expanded="false" aria-controls="MA_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="MA_collapse_03" class="collapse" aria-labelledby="MA_TCP" data-parent="#MA_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                              <div class="accordion" id="MA_relevant">\
+                                <div class="card">\
+                                  <div class="card-header p-0">\
+                                    <h2 class="mb-0">\
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04" aria-expanded="false" aria-controls="MA_collapse_04"><strong>Relevant Sheet(s)</strong>\
+                                      </button>\
+                                    </h2>\
+                                  </div>\
+                                  <div id="MA_collapse_04" class="collapse" aria-labelledby="MA_relevant" data-parent="#MA_popup">\
+                                    <div class="card-body">\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-G">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-1" aria-expanded="false" aria-controls="MA_collapse_04-1"><strong>MA-G - General</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-1" class="collapse" aria-labelledby="MA_relevant-G" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-G'] !== null ? Autolinker.link(feature.properties['relevant_MA-G'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-D">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-2" aria-expanded="false" aria-controls="MA_collapse_04-2"><strong>MA-D - Details</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-2" class="collapse" aria-labelledby="MA_relevant-D" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-D'] !== null ? Autolinker.link(feature.properties['relevant_MA-D'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-AWSS">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-3" aria-expanded="false" aria-controls="MA_collapse_04-3"><strong>AWSS - Standard Details</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-3" class="collapse" aria-labelledby="MA_relevant-AWSS" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-AWSS'] !== null ? Autolinker.link(feature.properties['relevant_MA-AWSS'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                      <div class="card">\
+                                        <div class="card-header p-0" id="MA_relevant-S">\
+                                          <h2 class="mb-0">\
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_04-4" aria-expanded="false" aria-controls="MA_collapse_04-4"><strong>MA - S - Structural</strong>\
+                                            </button>\
+                                          </h2>\
+                                        </div>\
+                                        <div id="MA_collapse_04-4" class="collapse" aria-labelledby="MA_relevant-S" data-parent="#MA_relevant">\
+                                          <div class="card-body">'+ (feature.properties['relevant_MA-S'] !== null ? Autolinker.link(feature.properties['relevant_MA-S'].toLocaleString()) : '') + '</div>\
+                                        </div>\
+                                      </div>\
+                                    </div>\
+                                  </div>\
+                                </div>\
+                              </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="MA_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MA_collapse_08" aria-expanded="false" aria-controls="MA_collapse_08"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="MA_collapse_08" class="collapse" aria-labelledby="MA_spec" data-parent="#MA_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_107_MA_AWSS_320_0() {
+            return {
+                pane: 'pane_107_MA_AWSS_320',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(183,72,75,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_107_MA_AWSS_320');
+        map.getPane('pane_107_MA_AWSS_320').style.zIndex = 604;
+        map.getPane('pane_107_MA_AWSS_320').style['mix-blend-mode'] = 'normal';
+        var layer_107_MA_AWSS_320 = new L.geoJson(json_107_MA_AWSS_320, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_107_MA_AWSS_320',
+            layerName: 'layer_107_MA_AWSS_320',
+            pane: 'pane_107_MA_AWSS_320',
+            onEachFeature: pop_107_MA_AWSS_320,
+            style: style_107_MA_AWSS_320_0,
+        });
+        bounds_group.addLayer(layer_107_MA_AWSS_320);
+
+        
+        function pop_105_WD_321(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+           var popupContent = '<div class="accordion" id="WD_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="WD_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_01" aria-expanded="false" aria-controls="WD_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="WD_collapse_01" class="collapse" aria-labelledby="WD_sheet" data-parent="#WD_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="WD_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_02" aria-expanded="false" aria-controls="WD_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="WD_collapse_02" class="collapse" aria-labelledby="WD_AB" data-parent="#WD_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="WD_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_03" aria-expanded="false" aria-controls="WD_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="WD_collapse_03" class="collapse" aria-labelledby="WD_TCP" data-parent="#WD_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="WD_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_04" aria-expanded="false" aria-controls="WD_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="WD_collapse_04" class="collapse" aria-labelledby="WD_relevant" data-parent="#WD_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="WD_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_05" aria-expanded="false" aria-controls="WD_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="WD_collapse_05" class="collapse" aria-labelledby="WD_spec" data-parent="#WD_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_105_WD_321_0() {
+            return {
+                pane: 'pane_105_WD_321',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(119,183,190,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_105_WD_321');
+        map.getPane('pane_105_WD_321').style.zIndex = 605;
+        map.getPane('pane_105_WD_321').style['mix-blend-mode'] = 'normal';
+        var layer_105_WD_321 = new L.geoJson(json_105_WD_321, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_105_WD_321',
+            layerName: 'layer_105_WD_321',
+            pane: 'pane_105_WD_321',
+            onEachFeature: pop_105_WD_321,
+            style: style_105_WD_321_0,
+        });
+        bounds_group.addLayer(layer_105_WD_321);
+        
+        
+        function pop_102_E_intersection_electricals_322(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+var popupContent = '<div class="accordion" id="E_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="E_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_01" aria-expanded="false" aria-controls="E_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="E_collapse_01" class="collapse" aria-labelledby="E_sheet" data-parent="#E_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="E_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_02" aria-expanded="false" aria-controls="E_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="E_collapse_02" class="collapse" aria-labelledby="E_AB" data-parent="#E_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="E_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_03" aria-expanded="false" aria-controls="E_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="E_collapse_03" class="collapse" aria-labelledby="E_TCP" data-parent="#E_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="E_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_04" aria-expanded="false" aria-controls="E_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="E_collapse_04" class="collapse" aria-labelledby="E_relevant" data-parent="#E_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="E_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#E_collapse_05" aria-expanded="false" aria-controls="E_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="E_collapse_05" class="collapse" aria-labelledby="E_spec" data-parent="#E_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_102_E_intersection_electricals_322_0() {
+            return {
+                pane: 'pane_102_E_intersection_electricals_322',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(210,228,87,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_102_E_intersection_electricals_322');
+        map.getPane('pane_102_E_intersection_electricals_322').style.zIndex = 606;
+        map.getPane('pane_102_E_intersection_electricals_322').style['mix-blend-mode'] = 'normal';
+        var layer_102_E_intersection_electricals_322 = new L.geoJson(json_102_E_intersection_electricals_322, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_102_E_intersection_electricals_322',
+            layerName: 'layer_102_E_intersection_electricals_322',
+            pane: 'pane_102_E_intersection_electricals_322',
+            onEachFeature: pop_102_E_intersection_electricals_322,
+            style: style_102_E_intersection_electricals_322_0,
+        });
+        bounds_group.addLayer(layer_102_E_intersection_electricals_322);
+        
+        
+        
+        function pop_101_C_const_details_323(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            
+var popupContent = '<div class="accordion" id="C_popup">\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="C_sheet">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_01" aria-expanded="false" aria-controls="C_collapse_01"><strong>Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="C_collapse_01" class="collapse" aria-labelledby="C_sheet" data-parent="#C_popup">\
+                                <div class="card-body">' + (feature.properties['sheet'] !== null ? Autolinker.link(feature.properties['sheet'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="C_AB">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_02" aria-expanded="false" aria-controls="C_collapse_02"><strong>As Built(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="C_collapse_02" class="collapse" aria-labelledby="C_AB" data-parent="#C_popup">\
+                                <div class="card-body">'+ (feature.properties['as_built'] !== null ? Autolinker.link(feature.properties['as_built'].toLocaleString()) : '') +'</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="C_TCP">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_03" aria-expanded="false" aria-controls="C_collapse_03"><strong>Traffic Control Plan(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="C_collapse_03" class="collapse" aria-labelledby="C_TCP" data-parent="#C_popup">\
+                                <div class="card-body">'+ (feature.properties['tcp'] !== null ? Autolinker.link(feature.properties['tcp'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="C_relevant">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_04" aria-expanded="false" aria-controls="C_collapse_04"><strong>Relevant Sheet(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="C_collapse_04" class="collapse" aria-labelledby="C_relevant" data-parent="#C_popup">\
+                                <div class="card-body">'+ (feature.properties['relevant'] !== null ? Autolinker.link(feature.properties['relevant'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                <div class="card">\
+                                <div class="card-header p-0" id="C_spec">\
+                                <h2 class="mb-0">\
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_05" aria-expanded="false" aria-controls="C_collapse_05"><strong>Relevant Specification(s)</strong></button>\
+                                </h2>\
+                                </div>\
+                                <div id="C_collapse_05" class="collapse" aria-labelledby="C_spec" data-parent="#C_popup">\
+                                <div class="card-body">'+ (feature.properties['spec'] !== null ? Autolinker.link(feature.properties['spec'].toLocaleString()) : '') + '</div>\
+                                </div>\
+                                </div>\
+\
+                                </div>';
+
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_101_C_const_details_323_0() {
+            return {
+                pane: 'pane_101_C_const_details_323',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillopacity: 0.6,
+                fillColor: 'rgba(228,173,32,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_101_C_const_details_323');
+        map.getPane('pane_101_C_const_details_323').style.zIndex = 607;
+        map.getPane('pane_101_C_const_details_323').style['mix-blend-mode'] = 'normal';
+        
+        
+        var layer_101_C_const_details_323 = new L.geoJson(json_101_C_const_details_323, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_101_C_const_details_323',
+            layerName: 'layer_101_C_const_details_323',
+            pane: 'pane_101_C_const_details_323',
+            onEachFeature: pop_101_C_const_details_323,
+            style: style_101_C_const_details_323_0,
+        });
+        bounds_group.addLayer(layer_101_C_const_details_323);
+        
+        
+        
+        function pop_003_stations_084_324(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>STA</strong><br />' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '+00</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_003_stations_084_324_0() {
+            return {
+                pane: 'pane_003_stations_084_324',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(196,60,57,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_003_stations_084_324');
+        map.getPane('pane_003_stations_084_324').style.zIndex = 699;
+        map.getPane('pane_003_stations_084_324').style['mix-blend-mode'] = 'normal';
+        
+        var layer_003_stations_084_324 = new L.geoJson(json_003_stations_084_324, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_003_stations_084_324',
+            layerName: 'layer_003_stations_084_324',
+            pane: 'pane_003_stations_084_324',
+            onEachFeature: pop_003_stations_084_324,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_003_stations_084_324_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_003_stations_084_324);
+        
+        
+        map.addLayer(layer_003_stations_084_324);
+        
+        
+        map.createPane('pane_999_OSMStandard_315');
+        map.getPane('pane_999_OSMStandard_315').style.zIndex = 1;
+        
+        
+        
+        var layer_999_OSMStandard_315 = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+            pane: 'pane_999_OSMStandard_315',
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_999_OSMStandard_315;
+        map.addLayer(layer_999_OSMStandard_315);
+        
+        
+        
+        function pop_202_SW_mains_0(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            
+           
+            
+            var popupContent = '<strong>Asset ID</strong><br>\
+                                <div>' + (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') + '</div>';
+
+                                
+            
+            
+//            '<div class="accordion" id="SWMN_popup">\
+//\
+//                                <div class="card">\
+//                               <div class="card-header p-0" id="SWMN_asset_id">\
+//                                <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-// target="#SWMN_collapse_01" aria-expanded="false" aria-controls="SWMN_collapse_01"><strong>Asset ID</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_01" class="collapse" aria-labelledby="SWMN_asset_id" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' +  +'</div>\
+//                                 </div>\
+ //                                </div>\
+// \
+//                                 <div class="card">\
+//                                 <div class="card-header p-0" id="SWMN_dia">\
+//                                 <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_02" aria-expanded="false" aria-controls="SWMN_collapse_02"><strong>Diameter</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_02" class="collapse" aria-labelledby="SWMN_dia" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' + (feature.properties['PIPE_DIA'] !== null ? Autolinker.link(feature.properties['PIPE_DIA'].toLocaleString()) : '') +'</div>\
+//                                 </div>\
+//                                 </div>\
+// \
+//                                 <div class="card">\
+//                                 <div class="card-header p-0" id="SWMN_mtl">\
+//                                 <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_03" aria-expanded="false" aria-controls="SWMN_collapse_03"><strong>Material</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_03" class="collapse" aria-labelledby="SWMN_mtl" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' + (feature.properties['PIPE_MATRL'] !== null ? Autolinker.link(feature.properties['PIPE_MATRL'].toLocaleString()) : '') +'</div>\
+//                                 </div>\
+//                                 </div>\
+// \
+//                                 <div class="card">\
+//                                 <div class="card-header p-0" id="SWMN_scp">\
+//                                 <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_04" aria-expanded="false" aria-controls="SWMN_collapse_04"><strong>Scope</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_04" class="collapse" aria-labelledby="SWMN_scp" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' + (feature.properties['SCOPE_DTLS'] !== null ? Autolinker.link(feature.properties['SCOPE_DTLS'].toLocaleString()) : '') +'</div>\
+//                                 </div>\
+//                                 </div>\
+// \
+//                                 <div class="card">\
+//                                 <div class="card-header p-0" id="SWMN_stat">\
+//                                 <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_05" aria-expanded="false" aria-controls="SWMN_collapse_05"><strong>Status</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_05" class="collapse" aria-labelledby="SWMN_stat" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +'</div>\
+//                                 </div>\
+//                                 </div>\
+// \
+//                                 <div class="card">\
+//                                 <div class="card-header p-0" id="SWMN_sub">\
+//                                 <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_06" aria-expanded="false" aria-controls="SWMN_collapse_06"><strong>Submittal(s)</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_06" class="collapse" aria-labelledby="SWMN_sub" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' + (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +'</div>\
+//                                 </div>\
+//                                 </div>\
+// \
+//                                 <div class="card">\
+//                                 <div class="card-header p-0" id="SWMN_bid">\
+//                                 <h2 class="mb-0">\
+//                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_07" aria-expanded="false" aria-controls="SWMN_collapse_07"><strong>Bid Item(s)</strong></button>\
+//                                 </h2>\
+//                                 </div>\
+//                                 <div id="SWMN_collapse_07" class="collapse" aria-labelledby="SWMN_bid" data-parent="#SWMN_popup">\
+//                                 <div class="card-body">' + (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +'</div>\
+//                                 </div>\
+//                                 </div>\
+// \
+//                                 </div>';
+           
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+        
+
+        function style_202_SW_mains_0_0(feature) {
+            switch(String(feature.properties['SCOPE'])) {
+                case '(E) to Remain':
+                    return {
+                pane: 'pane_202_SW_mains_0',
+                opacity: 1,
+                color: 'rgba(150,150,150,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Line (E) with CIPL':
+                    return {
+                pane: 'pane_202_SW_mains_0',
+                opacity: 1,
+                color: 'rgba(132,23,123,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Plug and Fill (E)':
+                    return {
+                pane: 'pane_202_SW_mains_0',
+                opacity: 1,
+                color: 'rgba(178,129,77,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) VCP':
+                    return {
+                pane: 'pane_202_SW_mains_0',
+                opacity: 1,
+                color: 'rgba(215,25,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N) VCP':
+                    return {
+                pane: 'pane_202_SW_mains_0',
+                opacity: 1,
+                color: 'rgba(255,141,19,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Remove (E)':
+                    return {
+                pane: 'pane_202_SW_mains_0',
+                opacity: 1,
+                color: 'rgba(27,196,103,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        
+        
+        map.createPane('pane_202_SW_mains_0');
+        map.getPane('pane_202_SW_mains_0').style.zIndex = 700;
+        map.getPane('pane_202_SW_mains_0').style['mix-blend-mode'] = 'normal';
+        var layer_202_SW_mains_0 = new L.geoJson(json_202_SW_mains_0, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_202_SW_mains_0',
+            layerName: 'layer_202_SW_mains_0',
+            pane: 'pane_202_SW_mains_0',
+            onEachFeature: pop_202_SW_mains_0,
+            style: style_202_SW_mains_0_0,
+        });
+        bounds_group.addLayer(layer_202_SW_mains_0);
+        
+       
+        //map.addLayer(layer_202_SW_mains_0);
+        
+        
+        
+        
+        function pop_205_shear_bands_1(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                //mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 710});
+        }
+
+        function style_205_shear_bands_1_0() {
+            return {
+                pane: 'pane_205_shear_bands_1',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(243,166,178,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_205_shear_bands_1');
+        map.getPane('pane_205_shear_bands_1').style.zIndex = 701;
+        map.getPane('pane_205_shear_bands_1').style['mix-blend-mode'] = 'normal';
+        
+        var layer_205_shear_bands_1 = new L.geoJson(json_205_shear_bands_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_205_shear_bands_1',
+            layerName: 'layer_205_shear_bands_1',
+            pane: 'pane_205_shear_bands_1',
+            onEachFeature: pop_205_shear_bands_1,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_205_shear_bands_1_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_205_shear_bands_1);
+        
+        //map.addLayer(layer_205_shear_bands_1);
+        
+        
+        function pop_200_laterals_2(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            
+            
+            
+            
+             var popupContent = '<strong>Asset ID</strong><br>\
+                                <div>' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') + '</div>';
+             
+             
+//                                '<div class="accordion" id="LAT_popup">\
+// \
+//                                     <div class="card">\
+//                                     <div class="card-header p-0" id="LAT_asset_id">\
+//                                     <h2 class="mb-0">\
+//                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_01" aria-expanded="false" aria-controls="LAT_collapse_01"><strong>Asset ID</strong></button>\
+//                                     </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_01" class="collapse" aria-labelledby="LAT_asset_id" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_address">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_02" aria-expanded="false" aria-controls="LAT_collapse_02"><strong>Address</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_02" class="collapse" aria-labelledby="LAT_address" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['ADDRESS'] !== null ? Autolinker.link(feature.properties['ADDRESS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_BLKLOT">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_03" aria-expanded="false" aria-controls="LAT_collapse_03"><strong>BLKLOT</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_03" class="collapse" aria-labelledby="LAT_BLKLOT" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['BLKLOT'] !== null ? Autolinker.link(feature.properties['BLKLOT'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_scp">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_04" aria-expanded="false" aria-controls="LAT_collapse_04"><strong>Scope</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_04" class="collapse" aria-labelledby="LAT_scp" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_stat">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_05" aria-expanded="false" aria-controls="LAT_collapse_05"><strong>Status</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_05" class="collapse" aria-labelledby="LAT_stat" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_bid">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_06" aria-expanded="false" aria-controls="LAT_collapse_06"><strong>Bid Item(s)s</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_06" class="collapse" aria-labelledby="LAT_bid" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_sub">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_07" aria-expanded="false" aria-controls="LAT_collapse_07"><strong>Submittal(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_07" class="collapse" aria-labelledby="LAT_sub" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="LAT_PP">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_08" aria-expanded="false" aria-controls="LAT_collapse_08"><strong>Payment History</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="LAT_collapse_08" class="collapse" aria-labelledby="LAT_PP" data-parent="#LAT_popup">\
+//                                <div class="card-body">' + (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_200_laterals_2_0(feature) {
+            switch(String(feature.properties['SCOPE'])) {
+                case '(E) to Remain':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(150,150,150,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Extend and Connect (E) or Replace with (N) as Directed by City':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(255,141,19,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Intercept to Connect (E) or Replace with (N) as Directed by City':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(107,176,175,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N)':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(215,25,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N) as Directed by City':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(132,23,123,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N), Extend and Connect':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(1,103,255,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Remove (E)':
+                    return {
+                pane: 'pane_200_laterals_2',
+                opacity: 1,
+                color: 'rgba(27,196,103,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_200_laterals_2');
+        map.getPane('pane_200_laterals_2').style.zIndex = 702;
+        map.getPane('pane_200_laterals_2').style['mix-blend-mode'] = 'normal';
+        var layer_200_laterals_2 = new L.geoJson(json_200_laterals_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_200_laterals_2',
+            layerName: 'layer_200_laterals_2',
+            pane: 'pane_200_laterals_2',
+            onEachFeature: pop_200_laterals_2,
+            style: style_200_laterals_2_0,
+        });
+        bounds_group.addLayer(layer_200_laterals_2);
+        
+        //map.addLayer(layer_200_laterals_2);
+        
+        
+        function pop_204_culverts_3(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            
+            
+               var popupContent = '<strong>Asset ID</strong><br>\
+                                <div>' + (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') + '</div>';
+               
+               
+//               '<div class="accordion" id="CLVT_popup">\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_asset_id">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_01" aria-expanded="false" aria-controls="CLVT_collapse_01"><strong>Asset ID</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_01" class="collapse" aria-labelledby="CLVT_asset_id" data-parent="#CLVT_popup">\
+//                                <div class="card-body">' + (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                               <div class="card-header p-0" id="CLVT_dia">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_02" aria-expanded="false" aria-controls="CLVT_collapse_02"><strong>Diameter</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_02" class="collapse" aria-labelledby="CLVT_dia" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['PIPE_DIA'] !== null ? Autolinker.link(feature.properties['PIPE_DIA'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_mtl">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_03" aria-expanded="false" aria-controls="CLVT_collapse_03"><strong>Material</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_03" class="collapse" aria-labelledby="CLVT_mtl" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['PIPE_MATRL'] !== null ? Autolinker.link(feature.properties['PIPE_MATRL'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_scp">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_04" aria-expanded="false" aria-controls="CLVT_collapse_04"><strong>Scope</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_04" class="collapse" aria-labelledby="CLVT_scp" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_bid">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_05" aria-expanded="false" aria-controls="CLVT_collapse_05"><strong>Bid Item(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_05" class="collapse" aria-labelledby="CLVT_bid" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_stat">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_06" aria-expanded="false" aria-controls="CLVT_collapse_06"><strong>Status</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_06" class="collapse" aria-labelledby="CLVT_stat" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_sbtl">\
+ //                               <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_07" aria-expanded="false" aria-controls="CLVT_collapse_07"><strong>Submittal(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_07" class="collapse" aria-labelledby="CLVT_sbtl" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="CLVT_PP_hist">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_08" aria-expanded="false" aria-controls="CLVT_collapse_08"><strong>Payment History</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="CLVT_collapse_08" class="collapse" aria-labelledby="CLVT_PP_hist" data-parent="#CLVT_popup">\
+//                                <div class="card-body">'+ (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                </div>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_204_culverts_3_0(feature) {
+            switch(String(feature.properties['SCOPE'])) {
+                case '(E) to Remain':
+                    return {
+                pane: 'pane_204_culverts_3',
+                opacity: 1,
+                color: 'rgba(150,150,150,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) DIP':
+                    return {
+                pane: 'pane_204_culverts_3',
+                opacity: 1,
+                color: 'rgba(255,141,19,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) VCP':
+                    return {
+                pane: 'pane_204_culverts_3',
+                opacity: 1,
+                color: 'rgba(215,25,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Plug (E)':
+                    return {
+                pane: 'pane_204_culverts_3',
+                opacity: 1,
+                color: 'rgba(178,129,77,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N) as Directed by City':
+                    return {
+                pane: 'pane_204_culverts_3',
+                opacity: 1,
+                color: 'rgba(132,23,123,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_204_culverts_3');
+        map.getPane('pane_204_culverts_3').style.zIndex = 703;
+        map.getPane('pane_204_culverts_3').style['mix-blend-mode'] = 'normal';
+        var layer_204_culverts_3 = new L.geoJson(json_204_culverts_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_204_culverts_3',
+            layerName: 'layer_204_culverts_3',
+            pane: 'pane_204_culverts_3',
+            onEachFeature: pop_204_culverts_3,
+            style: style_204_culverts_3_0,
+        });
+        bounds_group.addLayer(layer_204_culverts_3);
+
+        //map.addLayer(layer_204_culverts_3);
+        
+        
+        
+        function pop_203_drains_4(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            
+            
+
+            
+               var popupContent = '<strong>Asset ID</strong><br>\
+                                <div>' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') + '</div>';
+             
+             
+             
+//             '<div class="accordion" id="DRN_popup">\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="DRN_asset_id">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DRN_collapse_01" aria-expanded="false" aria-controls="DRN_collapse_01"><strong>Asset ID</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="DRN_collapse_01" class="collapse" aria-labelledby="DRN_asset_id" data-parent="#DRN_popup">\
+//                                <div class="card-body">' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="DRN_node_id">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DRN_collapse_02" aria-expanded="false" aria-controls="DRN_collapse_02"><strong>Node ID</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="DRN_collapse_02" class="collapse" aria-labelledby="DRN_node_id" data-parent="#DRN_popup">\
+//                                <div class="card-body">'+ (feature.properties['NODE_ID'] !== null ? Autolinker.link(feature.properties['NODE_ID'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="DRN_scope">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DRN_collapse_04" aria-expanded="false" aria-controls="DRN_collapse_04"><strong>Scope</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="DRN_collapse_04" class="collapse" aria-labelledby="DRN_scope" data-parent="#DRN_popup">\
+//                                <div class="card-body">'+ (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="DRN_status">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DRN_collapse_05" aria-expanded="false" aria-controls="DRN_collapse_05"><strong>Status</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="DRN_collapse_05" class="collapse" aria-labelledby="DRN_status" data-parent="#DRN_popup">\
+//                                <div class="card-body">'+ (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="DRN_submittals">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DRN_collapse_06" aria-expanded="false" aria-controls="DRN_collapse_06"><strong>Submittal(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="DRN_collapse_06" class="collapse" aria-labelledby="DRN_submittals" data-parent="#DRN_popup">\
+//                                <div class="card-body">'+ (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                               <div class="card-header p-0" id="DRN_bid_item">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DRN_collapse_07" aria-expanded="false" aria-controls="DRN_collapse_07"><strong>Bid Item(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="DRN_collapse_07" class="collapse" aria-labelledby="DRN_bid_item" data-parent="#DRN_popup">\
+//                                <div class="card-body">'+ (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                </div>';
+                                           
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_203_drains_4_0(feature) {
+            switch(String(feature.properties['SCOPE'])) {
+                case '(E) to Remain':
+                    return {
+                pane: 'pane_203_drains_4',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(150,150,150,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Abandon (E)':
+                    return {
+                pane: 'pane_203_drains_4',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(180,150,50,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) per SFPW STD Plan 87,187':
+                    return {
+                pane: 'pane_203_drains_4',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,141,19,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) per SFPW STD Plan 87,188':
+                    return {
+                pane: 'pane_203_drains_4',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(215,25,28,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) per SFPW STD Plan 87,189':
+                    return {
+                pane: 'pane_203_drains_4',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(1,103,255,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_203_drains_4');
+        map.getPane('pane_203_drains_4').style.zIndex = 704;
+        map.getPane('pane_203_drains_4').style['mix-blend-mode'] = 'normal';
+        var layer_203_drains_4 = new L.geoJson(json_203_drains_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_203_drains_4',
+            layerName: 'layer_203_drains_4',
+            pane: 'pane_203_drains_4',
+            onEachFeature: pop_203_drains_4,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_203_drains_4_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_203_drains_4);
+
+        
+        //map.addLayer(layer_203_drains_4);
+        
+        
+        function pop_201_MHs_5(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+
+
+               var popupContent = '<strong>Asset ID</strong><br>\
+                                <div>' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') + '</div>';
+            
+            
+            
+//            '<div class="accordion" id="MH_popup">\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="MH_asset_id">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_01" aria-expanded="false" aria-controls="MH_collapse_01"><strong>Asset ID</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="MH_collapse_01" class="collapse" aria-labelledby="MH_asset_id" data-parent="#MH_popup">\
+//                                <div class="card-body">' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="MH_node_id">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_02" aria-expanded="false" aria-controls="MH_collapse_02"><strong>Node ID</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="MH_collapse_02" class="collapse" aria-labelledby="MH_node_id" data-parent="#MH_popup">\
+//                                <div class="card-body">'+ (feature.properties['NODE_ID'] !== null ? Autolinker.link(feature.properties['NODE_ID'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="MH_scope">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_04" aria-expanded="false" aria-controls="MH_collapse_04"><strong>Scope</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="MH_collapse_04" class="collapse" aria-labelledby="MH_scope" data-parent="#MH_popup">\
+//                                <div class="card-body">'+ (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="MH_status">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_05" aria-expanded="false" aria-controls="MH_collapse_05"><strong>Status</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="MH_collapse_05" class="collapse" aria-labelledby="MH_status" data-parent="#MH_popup">\
+//                                <div class="card-body">'+ (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="MH_submittals">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_06" aria-expanded="false" aria-controls="MH_collapse_06"><strong>Submittal(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="MH_collapse_06" class="collapse" aria-labelledby="MH_submittals" data-parent="#MH_popup">\
+//                                <div class="card-body">'+ (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                <div class="card">\
+//                                <div class="card-header p-0" id="MH_bid_item">\
+//                                <h2 class="mb-0">\
+//                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_07" aria-expanded="false" aria-controls="MH_collapse_07"><strong>Bid Item(s)</strong></button>\
+//                                </h2>\
+//                                </div>\
+//                                <div id="MH_collapse_07" class="collapse" aria-labelledby="MH_bid_item" data-parent="#MH_popup">\
+//                                <div class="card-body">'+ (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +'</div>\
+//                                </div>\
+//                                </div>\
+//\
+//                                </div>';
+           
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_201_MHs_5_0(feature) {
+            switch(String(feature.properties['SCOPE'])) {
+                case '(E) to Remain':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(150,150,150,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) per SFPW STD Plan 87,181':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(249,158,89,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Install (N) per SFPW STD Plan 87,182':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(254,54,107,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Mortar (E)':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,237,170,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N) per SFPW STD Plan 87,181':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(237,248,185,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with (N) per SFPW STD Plan 87,182':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(199,233,173,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Replace (E) with angled (N) per SFPW STD Plan 87,182':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(157,211,167,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Remove (E)':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(100,171,176,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Abandon (E)':
+                    return {
+                pane: 'pane_201_MHs_5',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(180,150,50,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_201_MHs_5');
+        map.getPane('pane_201_MHs_5').style.zIndex = 705;
+        map.getPane('pane_201_MHs_5').style['mix-blend-mode'] = 'normal';
+        var layer_201_MHs_5 = new L.geoJson(json_201_MHs_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_201_MHs_5',
+            layerName: 'layer_201_MHs_5',
+            pane: 'pane_201_MHs_5',
+            onEachFeature: pop_201_MHs_5,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_201_MHs_5_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_201_MHs_5);
+        
+        //map.addLayer(layer_201_MHs_5);
+        
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/003_stations_084_324.png" /> Stations': layer_003_stations_084_324,'<img src="legend/101_C_const_details_323.png" /> C - Construction Details': layer_101_C_const_details_323,'<img src="legend/102_E_intersection_electricals_322.png" /> E - Intersection Electricals': layer_102_E_intersection_electricals_322,'<img src="legend/105_WD_321.png" /> WD - Water Service Work': layer_105_WD_321,'<img src="legend/107_MA_AWSS_320.png" /> MA - AWSS Work': layer_107_MA_AWSS_320,'<img src="legend/100_L_layout_319.png" /> L - Layout': layer_100_L_layout_319,'<img src="legend/103_SW_sewer_318.png" /> SW - Sewer': layer_103_SW_sewer_318,'<img src="legend/106_PD_pavement_delineation_317.png" /> PD - Pavement Delineation': layer_106_PD_pavement_delineation_317,'<img src="legend/104_U_utility_occupancy_316.png" /> U - Utility Occupancy': layer_104_U_utility_occupancy_316,"Street Map": layer_999_OSMStandard_315}).addTo(map);
+        
+        L.control.layers(baseMaps,{'<strong>Manholes</strong><br/><table><tr><td style="text-align: center;"><img src="legend/201_MHs_5_EtoRemain0.png" /></td><td>(E) to Remain</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_InstallNperSFPWSTDPlan871811.png" /></td><td>Install (N) per SFPW STD Plan 87,181</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_InstallNperSFPWSTDPlan871822.png" /></td><td>Install (N) per SFPW STD Plan 87,182</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_MortarE3.png" /></td><td>Mortar (E)</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_ReplaceEwithNperSFPWSTDPlan871814.png" /></td><td>Replace (E) with (N) per SFPW STD Plan 87,181</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_ReplaceEwithNperSFPWSTDPlan871825.png" /></td><td>Replace (E) with (N) per SFPW STD Plan 87,182</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_ReplaceEwithangledNperSFPWSTDPlan871826.png" /></td><td>Replace (E) with angled (N) per SFPW STD Plan 87,182</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_RemoveE7.png" /></td><td>Remove (E)</td></tr><tr><td style="text-align: center;"><img src="legend/201_MHs_5_AbandonE8.png" /></td><td>Abandon (E)</td></tr></table>': layer_201_MHs_5,'<strong>Drains</strong><br /><table><tr><td style="text-align: center;"><img src="legend/203_drains_4_EtoRemain0.png" /></td><td>(E) to Remain</td></tr><tr><td style="text-align: center;"><img src="legend/203_drains_4_AbandonE1.png" /></td><td>Abandon (E)</td></tr><tr><td style="text-align: center;"><img src="legend/203_drains_4_InstallNperSFPWSTDPlan871872.png" /></td><td>Install (N) per SFPW STD Plan 87,187</td></tr><tr><td style="text-align: center;"><img src="legend/203_drains_4_InstallNperSFPWSTDPlan871883.png" /></td><td>Install (N) per SFPW STD Plan 87,188</td></tr><tr><td style="text-align: center;"><img src="legend/203_drains_4_InstallNperSFPWSTDPlan871894.png" /></td><td>Install (N) per SFPW STD Plan 87,189</td></tr></table>': layer_203_drains_4,'<strong>Culverts</strong><br /><table><tr><td style="text-align: center;"><img src="legend/204_culverts_3_EtoRemain0.png" /></td><td>(E) to Remain</td></tr><tr><td style="text-align: center;"><img src="legend/204_culverts_3_InstallNDIP1.png" /></td><td>Install (N) DIP</td></tr><tr><td style="text-align: center;"><img src="legend/204_culverts_3_InstallNVCP2.png" /></td><td>Install (N) VCP</td></tr><tr><td style="text-align: center;"><img src="legend/204_culverts_3_PlugE3.png" /></td><td>Plug (E)</td></tr><tr><td style="text-align: center;"><img src="legend/204_culverts_3_ReplaceEwithNasDirectedbyCity4.png" /></td><td>Replace (E) with (N) as Directed by City</td></tr></table>': layer_204_culverts_3,'<strong>Laterals</strong><br /><table><tr><td style="text-align: center;"><img src="legend/200_laterals_2_EtoRemain0.png" /></td><td>(E) to Remain</td></tr><tr><td style="text-align: center;"><img src="legend/200_laterals_2_ExtendandConnectEorReplacewithNasDirectedbyCity1.png" /></td><td>Extend and Connect (E) or Replace with (N) as Directed by City</td></tr><tr><td style="text-align: center;"><img src="legend/200_laterals_2_IntercepttoConnectEorReplacewithNasDirectedbyCity2.png" /></td><td>Intercept to Connect (E) or Replace with (N) as Directed by City</td></tr><tr><td style="text-align: center;"><img src="legend/200_laterals_2_ReplaceEwithN3.png" /></td><td>Replace (E) with (N)</td></tr><tr><td style="text-align: center;"><img src="legend/200_laterals_2_ReplaceEwithNasDirectedbyCity4.png" /></td><td>Replace (E) with (N) as Directed by City</td></tr><tr><td style="text-align: center;"><img src="legend/200_laterals_2_ReplaceEwithNExtendandConnect5.png" /></td><td>Replace (E) with (N), Extend and Connect</td></tr><tr><td style="text-align: center;"><img src="legend/200_laterals_2_RemoveE6.png" /></td><td>Remove (E)</td></tr></table>': layer_200_laterals_2,'<strong>Mains</strong><br /><table><tr><td style="text-align: center;"><img src="legend/202_SW_mains_0_EtoRemain0.png" /></td><td>(E) to Remain</td></tr><tr><td style="text-align: center;"><img src="legend/202_SW_mains_0_LineEwithCIPL1.png" /></td><td>Line (E) with CIPL</td></tr><tr><td style="text-align: center;"><img src="legend/202_SW_mains_0_PlugandFillE2.png" /></td><td>Plug and Fill (E)</td></tr><tr><td style="text-align: center;"><img src="legend/202_SW_mains_0_InstallNVCP3.png" /></td><td>Install (N) VCP</td></tr><tr><td style="text-align: center;"><img src="legend/202_SW_mains_0_ReplaceEwithNVCP4.png" /></td><td>Replace (E) with (N) VCP</td></tr><tr><td style="text-align: center;"><img src="legend/202_SW_mains_0_RemoveE5.png" /></td><td>Remove (E)</td></tr></table>': layer_202_SW_mains_0,'<img src="legend/205_shear_bands_1.png" /> Shear Bands': layer_205_shear_bands_1,}).addTo(map);
+
+   /*            
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"C-01A Rev. 1": layer_2652J_dwg_C01A_rev01pdf1_modified_314,
+"C-01A": layer_2652J_dwg_C01Apdf1_modified_313,
+"C-01B Rev. 1": layer_2652J_dwg_C01B_rev01pdf1_modified_312,
+"C-01B": layer_2652J_dwg_C01Bpdf1_modified_311,
+"C-01C Rev. 1": layer_2652J_dwg_C01C_rev01pdf1_modified_310,
+"C-01C": layer_2652J_dwg_C01Cpdf1_modified_309,
+"C-05A Rev. 1": layer_2652J_dwg_C05A_rev01pdf1_modified_a_308,
+"C-05A-b": layer_2652J_dwg_C05Apdf1_modified_b_307,
+"C-05A-a": layer_2652J_dwg_C05Apdf1_modified_a_306,
+"C-08A Rev. 1": layer_2652J_dwg_C08A_rev01pdf1_modified_305,
+"C-08A": layer_2652J_dwg_C08Apdf1_modified_304,
+"C-08B Rev. 1": layer_2652J_dwg_C08B_rev01pdf1_modified_303,
+"C-08B": layer_2652J_dwg_C08Bpdf1_modified_302,
+"C-09A Rev. 1": layer_2652J_dwg_C09A_rev01pdf1_modified_301,
+"C-09A": layer_2652J_dwg_C09Apdf1_modified_300,
+"C-09B Rev. 1": layer_2652J_dwg_C09B_rev01pdf1_modified_299,
+"C-09B": layer_2652J_dwg_C09Bpdf1_modified_298,
+"C-09C Rev. 1": layer_2652J_dwg_C09C_rev01pdf1_modified_297,
+"C-09C": layer_2652J_dwg_C09Cpdf1_modified_296,
+"C-09D Rev. 1": layer_2652J_dwg_C09D_rev01pdf1_modified_295,
+"C-09D": layer_2652J_dwg_C09Dpdf1_modified_294,
+"C-10A Rev. 1": layer_2652J_dwg_C10A_rev01pdf1_modified_293,
+"C-10A": layer_2652J_dwg_C10Apdf1_modified_292,
+"C-10B Rev. 1": layer_2652J_dwg_C10B_rev01pdf1_modified_291,
+"C-10B": layer_2652J_dwg_C10Bpdf1_modified_290,
+"C-10C Rev. 1": layer_2652J_dwg_C10C_rev01pdf1_modified_289,
+"C-10C": layer_2652J_dwg_C10Cpdf1_modified_288,
+"C-10D_rev01-a": layer_2652J_dwg_C10D_rev01pdf1_modified_a_284,
+"C-10D-a": layer_2652J_dwg_C10Dpdf1_modified_a_286,
+"C-10D_rev01-b": layer_2652J_dwg_C10D_rev01pdf1_modified_b_285,
+"C-10D-b": layer_2652J_dwg_C10Dpdf1_modified_b_287,
+"C-12A Rev. 1": layer_2652J_dwg_C12A_rev01pdf1_modified_283,
+"C-12A": layer_2652J_dwg_C12Apdf1_modified_282,
+"C-13A Rev. 1": layer_2652J_dwg_C13A_rev01pdf1_modified_281,
+"C-13A": layer_2652J_dwg_C13Apdf1_modified_280,
+"C-13B Rev. 1": layer_2652J_dwg_C13B_rev01pdf1_modified_279,
+"C-13B": layer_2652J_dwg_C13Bpdf1_modified_278,
+"C-15A Rev. 1": layer_2652J_dwg_C15A_rev01pdf1_modified_277,
+"C-15A": layer_2652J_dwg_C15Apdf1_modified_276,
+"C-15B Rev. 1": layer_2652J_dwg_C15B_rev01pdf1_modified_275,
+"C-15B": layer_2652J_dwg_C15Bpdf1_modified_274,
+"C-16A Rev. 1": layer_2652J_dwg_C16A_rev01pdf1_modified_273,
+"C-16A": layer_2652J_dwg_C16Apdf1_modified_272,
+"C-16B Rev. 1": layer_2652J_dwg_C16B_rev01pdf1_modified_271,
+"C-16B": layer_2652J_dwg_C16Bpdf1_modified_270,
+"C-16C Rev. 1": layer_2652J_dwg_C16C_rev01pdf1_modified_269,
+"C-16C": layer_2652J_dwg_C16Cpdf1_modified_268,
+"C-16D Rev. 1": layer_2652J_dwg_C16D_rev01pdf1_modified_267,
+"C-16D": layer_2652J_dwg_C16Dpdf1_modified_266,
+"C-17A Rev. 1": layer_2652J_dwg_C17A_rev01pdf1_modified_265,
+"C-17A": layer_2652J_dwg_C17Apdf1_modified_264,
+"C-17B Rev. 1": layer_2652J_dwg_C17B_rev01pdf1_modified_263,
+"C-17B": layer_2652J_dwg_C17Bpdf1_modified_262,
+"C-19A Rev. 1": layer_2652J_dwg_C19A_rev01pdf1_modified_261,
+"C-19A": layer_2652J_dwg_C19Apdf1_modified_260,
+"C-19B Rev. 1": layer_2652J_dwg_C19B_rev01pdf1_modified_259,
+"C-19B": layer_2652J_dwg_C19Bpdf1_modified_258,
+"C-19C Rev. 1": layer_2652J_dwg_C19C_rev01pdf1_modified_257,
+"C-19C": layer_2652J_dwg_C19Cpdf1_modified_256,
+"C-19D Rev. 1": layer_2652J_dwg_C19D_rev01pdf1_modified_255,
+"C-19D": layer_2652J_dwg_C19Dpdf1_modified_254,
+"C-20A Rev. 1": layer_2652J_dwg_C20A_rev01pdf1_modified_253,
+"C-20A": layer_2652J_dwg_C20Apdf1_modified_252,
+"C-20B Rev. 1": layer_2652J_dwg_C20B_rev01pdf1_modified_251,
+"C-20B": layer_2652J_dwg_C20Bpdf1_modified_250,
+"C-20C Rev. 1": layer_2652J_dwg_C20C_rev01pdf1_modified_249,
+"C-20C": layer_2652J_dwg_C20Cpdf1_modified_248,
+"C-21A Rev. 1": layer_2652J_dwg_C21A_rev01pdf1_modified_247,
+"C-21A": layer_2652J_dwg_C21Apdf1_modified_246,
+"C-21B Rev. 1": layer_2652J_dwg_C21B_rev01pdf1_modified_245,
+"C-21B": layer_2652J_dwg_C21Bpdf1_modified_244,
+"C-22A Rev. 1": layer_2652J_dwg_C22A_rev01pdf1_modified_243,
+"C-22A": layer_2652J_dwg_C22Apdf1_modified_242,
+"C-22B Rev. 1": layer_2652J_dwg_C22B_rev01pdf1_modified_241,
+"C-22B": layer_2652J_dwg_C22Bpdf1_modified_240,
+"C-22C Rev. 1": layer_2652J_dwg_C22C_rev01pdf1_modified_239,
+"C-22C": layer_2652J_dwg_C22Cpdf1_modified_238,
+"C-22D Rev. 1": layer_2652J_dwg_C22D_rev01pdf1_modified_237,
+"C-22D": layer_2652J_dwg_C22Dpdf1_modified_236,
+"C-24A Rev. 1": layer_2652J_dwg_C24A_rev01pdf1_modified_235,
+"C-24A": layer_2652J_dwg_C24Apdf1_modified_234,
+"C-24B Rev. 1": layer_2652J_dwg_C24B_rev01pdf1_modified_233,
+"C-24B": layer_2652J_dwg_C24Bpdf1_modified_232,
+"C-25B Rev. 1": layer_2652J_dwg_C25B_rev01pdf1_modified_231,
+"C-25B": layer_2652J_dwg_C25Bpdf1_modified_230,
+"C-25A Rev. 1": layer_2652J_dwg_C25A_rev01pdf1_modified_229,
+"C-25A": layer_2652J_dwg_C25Apdf1_modified_228,
+"C-26A Rev. 1": layer_2652J_dwg_C26A_rev01pdf1_modified_227,
+"C-26A": layer_2652J_dwg_C26Apdf1_modified_226,
+"C-26B Rev. 1": layer_2652J_dwg_C26B_rev01pdf1_modified_225,
+"C-26B": layer_2652J_dwg_C26Bpdf1_modified_224,
+"C-26C Rev. 1": layer_2652J_dwg_C26C_rev01pdf1_modified_223,
+"C-26C": layer_2652J_dwg_C26Cpdf1_modified_222,
+"C-26D Rev. 1": layer_2652J_dwg_C26D_rev01pdf1_modified_221,
+"C-26D": layer_2652J_dwg_C26Dpdf1_modified_220,
+"C-27A Rev. 1": layer_2652J_dwg_C27A_rev01pdf1_modified_219,
+"C-27A": layer_2652J_dwg_C27Apdf1_modified_218,
+"C-27B Rev. 1": layer_2652J_dwg_C27B_rev01pdf1_modified_217,
+"C-27B": layer_2652J_dwg_C27Bpdf1_modified_216,
+"C-29A Rev. 1": layer_2652J_dwg_C29A_rev01pdf1_modified_215,
+"C-29A": layer_2652J_dwg_C29Apdf1_modified_214,
+"C-29B Rev. 1": layer_2652J_dwg_C29B_rev01pdf1_modified_213,
+"C-29B": layer_2652J_dwg_C29Bpdf1_modified_212,
+"C-29C Rev. 1": layer_2652J_dwg_C29C_rev01pdf1_modified_211,
+"C-29C": layer_2652J_dwg_C29Cpdf1_modified_210,
+"C-29D Rev. 1": layer_2652J_dwg_C29D_rev01pdf1_modified_209,
+"C-29D": layer_2652J_dwg_C29Dpdf1_modified_208,
+"C-30A Rev. 1": layer_2652J_dwg_C30A_rev01pdf1_modified_207,
+"C-30A": layer_2652J_dwg_C30Apdf1_modified_206,
+"C-30B Rev. 1": layer_2652J_dwg_C30B_rev01pdf1_modified_205,
+"C-30B": layer_2652J_dwg_C30Bpdf1_modified_204,
+"C-31A Rev. 1": layer_2652J_dwg_C31A_rev01pdf1_modified_203,
+"C-31A": layer_2652J_dwg_C31Apdf1_modified_202
+}).addTo(map);
+
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"E-01.0-a": layer_2652J_dwg_E010pdf1_modified_a_201,
+"E-01.0-b": layer_2652J_dwg_E010pdf1_modified_b_200,
+"E-01.0-c": layer_2652J_dwg_E010pdf1_modified_c_199,
+"E-02.0-a": layer_2652J_dwg_E020pdf1_modified_a_198,
+"E-02.0-b": layer_2652J_dwg_E020pdf1_modified_b_197,
+"E-02.0-c": layer_2652J_dwg_E020pdf1_modified_c_196,
+"E-03.0": layer_2652J_dwg_E030pdf1_modified_195,
+"E-04.0": layer_2652J_dwg_E040pdf1_modified_194,
+"E-05.0": layer_2652J_dwg_E050pdf1_modified_193,
+"E-06.0": layer_2652J_dwg_E060pdf1_modified_192,
+"E-07.0": layer_2652J_dwg_E070pdf1_modified_191,
+"E-08.0": layer_2652J_dwg_E080pdf1_modified_190,
+"E-09.0": layer_2652J_dwg_E090pdf1_modified_189,
+"E-10.0": layer_2652J_dwg_E100pdf1_modified_188,
+"E-11.0": layer_2652J_dwg_E110pdf1_modified_187,
+"E-12.0": layer_2652J_dwg_E120pdf1_modified_186,
+"E-13.0": layer_2652J_dwg_E130pdf1_modified_185,
+"E-14.0": layer_2652J_dwg_E140pdf1_modified_184,
+"E-15.0": layer_2652J_dwg_E150pdf1_modified_183,
+"E-16.0": layer_2652J_dwg_E160pdf1_modified_182,
+"E-17.0": layer_2652J_dwg_E170pdf1_modified_181,
+"E-18.0": layer_2652J_dwg_E180pdf1_modified_180,
+"E-19.0": layer_2652J_dwg_E190pdf1_modified_179,
+"E-20.0": layer_2652J_dwg_E200pdf1_modified_178,
+"E-21.0": layer_2652J_dwg_E210pdf1_modified_177
+}).addTo(map);
+
+
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+        
+        
+        
+"WD-2775-02": layer_2652J_dwg_WD277502pdf1_modified_176,
+"WD-2775-02A": layer_2652J_dwg_WD277502Apdf1_modified_175,
+"WD-2775-02B": layer_2652J_dwg_WD277502Bpdf1_modified_174,
+"WD-2775-02C": layer_2652J_dwg_WD277502Cpdf1_modified_173,
+
+"WD-2775-03": layer_2652J_dwg_WD277503pdf1_modified_172,
+"WD-2775-04": layer_2652J_dwg_WD277504pdf1_modified_171,
+
+
+"WD-2775-05": layer_2652J_dwg_WD277505pdf1_modified_170,
+"WD-2775-05A": layer_2652J_dwg_WD277505Apdf1_modified_169,
+
+
+
+"WD-2775-14": layer_2652J_dwg_WD277514pdf1_modified_168,
+
+"WD-2775-19A": layer_2652J_dwg_WD277519Apdf1_modified_167,
+
+"WD-2775-20B": layer_2652J_dwg_WD277520Bpdf1_modified_166,
+
+"WD-2775-20C": layer_2652J_dwg_WD277520Cpdf1_modified_165,
+
+"WD-2775-21A Rev. 1": layer_2652J_dwg_WD277521A_rev01pdf1_modified_164,
+"WD-2775-21A": layer_2652J_dwg_WD277521Apdf1_modified_163,
+
+"WD-2775-22": layer_2652J_dwg_WD277522pdf1_modified_162,
+
+"WD-2775-23A": layer_2652J_dwg_WD277523Apdf1_modified_161,
+"WD-2775-23B Rev. 1": layer_2652J_dwg_WD277523B_rev01pdf1_modified_160,
+"WD-2775-23B": layer_2652J_dwg_WD277523Bpdf1_modified_159,
+"WD-2775-23D Rev. 1": layer_2652J_dwg_WD277523D_rev01pdf1_modified_158,
+"WD-2775-23D": layer_2652J_dwg_WD277523Dpdf1_modified_157,
+
+"WD-2775-24A": layer_2652J_dwg_WD277524Apdf1_modified_156,
+"WD-2775-24B Rev. 1": layer_2652J_dwg_WD277524B_rev01pdf1_modified_155,
+"WD-2775-24B": layer_2652J_dwg_WD277524Bpdf1_modified_154,
+"WD-2775-24D Rev. 1": layer_2652J_dwg_WD277524D_rev01pdf1_modified_153,
+"WD-2775-24D": layer_2652J_dwg_WD277524Dpdf1_modified_152,
+
+"WD-2775-25B": layer_2652J_dwg_WD277525Bpdf1_modified_151,
+"WD-2775-25D": layer_2652J_dwg_WD277525Dpdf1_modified_150,
+
+"WD-2775-26B Rev. 1": layer_2652J_dwg_WD277526B_rev01pdf1_modified_149,
+"WD-2775-26B": layer_2652J_dwg_WD277526Bpdf1_modified_148,
+"WD-2775-26D": layer_2652J_dwg_WD277526Dpdf1_modified_147,
+
+"WD-2775-27B Rev. 1": layer_2652J_dwg_WD277527B_rev01pdf1_modified_146,
+"WD-2775-27B": layer_2652J_dwg_WD277527Bpdf1_modified_145,
+"WD-2775-27D-a": layer_2652J_dwg_WD277527Dpdf1_modified_a_144,
+"WD-2775-27D-b": layer_2652J_dwg_WD277527Dpdf1_modified_b_143,
+
+"WD-2775-28A": layer_2652J_dwg_WD277528Apdf1_modified_142
+
+}).addTo(map);
+
+
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"MA-15.1": layer_2652J_dwg_MA151pdf1_modified_141,
+"MA-15.2": layer_2652J_dwg_MA152pdf1_modified_140,
+"MA-15.4": layer_2652J_dwg_MA154pdf1_modified_139,
+"MA-17.4": layer_2652J_dwg_MA174pdf1_modified_138,
+"MA-19.4": layer_2652J_dwg_MA194pdf1_modified_137,
+"MA-22.1": layer_2652J_dwg_MA221pdf1_modified_136,
+"MA-22.2": layer_2652J_dwg_MA222pdf1_modified_135,
+"MA-24.1": layer_2652J_dwg_MA241pdf1_modified_134,
+"MA-24.2": layer_2652J_dwg_MA242pdf1_modified_133,
+"MA-24.4": layer_2652J_dwg_MA244pdf1_modified_132,
+"MA-26.1": layer_2652J_dwg_MA261pdf1_modified_131,
+"MA-26.2": layer_2652J_dwg_MA262pdf1_modified_130,
+"MA-27.1": layer_2652J_dwg_MA271pdf1_modified_129,
+"MA-27.2": layer_2652J_dwg_MA272pdf1_modified_128,
+"MA-27.4": layer_2652J_dwg_MA274pdf1_modified_127,
+"MA-28.1": layer_2652J_dwg_MA281pdf1_modified_126,
+"MA-28.2": layer_2652J_dwg_MA282pdf1_modified_125,
+"MA-29.1": layer_2652J_dwg_MA291pdf1_modified_124,
+"MA-29.2": layer_2652J_dwg_MA292pdf1_modified_123,
+"MA-30.1": layer_2652J_dwg_MA301pdf1_modified_122,
+"MA-30.2": layer_2652J_dwg_MA302pdf1_modified_121
+}).addTo(map);
+
+
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"L-01": layer_2652J_dwg_L01pdf1_modified_120,
+"L-05": layer_2652J_dwg_L05pdf1_modified_119,
+"L-08": layer_2652J_dwg_L08pdf1_modified_118,
+"L-09": layer_2652J_dwg_L09pdf1_modified_117,
+"L-10": layer_2652J_dwg_L10pdf1_modified_116,
+"L-12": layer_2652J_dwg_L12pdf1_modified_115,
+"L-13": layer_2652J_dwg_L13pdf1_modified_114,
+"L-15": layer_2652J_dwg_L15pdf1_modified_113,
+"L-16": layer_2652J_dwg_L16pdf1_modified_112,
+"L-17": layer_2652J_dwg_L17pdf1_modified_111,
+"L-19": layer_2652J_dwg_L19pdf1_modified_110,
+"L-20": layer_2652J_dwg_L20pdf1_modified_109,
+"L-21": layer_2652J_dwg_L21pdf1_modified_108,
+"L-22": layer_2652J_dwg_L22pdf1_modified_107,
+"L-24": layer_2652J_dwg_L24pdf1_modified_106,
+"L-25": layer_2652J_dwg_L25pdf1_modified_105,
+"L-26": layer_2652J_dwg_L26pdf1_modified_104,
+"L-27": layer_2652J_dwg_L27pdf1_modified_103,
+"L-29": layer_2652J_dwg_L29pdf1_modified_102,
+"L-30": layer_2652J_dwg_L30pdf1_modified_101,
+"L-31": layer_2652J_dwg_L31pdf1_modified_100
+}).addTo(map);
+
+
+
+
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"SW-01": layer_2652J_dwg_SW01pdf1_modified_99,
+"SW-02": layer_2652J_dwg_SW02pdf1_modified_98,
+"SW-03": layer_2652J_dwg_SW03pdf1_modified_97,
+"SW-04": layer_2652J_dwg_SW04pdf1_modified_96,
+"SW-05": layer_2652J_dwg_SW05pdf1_modified_95,
+"SW-06": layer_2652J_dwg_SW06pdf1_modified_94,
+"SW-07": layer_2652J_dwg_SW07pdf1_modified_93,
+"SW-08": layer_2652J_dwg_SW08pdf1_modified_92,
+"SW-09": layer_2652J_dwg_SW09pdf1_modified_91,
+"SW-10": layer_2652J_dwg_SW10pdf1_modified_90,
+"SW-11": layer_2652J_dwg_SW11pdf1_modified_89,
+"SW-12": layer_2652J_dwg_SW12pdf1_modified_88,
+"SW-13": layer_2652J_dwg_SW13pdf1_modified_87,
+"SW-14": layer_2652J_dwg_SW14pdf1_modified_86,
+"SW-15": layer_2652J_dwg_SW15pdf1_modified_85,
+"SW-16": layer_2652J_dwg_SW16pdf1_modified_84,
+"SW-17": layer_2652J_dwg_SW17pdf1_modified_83,
+"SW-18": layer_2652J_dwg_SW18pdf1_modified_82,
+"SW-19": layer_2652J_dwg_SW19pdf1_modified_81,
+"SW-20": layer_2652J_dwg_SW20pdf1_modified_80,
+"SW-21": layer_2652J_dwg_SW21pdf1_modified_79,
+"SW-22": layer_2652J_dwg_SW22pdf1_modified_78,
+"SW-23": layer_2652J_dwg_SW23pdf1_modified_77,
+"SW-24": layer_2652J_dwg_SW24pdf1_modified_76,
+"SW-25": layer_2652J_dwg_SW25pdf1_modified_75,
+"SW-26": layer_2652J_dwg_SW26pdf1_modified_74,
+"SW-27": layer_2652J_dwg_SW27pdf1_modified_73,
+"SW-28": layer_2652J_dwg_SW28pdf1_modified_72,
+"SW-29": layer_2652J_dwg_SW29pdf1_modified_71,
+"SW-30": layer_2652J_dwg_SW30pdf1_modified_70,
+"SW-31": layer_2652J_dwg_SW31pdf1_modified_69
+}).addTo(map);
+        
+
+        
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"PD-01-a": layer_2652J_dwg_PD01pdf1_modified_a_68,
+"PD-01-b": layer_2652J_dwg_PD01pdf1_modified_b_67,
+"PD-07-a": layer_2652J_dwg_PD07pdf1_modified_a_56,
+"PD-07-b": layer_2652J_dwg_PD07pdf1_modified_b_55,
+
+"PD-02-a": layer_2652J_dwg_PD02pdf1_modified_a_66,
+"PD-02-b": layer_2652J_dwg_PD02pdf1_modified_b_65,
+"PD-08-a": layer_2652J_dwg_PD08pdf1_modified_a_54,
+"PD-08-b": layer_2652J_dwg_PD08pdf1_modified_b_53,
+
+"PD-03-a": layer_2652J_dwg_PD03pdf1_modified_a_64,
+"PD-03-b": layer_2652J_dwg_PD03pdf1_modified_b_63,
+"PD-09-a": layer_2652J_dwg_PD09pdf1_modified_a_52,
+"PD-09-b": layer_2652J_dwg_PD09pdf1_modified_b_51,
+
+"PD-04-a": layer_2652J_dwg_PD04pdf1_modified_a_62,
+"PD-04-b": layer_2652J_dwg_PD04pdf1_modified_b_61,
+"PD-10-a": layer_2652J_dwg_PD10pdf1_modified_a_50,
+"PD-10-b": layer_2652J_dwg_PD10pdf1_modified_b_49,
+
+"PD-05-a": layer_2652J_dwg_PD05pdf1_modified_a_60,
+"PD-05-b": layer_2652J_dwg_PD05pdf1_modified_b_59,
+"PD-11-a": layer_2652J_dwg_PD11pdf1_modified_a_48,
+"PD-11-b": layer_2652J_dwg_PD11pdf1_modified_b_47,
+
+"PD-06-a": layer_2652J_dwg_PD06pdf1_modified_a_58,
+"PD-06-b": layer_2652J_dwg_PD06pdf1_modified_b_57,
+"PD-12-a": layer_2652J_dwg_PD12pdf1_modified_a_46,
+"PD-12-b": layer_2652J_dwg_PD12pdf1_modified_b_45
+
+}).addTo(map);  
+        
+        
+ 
+var baseMaps = {};
+        L.control.layers(baseMaps,{
+"U-01": layer_2652J_dwg_U01pdf1_modified_44,
+"U-02": layer_2652J_dwg_U02pdf1_modified_43,
+"U-03": layer_2652J_dwg_U03pdf1_modified_42,
+"U-04": layer_2652J_dwg_U04pdf1_modified_41,
+"U-05": layer_2652J_dwg_U05pdf1_modified_40,
+"U-06": layer_2652J_dwg_U06pdf1_modified_39,
+"U-07": layer_2652J_dwg_U07pdf1_modified_38,
+"U-08 Rev. 1": layer_2652J_dwg_U08_rev01pdf1_modified_37,
+"U-08": layer_2652J_dwg_U08pdf1_modified_36,
+"U-09": layer_2652J_dwg_U09pdf1_modified_35,
+"U-10": layer_2652J_dwg_U10pdf1_modified_34,
+"U-11": layer_2652J_dwg_U11pdf1_modified_33,
+"U-12 Rev. 1": layer_2652J_dwg_U12_rev01pdf1_modified_32,
+"U-12": layer_2652J_dwg_U12pdf1_modified_31,
+"U-13": layer_2652J_dwg_U13pdf1_modified_30,
+"U-14": layer_2652J_dwg_U14pdf1_modified_29,
+"U-15 Rev. 1": layer_2652J_dwg_U15_rev01pdf1_modified_28,
+"U-15": layer_2652J_dwg_U15pdf1_modified_27,
+"U-16": layer_2652J_dwg_U16pdf1_modified_26,
+"U-17 Rev. 1": layer_2652J_dwg_U17_rev01pdf1_modified_25,
+"U-17": layer_2652J_dwg_U17pdf1_modified_24,
+"U-18": layer_2652J_dwg_U18pdf1_modified_23,
+"U-19 Rev. 1": layer_2652J_dwg_U19_rev01pdf1_modified_22,
+"U-19": layer_2652J_dwg_U19pdf1_modified_21,
+"U-20 Rev. 1": layer_2652J_dwg_U20_rev01pdf1_modified_20,
+"U-20": layer_2652J_dwg_U20pdf1_modified_19,
+"U-21 Rev. 1": layer_2652J_dwg_U21_rev01pdf1_modified_18,
+"U-21": layer_2652J_dwg_U21pdf1_modified_17,
+"U-22 Rev. 1": layer_2652J_dwg_U22_rev01pdf1_modified_16,
+"U-22": layer_2652J_dwg_U22pdf1_modified_15,
+"U-23": layer_2652J_dwg_U23pdf1_modified_14,
+"U-24 Rev. 1": layer_2652J_dwg_U24_rev01pdf1_modified_13,
+"U-24": layer_2652J_dwg_U24pdf1_modified_12,
+"U-25 Rev. 1": layer_2652J_dwg_U25_rev01pdf1_modified_11,
+"U-25": layer_2652J_dwg_U25pdf1_modified_10,
+"U-26 Rev. 1": layer_2652J_dwg_U26_rev01pdf1_modified_9,
+"U-26": layer_2652J_dwg_U26pdf1_modified_8,
+"U-27 Rev. 1": layer_2652J_dwg_U27_rev01pdf1_modified_7,
+"U-27": layer_2652J_dwg_U27pdf1_modified_6,
+"U-28": layer_2652J_dwg_U28pdf1_modified_5,
+"U-29 Rev. 1": layer_2652J_dwg_U29_rev01pdf1_modified_4,
+"U-29": layer_2652J_dwg_U29pdf1_modified_3,
+"U-30 Rev. 1": layer_2652J_dwg_U30_rev01pdf1_modified_2,
+"U-30": layer_2652J_dwg_U30pdf1_modified_1,
+"U-31":layer_2652J_dwg_U31pdf1_modified_0
+}).addTo(map);  */  
+        
+        
+        setBounds();
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        
+ </script>       
+   
+
+   
+<script>        
+            
+    $("#clearAll").click(function(event) {
+    
+        event.preventDefault();
+
+
+        $(".check").each(function(i, el) {el.checked = false; $(el).change();})});    
+        
+        
+    $(".check").change(function() {
+
+        var layerClicked = $(this).attr("id");
+        
+        switch (layerClicked) 
+        
+        {
+        
+        case "layer_2652J_dwg_U01pdf1_modified_44":toggleLayer(this.checked, layer_2652J_dwg_U01pdf1_modified_44);break;
+        case "layer_2652J_dwg_U02pdf1_modified_43":toggleLayer(this.checked, layer_2652J_dwg_U02pdf1_modified_43);break;
+  
+        }
+        
+});
+
+
+function handleChange(checkbox, layer) {
+    if(checkbox.checked == true){
+        map.addLayer(layer);
+    }else{
+        map.removeLayer(layer);
+   }
+}
+
+
+function toggleLayer(checked, layer) {
+
+
+  if (checked) {
+    map.addLayer(layer);
+  } else {
+    map.removeLayer(layer);
+  }
+}          
+        </script>
+        
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+
+    </body>
+</html>
+

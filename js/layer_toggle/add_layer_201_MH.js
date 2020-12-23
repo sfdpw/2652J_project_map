@@ -8,75 +8,26 @@ function pop_201_MHs_5(feature, layer) {
     mouseover: highlightFeature,
   });
 
-var popupContent = '<div class="accordion" id="MH_popup">\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="MH_asset_id">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_01" aria-expanded="false" aria-controls="MH_collapse_01"><strong>Asset ID</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="MH_collapse_01" class="collapse" aria-labelledby="MH_asset_id" data-parent="#MH_popup">\
-                                <div class="card-body">' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="MH_node_id">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_02" aria-expanded="false" aria-controls="MH_collapse_02"><strong>Node ID</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="MH_collapse_02" class="collapse" aria-labelledby="MH_node_id" data-parent="#MH_popup">\
-                                <div class="card-body">' + (feature.properties['NODE_ID'] !== null ? Autolinker.link(feature.properties['NODE_ID'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="MH_scope">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_04" aria-expanded="false" aria-controls="MH_collapse_04"><strong>Scope</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="MH_collapse_04" class="collapse" aria-labelledby="MH_scope" data-parent="#MH_popup">\
-                                <div class="card-body">' + (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="MH_status">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_05" aria-expanded="false" aria-controls="MH_collapse_05"><strong>Status</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="MH_collapse_05" class="collapse" aria-labelledby="MH_status" data-parent="#MH_popup">\
-                                <div class="card-body">' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="MH_submittals">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_06" aria-expanded="false" aria-controls="MH_collapse_06"><strong>Submittal(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="MH_collapse_06" class="collapse" aria-labelledby="MH_submittals" data-parent="#MH_popup">\
-                                <div class="card-body">' + (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="MH_bid_item">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#MH_collapse_07" aria-expanded="false" aria-controls="MH_collapse_07"><strong>Bid Item(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="MH_collapse_07" class="collapse" aria-labelledby="MH_bid_item" data-parent="#MH_popup">\
-                                <div class="card-body">' + (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                </div>';
+var popupContent =
+    '<strong>Asset ID</strong><br>' +
+    (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') + '<br><br>\
+<strong>Node ID</strong><br>' +
+    (feature.properties['NODE_ID'] !== null ? Autolinker.link(feature.properties['NODE_ID'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Scope</strong><br>' +
+    (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Submittal(s)</strong><br>' +
+    (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Status</strong><br>' +
+    (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Bid Item(s)</strong><br>' +
+    (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Payment History</strong><br>' +
+    (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
 
   layer.bindPopup(popupContent, {
     maxHeight: 400
@@ -94,7 +45,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(150,150,150,1.0)',
@@ -110,10 +61,10 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
-          fillColor: 'rgba(249,158,89,1.0)',
+          fillColor: 'rgba(249,158,89,1)',
           interactive: true,
       }
       break;
@@ -126,10 +77,10 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
-          fillColor: 'rgba(254,54,107,1.0)',
+          fillColor: 'rgba(254,54,107,1)',
           interactive: true,
       }
       break;
@@ -142,7 +93,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(255,237,170,1.0)',
@@ -158,7 +109,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(237,248,185,1.0)',
@@ -174,7 +125,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(199,233,173,1.0)',
@@ -190,7 +141,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(157,211,167,1.0)',
@@ -206,7 +157,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(100,171,176,1.0)',
@@ -222,7 +173,7 @@ function style_201_MHs_5_0(feature) {
           dashArray: '',
           lineCap: 'butt',
           lineJoin: 'miter',
-          weight: 1,
+          weight: 2,
           fill: true,
           fillOpacity: 1,
           fillColor: 'rgba(180,150,50,1.0)',

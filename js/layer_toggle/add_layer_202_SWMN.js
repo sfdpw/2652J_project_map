@@ -8,87 +8,30 @@ function pop_202_SW_mains_0(feature, layer) {
     mouseover: highlightFeature,
   });
 
-
-var popupContent = '<div class="accordion" id="SWMN_popup">\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_asset_id">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_01" aria-expanded="false" aria-controls="SWMN_collapse_01"><strong>Asset ID</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_01" class="collapse" aria-labelledby="SWMN_asset_id" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_dia">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_02" aria-expanded="false" aria-controls="SWMN_collapse_02"><strong>Diameter</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_02" class="collapse" aria-labelledby="SWMN_dia" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['PIPE_DIA'] !== null ? Autolinker.link(feature.properties['PIPE_DIA'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_mtl">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_03" aria-expanded="false" aria-controls="SWMN_collapse_03"><strong>Material</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_03" class="collapse" aria-labelledby="SWMN_mtl" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['PIPE_MATRL'] !== null ? Autolinker.link(feature.properties['PIPE_MATRL'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_scp">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_04" aria-expanded="false" aria-controls="SWMN_collapse_04"><strong>Scope</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_04" class="collapse" aria-labelledby="SWMN_scp" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['SCOPE_DTLS'] !== null ? Autolinker.link(feature.properties['SCOPE_DTLS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_stat">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_05" aria-expanded="false" aria-controls="SWMN_collapse_05"><strong>Status</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_05" class="collapse" aria-labelledby="SWMN_stat" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_sub">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_06" aria-expanded="false" aria-controls="SWMN_collapse_06"><strong>Submittal(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_06" class="collapse" aria-labelledby="SWMN_sub" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="SWMN_bid">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SWMN_collapse_07" aria-expanded="false" aria-controls="SWMN_collapse_07"><strong>Bid Item(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="SWMN_collapse_07" class="collapse" aria-labelledby="SWMN_bid" data-parent="#SWMN_popup">\
-                                <div class="card-body">' + (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                </div>';
+var popupContent =
+    '<strong>Asset ID</strong><br>' +
+    (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Diameter</strong><br>' +
+    (feature.properties['PIPE_DIA'] !== null ? Autolinker.link(feature.properties['PIPE_DIA'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Material</strong><br>' +
+    (feature.properties['PIPE_MATRL'] !== null ? Autolinker.link(feature.properties['PIPE_MATRL'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Scope</strong><br>' +
+    (feature.properties['SCOPE_DTLS'] !== null ? Autolinker.link(feature.properties['SCOPE_DTLS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Submittal(s)</strong><br>' +
+    (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Status</strong><br>' +
+    (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Bid Item(s)</strong><br>' +
+    (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Payment History</strong><br>' +
+    (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
 
   layer.bindPopup(popupContent, {
     maxHeight: 400

@@ -8,97 +8,31 @@ function pop_200_laterals_2(feature, layer) {
     mouseover: highlightFeature,
   });
 
-var popupContent = '<div class="accordion" id="LAT_popup">\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_asset_id">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_01" aria-expanded="false" aria-controls="LAT_collapse_01"><strong>Asset ID</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_01" class="collapse" aria-labelledby="LAT_asset_id" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_address">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_02" aria-expanded="false" aria-controls="LAT_collapse_02"><strong>Address</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_02" class="collapse" aria-labelledby="LAT_address" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['ADDRESS'] !== null ? Autolinker.link(feature.properties['ADDRESS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_BLKLOT">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_03" aria-expanded="false" aria-controls="LAT_collapse_03"><strong>BLKLOT</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_03" class="collapse" aria-labelledby="LAT_BLKLOT" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['BLKLOT'] !== null ? Autolinker.link(feature.properties['BLKLOT'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_scp">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_04" aria-expanded="false" aria-controls="LAT_collapse_04"><strong>Scope</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_04" class="collapse" aria-labelledby="LAT_scp" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_stat">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_05" aria-expanded="false" aria-controls="LAT_collapse_05"><strong>Status</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_05" class="collapse" aria-labelledby="LAT_stat" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_bid">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_06" aria-expanded="false" aria-controls="LAT_collapse_06"><strong>Bid Item(s)s</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_06" class="collapse" aria-labelledby="LAT_bid" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_sub">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_07" aria-expanded="false" aria-controls="LAT_collapse_07"><strong>Submittal(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_07" class="collapse" aria-labelledby="LAT_sub" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="LAT_PP">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#LAT_collapse_08" aria-expanded="false" aria-controls="LAT_collapse_08"><strong>Payment History</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="LAT_collapse_08" class="collapse" aria-labelledby="LAT_PP" data-parent="#LAT_popup">\
-                                <div class="card-body">' + (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                </div>';
+var popupContent =
+    '<strong>Asset ID</strong><br>' +
+    (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Address</strong><br>' +
+    (feature.properties['ADDRESS'] !== null ? Autolinker.link(feature.properties['ADDRESS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>BLKLOT</strong><br>' +
+    (feature.properties['BLKLOT'] !== null ? Autolinker.link(feature.properties['BLKLOT'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Scope</strong><br>' +
+    (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Submittal(s)</strong><br>' +
+    (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Status</strong><br>' +
+    (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Bid Item(s)</strong><br>' +
+    (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Payment History</strong><br>' +
+    (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
+
   layer.bindPopup(popupContent, {
     maxHeight: 400
   });

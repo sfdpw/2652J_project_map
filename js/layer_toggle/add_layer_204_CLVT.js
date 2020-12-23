@@ -8,97 +8,31 @@ function pop_204_culverts_3(feature, layer) {
     mouseover: highlightFeature,
   });
 
-var popupContent = '<div class="accordion" id="CLVT_popup">\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_asset_id">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_01" aria-expanded="false" aria-controls="CLVT_collapse_01"><strong>Asset ID</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_01" class="collapse" aria-labelledby="CLVT_asset_id" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_dia">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_02" aria-expanded="false" aria-controls="CLVT_collapse_02"><strong>Diameter</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_02" class="collapse" aria-labelledby="CLVT_dia" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['PIPE_DIA'] !== null ? Autolinker.link(feature.properties['PIPE_DIA'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_mtl">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_03" aria-expanded="false" aria-controls="CLVT_collapse_03"><strong>Material</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_03" class="collapse" aria-labelledby="CLVT_mtl" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['PIPE_MATRL'] !== null ? Autolinker.link(feature.properties['PIPE_MATRL'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_scp">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_04" aria-expanded="false" aria-controls="CLVT_collapse_04"><strong>Scope</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_04" class="collapse" aria-labelledby="CLVT_scp" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_bid">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_05" aria-expanded="false" aria-controls="CLVT_collapse_05"><strong>Bid Item(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_05" class="collapse" aria-labelledby="CLVT_bid" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_stat">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_06" aria-expanded="false" aria-controls="CLVT_collapse_06"><strong>Status</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_06" class="collapse" aria-labelledby="CLVT_stat" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_sbtl">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_07" aria-expanded="false" aria-controls="CLVT_collapse_07"><strong>Submittal(s)</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_07" class="collapse" aria-labelledby="CLVT_sbtl" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                <div class="card">\
-                                <div class="card-header p-0" id="CLVT_PP_hist">\
-                                <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CLVT_collapse_08" aria-expanded="false" aria-controls="CLVT_collapse_08"><strong>Payment History</strong></button>\
-                                </h2>\
-                                </div>\
-                                <div id="CLVT_collapse_08" class="collapse" aria-labelledby="CLVT_PP_hist" data-parent="#CLVT_popup">\
-                                <div class="card-body">' + (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '') + '</div>\
-                                </div>\
-                                </div>\
-\
-                                </div>';
+var popupContent =
+    '<strong>Asset ID</strong><br>' +
+    (feature.properties['PSR'] !== null ? Autolinker.link(feature.properties['PSR'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Pipe Diameter</strong><br>' +
+    (feature.properties['PIPE_DIA'] !== null ? Autolinker.link(feature.properties['PIPE_DIA'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Pipe Material</strong><br>' +
+    (feature.properties['PIPE_MATRL'] !== null ? Autolinker.link(feature.properties['PIPE_MATRL'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Scope</strong><br>' +
+    (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Submittal(s)</strong><br>' +
+    (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Status</strong><br>' +
+    (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Bid Item(s)</strong><br>' +
+    (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Payment History</strong><br>' +
+    (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
+
   layer.bindPopup(popupContent, {
     maxHeight: 400
   });
@@ -186,7 +120,7 @@ function CLVT_204_toggle() {
 
     if (did_layer_204_CLVT_load == false) {
 
-        layer_204_culverts_3 = new L.geoJson(json_204_culverts_3, {
+      layer_204_culverts_3 = new L.geoJson(json_204_culverts_3, {
         attribution: '',
         interactive: true,
         dataVar: 'json_204_culverts_3',
@@ -205,7 +139,7 @@ function CLVT_204_toggle() {
   } else {
 
     map.removeLayer(layer_204_culverts_3);
-    
+
   }
 
 }

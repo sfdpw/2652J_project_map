@@ -4,11 +4,11 @@ map.getPane('pane_999_OSMStandard_315').style.zIndex = 1;
 var layer_999_OSMStandard_315 = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
   pane: 'pane_999_OSMStandard_315',
   opacity: 1.0,
-  attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+  //attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
   minZoom: 1,
-  maxZoom: 28,
+  maxZoom: 18,
   minNativeZoom: 0,
-  maxNativeZoom: 19
+  maxNativeZoom: 22
 });
 
 layer_999_OSMStandard_315;

@@ -2061,7 +2061,9 @@
         
         map.createPane('pane_2652J_dwg_C30Apdf1_modified_206');
         map.getPane('pane_2652J_dwg_C30Apdf1_modified_206').style.zIndex = 306;
+        //map.getPane('pane_2652J_dwg_C30Apdf1_modified_206').style.opacity=0.5;
         var img_2652J_dwg_C30Apdf1_modified_206 = 'data/2652J_dwg_C30Apdf1_modified_206.png';
+        
         var img_bounds_2652J_dwg_C30Apdf1_modified_206 = [[37.76349280567509,-122.4772196723174],[37.763982786076404,-122.47687851773892]];
 
         var layer_2652J_dwg_C30Apdf1_modified_206 = new L.imageOverlay(img_2652J_dwg_C30Apdf1_modified_206,
@@ -2071,6 +2073,7 @@
         
         map.createPane('pane_2652J_dwg_C30A_rev01pdf1_modified_207');
         map.getPane('pane_2652J_dwg_C30A_rev01pdf1_modified_207').style.zIndex = 307;
+        //map.getPane('pane_2652J_dwg_C30A_rev01pdf1_modified_207').style.opacity=0.5;
         var img_2652J_dwg_C30A_rev01pdf1_modified_207 = 'data/2652J_dwg_C30A_rev01pdf1_modified_207.png';
         var img_bounds_2652J_dwg_C30A_rev01pdf1_modified_207 = [[37.76349232387447,-122.47721717808831],[37.76398121958408,-122.47687635212256]];
 

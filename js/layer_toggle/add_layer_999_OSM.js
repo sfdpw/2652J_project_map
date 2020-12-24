@@ -1,14 +1,15 @@
 map.createPane('pane_999_OSMStandard_315');
 map.getPane('pane_999_OSMStandard_315').style.zIndex = 1;
 
-var layer_999_OSMStandard_315 = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+//var layer_999_OSMStandard_315 = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+var layer_999_OSMStandard_315 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   pane: 'pane_999_OSMStandard_315',
   opacity: 1.0,
   //attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
   minZoom: 1,
-  maxZoom: 18,
+  maxZoom: 22,
   minNativeZoom: 0,
-  maxNativeZoom: 22
+  maxNativeZoom: 19
 });
 
 layer_999_OSMStandard_315;

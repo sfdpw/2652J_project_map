@@ -9,7 +9,7 @@ function popup_sheet_entry_creator(popup_args = null)
         output_string = 'none';
     } else {
 
-        var overlay_checkbox;
+        var overlay_checkbox = "";
         var file_name = "";
         var file_name_length = "";
         var file_desc = "";
@@ -37,11 +37,11 @@ function popup_sheet_entry_creator(popup_args = null)
 
             {
 
-                output_string = output_string.concat("<input type=\"checkbox\" value=",
+                output_string = output_string.concat("<input type=\"checkbox\" id=\"",
                                                       overlay_checkbox,
-                                                      " onchange=\"handleChange(this, ",
+                                                      "_aaaa\" onchange=\"handleChange(this, ",
                                                       overlay_checkbox, ");\">&nbsp;");
-
+                     
             }
 
 

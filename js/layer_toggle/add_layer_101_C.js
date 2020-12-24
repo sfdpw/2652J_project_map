@@ -14,7 +14,10 @@ var popupContent = '<div class="accordion" id="C_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="C_sheet">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#C_collapse_01" aria-expanded="false" aria-controls="C_collapse_01"><strong>Sheet(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" onclick="sweep_check_clone()"\
+                                        data-toggle="collapse" data-target="#C_collapse_01"\
+                                        aria-expanded="false" aria-controls="C_collapse_01">\
+                                  <strong>Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="C_collapse_01" class="collapse" aria-labelledby="C_sheet" data-parent="#C_popup">\

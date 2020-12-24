@@ -1,221 +1,192 @@
 <!doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>2652J Project Map</title>
-      <meta name="viewport" content="initial-scale=1,maximum-scale=1,width=device-width">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-              integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-              crossorigin=""></script>
-      
-      <link rel="stylesheet" href="css/leaflet.css">
-      <link rel="stylesheet" href="css/L.Control.Locate.min.css">
-      <link rel="stylesheet" href="css/qgis2web.css">
-      <link rel="stylesheet" href="css/fontawesome-all.min.css">
-      <link rel="stylesheet" href="css/leaflet-measure.css">
-      <link rel="stylesheet" href="css/map_page_styles.css">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>2652J Project Map</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,width=device-width">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/L.Control.Locate.min.css">
+  <link rel="stylesheet" href="css/qgis2web.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/leaflet-measure.css">
+  <link rel="stylesheet" href="css/map_page_styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
-      <script src="js/popup_populator.js"></script>
-      <script src="js/list_of_specs.js"></script>
-      <script src="js/qgis2web_expressions.js"></script>
-      <script src="js/L.Control.Locate.min.js"></script>
-      <script src="js/leaflet.rotatedMarker.js"></script>
-      <script src="js/leaflet.pattern.js"></script>
-      <script src="js/leaflet-hash.js"></script>
-      <script src="js/Autolinker.min.js"></script>
-      <script src="js/rbush.min.js"></script>
-      <script src="js/labelgun.min.js"></script>
-      <script src="js/labels.js"></script>
-      <script src="js/leaflet-measure.js"></script>
-      <script src="data/104_U_utility_occupancy_316.js"></script>
-      <script src="data/106_PD_pavement_delineation_317.js"></script>
-      <script src="data/103_SW_sewer_318.js"></script>
-      <script src="data/100_L_layout_319.js"></script>
-      <script src="data/107_MA_AWSS_320.js"></script>
-      <script src="data/105_WD_321.js"></script>
-      <script src="data/102_E_intersection_electricals_322.js"></script>
-      <script src="data/101_C_const_details_323.js"></script>
-      
-      <script>
-      
-
-      
-      </script>
-      
-      <script src="data/003_stations_084_324.js"></script>
-      <script src="data/202_SW_mains_0.js"></script>
-      <script src="data/205_shear_bands_1.js"></script>
-      <script src="data/200_laterals_2.js"></script>
-      <script src="data/204_culverts_3.js"></script>
-      <script src="data/203_drains_4.js"></script>
-      <script src="data/201_MHs_5.js"></script>
-      
-
-
-
-
-
-    </head>
-    <body>
-    
-      <div class="map" id="map"></div>
-
-      <div class="accordion layer_menu" id="map_master_menu">
-        <script src="js/menu_cards/menu_card_sheet_layers.js"></script>
-        <script src="js/menu_cards/menu_card_sheet_overlays.js"></script>
-        <script src="js/menu_cards/menu_card_sewer_features.js"></script>
-      </div>     
-   
-     
-      <script>
-                
-        Array.prototype.insert = function ( index, item ) {this.splice( index, 0, item );};
-      
-        var highlightLayer;
-        
-        function highlightFeature(e) {
-            highlightLayer = e.target;
-
-            //if (e.target.feature.geometry.type != 'LineString') {
-            //  highlightLayer.setStyle({
-            //    color: '#ffff00',
-            //  });
-            //} else {
-              highlightLayer.setStyle({
-                color: '#ffff00',
-                fillColor: '#ffff00',
-                fillopacity: 0.5
-              });
-            //}
-        }
-       
-        var map = L.map('map', {
-            zoomControl:true, maxZoom:22, minZoom:1
-        }).fitBounds([[37.704889835317985,-122.55039402224207],[37.81158314244841,-122.42206914165835]]);
-        
-        var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('The accuracy of information presented on this map is not guaranteed. Consult City Representative for official documentation.');
-        
-        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
-        L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
-        
-        var measureControl = new L.Control.Measure({
-            position: 'topleft',
-            primaryLengthUnit: 'feet',
-            secondaryLengthUnit: 'miles',
-            primaryAreaUnit: 'sqfeet',
-            secondaryAreaUnit: 'sqmiles'
-        });
-        measureControl.addTo(map);
-        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
-        .innerHTML = '';
-        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
-        .className += ' fas fa-ruler';
-        
-        var bounds_group = new L.featureGroup([]);
-        function setBounds() {map.setView(new L.LatLng(37.7426, -122.4849), 13);
-
-        }
-        
-        
-        //$('.leaflet-control-attribution').hide();
-        
-
-      </script>
-        
-      <script src="js/overlay_pane_creator.js"></script>
-        
-      <script src="js/layer_toggle/add_layer_003_STA.js"></script> 
-      <script src="js/layer_toggle/add_layer_104_U.js"></script> 
-      <script src="js/layer_toggle/add_layer_103_SW.js"></script>
-      <script src="js/layer_toggle/add_layer_107_MA_AWSS.js"></script>
-      <script src="js/layer_toggle/add_layer_105_WD.js"></script>      
-      <script src="js/layer_toggle/add_layer_100_L.js"></script>  
-      <script src="js/layer_toggle/add_layer_101_C.js"></script>  
-      <script src="js/layer_toggle/add_layer_102_E.js"></script>  
-      <script src="js/layer_toggle/add_layer_106_PD.js"></script>      
-      <script src="js/layer_toggle/add_layer_999_OSM.js"></script>          
-
-      <script src="js/layer_toggle/add_layer_201_MH.js"></script>          
-      <script src="js/layer_toggle/add_layer_202_SWMN.js"></script>            
-      <script src="js/layer_toggle/add_layer_204_CLVT.js"></script>              
-      <script src="js/layer_toggle/add_layer_203_drains.js"></script>                 
-      <script src="js/layer_toggle/add_layer_200_laterals.js"></script>                         
-
-      <script>     
-        
-   /*
-        
-        
-        setBounds();
-        L.ImageOverlay.include({
-            getBounds: function () {
-                return this._bounds;
-            }
-        });
- 
-
-         
-        $("#clearAll").click(function(event) {
-    
-          event.preventDefault();
-
-
-        $(".check").each(function(i, el) {el.checked = false; $(el).change();})});    
-           
-        $(".check").change(function() {
-
-          var layerClicked = $(this).attr("id");
-        
-          switch (layerClicked) 
-        
-            {
-        
-             case "layer_2652J_dwg_U01pdf1_modified_44":toggleLayer(this.checked, layer_2652J_dwg_U01pdf1_modified_44);break;
-             case "layer_2652J_dwg_U02pdf1_modified_43":toggleLayer(this.checked, layer_2652J_dwg_U02pdf1_modified_43);break;
+  <script src="js/popup_populator.js"></script>
+  <script src="js/list_of_specs.js"></script>
+  <script src="js/qgis2web_expressions.js"></script>
+  <script src="js/L.Control.Locate.min.js"></script>
+  <script src="js/leaflet.rotatedMarker.js"></script>
+  <script src="js/leaflet.pattern.js"></script>
+  <script src="js/leaflet-hash.js"></script>
+  <script src="js/Autolinker.min.js"></script>
+  <script src="js/rbush.min.js"></script>
+  <script src="js/labelgun.min.js"></script>
+  <script src="js/labels.js"></script>
+  <script src="js/leaflet-measure.js"></script>
+  <script src="js/misc_layer_mgmt_functions.js"></script>
   
-             }
-        
-});
+  
+  
+  <script src="data/104_U_utility_occupancy_316.js"></script>
+  <script src="data/106_PD_pavement_delineation_317.js"></script>
+  <script src="data/103_SW_sewer_318.js"></script>
+  <script src="data/100_L_layout_319.js"></script>
+  <script src="data/107_MA_AWSS_320.js"></script>
+  <script src="data/105_WD_321.js"></script>
+  <script src="data/102_E_intersection_electricals_322.js"></script>
+  <script src="data/101_C_const_details_323.js"></script>
 
+  <script src="data/003_stations_084_324.js"></script>
+  <script src="data/202_SW_mains_0.js"></script>
+  <script src="data/205_shear_bands_1.js"></script>
+  <script src="data/200_laterals_2.js"></script>
+  <script src="data/204_culverts_3.js"></script>
+  <script src="data/203_drains_4.js"></script>
+  <script src="data/201_MHs_5.js"></script>
 
- */   
-
-function handleChange(checkbox, layer) {
-    if(checkbox.checked == true){
-        map.addLayer(layer);
-    }else{
-        map.removeLayer(layer);
-   }
+  <style>
+  
+   button:active {
+  background-color: yellow;
 }
+  
+  </style>
 
 
-function toggleLayer(checked, layer) {
+</head>
+
+<body>
+
+  <div class="map" id="map"></div>
+
+  <div class="accordion layer_menu" id="map_master_menu">
+    <script src="js/menu_cards/menu_card_sheet_layers.js"></script>
+    <script src="js/menu_cards/menu_card_sheet_overlays.js"></script>
+    <script src="js/menu_cards/menu_card_sewer_features.js"></script>
+  </div>
 
 
-  if (checked) {
-    map.addLayer(layer);
-  } else {
-    map.removeLayer(layer);
-  }
-}        
+  <script>
+    Array.prototype.insert = function(index, item) {
+      this.splice(index, 0, item);
+    };
+
+    var highlightLayer;
+
+    function highlightFeature(e) {
+      highlightLayer = e.target;
+
+      //if (e.target.feature.geometry.type != 'LineString') {
+      //  highlightLayer.setStyle({
+      //    color: '#ffff00',
+      //  });
+      //} else {
+      highlightLayer.setStyle({
+        color: '#ffff00',
+        fillColor: '#ffff00',
+        fillopacity: 0.5
+      });
+      //}
+    }
+
+    var map = L.map('map', {
+      zoomControl: true,
+      maxZoom: 22,
+      minZoom: 1
+    }).fitBounds([
+      [37.704889835317985, -122.55039402224207],
+      [37.81158314244841, -122.42206914165835]
+    ]);
+
+    var hash = new L.Hash(map);
+
+    map.attributionControl.setPrefix('The accuracy of information presented on this map is not guaranteed. Consult City Representative for official documentation.');
+
+    var autolinker = new Autolinker({
+      truncate: {
+        length: 30,
+        location: 'smart'
+      }
+    });
+    L.control.locate({
+      locateOptions: {
+        maxZoom: 19
+      }
+    }).addTo(map);
+
+    var measureControl = new L.Control.Measure({
+      position: 'topleft',
+      primaryLengthUnit: 'feet',
+      secondaryLengthUnit: 'miles',
+      primaryAreaUnit: 'sqfeet',
+      secondaryAreaUnit: 'sqmiles'
+    });
+    measureControl.addTo(map);
+
+    document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+      .innerHTML = '';
+    document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+      .className += ' fas fa-ruler';
 
 
-        </script>
-        
+    map.addControl(new clear_layers_button());
 
-        
+    var bounds_group = new L.featureGroup([]);
 
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-    </body>
+    function setBounds() {
+      map.setView(new L.LatLng(37.7426, -122.4849), 13);
+
+    }
+
+    //$('.leaflet-control-attribution').hide();
+  </script>
+
+  <script src="js/overlay_pane_creator.js"></script>
+
+  <script src="js/layer_toggle/add_layer_003_STA.js"></script>
+  <script src="js/layer_toggle/add_layer_104_U.js"></script>
+  <script src="js/layer_toggle/add_layer_103_SW.js"></script>
+  <script src="js/layer_toggle/add_layer_107_MA_AWSS.js"></script>
+  <script src="js/layer_toggle/add_layer_105_WD.js"></script>
+  <script src="js/layer_toggle/add_layer_100_L.js"></script>
+  <script src="js/layer_toggle/add_layer_101_C.js"></script>
+  <script src="js/layer_toggle/add_layer_102_E.js"></script>
+  <script src="js/layer_toggle/add_layer_106_PD.js"></script>
+  <script src="js/layer_toggle/add_layer_999_OSM.js"></script>
+
+  <script src="js/layer_toggle/add_layer_201_MH.js"></script>
+  <script src="js/layer_toggle/add_layer_202_SWMN.js"></script>
+  <script src="js/layer_toggle/add_layer_204_CLVT.js"></script>
+  <script src="js/layer_toggle/add_layer_203_drains.js"></script>
+  <script src="js/layer_toggle/add_layer_200_laterals.js"></script>
+
+  <script>
+    function handleChange(checkbox, layer) {
+      if (checkbox.checked == true) {
+        map.addLayer(layer);
+      } else {
+        map.removeLayer(layer);
+      }
+
+      check_clone(checkbox.id);
+
+    }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
-

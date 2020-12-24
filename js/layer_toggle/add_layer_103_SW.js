@@ -13,7 +13,10 @@ var popupContent = '<div class="accordion" id="SW_popup">\
                                 <div class="card">\
                                 <div class="card-header p-0" id="SW_sheet">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#SW_collapse_01" aria-expanded="false" aria-controls="SW_collapse_01"><strong>Sheet(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" onclick="sweep_check_clone()"\
+                                        data-toggle="collapse" data-target="#SW_collapse_01"\
+                                        aria-expanded="false" aria-controls="SW_collapse_01">\
+                                  <strong>Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="SW_collapse_01" class="collapse" aria-labelledby="SW_sheet" data-parent="#SW_popup">\

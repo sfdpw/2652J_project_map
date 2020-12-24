@@ -223,4 +223,4 @@ var menu_card_sheet_overlay_content =
      </div>\
    </div>';
 
-document.getElementById("map_master_menu").innerHTML += menu_card_sheet_overlay_content;
+document.getElementById("map_master_menu").innerHTML += menu_card_sheet_overlay_content.replace(/_aaaa/g, "_bbbb");

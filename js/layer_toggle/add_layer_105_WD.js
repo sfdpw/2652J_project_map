@@ -12,7 +12,10 @@ function pop_105_WD_321(feature, layer) {
                                 <div class="card">\
                                 <div class="card-header p-0" id="WD_sheet">\
                                 <h2 class="mb-0">\
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#WD_collapse_01" aria-expanded="false" aria-controls="WD_collapse_01"><strong>Sheet(s)</strong></button>\
+                                <button class="btn btn-link collapsed" type="button" onclick="sweep_check_clone()"\
+                                        data-toggle="collapse" data-target="#WD_collapse_01"\
+                                        aria-expanded="false" aria-controls="WD_collapse_01">\
+                                  <strong>Sheet(s)</strong></button>\
                                 </h2>\
                                 </div>\
                                 <div id="WD_collapse_01" class="collapse" aria-labelledby="WD_sheet" data-parent="#WD_popup">\

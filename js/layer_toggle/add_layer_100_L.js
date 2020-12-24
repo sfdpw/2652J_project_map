@@ -8,7 +8,7 @@ function pop_100_L_layout_319(feature, layer) {
     mouseover: highlightFeature,
   });
 
-  var popupContent = '<div class="accordion" id="L_popup">\
+var popupContent = '<div class="accordion" id="L_popup">\
 \
                                 <div class="card">\
                                 <div class="card-header p-0" id="L_sheet">\

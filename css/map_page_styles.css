@@ -25,8 +25,16 @@ body {
 
 .scroll_card {
   overflow-y: scroll;                  
-  max-height: 250pt;                     
+  max-height: 250pt;
+  font-size:12px;                    
 }
+
+.scroll_card_sub {
+  overflow-y: scroll;                  
+  max-height: 150pt;
+  font-size:12px;                    
+}
+
 
 .accordion.layer_menu {
   float: left;
@@ -68,17 +76,20 @@ body {
 
 .layer_label {font-size:12px;} 
 
-td { }
+/*td { vertical-align:top}*/
 
 tr {
+
    line-height: 10px;
-   vertical-align:top}
+   vertical-align:top; 
+   
+   }
   }
 }
 
 
 
-input[type=checkbox] {transform: scale(1.0);vertical-align:top}
+input[type=checkbox] {transform: scale(1.0); vertical-align:top; }
 
 
 /*html {

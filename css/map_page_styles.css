@@ -189,16 +189,18 @@ input[type="text"]
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-/*
+
 
 @media (max-width: 600px) {
-  nav, article {
+  .map, .accordion.layer_menu {
     width: 100%;
     height: auto;
 
   }
 }
 
+
+/*
 
 
 .bdc {border: 2px solid black; border-collapse: collapse; border-spacing:0;padding: 10px;} */

@@ -7,7 +7,7 @@ var layer_999_OSMStandard_315 = L.tileLayer('https://{s}.tile.openstreetmap.org/
   opacity: 1.0,
   //attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
   minZoom: 1,
-  maxZoom: 22,
+  maxZoom: 23,
   minNativeZoom: 0,
   maxNativeZoom: 19
 });

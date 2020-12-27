@@ -26,21 +26,24 @@ body {
 .scroll_card {
   overflow-y: scroll;                  
   max-height: 280pt;
-  font-size:12px;                    
-}
 
-.scroll_card_sub {
-  overflow-y: scroll;                  
-  max-height: 150pt;
-  font-size:12px;                    
 }
-
 
 .accordion.layer_menu {
   float: left;
   width: 35%;
   max-height:100%;
-  font-size: normal;
+  font-size: normal; }
+
+.scroll_card_sub {
+  overflow-y: scroll;                  
+  max-height: 150pt;
+  font-size: 12px;
+
+}
+
+
+
 
   /*background-color: #f1f1f1;
   height: auto;  only for demonstration, should be removed 

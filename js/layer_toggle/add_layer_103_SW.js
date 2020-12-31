@@ -97,7 +97,7 @@ var layer_103_SW_sewer_318 = {};
 
 function SW_103_toggle() {
 
-  if (document.getElementById("103_SW_checkbox").checked == true) {
+  if (document.getElementById("103_SW_checkbox").checked) {
 
     layer_103_SW_sewer_318 = new L.geoJson(json_103_SW_sewer_318, {
       attribution: '',

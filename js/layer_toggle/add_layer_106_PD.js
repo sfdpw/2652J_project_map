@@ -98,7 +98,7 @@ var layer_106_PD_pavement_delineation_317 = {};
 
 function PD_106_toggle() {
 
-  if (document.getElementById("106_PD_checkbox").checked == true) {
+  if (document.getElementById("106_PD_checkbox").checked) {
 
     layer_106_PD_pavement_delineation_317 = new L.geoJson(json_106_PD_pavement_delineation_317, {
       attribution: '',

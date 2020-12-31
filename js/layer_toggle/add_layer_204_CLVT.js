@@ -116,7 +116,7 @@ var did_layer_204_CLVT_load = false;
 
 function CLVT_204_toggle() {
 
-  if (document.getElementById("204_CLVT_checkbox").checked == true) {
+  if (document.getElementById("204_CLVT_checkbox").checked) {
 
     if (did_layer_204_CLVT_load == false) {
 

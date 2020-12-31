@@ -38,7 +38,7 @@ function style_003_stations_084_324_0() {
 
 
 map.createPane('pane_003_stations_084_324');
-map.getPane('pane_003_stations_084_324').style.zIndex = 699;
+map.getPane('pane_003_stations_084_324').style.zIndex = 998;
 map.getPane('pane_003_stations_084_324').style['mix-blend-mode'] = 'normal';
 
 
@@ -62,7 +62,7 @@ bounds_group.addLayer(layer_003_stations_084_324);
 map.addLayer(layer_003_stations_084_324);
 
 function STA_003_toggle() {
-  if (document.getElementById("003_stations_checkbox").checked == true) {
+  if (document.getElementById("003_stations_checkbox").checked) {
     map.addLayer(layer_003_stations_084_324);
   } else {
     map.removeLayer(layer_003_stations_084_324);

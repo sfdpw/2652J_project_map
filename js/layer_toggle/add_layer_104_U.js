@@ -81,7 +81,7 @@ var layer_104_U_utility_occupancy_316 = {};
 
 
 function U_104_toggle() {
-  if (document.getElementById("104_U_checkbox").checked == true) {
+  if (document.getElementById("104_U_checkbox").checked) {
   
     map.createPane('pane_104_U_utility_occupancy_316');
     map.getPane('pane_104_U_utility_occupancy_316').style.zIndex = 600;

@@ -146,7 +146,7 @@ var layer_107_MA_AWSS_320 = {};
 
 function MA_AWSS_107_toggle() {
 
-  if (document.getElementById("107_MA_AWSS_checkbox").checked == true) {
+  if (document.getElementById("107_MA_AWSS_checkbox").checked) {
     layer_107_MA_AWSS_320 = new L.geoJson(json_107_MA_AWSS_320, {
       attribution: '',
       interactive: true,

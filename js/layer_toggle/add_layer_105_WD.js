@@ -96,7 +96,7 @@ var layer_105_WD_321 = {};
 
 function WD_105_toggle() {
 
-  if (document.getElementById("105_WD_checkbox").checked == true) {
+  if (document.getElementById("105_WD_checkbox").checked) {
 
     layer_105_WD_321 = new L.geoJson(json_105_WD_321, {
       attribution: '',

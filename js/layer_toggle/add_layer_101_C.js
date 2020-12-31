@@ -100,7 +100,7 @@ var layer_101_C_const_details_323 = {};
 
 function C_101_toggle() {
 
-  if (document.getElementById("101_C_checkbox").checked == true) {
+  if (document.getElementById("101_C_checkbox").checked) {
 
     layer_101_C_const_details_323 = new L.geoJson(json_101_C_const_details_323, {
       attribution: '',

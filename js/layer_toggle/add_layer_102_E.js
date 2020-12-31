@@ -97,7 +97,7 @@ var layer_102_E_intersection_electricals_322 = {};
 
 function E_102_toggle() {
 
-  if (document.getElementById("102_E_checkbox").checked == true) {
+  if (document.getElementById("102_E_checkbox").checked) {
 
     layer_102_E_intersection_electricals_322 = new L.geoJson(json_102_E_intersection_electricals_322, {
       attribution: '',

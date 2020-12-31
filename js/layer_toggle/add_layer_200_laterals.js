@@ -142,7 +142,7 @@ var did_layer_200_laterals_load = false;
 
 function laterals_200_toggle() {
 
-  if (document.getElementById("200_laterals_checkbox").checked == true) {
+  if (document.getElementById("200_laterals_checkbox").checked) {
 
     if (did_layer_200_laterals_load == false) {
 

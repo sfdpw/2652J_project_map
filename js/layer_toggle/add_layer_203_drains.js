@@ -128,7 +128,7 @@ var did_layer_203_drains_load = false;
 
 function drains_203_toggle() {
 
-  if (document.getElementById("203_drains_checkbox").checked == true) {
+  if (document.getElementById("203_drains_checkbox").checked) {
 
     if (did_layer_203_drains_load == false) {
 

@@ -97,7 +97,7 @@ var layer_100_L_layout_319 = {};
 
 function L_100_toggle() {
 
-  if (document.getElementById("100_L_checkbox").checked == true) {
+  if (document.getElementById("100_L_checkbox").checked) {
 
     layer_100_L_layout_319 = new L.geoJson(json_100_L_layout_319, {
       attribution: '',

@@ -18,7 +18,7 @@ map.addLayer(layer_999_OSMStandard_315);
 
 function OSM_999_toggle() {
 
-  if (document.getElementById("999_OSM_checkbox").checked == true) {
+  if (document.getElementById("999_OSM_checkbox").checked) {
 
     map.addLayer(layer_999_OSMStandard_315);
 

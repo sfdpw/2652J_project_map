@@ -49,7 +49,7 @@ var did_layer_211_SMP_load = false;
 
 function SMP_211_toggle() {
 
-  if (document.getElementById("211_SMP_checkbox").checked == true) {
+  if (document.getElementById("211_SMP_checkbox").checked) {
 
     if (did_layer_211_SMP_load == false) {
 

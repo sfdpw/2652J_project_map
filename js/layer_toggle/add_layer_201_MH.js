@@ -191,7 +191,7 @@ var did_layer_201_MHs_load = false;
 
 function MH_201_toggle() {
 
-  if (document.getElementById("201_MH_checkbox").checked == true) {
+  if (document.getElementById("201_MH_checkbox").checked) {
 
     if (did_layer_201_MHs_load == false) {
 

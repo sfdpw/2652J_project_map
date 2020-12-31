@@ -1,6 +1,6 @@
-var json_205_shear_bands_1 = {
+var json_202_shear_bands_1 = {
 "type": "FeatureCollection",
-"name": "205_shear_bands_1",
+"name": "202_shear_bands_1",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "id": "1" }, "geometry": { "type": "Point", "coordinates": [ -122.475098191706792, 37.724323323558984 ] } },

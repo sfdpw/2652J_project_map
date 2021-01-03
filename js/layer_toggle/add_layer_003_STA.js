@@ -38,7 +38,7 @@ function style_003_stations_084_324_0() {
 
 
 map.createPane('pane_003_stations_084_324');
-map.getPane('pane_003_stations_084_324').style.zIndex = 998;
+map.getPane('pane_003_stations_084_324').style.zIndex = 699;
 map.getPane('pane_003_stations_084_324').style['mix-blend-mode'] = 'normal';
 
 

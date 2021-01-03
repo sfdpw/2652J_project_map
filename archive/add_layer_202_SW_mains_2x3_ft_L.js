@@ -58,28 +58,17 @@ layer_202_SW_mains_2x3_ft_L.features = [];
 
 function SW_mains_202_2x3_ft_L_toggle() {
 
-
-
     if (document.getElementById("202_SW_mains_2x3_ft_L").checked) {
 
-
-
-
         if (layer_202_SW_mains_2x3_ft_L.loaded == false) {
-
-
 
             map.createPane('pane_202_SW_mains_2x3_ft_L');
             map.getPane('pane_202_SW_mains_2x3_ft_L').style.zIndex = 700;
             map.getPane('pane_202_SW_mains_2x3_ft_L').style['mix-blend-mode'] = 'normal';
 
-
-
-
             for (var ii = 0; ii < json_202_SW_mains_0.features.length; ii++)
 
             {
-
 
                 if (json_202_SW_mains_0['features'][ii].properties.PIPE_DIA == '2\' x 3\'' && json_202_SW_mains_0['features'][ii].properties.SCOPE == 'Line (E) with CIPL')
 

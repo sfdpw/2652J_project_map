@@ -90,7 +90,7 @@ function style_103_SW_sewer_318_0() {
   }
 }
 map.createPane('pane_103_SW_sewer_318');
-map.getPane('pane_103_SW_sewer_318').style.zIndex = 602;
+map.getPane('pane_103_SW_sewer_318').style.zIndex = 601;
 map.getPane('pane_103_SW_sewer_318').style['mix-blend-mode'] = 'normal';
 
 var layer_103_SW_sewer_318 = {};

@@ -45,12 +45,116 @@
 
   <script src="data/003_stations_084_324.js"></script>
   <script src="data/202_SW_mains_0.js"></script>
-
-  <script src="data/202_shear_bands_1.js"></script>
-  <script src="data/200_laterals_2.js"></script>
-  <script src="data/204_culverts_3.js"></script>
-  <script src="data/203_drains_4.js"></script>
+  <script src="js/layer_toggle/add_line_layer_SW_main.js"></script>
   <script src="data/201_MHs_5.js"></script>
+  <script src="js/layer_toggle/add_point_layer_SW_MH.js"></script>
+  <script src="data/202_shear_bands_1.js"></script>
+  <script src="data/204_culverts_3.js"></script>
+  <script src="js/layer_toggle/add_line_layer_SW_clvt.js"></script>
+  <script src="data/203_drains_4.js"></script>
+  <script src="js/layer_toggle/add_point_layer_SW_drain.js"></script>
+
+
+  <script>
+    
+    var master_layer_array = [];
+  
+    var SW_main_index_limits = [700, 717];
+    add_feature_layer('SW_main', 700, json_202_SW_mains_0, ['Remain'],'rgba(150, 150, 150, 1.0)');
+    add_feature_layer('SW_main', 701, json_202_SW_mains_0, ['(N)',   '8\"'],'rgba(171,220,50,1.0)');
+    add_feature_layer('SW_main', 702, json_202_SW_mains_0, ['CIPL',  '8\"'],'rgba(171,220,50,1.0)');
+    add_feature_layer('SW_main', 703, json_202_SW_mains_0, ['(N)',  '12\"'],'rgba(93,201,99,1.0)');
+    add_feature_layer('SW_main', 704, json_202_SW_mains_0, ['(N)',  '12\"', 'CS'],'rgba(93,201,99,1.0)');
+    add_feature_layer('SW_main', 705, json_202_SW_mains_0, ['CIPL', '12\"'],'rgba(93,201,99,1.0)');
+    add_feature_layer('SW_main', 706, json_202_SW_mains_0, ['(N)',  '15\"'],'rgba(33,144,141,1.0)');
+    add_feature_layer('SW_main', 707, json_202_SW_mains_0, ['(N)',  '15\"', 'CS'],'rgba(33,144,141,1.0)');
+    add_feature_layer('SW_main', 708, json_202_SW_mains_0, ['CIPL', '15\"'],'rgba(33,144,141,1.0)');
+    add_feature_layer('SW_main', 709, json_202_SW_mains_0, ['(N)', '18\"'],'rgba(44,114,142,1.0)');
+    add_feature_layer('SW_main', 710, json_202_SW_mains_0, ['CIPL', '18\"'],'rgba(44,114,142,1.0)');  
+    add_feature_layer('SW_main', 711, json_202_SW_mains_0, ['(N)', '21\"'],'rgba(59,82,139,1.0)');
+    add_feature_layer('SW_main', 712, json_202_SW_mains_0, ['CIPL', '21\"'],'rgba(59,82,139,1.0)');  
+    add_feature_layer('SW_main', 713, json_202_SW_mains_0, ['(N)', '24\"'],'rgba(71,44,124,1.0)');
+    add_feature_layer('SW_main', 714, json_202_SW_mains_0, ['(N)', '30\"'],'rgba(68,1,84,1.0)');
+    add_feature_layer('SW_main', 715, json_202_SW_mains_0, ['CIPL', '2\' x 3\''],'rgba(255,141,19,1.0)');
+    add_feature_layer('SW_main', 716, json_202_SW_mains_0, ['Plug'],'rgba(178,129,77,1.0)');  
+    add_feature_layer('SW_main', 717, json_202_SW_mains_0, ['Remove'],'rgba(215,25,28,1.0)');    
+
+    var SW_MH_index_limits = [730, 738];  
+    
+    add_feature_layer('SW_MH', 730, json_201_MHs_5,
+    '(E) to Remain', 'rgba(150,150,150,1.0)');    
+    
+    add_feature_layer('SW_MH', 731, json_201_MHs_5,
+    'Install (N) per SFPW STD Plan 87,181', 'rgba(100, 171, 176, 1.0)');      
+    
+    add_feature_layer('SW_MH', 732, json_201_MHs_5,
+    'Replace (E) with (N) per SFPW STD Plan 87,181', 'rgba(157, 711, 167,1.0)');  
+                      
+    add_feature_layer('SW_MH', 733, json_201_MHs_5,
+    'Install (N) per SFPW STD Plan 87,182', 'rgba(199, 733, 173, 1.0)');                              
+      
+    add_feature_layer('SW_MH', 734, json_201_MHs_5,
+    'Replace (E) with (N) per SFPW STD Plan 87,182', 'rgba(237, 748, 185, 1.0)');          
+    
+    add_feature_layer('SW_MH', 735, json_201_MHs_5,
+    'Replace (E) with angled (N) per SFPW STD Plan 87,182', 'rgba(255, 737, 160, 1.0)');         
+    
+    add_feature_layer('SW_MH', 736, json_201_MHs_5,
+    'Mortar (E)', 'rgba(249, 158, 89, 1.0)');        
+
+    add_feature_layer('SW_MH', 737, json_201_MHs_5,
+    'Abandon (E)', 'rgba(180, 150, 50, 1.0)');        
+        
+    add_feature_layer('SW_MH', 738, json_201_MHs_5,
+    'Remove (E)', 'rgba(254, 54, 107, 1.0)');    
+
+
+
+
+
+    var SW_clvt_index_limits = [750, 754];  
+    add_feature_layer('SW_clvt', 750, json_204_culverts_3, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
+      
+    add_feature_layer('SW_clvt', 751, json_204_culverts_3, 'Install (N) VCP', 'rgba(33, 144, 141, 1.0)');  
+    
+    add_feature_layer('SW_clvt', 752, json_204_culverts_3, 'Replace (E) with (N) as Directed by City',
+                                                           'rgba(93, 201, 99, 1.0)');  
+                                                           
+    add_feature_layer('SW_clvt', 753, json_204_culverts_3, 'Install (N) DIP', 'rgba(132, 23, 123, 1.0)');  
+    
+    add_feature_layer('SW_clvt', 754, json_204_culverts_3, 'Plug (E)', 'rgba(178, 129, 77, 1.0)');  
+
+
+
+
+
+    var SW_drain_index_limits = [770, 774];  
+    add_feature_layer('SW_drain', 770, json_203_drains_4, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
+    add_feature_layer('SW_drain', 771, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,187', 'rgba(100, 171, 176, 1.0)');
+    add_feature_layer('SW_drain', 772, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,188', 'rgba(157, 211, 167, 1.0)');
+    add_feature_layer('SW_drain', 773, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,189', 'rgba(237, 248, 185, 1.0)');
+    add_feature_layer('SW_drain', 774, json_203_drains_4, 'Abandon (E)', 'rgba(180, 150, 50, 1.0)');
+    
+    
+//      201_MHs_5_AbandonE8.png
+//201_MHs_5_EtoRemain0.png
+//201_MHs_5_InstallNperSFPWSTDPlan871811.png
+//201_MHs_5_InstallNperSFPWSTDPlan871822.png
+//201_MHs_5_MortarE3.png
+//201_MHs_5_RemoveE7.png
+//201_MHs_5_ReplaceEwithangledNperSFPWSTDPlan871826.png
+//201_MHs_5_ReplaceEwithNperSFPWSTDPlan871814.png
+//201_MHs_5_ReplaceEwithNperSFPWSTDPlan871825.png
+      
+      
+  </script>
+
+
+
+  <script src="data/200_laterals_2.js"></script>
+
+
+
   <script src="data/211_SMPs_0.js"></script>
 
   <style>
@@ -75,6 +179,8 @@
     <script src="js/menu_cards/menu_card_AWSS_features.js"></script>
   </div>
 
+
+  
 
   <script>
     Array.prototype.insert = function(index, item) {
@@ -164,34 +270,34 @@
   <script src="js/layer_toggle/add_layer_106_PD.js"></script>
   <script src="js/layer_toggle/add_layer_999_OSM.js"></script>
 
-  <script src="js/layer_toggle/add_layer_201_MH.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SWMN.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_08_in_L.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_08_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_12_in_L.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_12_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_12_in_CP_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_15_in_L.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_15_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_15_in_CP_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_18_in_L.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_18_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_21_in_L.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_21_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_24_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_30_in_N.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_2x3_ft_L.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_E_to_remain.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_plug_and_fill_E.js"></script>
-  <script src="js/layer_toggle/add_layer_202_SW_mains_remove_E.js"></script>
+  <!<script src="js/layer_toggle/add_layer_201_MH.js"><!</script>
+  <script src="js/popup_content_return.js"></script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_08_in_L.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_08_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_12_in_L.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_12_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_12_in_CP_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_15_in_L.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_15_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_15_in_CP_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_18_in_L.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_18_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_21_in_L.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_21_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_24_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_30_in_N.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_2x3_ft_L.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_E_to_remain.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_plug_and_fill_E.js"> <!</script>
+  <!<script src="js/layer_toggle/add_layer_202_SW_mains_remove_E.js"><!</script>
   <script src="js/layer_toggle/add_layer_202_SW_mains_shear_bands.js"></script>
-  <script src="js/layer_toggle/add_layer_204_CLVT.js"></script>
-  <script src="js/layer_toggle/add_layer_203_drains.js"></script>
+  <!<script src="js/layer_toggle/add_layer_204_CLVT.js"><!</script>
+  <!<script src="js/layer_toggle/add_layer_203_drains.js"><!</script>
   <script src="js/layer_toggle/add_layer_200_laterals.js"></script>
   <script src="js/layer_toggle/add_layer_211_SMP.js"></script>
-
-
+  
   <script>
+  
     function handleChange(checkbox, layer) {
       if (checkbox.checked == true) {
         map.addLayer(layer);

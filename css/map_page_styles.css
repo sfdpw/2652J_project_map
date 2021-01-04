@@ -13,7 +13,7 @@ body {
 
 .map {
   float: left;
-  width: 65%;
+  width: 60%;
   height: 100%; /* only for demonstration, should be removed */
   background: #ccc;
 
@@ -31,7 +31,7 @@ body {
 
 .accordion.layer_menu {
   float: left;
-  width: 35%;
+  width: 40%;
   max-height:100%;
   font-size: normal; }
 

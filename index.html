@@ -53,7 +53,8 @@
   <script src="js/layer_toggle/add_line_layer_SW_clvt.js"></script>
   <script src="data/203_drains_4.js"></script>
   <script src="js/layer_toggle/add_point_layer_SW_drain.js"></script>
-
+  <script src="data/200_laterals_2.js"></script>
+  <script src="js/layer_toggle/add_line_layer_SW_lateral.js"></script>
 
   <script>
     
@@ -117,16 +118,12 @@
       
     add_feature_layer('SW_clvt', 751, json_204_culverts_3, 'Install (N) VCP', 'rgba(33, 144, 141, 1.0)');  
     
-    add_feature_layer('SW_clvt', 752, json_204_culverts_3, 'Replace (E) with (N) as Directed by City',
+    add_feature_layer('SW_clvt', 752, json_204_culverts_3, 'Replace (E) with (N) as Directed',
                                                            'rgba(93, 201, 99, 1.0)');  
                                                            
     add_feature_layer('SW_clvt', 753, json_204_culverts_3, 'Install (N) DIP', 'rgba(132, 23, 123, 1.0)');  
     
     add_feature_layer('SW_clvt', 754, json_204_culverts_3, 'Plug (E)', 'rgba(178, 129, 77, 1.0)');  
-
-
-
-
 
     var SW_drain_index_limits = [770, 774];  
     add_feature_layer('SW_drain', 770, json_203_drains_4, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
@@ -136,6 +133,36 @@
     add_feature_layer('SW_drain', 774, json_203_drains_4, 'Abandon (E)', 'rgba(180, 150, 50, 1.0)');
     
     
+    var SW_lateral_index_limits = [780, 786];  
+    add_feature_layer('SW_lateral', 780, json_200_laterals_2,
+                      '(E) to Remain',
+                      'rgba(150, 150, 150, 1.0)');
+                      
+    add_feature_layer('SW_lateral', 781, json_200_laterals_2,
+                      'Replace (E) with (N)',
+                      'rgba(1, 103, 255, 1.0)');
+                      
+    add_feature_layer('SW_lateral', 782, json_200_laterals_2,
+                      'Replace (E) with (N) as Directed',
+                      'rgba(33, 144, 141, 1.0)');
+                      
+    add_feature_layer('SW_lateral', 783, json_200_laterals_2,
+                      'Replace (E) with (N), Extend and Connect',
+                      'rgba(93, 201, 99, 1.0)');
+                      
+    add_feature_layer('SW_lateral', 784, json_200_laterals_2,
+                      'Extend and Connect (E) or Replace with (N) as Directed',
+                      'rgba(171, 220, 50, 1.0)');    
+                      
+    add_feature_layer('SW_lateral', 785, json_200_laterals_2, 
+                      'Intercept to Connect (E) or Replace with (N) as Directed',
+                      'rgba(255, 141, 19, 1.0)');    
+                      
+    add_feature_layer('SW_lateral', 786, json_200_laterals_2,
+                      'Remove (E)',
+                      'rgba(215, 25, 28, 1.0)');    
+
+        
 //      201_MHs_5_AbandonE8.png
 //201_MHs_5_EtoRemain0.png
 //201_MHs_5_InstallNperSFPWSTDPlan871811.png
@@ -151,7 +178,7 @@
 
 
 
-  <script src="data/200_laterals_2.js"></script>
+
 
 
 
@@ -272,7 +299,6 @@
 
   <script src="js/popup_content_return.js"></script>
   <script src="js/layer_toggle/add_layer_202_SW_mains_shear_bands.js"></script>
-  <script src="js/layer_toggle/add_layer_200_laterals.js"></script>
   <script src="js/layer_toggle/add_layer_211_SMP.js"></script>
   
   <script>

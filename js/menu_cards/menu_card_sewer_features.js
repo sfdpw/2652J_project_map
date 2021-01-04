@@ -98,76 +98,19 @@ sw_sewer_feature_menu +=
                   <td colspan="2">&nbsp;</td>\
                 </tr>\
                 <tr>\
-                  <td><input type="checkbox" id="200_laterals_checkbox" onchange="laterals_200_toggle()"></td>\
-                  <td><label class="layer_label" for="200_laterals_checkbox"><strong>Laterals</strong></label></td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_EtoRemain0.png" width="13" height="13"\
-                         alt="Scope Symbol - Laterals - (E) to Remain"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">(E) to Remain</span>\
-                  </td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_ExtendandConnectEorReplacewithNasDirectedbyCity1.png"\
-                              width="13" height="13"\
-                         alt="Scope Symbol - Laterals - Extend and Connect (E) or Replace with (N) as Directed by City"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">Extend and Connect (E) or Replace with (N) as Directed by City</span>\
-                  </td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_IntercepttoConnectEorReplacewithNasDirectedbyCity2.png"\
-                              width="13" height="13"\
-                         alt="Scope Symbol - Laterals - Intercept to Connect (E) or Replace with (N) as Directed by City"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">Intercept to Connect (E) or Replace with (N) as Directed by City</span>\
-                  </td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_ReplaceEwithN3.png" width="13" height="13"\
-                         alt="Scope Symbol - Laterals - Replace (E) with (N)"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">Replace (E) with (N)</span>\
-                  </td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_ReplaceEwithNasDirectedbyCity4.png"\
-                              width="13" height="13"\
-                         alt="Scope Symbol - Laterals - Replace (E) with (N) as Directed by City"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">Replace (E) with (N) as Directed by City</span>\
-                  </td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_ReplaceEwithNExtendandConnect5.png" width="13" height="13"\
-                         alt="Scope Symbol - Laterals - Replace (E) with (N), Extend and Connect"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">Replace (E) with (N), Extend and Connect</span>\
-                  </td>\
-                </tr>\
-                <tr>\
-                  <td>\
-                    <img src="legend/200_laterals_2_RemoveE6.png" width="13" height="13"\
-                         alt="Scope Symbol - Laterals - Remove (E)"/>\
-                  </td>\
-                  <td>\
-                    <span class="layer_label">Remove (E)</span>\
-                  </td>\
-                </tr>\
-              </table>\
+                  <td><input type="checkbox" id="7xx_SW_lateral_checkbox"\
+                             onchange="feature_layer_toggle(\'7xx_SW_lateral_checkbox\','
+                             + SW_lateral_index_limits[0] + ',' + SW_lateral_index_limits[1] + ')"></td>\
+                  <td><label class="layer_label" for="7xx_SW_lateral_checkbox"><strong>Laterals</strong></label></td>\
+                </tr>'
+                
+for (ll = SW_lateral_index_limits[0]; ll <= SW_lateral_index_limits[1]; ll++) // SEWER lateral
+ 
+   {sw_sewer_feature_menu += layer_card_entry_generator(ll);}                   
+                
+sw_sewer_feature_menu +=                                                
+
+              '</table>\
               </div>\
             </div>\
           </div>\

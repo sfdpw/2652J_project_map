@@ -136,8 +136,38 @@ function pop_up_creator_for_domain(feature, layer)
 
 
     }
+    
+      else if (layer.feature.L_index_stored_in_each_feature >= SW_lateral_index_limits[0] &&
+        layer.feature.L_index_stored_in_each_feature <= SW_lateral_index_limits[1])   
+    
+    {
+    
+var popupContent =
+    '<strong>Asset ID</strong><br>' +
+    (feature.properties['MAXIMO_ID'] !== null ? Autolinker.link(feature.properties['MAXIMO_ID'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Address</strong><br>' +
+    (feature.properties['ADDRESS'] !== null ? Autolinker.link(feature.properties['ADDRESS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>BLKLOT</strong><br>' +
+    (feature.properties['BLKLOT'] !== null ? Autolinker.link(feature.properties['BLKLOT'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Scope</strong><br>' +
+    (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Submittal(s)</strong><br>' +
+    (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Status</strong><br>' +
+    (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Bid Item(s)</strong><br>' +
+    (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
+    '<br><br>\
+<strong>Payment History</strong><br>' +
+    (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
 
-
+}
 
     layer.bindPopup(popupContent, {
         maxHeight: 400

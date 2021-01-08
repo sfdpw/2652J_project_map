@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/leaflet-measure.css">
   <link rel="stylesheet" href="css/map_page_styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <link rel="icon" type="image/png" href="legend/L_731.png"/>
+  <link rel="icon" type="image/png" href="legend/L_801.png"/>
 
 
   <script src="js/popup_populator.js"></script>
@@ -81,39 +81,6 @@
     add_feature_layer('SW_main', 716, json_202_SW_mains_0, ['Plug'],'rgba(178,129,77,1.0)');  
     add_feature_layer('SW_main', 717, json_202_SW_mains_0, ['Remove'],'rgba(215,25,28,1.0)');    
 
-    var SW_MH_index_limits = [730, 738];  
-    
-    add_feature_layer('SW_MH', 730, json_201_MHs_5,
-    '(E) to Remain', 'rgba(150,150,150,1.0)');    
-    
-    add_feature_layer('SW_MH', 731, json_201_MHs_5,
-    'Install (N) per SFPW STD Plan 87,181', 'rgba(100, 171, 176, 1.0)');      
-    
-    add_feature_layer('SW_MH', 732, json_201_MHs_5,
-    'Replace (E) with (N) per SFPW STD Plan 87,181', 'rgba(157, 711, 167,1.0)');  
-                      
-    add_feature_layer('SW_MH', 733, json_201_MHs_5,
-    'Install (N) per SFPW STD Plan 87,182', 'rgba(199, 733, 173, 1.0)');                              
-      
-    add_feature_layer('SW_MH', 734, json_201_MHs_5,
-    'Replace (E) with (N) per SFPW STD Plan 87,182', 'rgba(237, 748, 185, 1.0)');          
-    
-    add_feature_layer('SW_MH', 735, json_201_MHs_5,
-    'Replace (E) with angled (N) per SFPW STD Plan 87,182', 'rgba(255, 737, 160, 1.0)');         
-    
-    add_feature_layer('SW_MH', 736, json_201_MHs_5,
-    'Mortar (E)', 'rgba(249, 158, 89, 1.0)');        
-
-    add_feature_layer('SW_MH', 737, json_201_MHs_5,
-    'Abandon (E)', 'rgba(180, 150, 50, 1.0)');        
-        
-    add_feature_layer('SW_MH', 738, json_201_MHs_5,
-    'Remove (E)', 'rgba(254, 54, 107, 1.0)');    
-
-
-
-
-
     var SW_clvt_index_limits = [750, 754];  
     add_feature_layer('SW_clvt', 750, json_204_culverts_3, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
       
@@ -125,13 +92,6 @@
     add_feature_layer('SW_clvt', 753, json_204_culverts_3, 'Install (N) DIP', 'rgba(132, 23, 123, 1.0)');  
     
     add_feature_layer('SW_clvt', 754, json_204_culverts_3, 'Plug (E)', 'rgba(178, 129, 77, 1.0)');  
-
-    var SW_drain_index_limits = [770, 774];  
-    add_feature_layer('SW_drain', 770, json_203_drains_4, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
-    add_feature_layer('SW_drain', 771, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,187', 'rgba(100, 171, 176, 1.0)');
-    add_feature_layer('SW_drain', 772, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,188', 'rgba(157, 211, 167, 1.0)');
-    add_feature_layer('SW_drain', 773, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,189', 'rgba(237, 248, 185, 1.0)');
-    add_feature_layer('SW_drain', 774, json_203_drains_4, 'Abandon (E)', 'rgba(180, 150, 50, 1.0)');
     
     
     var SW_lateral_index_limits = [780, 786];  
@@ -163,6 +123,42 @@
                       'Remove (E)',
                       'rgba(215, 25, 28, 1.0)');    
 
+
+    var SW_drain_index_limits = [790, 794];  
+    add_feature_layer('SW_drain', 790, json_203_drains_4, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
+    add_feature_layer('SW_drain', 791, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,187', 'rgba(100, 171, 176, 1.0)');
+    add_feature_layer('SW_drain', 792, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,188', 'rgba(157, 211, 167, 1.0)');
+    add_feature_layer('SW_drain', 793, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,189', 'rgba(237, 248, 185, 1.0)');
+    add_feature_layer('SW_drain', 794, json_203_drains_4, 'Abandon (E)', 'rgba(180, 150, 50, 1.0)');
+    
+        var SW_MH_index_limits = [800, 808];  
+    
+    add_feature_layer('SW_MH', 800, json_201_MHs_5,
+    '(E) to Remain', 'rgba(150,150,150,1.0)');    
+    
+    add_feature_layer('SW_MH', 801, json_201_MHs_5,
+    'Install (N) per SFPW STD Plan 87,181', 'rgba(100, 171, 176, 1.0)');      
+    
+    add_feature_layer('SW_MH', 802, json_201_MHs_5,
+    'Replace (E) with (N) per SFPW STD Plan 87,181', 'rgba(157, 711, 167,1.0)');  
+                      
+    add_feature_layer('SW_MH', 803, json_201_MHs_5,
+    'Install (N) per SFPW STD Plan 87,182', 'rgba(199, 733, 173, 1.0)');                              
+      
+    add_feature_layer('SW_MH', 804, json_201_MHs_5,
+    'Replace (E) with (N) per SFPW STD Plan 87,182', 'rgba(237, 748, 185, 1.0)');          
+    
+    add_feature_layer('SW_MH', 805, json_201_MHs_5,
+    'Replace (E) with angled (N) per SFPW STD Plan 87,182', 'rgba(255, 737, 160, 1.0)');         
+    
+    add_feature_layer('SW_MH', 806, json_201_MHs_5,
+    'Mortar (E)', 'rgba(249, 158, 89, 1.0)');        
+
+    add_feature_layer('SW_MH', 807, json_201_MHs_5,
+    'Abandon (E)', 'rgba(180, 150, 50, 1.0)');        
+        
+    add_feature_layer('SW_MH', 808, json_201_MHs_5,
+    'Remove (E)', 'rgba(254, 54, 107, 1.0)');    
         
 //      201_MHs_5_AbandonE8.png
 //201_MHs_5_EtoRemain0.png

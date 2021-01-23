@@ -110,6 +110,22 @@ function SW_lateral_layer_styler(feature) {
             }
             break;
 
+
+        case 'Post-Construction':
+            return {
+                pane: 'P_'.concat(feature.L_index_stored_in_each_feature),
+                    opacity: 1,
+                    color: feature.rgba_code_stored_in_each_feature,
+                    dashArray: dash_code,
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    weight: 10.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            
+            
             // case 'Post-Construction, Pre-Payment':
             //   return {
             //     pane: 'pane_202_SW_mains_08_in_N',

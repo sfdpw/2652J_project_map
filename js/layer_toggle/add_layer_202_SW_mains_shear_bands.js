@@ -38,7 +38,7 @@ function shear_bands_1_toggle()
 
   {
 
-    if (document.getElementById("202_SW_shear_bands_1").checked) {
+    if (document.getElementById("718_SW_shear_band").checked) {
 
         if (is_layer_202_shear_bands_1_loaded == false) {
 

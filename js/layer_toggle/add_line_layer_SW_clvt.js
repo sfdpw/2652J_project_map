@@ -102,6 +102,20 @@ function SW_clvt_layer_styler(feature) {
                     interactive: true,
             }
             break;
+            
+         case 'Post-Construction':
+            return {
+                pane: 'P_'.concat(feature.L_index_stored_in_each_feature),
+                    opacity: 1,
+                    color: feature.rgba_code_stored_in_each_feature,
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    weight: 10.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;           
 
             // case 'Post-Construction, Pre-Payment':
             //   return {

@@ -146,3 +146,34 @@ function popup_spec_entry_creator(popup_args = null)
     return output_string
 
 }
+
+/* ################# AS BUILT ENTRY CREATOR ########################################################## */
+
+
+function popup_AB_entry_creator(ab_arg = null)
+
+{
+
+    var output_string = 'none';
+
+    for (var ii = 0; ii < json_ab_list.SW.length; ii += 1)
+    
+    {
+    
+     if (json_ab_list.SW[ii].includes(ab_arg))
+      
+       { 
+    
+        output_string = "<a href=\".\\pp_as_builts\\".concat(json_ab_list.SW[ii],
+                        ".pdf\" target=\"_blank\">", (json_ab_list.SW[ii].replace('2652J_','')).replace(/_/g,' '), "<\/a>");
+    
+        }
+    }
+    
+    return output_string
+
+}
+
+
+
+

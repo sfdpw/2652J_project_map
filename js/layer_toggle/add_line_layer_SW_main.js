@@ -1,22 +1,3 @@
-// 700 add_layer_202_SW_mains_08_in_N.js
-// 701 add_layer_202_SW_mains_08_in_L.js
-// 702 add_layer_202_SW_mains_12_in_N.js
-// 703 add_layer_202_SW_mains_12_in_CP_N.js
-// 704 add_layer_202_SW_mains_12_in_L.js
-// 705 add_layer_202_SW_mains_15_in_N.js
-// 706 add_layer_202_SW_mains_15_in_CP_N.js
-// 707 add_layer_202_SW_mains_15_in_L.js
-// 708 add_layer_202_SW_mains_18_in_N.js
-// 709 add_layer_202_SW_mains_18_in_L.js
-// 710 add_layer_202_SW_mains_21_in_N.js
-// 711 add_layer_202_SW_mains_21_in_L.js
-// 712 add_layer_202_SW_mains_24_in_N.js
-// 713 add_layer_202_SW_mains_30_in_N.js
-// 714 add_layer_202_SW_mains_2x3_ft_L.js
-// 715 add_layer_202_SW_mains_E_to_remain.js
-// 716 add_layer_202_SW_mains_plug_and_fill_E.js
-// 717 add_layer_202_SW_mains_remove_E.js
-// 718 add_layer_202_SW_mains_shear_bands.js
 
 function SW_main_layer_toggle(layer_index, master_layer_array, local_json_layer_obj, property_filters, rgba_code)
 
@@ -63,14 +44,32 @@ function SW_main_layer_toggle(layer_index, master_layer_array, local_json_layer_
 
                     }
 
+
+                    if (property_filters.includes('CS') ==  false && 
+                        local_json_layer_obj['features'][ii].properties.SCOPE.includes('Concrete Parking Strip') == true)
+                        
+                    {
+                    
+                        filter_pass[jj] = false;
+                    
+                    }     
+
+
+
                     if (property_filters[jj] == 'CS')
 
                     {
 
                         filter_pass[jj] =
-                            local_json_layer_obj['features'][ii].properties.SCOPE.includes('Concrete Scope');
+                            local_json_layer_obj['features'][ii].properties.SCOPE.includes('Concrete Parking Strip');
 
                     }
+                    
+
+
+
+
+                    
 
 
                 }
@@ -222,7 +221,7 @@ function unpack_SW_main_feature_description(property_filters)
 
         {
 
-            output_L_desc += ' under Other Concrete Scope';
+            output_L_desc += ' at Concrete Parking Strip';
 
         }
 

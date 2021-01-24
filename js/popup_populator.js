@@ -154,13 +154,14 @@ function popup_AB_entry_creator(ab_arg = null)
 
 {
 
+
     var output_string = 'none';
 
-    for (var ii = 0; ii < json_ab_list.SW.length; ii += 1)
+    for (var ii = 0; ii < json_ab_list[ab_arg.substring(0, 2)].length; ii += 1)
     
     {
     
-     if (json_ab_list.SW[ii].includes(ab_arg))
+     if (json_ab_list[ab_arg.substring(0, 2)][ii].includes(ab_arg))
       
        { 
     

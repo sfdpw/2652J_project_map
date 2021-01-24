@@ -51,11 +51,34 @@ function popup_sheet_entry_creator(popup_args = null)
             {
 
 
+              if (file_name.includes('SFPW_STD_'))
+              
+                {
+                
+                 var STD_file_name_formatted = file_name.replace(/_/g,' ');
+                 var comma_position = STD_file_name_formatted.length-3
+                
+                     STD_file_name_formatted =
+                    [STD_file_name_formatted.slice(0, comma_position), ',',  
+                     STD_file_name_formatted.slice(comma_position)].join('');
+
+                 output_string = output_string.concat("<a href=\".\\sheets\\",file_name, ".pdf\" target=\"_blank\">", STD_file_name_formatted, "<\/a>");        
+                
+                 }
+              
+              else
+              
+               {
+
                 output_string = output_string.concat("<a href=\".\\sheets\\2652J_dwg_", file_name, ".pdf\" target=\"_blank\">", (file_name.replace("-0", "-")).replace("_rev0", " Rev. "), "<\/a>");
+
+                }
 
                 if (popup_args[ii + 2] != null) {
                     output_string = output_string.concat(" - ", file_desc);
                 }
+
+               
 
             } else {
                 if (popup_args[ii + 2] != null) {

@@ -177,8 +177,10 @@ function popup_AB_entry_creator(ab_arg = null)
 
 {
 
+    
 
     var output_string = 'none';
+    var jj = 0;
 
     for (var ii = 0; ii < json_ab_list[ab_arg.substring(0, 2)].length; ii += 1)
     
@@ -187,10 +189,18 @@ function popup_AB_entry_creator(ab_arg = null)
      if (json_ab_list[ab_arg.substring(0, 2)][ii].includes(ab_arg))
       
        { 
+       
+        output_string = output_string.replace('none','');
+        
     
-        output_string = "<a href=\".\\pp_as_builts\\".concat(json_ab_list.SW[ii],
+        if (jj>0) {output_string = output_string.concat("<br>");}
+    
+        output_string += "<a href=\".\\pp_as_builts\\".concat(json_ab_list.SW[ii],
                         ".pdf\" target=\"_blank\">", (json_ab_list.SW[ii].replace('2652J_','')).replace(/_/g,' '), "<\/a>");
     
+        jj+=1;
+    
+            
         }
     }
     

@@ -7,13 +7,13 @@ function popup_sheet_entry_creator(popup_args = null)
 
     if (popup_args == null) {
         output_string = 'none';
+        
     } else {
 
         var overlay_checkbox = "";
         var file_name = "";
         var file_name_length = "";
         var file_desc = "";
-
 
         for (var ii = 0; ii < popup_args.length; ii += 3)
 
@@ -33,15 +33,16 @@ function popup_sheet_entry_creator(popup_args = null)
 
             {
                 output_string = output_string.concat("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+
             } else
 
             {
 
                 output_string = output_string.concat("<input type=\"checkbox\" id=\"",
-                                                      overlay_checkbox,
-                                                      "_aaaa\" onchange=\"handleChange(this, ",
-                                                      overlay_checkbox, ");\">&nbsp;");
-                     
+                    overlay_checkbox,
+                    "_aaaa\" onchange=\"handleChange(this, ",
+                    overlay_checkbox, ");\">&nbsp;");
+
             }
 
 
@@ -51,26 +52,24 @@ function popup_sheet_entry_creator(popup_args = null)
             {
 
 
-              if (file_name.includes('SFPW_STD_'))
-              
+                if (file_name.includes('SFPW_STD_'))
+
                 {
-                
-                 var STD_file_name_formatted = file_name.replace(/_/g,' ');
-                 var comma_position = STD_file_name_formatted.length-3
-                
-                     STD_file_name_formatted =
-                    [STD_file_name_formatted.slice(0, comma_position), ',',  
-                     STD_file_name_formatted.slice(comma_position)].join('');
 
-                 output_string = output_string.concat("<a href=\".\\sheets\\",file_name, ".pdf\" target=\"_blank\">", STD_file_name_formatted, "<\/a>");        
-                
-                 }
-              
-              else
-              
-               {
+                    var STD_file_name_formatted = file_name.replace(/_/g, ' ');
+                    var comma_position = STD_file_name_formatted.length - 3
 
-                output_string = output_string.concat("<a href=\".\\sheets\\2652J_dwg_", file_name, ".pdf\" target=\"_blank\">", (file_name.replace("-0", "-")).replace("_rev0", " Rev. "), "<\/a>");
+                    STD_file_name_formatted = [STD_file_name_formatted.slice(0, comma_position), ',',
+                        STD_file_name_formatted.slice(comma_position)
+                    ].join('');
+
+                    output_string = output_string.concat("<a href=\".\\sheets\\", file_name, ".pdf\" target=\"_blank\">", STD_file_name_formatted, "<\/a>");
+
+                } else
+
+                {
+
+                    output_string = output_string.concat("<a href=\".\\sheets\\2652J_dwg_", file_name, ".pdf\" target=\"_blank\">", (file_name.replace("-0", "-")).replace("_rev0", " Rev. "), "<\/a>");
 
                 }
 
@@ -78,7 +77,7 @@ function popup_sheet_entry_creator(popup_args = null)
                     output_string = output_string.concat(" - ", file_desc);
                 }
 
-               
+
 
             } else {
                 if (popup_args[ii + 2] != null) {
@@ -177,37 +176,79 @@ function popup_AB_entry_creator(ab_arg = null)
 
 {
 
-    
-
     var output_string = 'none';
     var jj = 0;
 
     for (var ii = 0; ii < json_ab_list[ab_arg.substring(0, 2)].length; ii += 1)
-    
+
     {
-    
-     if (json_ab_list[ab_arg.substring(0, 2)][ii].includes(ab_arg))
-      
-       { 
-       
-        output_string = output_string.replace('none','');
-        
-    
-        if (jj>0) {output_string = output_string.concat("<br>");}
-    
-        output_string += "<a href=\".\\pp_as_builts\\".concat(json_ab_list.SW[ii],
-                        ".pdf\" target=\"_blank\">", (json_ab_list.SW[ii].replace('2652J_','')).replace(/_/g,' '), "<\/a>");
-    
-        jj+=1;
-    
-            
+
+        if (json_ab_list[ab_arg.substring(0, 2)][ii].includes(ab_arg))
+
+        {
+
+            output_string = output_string.replace('none', '');
+
+
+            if (jj > 0) {
+                output_string = output_string.concat("<br>");
+            }
+
+            output_string += "<a href=\".\\pp_as_builts\\".concat(json_ab_list[ab_arg.substring(0, 2)][ii],
+                ".pdf\" target=\"_blank\">", (json_ab_list[ab_arg.substring(0, 2)][ii].replace('2652J_', '')).replace(/_/g, ' '), "<\/a>");
+
+            jj += 1;
+
+
         }
     }
-    
+
     return output_string
 
 }
 
+/* ################# TCP ENTRY CREATOR ########################################################## */
 
 
+function popup_tcp_entry_creator(tcp_arg = null)
 
+{
+
+    var output_string = '';
+
+    if (tcp_arg == null) {output_string = 'none';} 
+    
+     else
+
+    {
+
+        for (var ii = 0; ii < tcp_arg.length; ii += 1)
+
+        {
+
+            for (var jj = 0; jj < json_tcp_list.length; jj += 1)
+
+            {
+
+                if (json_tcp_list[jj].includes(tcp_arg[ii]))
+
+                {
+
+                    output_string += "<a href=\".\\tcps\\".concat(json_tcp_list[jj],
+                        ".pdf\" target=\"_blank\">", tcp_arg[ii].replace('_', ' '), "<\/a>");
+
+                }
+
+            }
+
+            if (ii != output_string.length) {
+                output_string += '<br>'
+            }
+
+        }
+
+    }
+
+    return output_string
+
+}

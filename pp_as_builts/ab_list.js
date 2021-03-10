@@ -12,7 +12,6 @@ var json_ab_list = {
 '2652J_SW-25_AB_PP03',
 '2652J_SW-26_AB_PP03',
 '2652J_SW-27_AB_PP03',
-'2652J_SW-27_AB_PP03',
 '2652J_SW-31_AB_PP03'
 ]
  

@@ -27,9 +27,6 @@ var popupContent =
 <strong>Status</strong><br>' +
     (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
     '<br><br>\
-<strong>Bid Item(s)</strong><br>' +
-    (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
-    '<br><br>\
 <strong>Payment History</strong><br>' +
     (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
 

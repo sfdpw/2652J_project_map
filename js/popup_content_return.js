@@ -40,8 +40,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Bid Item(s)</strong><br>' +
             (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Payment History</strong><br>' +
-            (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
+<strong>Payment History</strong><br>';
+
+        popupContent += pp_history_details(feature);
 
     } else if (layer.feature.L_index_stored_in_each_feature >= SW_MH_index_limits[0] &&
         layer.feature.L_index_stored_in_each_feature <= SW_MH_index_limits[1])
@@ -66,8 +67,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Bid Item(s)</strong><br>' +
             (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Payment History</strong><br>' +
-            (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
+<strong>Payment History</strong><br>';
+
+        popupContent += pp_history_details(feature);
 
     } else if (layer.feature.L_index_stored_in_each_feature >= SW_clvt_index_limits[0] &&
         layer.feature.L_index_stored_in_each_feature <= SW_clvt_index_limits[1])
@@ -96,8 +98,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Bid Item(s)</strong><br>' +
             (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Payment History</strong><br>' +
-            (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
+<strong>Payment History</strong><br>';
+
+        popupContent += pp_history_details(feature);
 
 
     } else if (layer.feature.L_index_stored_in_each_feature >= SW_drain_index_limits[0] &&
@@ -123,8 +126,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Bid Item(s)</strong><br>' +
             (feature.properties['BID_ITEM'] !== null ? Autolinker.link(feature.properties['BID_ITEM'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Payment History</strong><br>' +
-            (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
+<strong>Payment History</strong><br>';
+
+        popupContent += pp_history_details(feature);
 
 
 
@@ -154,58 +158,15 @@ function pop_up_creator_for_domain(feature, layer)
             '<br><br>\
 <strong>Payment History</strong><br>';
 
+        popupContent += pp_history_details(feature);
 
-
-if (Object.keys(feature.properties['PP_HISTORY']).length > 0 )
-
-{
-
- popupContent += '<table>';
-
- for (const bid_item in feature.properties['PP_HISTORY'])
-
-  {
-
-  
-   if ( Object.keys(feature.properties['PP_HISTORY'][bid_item]).length != 0 )
-
-     {
-  
-      for (const payment_instance in feature.properties['PP_HISTORY'][bid_item])
-      
-        {
-  
-          popupContent +=
-             pp_history_row(bid_item + ':',
-                            feature.properties['PP_HISTORY'][bid_item][payment_instance]['QTY'],
-                            feature.properties['PP_HISTORY'][bid_item][payment_instance]['UNIT'],
-                            payment_instance,
-                            feature.properties['PP_HISTORY'][bid_item][payment_instance]['FUND']) ;
-     
-         }
-     
-       }
-
-    }
-
-   popupContent += '</table>';
-
- } else {
-
- popupContent += 'none';
- 
- }
-
-
-
-
-//+ pp_history_row('SW-32 (Precon TV):','','','')
-//+ pp_history_row('SW-33 (Precon TV, ext.):','','','') 
-//+ pp_history_row('SW-36 (Connection):','','','') 
-//+ pp_history_row('SW-37 (Replacement):','','','') 
-//+ pp_history_row('SW-38 (Replacement, ext.):','','','') 
-//+ pp_history_row('SW-39 (Trap and Vent):','','','') 
-//+ pp_history_row('SW-41 (Postcon TV):','','','') + 
+        //+ pp_history_row('SW-32 (Precon TV):','','','')
+        //+ pp_history_row('SW-33 (Precon TV, ext.):','','','') 
+        //+ pp_history_row('SW-36 (Connection):','','','') 
+        //+ pp_history_row('SW-37 (Replacement):','','','') 
+        //+ pp_history_row('SW-38 (Replacement, ext.):','','','') 
+        //+ pp_history_row('SW-39 (Trap and Vent):','','','') 
+        //+ pp_history_row('SW-41 (Postcon TV):','','','') + 
 
 
 
@@ -220,18 +181,68 @@ if (Object.keys(feature.properties['PP_HISTORY']).length > 0 )
 }
 
 
-function pp_history_row(bid_item,QTY,UNIT,payment_no,FUND)
+
+function pp_history_details(ffeature)
 
 {
 
-    var row_string = '<tr><td>' + bid_item + '</td><td>' 
-                                + QTY + '</td><td>' 
-                                + UNIT + ' in</td><td>'
-                                + payment_no + ' from</td><td>'
-                                + FUND + '</td></tr>';
-    
+    var pp_history_details = "";
+
+    if (Object.keys(ffeature.properties['PP_HISTORY']).length > 0)
+
+    {
+
+        pp_history_details += '<table>';
+
+        for (const bid_item in ffeature.properties['PP_HISTORY'])
+
+        {
+
+
+            if (Object.keys(ffeature.properties['PP_HISTORY'][bid_item]).length != 0)
+
+            {
+
+                for (const payment_instance in ffeature.properties['PP_HISTORY'][bid_item])
+
+                {
+
+                    pp_history_details +=
+                        pp_history_row(bid_item + ':',
+                            ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['QTY'],
+                            ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['UNIT'],
+                            payment_instance,
+                            ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['FUND']);
+
+                }
+
+            }
+
+        }
+
+        pp_history_details += '</table>';
+
+    } else {
+
+        pp_history_details += 'none';
+
+    }
+
+    return pp_history_details;
+
+}
+
+
+function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
+
+{
+
+    var row_string = '<tr><td>' + bid_item + '</td><td>' +
+        QTY + '</td><td>' +
+        UNIT + ' in</td><td>' +
+        payment_no.substring(0, 4) + ' from</td><td>' +
+        FUND + '</td></tr>';
+
     return row_string
-
-
 
 }

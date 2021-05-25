@@ -43,7 +43,7 @@ function shear_bands_1_toggle()
         if (is_layer_202_shear_bands_1_loaded == false) {
 
             map.createPane('pane_202_shear_bands_1');
-            map.getPane('pane_202_shear_bands_1').style.zIndex = 701;
+            map.getPane('pane_202_shear_bands_1').style.zIndex = 809;
             map.getPane('pane_202_shear_bands_1').style['mix-blend-mode'] = 'normal';
 
             layer_202_shear_bands_1 = new L.geoJson(json_202_shear_bands_1, {

@@ -220,6 +220,8 @@ function add_feature_layer(feature_group, layer_index, source_json_layer_obj, pr
        
          function() {SW_main_layer_toggle(layer_index, master_layer_array, local_json_layer_obj,
                                           property_filters, rgba_code);}
+                        
+
                                                                                
        }
    

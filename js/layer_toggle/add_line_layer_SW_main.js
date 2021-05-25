@@ -117,6 +117,10 @@ function SW_main_layer_toggle(layer_index, master_layer_array, local_json_layer_
 
     }
 
+     document.getElementById("718_SW_shear_band").checked = document.getElementById("7xx_SWMN_checkbox").checked;
+        
+           shear_bands_1_toggle();                 
+
 }
 
 

@@ -237,7 +237,7 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
 
 {
 
-    var row_string = '<tr><td>' + bid_item + '</td><td>' +
+    var row_string = '<tr><td>' + bid_item + '</td><td style=\"text-align: right\">' +
         QTY + '</td><td>' +
         UNIT + ' in</td><td>' +
         payment_no.substring(0, 4) + ' from</td><td>' +

@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+.map_page {
+
+
+    overflow-y: auto;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    float: left;
+
+
+}
+
+.spec_page {
+
+
+    overflow-y: scroll;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    float: left;
+
+
+}
+
+.bid_item_page {
+
+    overflow-y: scroll;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    float: left;
+
+
+}
+
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+/* @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap'); */
+
+
+
+
+.bg-nav {
+  background-color: #456caa;
+  font-family: 'Montserrat', sans-serif; 
+
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+}
+
+.active-custom a{
+    color: #DDC966 !important;
+    font-weight: bold;
+
+}
+
+.nav-item-modified{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-link-custom{
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.menu_nav {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 95%;
+    width: 100%;
+
+
+}
+
+
+.spec_card_header {
+
+padding: 5px;
+
+}
+
+
+
+
+
+

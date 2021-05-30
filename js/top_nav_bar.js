@@ -87,7 +87,7 @@ function top_nav(nav_element)
 
           '</ul>\
         </div>\
-        <div style="float:right; padding-right:10px; color:white; font-weight:bold">2652J - 19th Ave</div>\
+        <div style="float:right; padding-right:10px; color:white; font-weight:bold">2652J - 19th Ave - Last Updated 2021 - May - 29</div>\
       </nav>'
 
     return return_block

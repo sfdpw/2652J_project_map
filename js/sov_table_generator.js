@@ -119,8 +119,18 @@ function to_date_details(bid_item_id) {
 function generate_sov_table() {
 
     var return_block = '';
+    var contract_total_amount = 0;
+    var to_date_total_amount = 0;
 
     for (ii = 0; ii < base_sov.length; ii++) {
+
+        if (isNaN(base_sov[ii]["Unit Price"]) == false)
+
+           {contract_total_amount +=  base_sov[ii]["Unit Price"] * base_sov[ii]["Contract QTY"];}
+
+        if (to_date_details(base_sov[ii]["Bid Item"])[1] > 0)
+
+           {to_date_total_amount += to_date_details(base_sov[ii]["Bid Item"])[1];}
 
         return_block +=
 
@@ -156,7 +166,7 @@ function generate_sov_table() {
             '</td>\
                     <td class="sov_td"\
                          style="width:6%;\
-                                text-align:right">' +
+                                text-align:center">' +
             to_date_details(base_sov[ii]["Bid Item"])[0] +
             '</td>\
                     <td class="sov_td"\
@@ -168,6 +178,19 @@ function generate_sov_table() {
 
     }
 
+    return_block +=
+    
+            '<tr class="sov_tr">\
+              <td class="sov_td"></td>\
+              <td class="sov_td"></td>\
+              <td class="sov_td"></td>\
+              <td class="sov_td"></td>\
+              <td class="sov_td" style="width:10%; text-align:right"><strong>Total:</strong></td>\
+              <td class="sov_td">' + amount_cell(contract_total_amount) + '</td>\
+              <td class="sov_td"></td>\
+              <td class="sov_td">' + amount_cell(to_date_total_amount) + '</td>\
+             </tr><br>';
+    
 
     return return_block
 

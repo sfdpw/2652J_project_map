@@ -1,4 +1,4 @@
-function spec_table(selected_div)
+function spec_table()
 
 {
 

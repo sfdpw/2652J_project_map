@@ -40,14 +40,14 @@ function top_nav(nav_element)
 
     }
 
-    if (nav_element == 'bid_items')
+    if (nav_element == 'sov')
 
     {
 
         return_block +=
 
             '<li class="nav-item active active-custom custom-hover">\
-                <a class="nav-link nav-link-custom" href="bid_items.html">Bid Items</a>\
+                <a class="nav-link nav-link-custom" href="sov.html">Bid Items</a>\
             </li>';
 
     } else {
@@ -55,7 +55,7 @@ function top_nav(nav_element)
         return_block +=
 
             '<li class="nav-item custom-hover">\
-                <a class="nav-link nav-link-custom" href="bid_items.html">Bid Items</a>\
+                <a class="nav-link nav-link-custom" href="sov.html">Bid Items</a>\
             </li>';
 
     }

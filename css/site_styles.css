@@ -36,11 +36,11 @@ body {
 
 }
 
-.bid_item_page {
+.sov_page {
 
     overflow-y: scroll;
     position: absolute;
-    top: 8%;
+    top: 9%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -102,10 +102,55 @@ body {
 
 padding: 5px;
 
+
 }
 
 
+.sov_table {
 
+  border-collapse: collapse;
+  width: 98%;
+  font-size: 12px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+
+
+
+}
+
+.sov_tr {
+
+  border: 1px solid black;
+
+}
+
+
+.sov_td {
+
+  border: 1px solid black;
+  padding:5px;
+}
+
+
+.sov_thead {
+
+
+}
+
+.sov_th {
+
+  border: 1px solid black;
+  color:white;
+  text-align:center;
+  position: sticky;
+  top: 0;
+  background:grey;
+
+
+}
 
 
 

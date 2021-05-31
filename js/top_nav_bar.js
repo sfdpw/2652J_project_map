@@ -1,13 +1,13 @@
-function top_nav(nav_element)
+function top_nav(nav_element, pp_no = null)
 
 {
 
     var return_block = '';
 
     return_block = '<nav class="navbar navbar-dark bg-nav navbar-expand-lg fixed-top">';
-        
-        return_block +=
-        
+
+    return_block +=
+
         '<button class="navbar-toggler"\
                 type="button"\
                 data-toggle="collapse"\
@@ -30,36 +30,106 @@ function top_nav(nav_element)
               <a class="nav-link nav-link-custom" href="index.html">Map</span></a>\
             </li>';
 
-    } else {
+        return_block +=
+
+           '<li class="nav-item dropdown">\
+              <a class="nav-link dropdown-toggle"\
+                 href="#" id="navbarDropdown_sov"\
+                 role="button"\
+                 data-toggle="dropdown"\
+                 aria-haspopup="true"\
+                 aria-expanded="false">\
+                 SOV\
+              </a>\
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown_sov">\
+                <a class="dropdown-item" href="sov/sov_PP01.html">PP01</a>\
+                <a class="dropdown-item" href="sov/sov_PP02.html">PP02</a>\
+                <a class="dropdown-item" href="sov/sov_PP03.html">PP03</a>\
+                <a class="dropdown-item" href="sov/sov_PP04.html">PP04</a>\
+                <a class="dropdown-item" href="sov/sov_PP05.html">PP05</a>\
+              </div>\
+            </li>\
+            <li class="nav-item dropdown">\
+              <a class="nav-link dropdown-toggle"\
+                 href="#" id="navbarDropdown_funding"\
+                 role="button"\
+                 data-toggle="dropdown"\
+                 aria-haspopup="true"\
+                 aria-expanded="false">\
+                 Funding\
+              </a>\
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown_funding">\
+                <a class="dropdown-item" href="funding/funding_PP01.html">PP01</a>\
+                <a class="dropdown-item" href="funding/funding_PP02.html">PP02</a>\
+                <a class="dropdown-item" href="funding/funding_PP03.html">PP03</a>\
+                <a class="dropdown-item" href="funding/funding_PP04.html">PP04</a>\
+                <a class="dropdown-item" href="funding/funding_PP05.html">PP05</a>\
+              </div>\
+            </li>';
+
 
         return_block +=
 
-            '<li class="nav-item active custom-hover">\
-              <a class="nav-link nav-link-custom" href="index.html">Map</span></a>\
+            '<li class="nav-item custom-hover">\
+              <a class="nav-link nav-link-custom" href="specs/specs.html">Specs</a>\
             </li>';
 
-    }
+    
+        return_block +=
 
-    if (nav_element == 'sov')
+         '</ul>\
+        </div>\
+      </nav>';
+
+
+    } else
 
     {
 
         return_block +=
 
-            '<li class="nav-item active active-custom custom-hover">\
-                <a class="nav-link nav-link-custom" href="sov.html">Bid Items</a>\
+            '<li class="nav-item active custom-hover">\
+              <a class="nav-link nav-link-custom" href="../index.html">Map</span></a>\
             </li>';
 
-    } else {
 
         return_block +=
 
-            '<li class="nav-item custom-hover">\
-                <a class="nav-link nav-link-custom" href="sov.html">Bid Items</a>\
-            </li>';
-
-    }
-
+        '<li class="nav-item dropdown">\
+           <a class="nav-link dropdown-toggle"\
+              href="#" id="navbarDropdown_sov"\
+              role="button"\
+              data-toggle="dropdown"\
+              aria-haspopup="true"\
+              aria-expanded="false">\
+             <strong>SOV</strong>\
+           </a>\
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown_sov">\
+             <a class="dropdown-item" href="../sov/sov_PP01.html">PP01</a>\
+             <a class="dropdown-item" href="../sov/sov_PP02.html">PP02</a>\
+             <a class="dropdown-item" href="../sov/sov_PP03.html">PP03</a>\
+             <a class="dropdown-item" href="../sov/sov_PP04.html">PP04</a>\
+             <a class="dropdown-item" href="../sov/sov_PP05.html">PP05</a>\
+           </div>\
+         </li>\
+         <li class="nav-item dropdown">\
+           <a class="nav-link dropdown-toggle"\
+              href="#" id="navbarDropdown_funding"\
+              role="button"\
+              data-toggle="dropdown"\
+              aria-haspopup="true"\
+              aria-expanded="false">\
+             <strong>Funding</strong>\
+           </a>\
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown_funding">\
+             <a class="dropdown-item" href="../funding/funding_PP01.html">PP01</a>\
+             <a class="dropdown-item" href="../funding/funding_PP02.html">PP02</a>\
+             <a class="dropdown-item" href="../funding/funding_PP03.html">PP03</a>\
+             <a class="dropdown-item" href="../funding/funding_PP04.html">PP04</a>\
+             <a class="dropdown-item" href="../funding/funding_PP05.html">PP05</a>\
+           </div>\
+         </li>';        
+         
     if (nav_element == 'specs')
 
     {
@@ -67,7 +137,7 @@ function top_nav(nav_element)
         return_block +=
 
             '<li class="nav-item active active-custom custom-hover">\
-              <a class="nav-link nav-link-custom" href="specs.html">Specs</a>\
+              <a class="nav-link nav-link-custom" href="../specs/specs.html">Specs</a>\
             </li>';
 
     } else {
@@ -75,25 +145,97 @@ function top_nav(nav_element)
         return_block +=
 
             '<li class="nav-item custom-hover">\
-              <a class="nav-link nav-link-custom" href="specs.html">Specs</a>\
+              <a class="nav-link nav-link-custom" href="../specs/specs.html">Specs</a>\
             </li>';
 
     }
 
-
-
+    if (nav_element == 'sov')
+    
+    
+    {
 
     return_block +=
 
-          '</ul>\
+         '</ul>\
         </div>\
-        <div style="float:right; padding-right:10px; color:white; font-weight:bold">2652J - 19th Ave - Last Updated 2021 - May - 29</div>\
-      </nav>'
+        <div style="float:right; padding-right:10px; color:white; font-weight:bold">Schedule of Values (SOV) for PP ' + pp_no + '</div>\
+      </nav>';
+
+     } 
+     
+     else if (nav_element == 'funding')
+     
+     {
+    
+      return_block += 
+     
+      '</ul>\
+        </div>\
+        <div style="float:right; padding-right:10px; color:white; font-weight:bold">Funding Breakdown for PP ' + pp_no + '</div>\
+      </nav>';   
+     
+     }
+     
+     else 
+     
+     {
+     
+     return_block +=
+
+         '</ul>\
+        </div>\
+      </nav>';
+     
+     }
+
+
+  }
+
+
+    //         
+
+
+    //  if (nav_element == 'sov')
+
+    //  {
+
+    //      return_block +=
+
+
+
+
+    //'<li class="nav-item active active-custom custom-hover">\
+    //    <a class="nav-link nav-link-custom" href="sov.html">SOV</a>\
+    //</li>';
+
+    // } else {
+
+    //     return_block +=
+
+    //     '<li class="nav-item dropdown">\
+    //        <a class="nav-link dropdown-toggle"\
+    //           href="#" id="navbarDropdown"\
+    //           role="button"\
+    //           data-toggle="dropdown"\
+    //           aria-haspopup="true"\
+    //           aria-expanded="false">\
+    //          <strong>SOV</strong>\
+    //        </a>\
+    //        <div class="dropdown-menu" aria-labelledby="navbarDropdown">\
+    //          <a class="dropdown-item" href="#">Action</a>\
+    //          <a class="dropdown-item" href="#">Another action</a>\
+    //          <a class="dropdown-item" href="#">Something else here</a>\
+    //       </div>\
+    //     </li>';
+
+
+    //'<li class="nav-item custom-hover">\
+    //    <a class="nav-link nav-link-custom" href="sov.html">SOV</a>\
+    //</li>';
+
+    // }
 
     return return_block
 
 }
-
-
-
-

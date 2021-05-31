@@ -63,7 +63,7 @@ function spec_table()
      
           if (list_of_specs[jj].substring(8, 10) == active_div_list[ii]) {
      
-            return_block += '<a href=".\\specs\\' + list_of_specs[jj] + '" target="_blank">'
+            return_block += '<a href="' + list_of_specs[jj] + '" target="_blank">'
             + list_of_specs[jj].replace(".pdf","") + '</a><br>';
      
             }

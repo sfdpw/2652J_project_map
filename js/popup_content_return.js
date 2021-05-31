@@ -160,18 +160,6 @@ function pop_up_creator_for_domain(feature, layer)
 
         popupContent += pp_history_details(feature);
 
-        //+ pp_history_row('SW-32 (Precon TV):','','','')
-        //+ pp_history_row('SW-33 (Precon TV, ext.):','','','') 
-        //+ pp_history_row('SW-36 (Connection):','','','') 
-        //+ pp_history_row('SW-37 (Replacement):','','','') 
-        //+ pp_history_row('SW-38 (Replacement, ext.):','','','') 
-        //+ pp_history_row('SW-39 (Trap and Vent):','','','') 
-        //+ pp_history_row('SW-41 (Postcon TV):','','','') + 
-
-
-
-        //   (feature.properties['PP_HISTORY'] !== null ? Autolinker.link(feature.properties['PP_HISTORY'].toLocaleString()) : '');
-
     }
 
     layer.bindPopup(popupContent, {
@@ -208,7 +196,7 @@ function pp_history_details(ffeature)
                 {
 
                     pp_history_details +=
-                        pp_history_row(bid_item + ':',
+                        pp_history_row(bid_item,
                             ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['QTY'],
                             ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['UNIT'],
                             payment_instance,
@@ -232,12 +220,24 @@ function pp_history_details(ffeature)
 
 }
 
-
 function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
 
 {
 
-    var row_string = '<tr><td>' + bid_item + '</td><td style=\"text-align: right\">' +
+    var NN = 0; // bid item index
+
+    while (base_sov[NN]["Bid Item"] != bid_item) {
+
+        NN++;
+    }
+
+
+
+
+    var row_string = '<tr><td data-toogle="tooltip" title="' +
+        base_sov[NN]['Bid Item'] + ": " +
+        base_sov[NN]['Description'] + " (" + base_sov[NN]['Unit'] + ')">' +
+        bid_item + ':</td><td style=\"text-align: right\">' +
         QTY + '</td><td>' +
         UNIT + ' in</td><td>' +
         payment_no.substring(0, 4) + ' from</td><td>' +

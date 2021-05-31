@@ -102,7 +102,7 @@ function top_nav(nav_element, pp_no = null)
               data-toggle="dropdown"\
               aria-haspopup="true"\
               aria-expanded="false">\
-             <strong>SOV</strong>\
+             SOV\
            </a>\
            <div class="dropdown-menu" aria-labelledby="navbarDropdown_sov">\
              <a class="dropdown-item" href="../sov/sov_PP01.html">PP01</a>\
@@ -119,7 +119,7 @@ function top_nav(nav_element, pp_no = null)
               data-toggle="dropdown"\
               aria-haspopup="true"\
               aria-expanded="false">\
-             <strong>Funding</strong>\
+             Funding\
            </a>\
            <div class="dropdown-menu" aria-labelledby="navbarDropdown_funding">\
              <a class="dropdown-item" href="../funding/funding_PP01.html">PP01</a>\
@@ -193,48 +193,6 @@ function top_nav(nav_element, pp_no = null)
   }
 
 
-    //         
-
-
-    //  if (nav_element == 'sov')
-
-    //  {
-
-    //      return_block +=
-
-
-
-
-    //'<li class="nav-item active active-custom custom-hover">\
-    //    <a class="nav-link nav-link-custom" href="sov.html">SOV</a>\
-    //</li>';
-
-    // } else {
-
-    //     return_block +=
-
-    //     '<li class="nav-item dropdown">\
-    //        <a class="nav-link dropdown-toggle"\
-    //           href="#" id="navbarDropdown"\
-    //           role="button"\
-    //           data-toggle="dropdown"\
-    //           aria-haspopup="true"\
-    //           aria-expanded="false">\
-    //          <strong>SOV</strong>\
-    //        </a>\
-    //        <div class="dropdown-menu" aria-labelledby="navbarDropdown">\
-    //          <a class="dropdown-item" href="#">Action</a>\
-    //          <a class="dropdown-item" href="#">Another action</a>\
-    //          <a class="dropdown-item" href="#">Something else here</a>\
-    //       </div>\
-    //     </li>';
-
-
-    //'<li class="nav-item custom-hover">\
-    //    <a class="nav-link nav-link-custom" href="sov.html">SOV</a>\
-    //</li>';
-
-    // }
 
     return return_block
 

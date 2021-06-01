@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2652J QTY - SW-36</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,width=device-width">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <link rel="stylesheet" href="../css/site_styles.css">
+    <link rel="stylesheet" href="qty.css">
+    <link rel="stylesheet" href="../funding/funding.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="../legend/L_801.png" />
+    <script src="../js/top_nav_bar.js"></script>
+    <script src="../js/misc_payment_functions.js"></script>
+    <script src="misc_qty_functions.js"></script>
+    <script src="../data/base_sov.js"></script>
+    <script src="../data/200_laterals_2.js"></script>
+
+
+    <script>
+        function qty_table_generator() {
+
+            var qty_bid_item = "SW-36";
+
+            var NN = 0; // bid item index
+
+            while (base_sov[NN]['Bid Item'] != qty_bid_item) {
+                NN++;
+            }
+
+
+            var unit_price = base_sov[NN]['Unit Price'];
+
+            var latest_pp = 5;
+
+
+            var return_block = '';
+            var lateral_body_block = '';
+            var is_qty_in_pp = false;
+            var instance_qty = 0;
+            var period_totals = [];
+            var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+            for (var pp_no = 1; pp_no < (latest_pp + 1); pp_no++) {
+
+                lateral_body_block = '';
+                period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                                
+                
+                for (var ll = 0; ll < json_200_laterals_2["features"].length; ll++) {
+
+                    if ((json_200_laterals_2["features"][ll]["properties"]["PP_HISTORY"]).hasOwnProperty(qty_bid_item)) {
+
+                        if ((json_200_laterals_2["features"][ll]
+                                ["properties"]["PP_HISTORY"]
+                                [qty_bid_item]).hasOwnProperty("PP" + zeroPad(pp_no, 2))) {
+
+                            console.log(json_200_laterals_2["features"][ll]
+                                ["properties"]["MAXIMO_ID"]);
+
+
+                            is_qty_in_pp = true;
+
+                            instance_qty = json_200_laterals_2["features"][ll]["properties"]["PP_HISTORY"]
+                                [qty_bid_item]["PP" + zeroPad(pp_no, 2)]["QTY"];
+
+                            period_totals[0] += instance_qty;
+                            period_totals[1] += instance_qty * unit_price;
+
+                            if (json_200_laterals_2["features"][ll]["properties"]["PP_HISTORY"]
+                                [qty_bid_item]["PP" + zeroPad(pp_no, 2)]["FUND"] == "SFMTA")
+
+                            {
+
+                                period_totals[2] += instance_qty;
+                                period_totals[3] += instance_qty * unit_price;
+
+                            } else if (json_200_laterals_2["features"][ll]["properties"]["PP_HISTORY"]
+                                [qty_bid_item]["PP" + zeroPad(pp_no, 2)]["FUND"] == "SFPUC-SW")
+
+                            {
+
+                                period_totals[4] += instance_qty;
+                                period_totals[5] += instance_qty * unit_price;
+
+                            } else if (json_200_laterals_2["features"][ll]["properties"]["PP_HISTORY"]
+                                [qty_bid_item]["PP" + zeroPad(pp_no, 2)]["FUND"] == "SFPUC-AWSS")
+
+                            {
+
+                                period_totals[6] += instance_qty;
+                                period_totals[7] += instance_qty * unit_price;
+
+                            } else if (json_200_laterals_2["features"][ll]["properties"]["PP_HISTORY"]
+                                [qty_bid_item]["PP" + zeroPad(pp_no, 2)]["FUND"] == "SFPUC-WD")
+
+                            {
+
+                                period_totals[8] += instance_qty;
+                                period_totals[9] += instance_qty * unit_price;
+
+                            }
+
+                            lateral_body_block +=
+
+                                '<tr class="qty_tr">\
+		         <td class="qty_td" style="text-align:left; padding:5px">' +
+                                json_200_laterals_2["features"][ll]["properties"]["ADDRESS"] +
+                                '</td>\
+			  <td class="qty_td" style="text-align:left; padding:5px">' +
+                                json_200_laterals_2["features"][ll]["properties"]["MAXIMO_ID"] +
+                                '</td>\
+			  <td class="qty_td" style="text-align:left; padding:5px">' +
+                                json_200_laterals_2["features"][ll]["properties"]["BLKLOT"] +
+                                '</td>\
+		   	  <td class="qty_td">' +
+                                instance_qty + '</td>\
+		          <td class="qty_td funding_td_amt">' +
+                                amount_cell(instance_qty * unit_price) + '</td>';
+
+                         lateral_body_block += lateral_cell_qty(ll, qty_bid_item, unit_price, pp_no, "SFMTA");
+                         lateral_body_block += lateral_cell_qty(ll, qty_bid_item, unit_price, pp_no, "SFPUC-SW");
+                         lateral_body_block += lateral_cell_qty(ll, qty_bid_item, unit_price, pp_no, "SFPUC-AWSS");
+                         lateral_body_block += lateral_cell_qty(ll, qty_bid_item, unit_price, pp_no, "SFPUC-WD");
+
+
+                            lateral_body_block += '</tr>';
+
+                        }
+
+                    }
+
+                }
+
+
+                if (is_qty_in_pp) {
+
+                    return_block +=
+
+                        '<tr class="qty_tr">\
+                        <td class="qty_td" style="text-align:left; padding:5px">\
+                          <strong>PP ' + pp_no + ' </strong>\
+                        </td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                     </tr>';
+
+                    return_block += lateral_body_block;
+
+                    return_block +=
+
+                        '<tr class="qty_tr">\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td" style="text-align:right; padding:5px">\
+                          <strong>PP ' + pp_no + ' Totals:</strong>\
+                        </td>\
+                        <td class="qty_td">' + format_unit(period_totals[0], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(period_totals[1]) + '</td>\
+                        <td class="qty_td">' + format_unit(period_totals[2], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(period_totals[3]) + '</td>\
+                        <td class="qty_td">' + format_unit(period_totals[4], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(period_totals[5]) + '</td>\
+                        <td class="qty_td">' + format_unit(period_totals[6], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(period_totals[7]) + '</td>\
+                        <td class="qty_td">' + format_unit(period_totals[8], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(period_totals[9]) + '</td>\
+                     </tr>';
+
+
+                }
+
+
+
+                for (var jj = 0; jj < 9; jj++)
+
+                {
+
+                    to_date_totals[jj] += period_totals[jj];
+
+                }
+
+            }
+
+            return_block +=
+
+                '<tr class="qty_tr">\
+                        <td class="qty_td">&nbsp</td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                     </tr>\
+                     <tr class="qty_tr">\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td"></td>\
+                        <td class="qty_td" style="text-align:right; padding: 5px">\
+                          <strong>To-Date Totals:</strong>\
+                        </td>\
+                        <td class="qty_td">' + format_unit(to_date_totals[0], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(to_date_totals[1]) + '</td>\
+                        <td class="qty_td">' + format_unit(to_date_totals[2], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(to_date_totals[3]) + '</td>\
+                        <td class="qty_td">' + format_unit(to_date_totals[4], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(to_date_totals[5]) + '</td>\
+                        <td class="qty_td">' + format_unit(to_date_totals[6], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(to_date_totals[7]) + '</td>\
+                        <td class="qty_td">' + format_unit(to_date_totals[8], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td">' + amount_cell(to_date_totals[9]) + '</td>\
+                     </tr>'
+
+
+            return return_block
+
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="menu_nav" id="menu_nav">
+        <script>
+            document.getElementById("menu_nav").innerHTML += top_nav('qty');
+        </script>
+    </div>
+
+
+
+    <div class="qty_page" id="qty_page">
+        <table class="qty_table" id="qty_table">
+            <tbody>
+                <thead class="qty_thead">
+                    <tr class="qty_tr">
+                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Address</th>
+                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Asset ID</th>
+                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Block Lot</th>
+                        <th class="qty_thead" colspan="2" style="text-align:center">Total</th>
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFMTA</th>
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - AWSS</th>
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - WD</th>
+                    </tr>
+                    <tr class="qty_tr">
+                        <td class="qty_tdh">QTY</td>
+                        <td class="qty_tdh">AMT</td>
+                        <td class="qty_tdh">QTY</td>
+                        <td class="qty_tdh">AMT</td>
+                        <td class="qty_tdh">QTY</td>
+                        <td class="qty_tdh">AMT</td>
+                        <td class="qty_tdh">QTY</td>
+                        <td class="qty_tdh">AMT</td>
+                        <td class="qty_tdh">QTY</td>
+                        <td class="qty_tdh">AMT</td>
+                    </tr>
+                </thead>
+            <tbody>
+                <script>
+                    document.getElementById("qty_table").innerHTML += qty_table_generator();
+                </script>
+            </tbody>
+        </table><br>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

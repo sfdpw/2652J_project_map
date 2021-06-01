@@ -100,14 +100,14 @@ function generate_funding_table(pp_no) {
 	    <th class="funding_tdh" style="background-color:white"></th>\
 	    <th class="funding_tdh funding_pp_amt" colspan="2">Period</th>\
 	    <th class="funding_tdh funding_td_amt" colspan="2">To Date</th>\
-	    <th class="funding_tdh funding_pp_amt_sfmta" colspan="2">Period</th>\
-	    <th class="funding_tdh funding_td_amt_sfmta" colspan="2">To Date</th>\
-	    <th class="funding_tdh funding_pp_amt_puc_sw" colspan="2">Period</th>\
-	    <th class="funding_tdh funding_td_amt_puc_sw" colspan="2">To Date</th>\
-	    <th class="funding_tdh funding_pp_amt_puc_awss" colspan="2">Period</th>\
-	    <th class="funding_tdh funding_td_amt_puc_awss" colspan="2">To Date</th>\
-	    <th class="funding_tdh funding_pp_amt_puc_wd" colspan="2">Period</th>\
-	    <th class="funding_tdh funding_td_amt_puc_wd" colspan="2">To Date</th>\
+	    <th class="funding_tdh funding_pp_amt_SFMTA" colspan="2">Period</th>\
+	    <th class="funding_tdh funding_td_amt_SFMTA" colspan="2">To Date</th>\
+	    <th class="funding_tdh funding_pp_amt_SFPUC-SW" colspan="2">Period</th>\
+	    <th class="funding_tdh funding_td_amt_SFPUC-SW" colspan="2">To Date</th>\
+	    <th class="funding_tdh funding_pp_amt_SFPUC-AWSS" colspan="2">Period</th>\
+	    <th class="funding_tdh funding_td_amt_SFPUC-AWSS" colspan="2">To Date</th>\
+	    <th class="funding_tdh funding_pp_amt_SFPUC-WD" colspan="2">Period</th>\
+	    <th class="funding_tdh funding_td_amt_SFPUC-WD" colspan="2">To Date</th>\
 	  </tr>\
 	  <tr class="funding_tr">\
 	     <th class="funding_bid_item"></th>\
@@ -116,21 +116,21 @@ function generate_funding_table(pp_no) {
 	     <th class="funding_tdhh funding_qty">QTY</th>\
 	     <th class="funding_tdhh funding_amt funding_td_amt">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_pp_amt_sfmta">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_pp_amt_SFMTA">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_td_amt_sfmta">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_td_amt_SFMTA">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_pp_amt_puc_sw">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_pp_amt_SFPUC-SW">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_td_amt_puc_sw">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_td_amt_SFPUC-SW">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_pp_amt_puc_awss">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_pp_amt_SFPUC-AWSS">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_td_amt_puc_awss">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_td_amt_SFPUC-AWSS">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_pp_amt_puc_wd">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_pp_amt_SFPUC-WD">AMT</th>\
 	     <th class="funding_tdhh funding_qty">QTY</th>\
-	     <th class="funding_tdhh funding_amt funding_td_amt_puc_wd">AMT</th>\
+	     <th class="funding_tdhh funding_amt funding_td_amt_SFPUC-WD">AMT</th>\
 	  </tr>';
 
     for (ii = 0; ii < base_sov.length; ii++)
@@ -177,35 +177,35 @@ function generate_funding_table(pp_no) {
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[3]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[4] + '</td>\
-	     <td class="funding_td funding_pp_amt_sfmta">' +
+	     <td class="funding_td funding_pp_amt_SFMTA">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[5]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[6] + '</td>\
-	     <td class="funding_td funding_td_amt_sfmta">' +
+	     <td class="funding_td funding_td_amt_SFMTA">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[7]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[8] + '</td>\
-	     <td class="funding_td funding_pp_amt_puc_sw">' +
+	     <td class="funding_td funding_pp_amt_SFPUC-SW">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[9]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[10] + '</td>\
-	     <td class="funding_td funding_td_amt_puc_sw">' +
+	     <td class="funding_td funding_td_amt_SFPUC-SW">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[11]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[12] + '</td>\
-	     <td class="funding_td funding_pp_amt_puc_awss">' +
+	     <td class="funding_td funding_pp_amt_SFPUC-AWSS">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[13]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[14] + '</td>\
-	     <td class="funding_td funding_td_amt_puc_awss">' +
+	     <td class="funding_td funding_td_amt_SFPUC-AWSS">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[15]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[16] + '</td>\
-	     <td class="funding_td funding_pp_amt_puc_wd">' +
+	     <td class="funding_td funding_pp_amt_SFPUC-WD">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[17]) + '</td>\
 	     <td class="funding_td">' +
             period_funding_details(base_sov[ii]["Bid Item"], pp_no)[18] + '</td>\
-	     <td class="funding_td funding_td_amt_puc_wd">' +
+	     <td class="funding_td funding_td_amt_SFPUC-WD">' +
             amount_cell(period_funding_details(base_sov[ii]["Bid Item"], pp_no)[19]) + '</td>\
 	  </tr>';
 

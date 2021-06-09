@@ -191,17 +191,25 @@ function pp_history_details(ffeature)
 
             {
 
-                for (const payment_instance in ffeature.properties['PP_HISTORY'][bid_item])
+                for (const payment_no in ffeature.properties['PP_HISTORY'][bid_item])
 
                 {
 
-                    pp_history_details +=
-                        pp_history_row(bid_item,
-                            ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['QTY'],
-                            ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['UNIT'],
-                            payment_instance,
-                            ffeature.properties['PP_HISTORY'][bid_item][payment_instance]['FUND']);
+                   for (const fund in ffeature.properties['PP_HISTORY'][bid_item][payment_no])
 
+
+                    {
+
+                     pp_history_details +=
+                        pp_history_row(bid_item,
+                            ffeature.properties['PP_HISTORY'][bid_item][payment_no][fund]['QTY'],
+                            ffeature.properties['PP_HISTORY'][bid_item][payment_no][fund]['UNIT'],
+                            payment_no,
+                            fund);
+
+                
+                    }
+                
                 }
 
             }

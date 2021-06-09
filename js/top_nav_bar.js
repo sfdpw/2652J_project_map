@@ -65,8 +65,24 @@ function top_nav(nav_element, pp_no = null)
                 <a class="dropdown-item" href="funding/funding_PP04.html">PP04</a>\
                 <a class="dropdown-item" href="funding/funding_PP05.html">PP05</a>\
               </div>\
+            </li>\
+            <li class="nav-item dropdown">\
+              <a class="nav-link dropdown-toggle"\
+                 href="#" id="navbarDropdown_qty"\
+                 role="button"\
+                 data-toggle="dropdown"\
+                 aria-haspopup="true"\
+                 aria-expanded="false">\
+                 QTYs\
+              </a>\
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown_qty">\
+                <a class="dropdown-item" href="qty/qty_SW-32.html">SW-32</a>\
+                <a class="dropdown-item" href="qty/qty_SW-36.html">SW-36</a>\
+                <a class="dropdown-item" href="qty/qty_SW-37.html">SW-37</a>\
+                <a class="dropdown-item" href="qty/qty_SW-39.html">SW-39</a>\
+                <a class="dropdown-item" href="qty/qty_SW-41.html">SW-41</a>\
+              </div>\
             </li>';
-
 
         return_block +=
 
@@ -128,7 +144,24 @@ function top_nav(nav_element, pp_no = null)
              <a class="dropdown-item" href="../funding/funding_PP04.html">PP04</a>\
              <a class="dropdown-item" href="../funding/funding_PP05.html">PP05</a>\
            </div>\
-         </li>';        
+         </li>\
+         <li class="nav-item dropdown">\
+              <a class="nav-link dropdown-toggle"\
+                 href="#" id="navbarDropdown_qty"\
+                 role="button"\
+                 data-toggle="dropdown"\
+                 aria-haspopup="true"\
+                 aria-expanded="false">\
+                 QTYs\
+              </a>\
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown_qty">\
+                <a class="dropdown-item" href="../qty/qty_SW-32.html">SW-32</a>\
+                <a class="dropdown-item" href="../qty/qty_SW-36.html">SW-36</a>\
+                <a class="dropdown-item" href="../qty/qty_SW-37.html">SW-37</a>\
+                <a class="dropdown-item" href="../qty/qty_SW-39.html">SW-39</a>\
+                <a class="dropdown-item" href="../qty/qty_SW-41.html">SW-41</a>\
+              </div>\
+            </li>';        
          
     if (nav_element == 'specs')
 

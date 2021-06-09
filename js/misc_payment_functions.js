@@ -62,3 +62,53 @@ function format_unit(input_num, unit) {
     return return_string
 
 }
+
+
+function amount_or_blank(input_num) {
+
+    var return_block = '';
+
+    if  (Math.abs(input_num) > 0)
+
+    {
+    
+     return_block = amount_cell(input_num);
+    
+     }
+
+    return return_block
+
+    }
+    
+function qty_or_blank(input_num, unit) {
+
+    var return_block = '';
+
+    if  (Math.abs(input_num) > 0)
+
+    {
+    
+     if ( unit == 'LF' || unit == 'SF' || unit == 'CY' ||unit == 'TON')
+     
+     { 
+    
+      return_block = input_num.toFixed(2);
+    
+      }
+      
+     else if  ( unit == 'EA')
+    
+      { 
+    
+       return_block = input_num;
+    
+      }
+    
+    
+     }
+
+    return return_block
+
+    }  
+    
+    

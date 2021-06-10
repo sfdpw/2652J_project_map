@@ -239,14 +239,16 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
         NN++;
     }
 
-
+    var neg_space = '';
+    
+    if (QTY > 0) {neg_space= '&nbsp;';}
 
 
     var row_string = '<tr><td data-toogle="tooltip" title="' +
         base_sov[NN]['Bid Item'] + ": " +
         base_sov[NN]['Description'] + " (" + base_sov[NN]['Unit'] + ')">' +
-        bid_item + ':</td><td style=\"text-align: right\">' +
-        QTY + '</td><td>' +
+        bid_item + ':</td><td style=\"text-align: left\">' + neg_space +
+        format_unit(QTY, UNIT) + '</td><td>' +
         UNIT + ' in</td><td>' +
         payment_no.substring(0, 4) + ' from</td><td>' +
         FUND + '</td></tr>';

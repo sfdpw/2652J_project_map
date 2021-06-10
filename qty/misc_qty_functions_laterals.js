@@ -229,7 +229,7 @@ function qty_table_generator_laterals(qty_bid_item) {
          <tr class="qty_tr">\
           <td></td>\
           <td></td>\
-          <td><strong>To Date Totals:</strong></td>\
+          <td style="padding:5px"><strong>To Date Totals:</strong></td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
             <strong>' + qty_or_blank(to_date_totals[0], base_sov[NN]['Unit']) + '</strong>\
           </td>\

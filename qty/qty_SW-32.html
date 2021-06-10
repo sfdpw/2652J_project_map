@@ -30,7 +30,8 @@
 <body>
     <div class="menu_nav" id="menu_nav">
         <script>
-            document.getElementById("menu_nav").innerHTML += top_nav('qty');
+            var qty_bid_item = 'SW-32';
+            document.getElementById("menu_nav").innerHTML += top_nav('qty', null, qty_bid_item);
         </script>
     </div>
 
@@ -40,7 +41,7 @@
         <table class="qty_table" id="qty_table">
             <tbody>
                 <script>
-                    document.getElementById("qty_table").innerHTML += qty_table_generator_laterals('SW-32');
+                    document.getElementById("qty_table").innerHTML += qty_table_generator_laterals(qty_bid_item);
                 </script>
             </tbody>
         </table><br>

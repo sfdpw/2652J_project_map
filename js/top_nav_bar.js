@@ -104,6 +104,15 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                  QTYs\
               </a>\
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_qty">\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-11.html">SW-11</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-12.html">SW-12</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-13.html">SW-13</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-14.html">SW-14</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-15.html">SW-15</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-16.html">SW-16</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-17.html">SW-17</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-18.html">SW-18</a>\
+                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-29.html">SW-29</a>\
                 <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-32.html">SW-32</a>\
                 <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-36.html">SW-36</a>\
                 <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-37.html">SW-37</a>\

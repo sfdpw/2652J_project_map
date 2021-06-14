@@ -206,6 +206,8 @@ function pp_history_details(ffeature)
                             ffeature.properties['PP_HISTORY'][bid_item][payment_no][fund]['UNIT'],
                             payment_no,
                             fund);
+                     
+
 
                 
                     }
@@ -238,6 +240,8 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
 
         NN++;
     }
+
+
 
     var neg_space = '';
     

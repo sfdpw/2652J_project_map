@@ -31,8 +31,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Scope</strong><br>' +
             (feature.properties['SCOPE_DTLS'] !== null ? Autolinker.link(feature.properties['SCOPE_DTLS'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Submittal(s)</strong><br>' +
-            (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+<strong>Post-Con TVI Submittal - Video</strong><br>' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Submittal + ' - ' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Video +
             '<br><br>\
 <strong>Status</strong><br>' +
             (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
@@ -48,6 +49,8 @@ function pop_up_creator_for_domain(feature, layer)
         layer.feature.L_index_stored_in_each_feature <= SW_MH_index_limits[1])
 
     {
+
+
 
         var popupContent =
             '<strong>Asset ID</strong><br>' +
@@ -89,8 +92,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Scope</strong><br>' +
             (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Submittal(s)</strong><br>' +
-            (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+<strong>Post-Con TVI Submittal - Video</strong><br>' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Submittal + ' - ' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Video +
             '<br><br>\
 <strong>Status</strong><br>' +
             (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
@@ -150,8 +154,9 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Scope</strong><br>' +
             (feature.properties['SCOPE'] !== null ? Autolinker.link(feature.properties['SCOPE'].toLocaleString()) : '') +
             '<br><br>\
-<strong>Submittal(s)</strong><br>' +
-            (feature.properties['SUBMITTALS'] !== null ? Autolinker.link(feature.properties['SUBMITTALS'].toLocaleString()) : '') +
+<strong>Post-Con TVI Submittal - Video</strong><br>' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Submittal + ' - ' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Video +
             '<br><br>\
 <strong>Status</strong><br>' +
             (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +
@@ -236,7 +241,7 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
 
     var NN = 0; // bid item index
 
-    while (base_sov[NN]["Bid Item"] != bid_item) {
+    while (base_sov[NN]["Bid Item"].replace('-0','-') != bid_item.replace('-0','-')) {
 
         NN++;
     }

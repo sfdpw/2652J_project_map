@@ -12,16 +12,16 @@ function period_funding_details(bid_item_id, pp_no) {
     {
 
         return_array[5] = base_sov[NN]["Amount to Date"]["SFMTA"]["PP" + zeroPad(pp_no, 2)];
-        return_array[4] = format_unit(return_array[5] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
+        return_array[4] = format_unit(return_array[5] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
 
-        return_array[9] = base_sov[NN]["Amount to Date"]["SFPUC_SW"]["PP" + zeroPad(pp_no, 2)];
-        return_array[8] = format_unit(return_array[9] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
+        return_array[9] = base_sov[NN]["Amount to Date"]["SFPUC-SW"]["PP" + zeroPad(pp_no, 2)];
+        return_array[8] = format_unit(return_array[9] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
         
-        return_array[13] = base_sov[NN]["Amount to Date"]["SFPUC_AWSS"]["PP" + zeroPad(pp_no, 2)];
-        return_array[12] = format_unit(return_array[13] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
+        return_array[13] = base_sov[NN]["Amount to Date"]["SFPUC-AWSS"]["PP" + zeroPad(pp_no, 2)];
+        return_array[12] = format_unit(return_array[13] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
 
-        return_array[17] = base_sov[NN]["Amount to Date"]["SFPUC_WD"]["PP" + zeroPad(pp_no, 2)];
-        return_array[16] = format_unit(return_array[17] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
+        return_array[17] = base_sov[NN]["Amount to Date"]["SFPUC-WD"]["PP" + zeroPad(pp_no, 2)];
+        return_array[16] = format_unit(return_array[17] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
 
         return_array[1] = (return_array[5] + return_array[9] + return_array[13] + return_array[17])
         return_array[0] = format_unit(return_array[1] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
@@ -36,13 +36,13 @@ function period_funding_details(bid_item_id, pp_no) {
         {
 
             return_array[7] += base_sov[NN]["Amount to Date"]["SFMTA"]["PP" + zeroPad(pp, 2)];
-            return_array[6] = format_unit(return_array[7] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
-            return_array[11] += base_sov[NN]["Amount to Date"]["SFPUC_SW"]["PP" + zeroPad(pp, 2)];
-            return_array[10] = format_unit(return_array[11] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
-            return_array[15] += base_sov[NN]["Amount to Date"]["SFPUC_AWSS"]["PP" + zeroPad(pp, 2)];
-            return_array[14] = format_unit(return_array[15] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
-            return_array[19] += base_sov[NN]["Amount to Date"]["SFPUC_WD"]["PP" + zeroPad(pp, 2)];
-            return_array[18] = format_unit(return_array[19] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit']);
+            return_array[6] = format_unit(return_array[7] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
+            return_array[11] += base_sov[NN]["Amount to Date"]["SFPUC-SW"]["PP" + zeroPad(pp, 2)];
+            return_array[10] = format_unit(return_array[11] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
+            return_array[15] += base_sov[NN]["Amount to Date"]["SFPUC-AWSS"]["PP" + zeroPad(pp, 2)];
+            return_array[14] = format_unit(return_array[15] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
+            return_array[19] += base_sov[NN]["Amount to Date"]["SFPUC-WD"]["PP" + zeroPad(pp, 2)];
+            return_array[18] = format_unit(return_array[19] / base_sov[NN]['Unit Price'], base_sov[NN]['Unit'], 2);
 
         }
 

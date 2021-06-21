@@ -1,4 +1,4 @@
-function qty_table_generator_laterals(qty_bid_item) {
+function qty_table_generator_laterals_lat_culv_TVI(qty_bid_item) {
 
     var NN = 0; // bid item index
 
@@ -16,7 +16,8 @@ function qty_table_generator_laterals(qty_bid_item) {
                     <tr class="qty_tr">\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Address</th>\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Asset ID</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Block Lot</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Submittal</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Video</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">Total</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFMTA</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
@@ -46,7 +47,12 @@ function qty_table_generator_laterals(qty_bid_item) {
     var payment_block = '';
 
     var lateral_extracted_details = [];
+    var lateral_coordinates = [];
     var lateral_properties = [];
+
+    var culvert_extracted_details = [];
+    var culvert_coordinates = [];
+    var culvert_properties = [];
 
 
     var period_totals = [];
@@ -65,7 +71,8 @@ function qty_table_generator_laterals(qty_bid_item) {
 
         {
 
-            lateral_properties = lateral["properties"]
+            lateral_properties = lateral["properties"]   
+            lateral_coordinates = lateral["geometry"]["coordinates"];
             lateral_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
@@ -82,8 +89,19 @@ function qty_table_generator_laterals(qty_bid_item) {
                     is_qty_in_pp = true;
 
                     lateral_extracted_details[0] = lateral_properties["ADDRESS"];
-                    lateral_extracted_details[1] = lateral_properties["MAXIMO_ID"];
-                    lateral_extracted_details[2] = lateral_properties["BLKLOT"];
+
+                        
+                    lateral_extracted_details[1] =
+                    "<a href=\"..\\index.html#20/" + 
+                    lateral_coordinates[0][0][1] +"/" + 
+                    lateral_coordinates[0][0][0] +                     
+                    "\" target=\"_blank\">" +
+                    lateral_properties["MAXIMO_ID"];
+                    lateral_extracted_details[2] = [lateral_properties.SUBMITTALS.TVI_PST_CON.Submittal, 
+                                                    lateral_properties.SUBMITTALS.TVI_PST_CON.Video]
+
+
+
 
                     for (ff = 0; ff < funds.length; ff++)
 
@@ -123,8 +141,10 @@ function qty_table_generator_laterals(qty_bid_item) {
                         lateral_extracted_details[0] + '</td>\
                         <td class="qty_td" style="text-align:left; padding:5px">' +
                         lateral_extracted_details[1] + '</td>\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
-                        lateral_extracted_details[2] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        lateral_extracted_details[2][0] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        lateral_extracted_details[2][1] + '</td>\
                         <td class="qty_td" style="text-align:right; padding:5px">' +
                         qty_or_blank(lateral_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
                         <td class="qty_td funding_td_amt" style="text-padding:5px">' +
@@ -157,6 +177,117 @@ function qty_table_generator_laterals(qty_bid_item) {
         }
 
 
+        for (const culvert of json_204_culverts_3["features"])
+
+        {
+
+            culvert_properties = culvert["properties"]   
+            culvert_coordinates = culvert["geometry"]["coordinates"];
+            culvert_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+
+            if (culvert_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
+
+            {
+
+
+                if (culvert_properties["PP_HISTORY"][qty_bid_item].hasOwnProperty('PP' + zeroPad(pp, 2)))
+
+
+                {
+
+                    is_qty_in_pp = true;
+
+                    culvert_extracted_details[0] = "-";
+
+                        
+                    culvert_extracted_details[1] =
+                    "<a href=\"..\\index.html#20/" + 
+                    culvert_coordinates[0][0][1] +"/" + 
+                    culvert_coordinates[0][0][0] +                     
+                    "\" target=\"_blank\">" +
+                    culvert_properties["PSR"];
+                    culvert_extracted_details[2] = [culvert_properties.SUBMITTALS.TVI_PST_CON.Submittal, 
+                                                    culvert_properties.SUBMITTALS.TVI_PST_CON.Video]
+
+
+
+
+                    for (ff = 0; ff < funds.length; ff++)
+
+                    {
+
+
+                        if (culvert_properties["PP_HISTORY"][qty_bid_item]
+                            ['PP' + zeroPad(pp, 2)].hasOwnProperty(funds[ff]))
+
+                        {
+
+                            culvert_extracted_details[2 * ff + 5] = culvert_properties["PP_HISTORY"]
+                                [qty_bid_item]['PP' + zeroPad(pp, 2)]
+                                [funds[ff]]["QTY"];
+
+                            culvert_extracted_details[2 * ff + 6] =
+                                culvert_extracted_details[2 * ff + 5] * unit_price;
+
+
+                            culvert_extracted_details[3] += culvert_extracted_details[2 * ff + 5];
+                            culvert_extracted_details[4] += culvert_extracted_details[2 * ff + 6];
+
+
+                            period_totals[0] += culvert_extracted_details[2 * ff + 5];
+                            period_totals[1] += culvert_extracted_details[2 * ff + 6];
+                            period_totals[2 * ff + 2] += culvert_extracted_details[2 * ff + 5];
+                            period_totals[2 * ff + 3] += culvert_extracted_details[2 * ff + 6];
+
+                        }
+
+                    }
+
+                    payment_block +=
+
+                        '<tr class="qty_tr">\
+                        <td class="qty_td" style="text-align:left; padding:5px">' +
+                        culvert_extracted_details[0] + '</td>\
+                        <td class="qty_td" style="text-align:left; padding:5px">' +
+                        culvert_extracted_details[1] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        culvert_extracted_details[2][0] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        culvert_extracted_details[2][1] + '</td>\
+                        <td class="qty_td" style="text-align:right; padding:5px">' +
+                        qty_or_blank(culvert_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
+                        <td class="qty_td funding_td_amt" style="text-padding:5px">' +
+                        amount_or_blank(culvert_extracted_details[4]) + '</td>';
+
+
+                    for (ff = 0; ff < funds.length; ff++)
+
+                    {
+
+                        payment_block +=
+
+                            '<td class="qty_td" style="text-align:right; padding:5px">' +
+                            qty_or_blank(culvert_extracted_details[2 * ff + 5], base_sov[NN]['Unit']) + '</td>\
+                                     <td class="qty_td funding_td_amt_' + funds[ff] + '" style="padding:5px">' +
+                            amount_or_blank(culvert_extracted_details[2 * ff + 6]) + '</td>';
+
+
+                    }
+
+
+                }
+
+
+                payment_block += '</tr>';
+
+            }
+
+
+        }
+
+
+
         if (is_qty_in_pp)
 
         {
@@ -172,7 +303,9 @@ function qty_table_generator_laterals(qty_bid_item) {
                                            </td>\
                                            <td>\
                                            </td>\
-                                           <td style="padding:5px; text-align:left">\
+                                           <td>\
+                                           </td>\
+                                           <td style="padding:5px; text-align:right">\
                                              <strong>PP ' + pp + ' Totals:</strong>\
                                            </td>\
                                            <td class="qty_td"\
@@ -203,7 +336,7 @@ function qty_table_generator_laterals(qty_bid_item) {
 
             }
 
-            return_block += '</tr><tr><td  colspan="13">&nbsp;</td></tr>';
+            return_block += '</tr><tr><td  colspan="14">&nbsp;</td></tr>';
 
 
 
@@ -224,12 +357,13 @@ function qty_table_generator_laterals(qty_bid_item) {
     return_block +=
     
         '<tr class="qty_tr">\
-          <td colspan="13">&nbsp;</td>\
+          <td colspan="1r">&nbsp;</td>\
          </tr>\
          <tr class="qty_tr">\
           <td></td>\
           <td></td>\
-          <td style="padding:5px"><strong>To Date Totals:</strong></td>\
+          <td></td>\
+          <td style="padding:5px; text-align:right"><strong>To Date Totals:</strong></td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
             <strong>' + qty_or_blank(to_date_totals[0], base_sov[NN]['Unit']) + '</strong>\
           </td>\

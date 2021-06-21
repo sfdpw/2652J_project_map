@@ -8,15 +8,13 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
     var unit_price = base_sov[NN]['Unit Price'];
 
-    var latest_pp = 6;
+    var latest_pp = latest_pp_no(base_sov);
 
     var return_block = 
         
                  '<thead class="qty_thead">\
                     <tr class="qty_tr">\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Asset ID</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Start Location</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">End Location</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">Total</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFMTA</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
@@ -45,7 +43,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
     var payment_block = '';
     var sw_main_extracted_details = [];
     var sw_main_properties = [];
-    var funds = ["SFMTA", "SFPUC-SW", "SFPUC-AWSS", "SFPUC-WD"];
+
 
     var period_totals = [];
     var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -65,7 +63,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
             culvert_properties = culvert["properties"];
             culvert_coordinates = culvert["geometry"]["coordinates"];
-            culvert_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            culvert_extracted_details = ['', '', '',0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
             if (culvert_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
@@ -81,8 +79,8 @@ function qty_table_generator_sw_mains(qty_bid_item) {
                     is_qty_in_pp = true;
 
                     culvert_extracted_details[0] = culvert_properties["PSR"];
-                    culvert_extracted_details[1] = "Start"; //sw_main_coordinates[0][0];
-                    culvert_extracted_details[2] = "Stop"; //sw_main_coordinates[0][-1];
+                    culvert_extracted_details[1] = "";//"Start"; //sw_main_coordinates[0][0];
+                    culvert_extracted_details[2] = "";//"Stop"; //sw_main_coordinates[0][-1];
 
                     for (ff = 0; ff < funds.length; ff++)
 
@@ -120,10 +118,6 @@ function qty_table_generator_sw_mains(qty_bid_item) {
                         '<tr class="qty_tr">\
                         <td class="qty_td" style="text-align:left; padding:5px">' +
                         culvert_extracted_details[0] + '</td>\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
-                        culvert_extracted_details[1] + '</td>\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
-                        culvert_extracted_details[2] + '</td>\
                         <td class="qty_td" style="text-align:right; padding:5px">' +
                         qty_or_blank(culvert_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
                         <td class="qty_td funding_td_amt" style="text-padding:5px">' +
@@ -147,8 +141,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
                 }
 
-
-                payment_block += '</tr>';
+            return_block += '</tr>';
 
             }
 
@@ -164,14 +157,12 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
 
             return_block += '<tr class="qty_tr">\
-                                          <td style="padding:5px"><strong>Payment Period ' + pp + '</strong></td>\
+                                          <td style="padding:5px; text-align:left">\
+                                            <strong>Payment Period ' + pp + '</strong>\
+                                          </td>\
                                         </tr>' + payment_block +
-                '<tr>\
-                                           <td>\
-                                           </td>\
-                                           <td>\
-                                           </td>\
-                                           <td style="padding:5px; text-align:left">\
+                                       '<tr>\
+                                           <td style="padding:5px; text-align:right">\
                                              <strong>PP ' + pp + ' Totals:</strong>\
                                            </td>\
                                            <td class="qty_td"\
@@ -202,7 +193,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
             }
 
-            return_block += '</tr>';
+            return_block += '</tr><tr><td  colspan="11">&nbsp;</td></tr>';
 
 
 
@@ -223,12 +214,10 @@ function qty_table_generator_sw_mains(qty_bid_item) {
     return_block +=
     
         '<tr class="qty_tr">\
-          <td colspan="10">&nbsp;</td>\
+          <td colspan="11">&nbsp;</td>\
          </tr>\
          <tr class="qty_tr">\
-          <td></td>\
-          <td></td>\
-          <td style="padding:5px"><strong>To Date Totals:</strong></td>\
+          <td style="padding:5px; text-align:right"><strong>To Date Totals:</strong></td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
             <strong>' + qty_or_blank(to_date_totals[0], base_sov[NN]['Unit']) + '</strong>\
           </td>\

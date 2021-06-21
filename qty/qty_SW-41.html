@@ -12,19 +12,20 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-
     <link rel="stylesheet" href="../css/site_styles.css">
     <link rel="stylesheet" href="qty.css">
     <link rel="stylesheet" href="../funding/funding.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="../legend/L_801.png" />
     <script src="../js/top_nav_bar.js"></script>
+    <script src="../data/200_laterals_2.js"></script>\
+    <script src="../data/201_MHs_5.js"></script>\
+    <script src="../data/202_SW_mains_0.js"></script>\
+    <script src="../data/203_drains_4.js"></script>\
+    <script src="../data/204_culverts_3.js"></script>
     <script src="../js/misc_payment_functions.js"></script>
-    <script src="misc_qty_functions_laterals.js"></script>
+    <script src="misc_qty_functions_laterals_and_culverts_TVI.js"></script>
     <script src="../data/base_sov.js"></script>
-    <script src="../data/200_laterals_2.js"></script>
-
-
 </head>
 
 <body>
@@ -41,7 +42,8 @@
         <table class="qty_table" id="qty_table">
             <tbody>
                 <script>
-                    document.getElementById("qty_table").innerHTML += qty_table_generator_laterals(qty_bid_item);
+                    document.getElementById("qty_table").innerHTML +=  
+                             qty_table_generator_laterals_lat_culv_TVI(qty_bid_item);
                 </script>
             </tbody>
         </table><br>

@@ -75,6 +75,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                 <a class="dropdown-item" href="' + nav_path +  'sov/sov_PP03.html">PP03</a>\
                 <a class="dropdown-item" href="' + nav_path +  'sov/sov_PP04.html">PP04</a>\
                 <a class="dropdown-item" href="' + nav_path +  'sov/sov_PP05.html">PP05</a>\
+                <a class="dropdown-item" href="' + nav_path +  'sov/sov_PP06.html">PP06</a>\
               </div>\
             </li>\
             <li class="nav-item dropdown">\
@@ -92,6 +93,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                 <a class="dropdown-item" href="' + nav_path +  'funding/funding_PP03.html">PP03</a>\
                 <a class="dropdown-item" href="' + nav_path +  'funding/funding_PP04.html">PP04</a>\
                 <a class="dropdown-item" href="' + nav_path +  'funding/funding_PP05.html">PP05</a>\
+                <a class="dropdown-item" href="' + nav_path +  'funding/funding_PP06.html">PP06</a>\
               </div>\
             </li>\
             <li class="nav-item dropdown">\
@@ -104,22 +106,45 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                  QTYs\
               </a>\
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_qty">\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-11.html">SW-11</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-12.html">SW-12</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-13.html">SW-13</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-14.html">SW-14</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-15.html">SW-15</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-16.html">SW-16</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-17.html">SW-17</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-18.html">SW-18</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-29.html">SW-29</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-32.html">SW-32</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-36.html">SW-36</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-37.html">SW-37</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-39.html">SW-39</a>\
-                <a class="dropdown-item" href="' + nav_path +  'qty/qty_SW-41.html">SW-41</a>\
+                <a class="dropdown-item" href="' + nav_path + 
+                   'qty/qty_SW-02.html">SW-02 - (N) MH - STD 87,181</a>\
+                <a class="dropdown-item" href="' + nav_path +  
+                   'qty/qty_SW-09.html">SW-09 - (N) CB - STD 87,188</a>\
+                <a class="dropdown-item" href="' + nav_path + 
+                   'qty/qty_SW-11.html">SW-11 - (N) 8" VCP SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-12.html">SW-12 - (N) 12" VCP SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-13.html">SW-13 - (N) 12" VCP SW Main at Parking Strip</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-14.html">SW-14 - (N) 15" VCP SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-15.html">SW-15 - (N) 15" VCP SW Main at Parking Strip</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-16.html">SW-16 - (N) 18" VCP SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-17.html">SW-17 - (N) 21" VCP SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-18.html">SW-18 - (N) 24" VCP SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-29.html">SW-29 - (N) 10" VCP Culvert</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-32.html">SW-32 - Pre-Con TVI of (E) Side Sewer</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-34.html">SW-34 - Pre-Con TVI of (E) Culvert</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-36.html">SW-36 - Connection between Side Sewer and SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-37.html">SW-37 - (N) 6" / 8" Side Sewer</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-39.html">SW-39 - (N) Vent / Trap for 6" / 8" Side Sewer</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-40.html">SW-40 - Post-Con TVI of (N) SW Main</a>\
+                <a class="dropdown-item" href="' + nav_path +
+                   'qty/qty_SW-41.html">SW-41 - Post-Con TVI of (N) Side Sewer or Culvert</a>\
               </div>\
-            </li>';
+            </li>';      
+            
          
     if (nav_element == 'specs')
 
@@ -151,7 +176,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
          '</ul>\
         </div>\
         <div style="float:right; padding-right:10px; color:white; font-weight:bold">Schedule of Values (SOV) for PP ' + pp_no + '</div>\
-      </nav>';
+     </nav>';
 
      } 
      
@@ -164,7 +189,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
       '</ul>\
         </div>\
         <div style="float:right; padding-right:10px; color:white; font-weight:bold">Funding Breakdown for PP ' + pp_no + '</div>\
-      </nav>';   
+       </nav>';   
      
      }
      
@@ -183,7 +208,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                     data-toogle="tooltip"\
 	            title="'  + base_sov[NN]['Description'] +
 	                  ' (' + base_sov[NN]['Unit'] + ')"\> Quantity Details for ' + bid_item_id + '</div>\
-      </nav>';   
+     </nav>';   
      
      
      
@@ -202,9 +227,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
      
      }
 
-
     return return_block
 
   }
+  
+  
 
 

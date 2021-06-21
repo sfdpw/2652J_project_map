@@ -1,9 +1,11 @@
-function qty_table_generator_laterals(qty_bid_item) {
+function qty_table_generator_drains(qty_bid_item) {
 
     var NN = 0; // bid item index
 
-    while (base_sov[NN]['Bid Item'] != qty_bid_item) {
+    while (base_sov[NN]['Bid Item'] != qty_bid_item.replace('-0','-')) {
+
         NN++;
+
     }
 
     var unit_price = base_sov[NN]['Unit Price'];
@@ -14,9 +16,8 @@ function qty_table_generator_laterals(qty_bid_item) {
         
                  '<thead class="qty_thead">\
                     <tr class="qty_tr">\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Address</th>\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Asset ID</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Block Lot</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Node ID</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">Total</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFMTA</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
@@ -41,12 +42,11 @@ function qty_table_generator_laterals(qty_bid_item) {
     var dd = 0;
     var pp = 0;
     var ff = 0;
-
     var is_qty_in_pp = false;
     var payment_block = '';
-
-    var lateral_extracted_details = [];
-    var lateral_properties = [];
+    var drain_extracted_details = [];
+    var drain_properties = [];
+    var drain_coordinates = [];
 
 
     var period_totals = [];
@@ -61,56 +61,57 @@ function qty_table_generator_laterals(qty_bid_item) {
         period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
-        for (const lateral of json_200_laterals_2["features"])
+        for (const drain of json_203_drains_4["features"])
 
         {
 
-            lateral_properties = lateral["properties"]
-            lateral_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            drain_properties = drain["properties"];
+            drain_coordinates = ["geometry"]["coordinates"];
+            drain_extracted_details = ['', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
-            if (lateral_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
+            if (drain_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
 
             {
 
 
-                if (lateral_properties["PP_HISTORY"][qty_bid_item].hasOwnProperty('PP' + zeroPad(pp, 2)))
+                if (drain_properties["PP_HISTORY"][qty_bid_item].hasOwnProperty('PP' + zeroPad(pp, 2)))
 
 
                 {
 
                     is_qty_in_pp = true;
 
-                    lateral_extracted_details[0] = lateral_properties["ADDRESS"];
-                    lateral_extracted_details[1] = lateral_properties["MAXIMO_ID"];
-                    lateral_extracted_details[2] = lateral_properties["BLKLOT"];
+                    drain_extracted_details[0] = drain_properties["MAXIMO_ID"];
+                    drain_extracted_details[1] = drain_properties["NODE_ID"];
+                    //drain_extracted_details[2] = "Stop"; //sw_main_coordinates[0][-1];
 
                     for (ff = 0; ff < funds.length; ff++)
 
                     {
 
 
-                        if (lateral_properties["PP_HISTORY"][qty_bid_item]
+                        if (drain_properties["PP_HISTORY"][qty_bid_item]
                             ['PP' + zeroPad(pp, 2)].hasOwnProperty(funds[ff]))
 
                         {
 
-                            lateral_extracted_details[2 * ff + 5] = lateral_properties["PP_HISTORY"]
+                            drain_extracted_details[2 * ff + 5] = drain_properties["PP_HISTORY"]
                                 [qty_bid_item]['PP' + zeroPad(pp, 2)]
                                 [funds[ff]]["QTY"];
 
-                            lateral_extracted_details[2 * ff + 6] =
-                                lateral_extracted_details[2 * ff + 5] * unit_price;
+                            drain_extracted_details[2 * ff + 6] =
+                                drain_extracted_details[2 * ff + 5] * unit_price;
 
 
-                            lateral_extracted_details[3] += lateral_extracted_details[2 * ff + 5];
-                            lateral_extracted_details[4] += lateral_extracted_details[2 * ff + 6];
+                            drain_extracted_details[3] += drain_extracted_details[2 * ff + 5];
+                            drain_extracted_details[4] += drain_extracted_details[2 * ff + 6];
 
 
-                            period_totals[0] += lateral_extracted_details[2 * ff + 5];
-                            period_totals[1] += lateral_extracted_details[2 * ff + 6];
-                            period_totals[2 * ff + 2] += lateral_extracted_details[2 * ff + 5];
-                            period_totals[2 * ff + 3] += lateral_extracted_details[2 * ff + 6];
+                            period_totals[0] += drain_extracted_details[2 * ff + 5];
+                            period_totals[1] += drain_extracted_details[2 * ff + 6];
+                            period_totals[2 * ff + 2] += drain_extracted_details[2 * ff + 5];
+                            period_totals[2 * ff + 3] += drain_extracted_details[2 * ff + 6];
 
                         }
 
@@ -120,15 +121,13 @@ function qty_table_generator_laterals(qty_bid_item) {
 
                         '<tr class="qty_tr">\
                         <td class="qty_td" style="text-align:left; padding:5px">' +
-                        lateral_extracted_details[0] + '</td>\
+                        drain_extracted_details[0] + '</td>\
                         <td class="qty_td" style="text-align:left; padding:5px">' +
-                        lateral_extracted_details[1] + '</td>\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
-                        lateral_extracted_details[2] + '</td>\
+                        drain_extracted_details[1] + '</td>\
                         <td class="qty_td" style="text-align:right; padding:5px">' +
-                        qty_or_blank(lateral_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
+                        fixed_qty_or_blank(drain_extracted_details[3], 0) + '</td>\
                         <td class="qty_td funding_td_amt" style="text-padding:5px">' +
-                        amount_or_blank(lateral_extracted_details[4]) + '</td>';
+                        amount_or_blank(drain_extracted_details[4]) + '</td>';
 
 
                     for (ff = 0; ff < funds.length; ff++)
@@ -138,9 +137,9 @@ function qty_table_generator_laterals(qty_bid_item) {
                         payment_block +=
 
                             '<td class="qty_td" style="text-align:right; padding:5px">' +
-                            qty_or_blank(lateral_extracted_details[2 * ff + 5], base_sov[NN]['Unit']) + '</td>\
+                            fixed_qty_or_blank(drain_extracted_details[2 * ff + 5], 2) + '</td>\
                                      <td class="qty_td funding_td_amt_' + funds[ff] + '" style="padding:5px">' +
-                            amount_or_blank(lateral_extracted_details[2 * ff + 6]) + '</td>';
+                            amount_or_blank(drain_extracted_details[2 * ff + 6]) + '</td>';
 
 
                     }
@@ -170,15 +169,13 @@ function qty_table_generator_laterals(qty_bid_item) {
                 '<tr>\
                                            <td>\
                                            </td>\
-                                           <td>\
-                                           </td>\
-                                           <td style="padding:5px; text-align:left">\
+                                           <td style="padding:5px; text-align:right">\
                                              <strong>PP ' + pp + ' Totals:</strong>\
                                            </td>\
                                            <td class="qty_td"\
                                                style="padding:5px; text-align:right; width:5vw">\
                                              <strong>' +
-                qty_or_blank(period_totals[0], base_sov[NN]['Unit']) +
+                fixed_qty_or_blank(period_totals[0], 0) +
                 '</strong>\
                                            </td>\
                                            <td class="qty_td funding_td_amt"\
@@ -196,14 +193,14 @@ function qty_table_generator_laterals(qty_bid_item) {
                 return_block +=
 
                     '<td class="qty_td" style="text-align:right; width:5vw; padding:5px"><strong>' +
-                    qty_or_blank(period_totals[2 * ff + 2], base_sov[NN]['Unit']) + '</strong></td>\
+                    fixed_qty_or_blank(period_totals[2 * ff + 2], 2) + '</strong></td>\
                               <td class="qty_td funding_td_amt_' + funds[ff] +
                     '" style="padding:5px; width:8vw;"><strong>' +
                     amount_or_blank(period_totals[2 * ff + 3]) + '</strong></td>';
 
             }
 
-            return_block += '</tr><tr><td  colspan="13">&nbsp;</td></tr>';
+            return_block += '</tr><tr><td  colspan="12">&nbsp;</td></tr>';
 
 
 
@@ -224,12 +221,11 @@ function qty_table_generator_laterals(qty_bid_item) {
     return_block +=
     
         '<tr class="qty_tr">\
-          <td colspan="13">&nbsp;</td>\
+          <td colspan="12">&nbsp;</td>\
          </tr>\
          <tr class="qty_tr">\
           <td></td>\
-          <td></td>\
-          <td style="padding:5px"><strong>To Date Totals:</strong></td>\
+          <td style="padding:5px; text-align:right"><strong>To Date Totals:</strong></td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
             <strong>' + qty_or_blank(to_date_totals[0], base_sov[NN]['Unit']) + '</strong>\
           </td>\
@@ -237,25 +233,25 @@ function qty_table_generator_laterals(qty_bid_item) {
             <strong>' + amount_or_blank(to_date_totals[1]) + '</strong>\
           </td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
-            <strong>' + qty_or_blank(to_date_totals[2], base_sov[NN]['Unit']) + '</strong>\
+            <strong>' + fixed_qty_or_blank(to_date_totals[2], 2) + '</strong>\
           </td>\
           <td class="qty_td funding_td_amt_SFMTA" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[3]) + '</strong>\
           </td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
-            <strong>' + qty_or_blank(to_date_totals[4], base_sov[NN]['Unit']) + '</strong>\
+            <strong>' + fixed_qty_or_blank(to_date_totals[4], 2) + '</strong>\
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-SW" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[5]) + '</strong>\
           </td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
-            <strong>' + qty_or_blank(to_date_totals[6], base_sov[NN]['Unit']) + '</strong>\
+            <strong>' + fixed_qty_or_blank(to_date_totals[6], 2) + '</strong>\
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-AWSS" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[7]) + '</strong>\
           </td>\
           <td class="qty_td" style="padding:5px; text-align:right">\
-            <strong>' + qty_or_blank(to_date_totals[8], base_sov[NN]['Unit']) + '</strong>\
+            <strong>' + fixed_qty_or_blank(to_date_totals[8], 2) + '</strong>\
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-WD" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[9]) + '</strong>\

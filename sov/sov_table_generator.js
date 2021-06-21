@@ -67,7 +67,7 @@ function to_date_sov_details(bid_item_id, pp_no) {
         {
 
             //for (const payment_no in base_sov[NN]["Amount to Date"][fund_source])
-              for (var pp = 1; pp < pp_no+1; pp++)
+              for (var pp = 1; pp < pp_no + 1; pp++)
 
             {
 
@@ -101,15 +101,15 @@ function to_date_sov_details(bid_item_id, pp_no) {
 }
 
 
-
-
 function generate_sov_table(pp_no) {
 
     var contract_total_amount = 0;
     var period_total_amount = 0;
     var to_date_total_amount = 0;
 
-    var return_block =
+    var return_block = "";
+
+        return_block +=
 
            '<thead class="sov_thead">\
                 <tr>\

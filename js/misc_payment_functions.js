@@ -49,8 +49,23 @@ function format_unit(input_num, unit, prec = 0) {
             return_string = (input_num * 100).toFixed(2) + '%';
 
         } else if (unit == "EA") {
+          
+          
+            if (Math.abs(input_num) % 1 < 0.001)
+            
+              {
 
             return_string = input_num.toFixed(prec);
+
+               }
+               
+               else
+               
+               {
+               
+            return_string = input_num.toFixed(2);              
+
+                   }
 
         } else if (['LF', 'SF', 'CY', 'TON', 'LBS'].includes(unit)) {
 

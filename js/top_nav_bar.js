@@ -108,6 +108,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_qty">\
                 <a class="dropdown-item" href="' + nav_path + 
                    'qty/qty_SW-02.html">SW-02 - (N) MH - STD 87,181</a>\
+                <a class="dropdown-item" href="' + nav_path + 
+                   'qty/qty_SW-04.html">SW-04 - (N) MH - STD 87,182</a>\
+                <a class="dropdown-item" href="' + nav_path + 
+                   'qty/qty_SW-05.html">SW-05 - (N) MH - STD 87,182 - Angled</a>\
                 <a class="dropdown-item" href="' + nav_path +  
                    'qty/qty_SW-09.html">SW-09 - (N) CB - STD 87,188</a>\
                 <a class="dropdown-item" href="' + nav_path + 

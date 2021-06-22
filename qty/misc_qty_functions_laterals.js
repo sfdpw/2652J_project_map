@@ -65,7 +65,8 @@ function qty_table_generator_laterals(qty_bid_item) {
 
         {
 
-            lateral_properties = lateral["properties"]
+            lateral_properties = lateral["properties"];
+            lateral_coordinates = lateral["geometry"]["coordinates"];
             lateral_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
@@ -82,7 +83,16 @@ function qty_table_generator_laterals(qty_bid_item) {
                     is_qty_in_pp = true;
 
                     lateral_extracted_details[0] = lateral_properties["ADDRESS"];
-                    lateral_extracted_details[1] = lateral_properties["MAXIMO_ID"];
+                    //lateral_extracted_details[1] = lateral_properties["MAXIMO_ID"];
+                    
+                    lateral_extracted_details[1] =
+                    "<a href=\"..\\index.html#20/" + 
+                    lateral_coordinates[0][0][1] +"/" + 
+                    lateral_coordinates[0][0][0] +                     
+                    "\" target=\"_blank\">" +
+                    lateral_properties["MAXIMO_ID"];
+                    
+                    
                     lateral_extracted_details[2] = lateral_properties["BLKLOT"];
 
                     for (ff = 0; ff < funds.length; ff++)

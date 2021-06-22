@@ -66,7 +66,8 @@ function qty_table_generator_drains(qty_bid_item) {
         {
 
             drain_properties = drain["properties"];
-            drain_coordinates = ["geometry"]["coordinates"];
+            drain_coordinates = drain["geometry"]["coordinates"];
+
             drain_extracted_details = ['', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
@@ -82,7 +83,19 @@ function qty_table_generator_drains(qty_bid_item) {
 
                     is_qty_in_pp = true;
 
-                    drain_extracted_details[0] = drain_properties["MAXIMO_ID"];
+                    //drain_extracted_details[0] = drain_properties["MAXIMO_ID"];
+                    
+                    
+
+                    
+                    drain_extracted_details[0] =
+                    "<a href=\"..\\index.html#20/" + 
+                    drain_coordinates[1] +"/" + 
+                    drain_coordinates[0] +                     
+                    "\" target=\"_blank\">" +
+                    drain_properties["MAXIMO_ID"];
+                    
+                    
                     drain_extracted_details[1] = drain_properties["NODE_ID"];
                     //drain_extracted_details[2] = "Stop"; //sw_main_coordinates[0][-1];
 

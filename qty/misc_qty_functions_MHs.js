@@ -82,7 +82,14 @@ function qty_table_generator_MHs(qty_bid_item) {
 
                     is_qty_in_pp = true;
 
-                    MH_extracted_details[0] = MH_properties["MAXIMO_ID"];
+                    MH_extracted_details[0] =
+                    "<a href=\"..\\index.html#20/" + 
+                    MH_coordinates[1] +"/" + 
+                    MH_coordinates[0] +                     
+                    "\" target=\"_blank\">" +
+                    MH_properties["MAXIMO_ID"];
+                    
+                    
                     MH_extracted_details[1] = MH_properties["NODE_ID"];
                     //MH_extracted_details[2] = "Stop"; //sw_main_coordinates[0][-1];
 

@@ -78,7 +78,12 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
                     is_qty_in_pp = true;
 
-                    culvert_extracted_details[0] = culvert_properties["PSR"];
+                    culvert_extracted_details[0] =
+                    "<a href=\"..\\index.html#20/" + 
+                    culvert_coordinates[0][0][1] +"/" + 
+                    culvert_coordinates[0][0][0] +                     
+                    "\" target=\"_blank\">" +
+                    culvert_properties["PSR"];
                     culvert_extracted_details[1] = "";//"Start"; //sw_main_coordinates[0][0];
                     culvert_extracted_details[2] = "";//"Stop"; //sw_main_coordinates[0][-1];
 

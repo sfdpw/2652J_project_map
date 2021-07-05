@@ -1,7 +1,7 @@
 var clear_layers_button = L.Control.extend({
 
   options: {
-    position: 'topright'
+    position: 'topleft'
   },
 
   onAdd: function(map) {
@@ -19,7 +19,7 @@ var clear_layers_button = L.Control.extend({
     container.style.backgroundSize = '20px 20px';
     container.style.width = '36px';
     container.style.height = '36px';
-
+    //container.style.zindex = 'auto';
     container.onmouseover = function() {
       container.style.backgroundColor = 'pink';
     }

@@ -99,12 +99,12 @@ var json_102_E_intersection_electricals_322 = {
 
 
 
-{ "type": "Feature", "properties": { "id": "19", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E190pdf1_modified_179','E-19.0',]), "as_built": popup_sheet_entry_creator(), "tcp": popup_tcp_entry_creator(['TCP_041', 'TCP_120']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.477236784195583, 37.76193348395946 ], [ -122.476834599587022, 37.761952818319457 ], [ -122.476812575490996, 37.761500261183109 ], [ -122.477215143657503, 37.76148111973032 ], [ -122.477236784195583, 37.76193348395946 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "19", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E190pdf1_modified_179','E-19.0',]), "as_built": popup_AB_entry_creator('E-19'), "tcp": popup_tcp_entry_creator(['TCP_041', 'TCP_120']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.477236784195583, 37.76193348395946 ], [ -122.476834599587022, 37.761952818319457 ], [ -122.476812575490996, 37.761500261183109 ], [ -122.477215143657503, 37.76148111973032 ], [ -122.477236784195583, 37.76193348395946 ] ] ] ] } },
 
 
 
 
-{ "type": "Feature", "properties": { "id": "20", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E200pdf1_modified_178','E-20.0',]), "as_built": popup_sheet_entry_creator(), "tcp": popup_tcp_entry_creator(['TCP_040']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.477396964262752, 37.763784745456988 ], [ -122.476996031746523, 37.763799493616609 ], [ -122.476978936687658, 37.763348129905253 ], [ -122.477380067502295, 37.763333240668175 ], [ -122.477396964262752, 37.763784745456988 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "20", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E200pdf1_modified_178','E-20.0',]), "as_built": popup_AB_entry_creator('E-20'), "tcp": popup_tcp_entry_creator(['TCP_040']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.477396964262752, 37.763784745456988 ], [ -122.476996031746523, 37.763799493616609 ], [ -122.476978936687658, 37.763348129905253 ], [ -122.477380067502295, 37.763333240668175 ], [ -122.477396964262752, 37.763784745456988 ] ] ] ] } },
 
 
 

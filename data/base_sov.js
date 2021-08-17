@@ -58,6 +58,7 @@ var base_sov =
                               },
                      }      
  },
+
  {
    "Bid Item": "G-2",
    "Description": "F&I Temporary Traffic Striping Tape",
@@ -73,7 +74,7 @@ var base_sov =
                               "PP05":514.50,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":84,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -85,7 +86,7 @@ var base_sov =
                               "PP05":379.75,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":62,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               }, 
@@ -97,7 +98,7 @@ var base_sov =
                               "PP05":159.25,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":26,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -109,12 +110,13 @@ var base_sov =
                               "PP05":171.50,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":28,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }      
  },
+
  {
    "Bid Item": "G-3",
    "Description": "F&I Changeable Message Signs",
@@ -173,6 +175,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-4",
    "Description": "NOT USED",
@@ -230,6 +233,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-5",
    "Description": "NOT USED",
@@ -287,6 +291,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-6",
    "Description": "Allowance for Uniformed San Francisco Police Department (SFPD) Officers for Traffic Control, As Required by the Engineer",
@@ -344,6 +349,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-7",
    "Description": "SOILS OFF-HAUL-Transportation of surplus California Class I (non-RCRA) Hazardous Waste (soils) to a Class I Disposal Facility",
@@ -401,6 +407,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-8",
    "Description": "SOILS OFF-HAUL-Disposal of surplus California Class I (non-RCRA) Hazardous Waste (soils) at a Class I Disposal Facility",
@@ -458,6 +465,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-9",
    "Description": "SOILS OFF-HAUL-Transportation of surplus non-hazardous soils (Class II & III) California Designated Waste (soils) to a Class II & III Disposal Facility",
@@ -515,6 +523,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-10",
    "Description": "SOILS OFF-HAUL-Disposal of surplus non-hazardous soils (Class II & III) California Designated Waste (soils) at a Class II & III Disposal Facility",
@@ -572,6 +581,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-11",
    "Description": "Mobilization (Maximum 3% of the Sum of Bid Items G-1 through AW-30.3, Excluding Allowances, Mobilization, and Demobilization Bid Items)",
@@ -587,7 +597,7 @@ var base_sov =
                               "PP05":64863.75,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":85611.02,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -599,7 +609,7 @@ var base_sov =
                               "PP05":47875.62,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":63189.08,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               }, 
@@ -611,7 +621,7 @@ var base_sov =
                               "PP05":20076.88,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":26498.65,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -623,12 +633,13 @@ var base_sov =
                               "PP05":21621.25,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":28537,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "G-12",
    "Description": "Demobilization (Maximum 2% of the Sum of Bid Items G-1 through AW-30.3, Excluding Allowances, Mobilization, and Demobilization Bid Items)",
@@ -686,6 +697,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-13",
    "Description": "Allowance for City's Share of Partnering Faciliatation and Related Costs",
@@ -743,6 +755,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "G-14",
    "Description": "Allowance for Unforeseen Environmental Conditions",
@@ -800,6 +813,7 @@ var base_sov =
                               },
                      }   
  },
+ 
  {
    "Bid Item": "G-15",
    "Description": "Allowance For Graffiti Removal",
@@ -815,7 +829,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":344.43,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -827,7 +841,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":254.22,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               }, 
@@ -839,7 +853,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":106.61,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -851,12 +865,13 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":114.81,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+ 
  {
    "Bid Item": "G-16",
    "Description": "Allowance for Certified Biologist and Qualified Arborist",
@@ -914,6 +929,7 @@ var base_sov =
                               },
                      }   
  },
+ 
  {
    "Bid Item": "CR-1",
    "Description": "Full Depth Planing Per 3-Inch Depth of Cut",
@@ -971,405 +987,70 @@ var base_sov =
                               },
                      }   
  },
+ 
  {
    "Bid Item": "CR-2",
    "Description": "Hot Mix Asphalt Concrete (Type A, ½-Inch Maximum With Medium Grading)",
    "Unit": "TON",
    "Contract QTY": 1670.00,
    "Unit Price": 325.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":1073.48,    
-                              "PP06":2146.95,                               
-                              "PP07":1226.83, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":12.94,    
-                              "PP06":25.88,                               
-                              "PP07":14.79, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":12.94,    
-                              "PP06":25.88,                               
-                              "PP07":14.79, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":38.14,    
-                              "PP06":76.29,                               
-                              "PP07":43.59, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-02', 325)    
  },
+ 
  {
    "Bid Item": "CR-3",
    "Description": "9-Inch Thick Jointed Plain Concrete Pavement with Rapid Setting Concrete (JPCP-RSC) Base",
    "Unit": "SF",
    "Contract QTY": 66940.00,
    "Unit Price": 29.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":5597,    
-                              "PP06":9831,                               
-                              "PP07":29145.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-03', 29)  
  },
+
  {
    "Bid Item": "CR-4",
    "Description": "12-Inch Thick Class II Aggregate Base",
    "Unit": "CY",
    "Contract QTY": 2479.00,
    "Unit Price": 88.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":1100,                               
-                              "PP07":3344.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-04', 88)    
  },
+ 
  {
    "Bid Item": "CR-5",
    "Description": "10-Inch Thick Jointed Plain Concrete Pavement  (JPCP) Bus Pad",
    "Unit": "SF",
    "Contract QTY": 22785.00,
    "Unit Price": 45.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":29700,    
-                              "PP06":68850,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-05', 45)   
  },
+ 
  {
    "Bid Item": "CR-6",
    "Description": "6-Inch Thick Class II Aggregate Subbase for Bus Pad, Sidewalk, Curb, Gutter and Parking Strip",
    "Unit": "CY",
    "Contract QTY": 2028.00,
    "Unit Price": 89.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":7832,    
-                              "PP06":7422.60,                               
-                              "PP07":8277.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-06', 89)   
  },
+ 
  {
    "Bid Item": "CR-7",
    "Description": "3-1/2-Inch Thick Concrete Sidewalk",
    "Unit": "SF",
    "Contract QTY": 56130.00,
    "Unit Price": 18.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":39960,    
-                              "PP06":18468,                               
-                              "PP07":11106.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":4752,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":972,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":810,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-07', 18)   
  },
+
  {
    "Bid Item": "CR-8",
    "Description": "4-Inch Thick Concrete Sidewalk",
    "Unit": "SF",
    "Contract QTY": 10550.00,
    "Unit Price": 20.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":6953.55,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":4246.45,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-08', 20)   
  },
+
  {
    "Bid Item": "CR-9",
    "Description": "6-Inch Thick Concrete Sidewalk",
@@ -1427,177 +1108,34 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "CR-10",
    "Description": "4-Inch or 6-Inch Wide Concrete Curb",
    "Unit": "LF",
    "Contract QTY": 8710.00,
    "Unit Price": 47.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":11349.18,    
-                              "PP06":7315.43,                               
-                              "PP07":19724.32, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":4254.82,    
-                              "PP06":2742.57,                               
-                              "PP07":7394.68, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-10', 47)   
  },
+
  {
    "Bid Item": "CR-11",
    "Description": "12-Inch Thick Concrete Parking Strip or Gutter",
    "Unit": "SF",
    "Contract QTY": 26240.00,
    "Unit Price": 29.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":19571.93,    
-                              "PP06":2729.74,                               
-                              "PP07":49334.01, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":23261.07,    
-                              "PP06":3244.26,                               
-                              "PP07":58632.99, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-11', 29)   
  },
+
  {
    "Bid Item": "CR-12",
    "Description": "Concrete Curb Ramp w/ Concrete Detectable Surface Tiles",
    "Unit": "EA",
    "Contract QTY": 92.00,
    "Unit Price": 5500.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":11000,    
-                              "PP06":11000,                               
-                              "PP07":11000, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-12', 5500)   
  },
+
  {
    "Bid Item": "CR-13",
    "Description": "Adjust City-Owned Manhole and Catchbasin Frame And Casting To Grade (Contingency Bid Item)",
@@ -1655,6 +1193,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "CR-14",
    "Description": "Adjust City-Owned Hydrant and Watermain Valve Box Casting Cover To Grade (Contingency Bid Item)",
@@ -1712,63 +1251,16 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "CR-15",
    "Description": "8-Inch Thick Reinforced Sidewalk for Bus Shelter Foundations",
    "Unit": "EA",
    "Contract QTY": 18.00,
    "Unit Price": 11500.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":11500,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00   
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00                           
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-15', 11500)    
  },
+
  {
    "Bid Item": "CR-16",
    "Description": "Irving Street Concrete Paving With Integral Color",
@@ -1826,6 +1318,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "CR-17",
    "Description": "2-Inch Thick Asphalt Concrete Pathway Pavement over 4-Inch Aggregate Base",
@@ -1883,6 +1376,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-1",
    "Description": "(3S12&#8221;) 3 Section, 12-inch Vehicle Signal Face with Type 1 LED Red, Yellow, and Green",
@@ -1940,6 +1434,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-2",
    "Description": "(3S12&#8221;LA) 3 Section, 12-inch Vehicle Signal Face with Type 1 LED Red Left Arrow, Yellow Left Arrow, and Green Left Arrow",
@@ -1997,6 +1492,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-3",
    "Description": "(5S12&#8221;GYRA) 5 Section, 12-inch Vehicle Signal Face with Type 1 LED Red, Yellow, Green, Yellow Right Arrow and Green Right Arrow",
@@ -2054,6 +1550,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-4",
    "Description": "(TV-1-T) One-Way Post Top-Mounted Vehicle Signal Mounting with Terminal Compartment",
@@ -2111,6 +1608,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-5",
    "Description": "(SV-1-T) One-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment",
@@ -2168,6 +1666,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-6",
    "Description": "(SV-2-TA) Two-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment in Configuration (SV-1-T) One-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment &#8221;A&#8221;",
@@ -2225,6 +1724,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-7",
    "Description": "(SV-2-TA-SF) Two-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment in Configuration &#8221;A&#8221; SF Standard",
@@ -2282,6 +1782,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-8",
    "Description": "(SV-3-TA) Three-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment in Configuration &#8221;A&#8221;",
@@ -2339,6 +1840,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-9",
    "Description": "Signal Back Plate",
@@ -2396,6 +1898,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-10",
    "Description": "(1S-Count) One-Section LED Pedestrian Countdown Signal Housing",
@@ -2453,6 +1956,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-11",
    "Description": "Labor Cost Only To Install City Furnished (1S-Count Module) One-Section LED Pedestrian Countdown Signal Module",
@@ -2510,6 +2014,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-12",
    "Description": "(SP-1) One-Way Side-Mounted Pedestrian Signal Mounting",
@@ -2567,6 +2072,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-13",
    "Description": "(TP-1) One-Way Top-Mounted Pedestrian Signal Mounting",
@@ -2624,6 +2130,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-14",
    "Description": "Pedestrian Push Button Assembly Post (5') with Concrete Foundation",
@@ -2681,6 +2188,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-15",
    "Description": "Type 1-A Pole (7') with Concrete Foundation",
@@ -2738,6 +2246,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-16",
    "Description": "Type 1-A Pole (10') with Concrete Foundation",
@@ -2795,6 +2304,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-17",
    "Description": "Type 1-A Pole (13') with Concrete Foundation",
@@ -2852,6 +2362,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-18",
    "Description": "Type 16-2-100 Pole with 20-foot Signal Mast Arm, MAS Mounting, and Concrete Foundation",
@@ -2909,6 +2420,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-19",
    "Description": "Type 17-2-100 Pole with 20-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -2966,6 +2478,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-20",
    "Description": "Type 19-2-100 Pole with 20-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -3023,6 +2536,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-21",
    "Description": "Type 19-2-100 Pole with 25-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -3080,6 +2594,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-22",
    "Description": "Type 26-3-100 Pole with 45-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -3137,6 +2652,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-23",
    "Description": "Type 26-4-100 Pole with 45-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -3194,6 +2710,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-24",
    "Description": "Caltrans Type 15TS Street Light Pole with 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -3251,6 +2768,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-25",
    "Description": "Caltrans Type 21TS Street Light Pole with 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
@@ -3308,6 +2826,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-26",
    "Description": "Spare for Caltrans Type 15TS Street Light Pole with 8-Foot Luminaire Arm and LED Luminaire",
@@ -3365,6 +2884,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-27",
    "Description": "Relocation of Existing 19A-3-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3422,6 +2942,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-28",
    "Description": "Relocation of Existing 19-2-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3479,6 +3000,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-29",
    "Description": "Relocation of Existing 19-2-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 12-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3536,6 +3058,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-30",
    "Description": "Relocation of Existing 19-2-100 Mast Arm Pole with 30-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3593,6 +3116,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-31",
    "Description": "Relocation of Existing 19-4-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3650,6 +3174,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-32",
    "Description": "Relocation of Existing 24-3-100 Mast Arm Pole with 35-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3707,6 +3232,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-33",
    "Description": "Relocation of Existing 24-4-100 Mast Arm Pole with 35-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3764,6 +3290,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-34",
    "Description": "Relocation of Existing 24-4-100 Mast Arm Pole with 35-Foot Signal Mast Arm, MAS Mounting, 15-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
@@ -3821,6 +3348,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-35",
    "Description": "Pull Box Type I",
@@ -3878,6 +3406,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-36",
    "Description": "Pull Box Type III",
@@ -3893,7 +3422,7 @@ var base_sov =
                               "PP05":6000,    
                               "PP06":0.00,                               
                               "PP07":5000, 
-                              "PP08":0.00,                               
+                              "PP08":6000,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -3935,6 +3464,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-37",
    "Description": "Pull Box Type 48X",
@@ -3950,7 +3480,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":4000, 
-                              "PP08":0.00,                               
+                              "PP08":8000,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -3992,6 +3522,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-38",
    "Description": "1-1&#8221; PVC Schedule 80 Conduit (Underground) in Sidewalk Trench",
@@ -4007,7 +3538,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":1280,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -4049,6 +3580,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-39",
    "Description": "1-2&#8221; PVC Schedule 80 Conduit (Underground) in Sidewalk Trench",
@@ -4106,6 +3638,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-40",
    "Description": "2-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
@@ -4163,6 +3696,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-41",
    "Description": "1-3&#8221; PVC Schedule 80 Conduit (Underground) in Sidewalk Trench",
@@ -4220,6 +3754,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-42",
    "Description": "1-3&#8221; & 1-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
@@ -4277,6 +3812,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-43",
    "Description": "1-2&#8221; GRS Conduit and 1-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
@@ -4334,6 +3870,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-44",
    "Description": "1-2&#8221; GRS Conduit and 2-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench",
@@ -4391,6 +3928,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-45",
    "Description": "1-2&#8221; GRS Conduit and 3-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench",
@@ -4448,6 +3986,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-46",
    "Description": "1-2&#8221; GRS Conduit (Underground) in Sidewalk Trench",
@@ -4463,7 +4002,7 @@ var base_sov =
                               "PP05":14800,    
                               "PP06":0.00,                               
                               "PP07":1600, 
-                              "PP08":0.00,                               
+                              "PP08":1600,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -4505,6 +4044,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-47",
    "Description": "2-2&#8221; GRS Conduit (Underground) in the Same Roadway T-Trench",
@@ -4562,6 +4102,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-48",
    "Description": "3-2&#8221; GRS Conduit (Underground) in the Same Roadway T-Trench",
@@ -4619,6 +4160,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-49",
    "Description": "6-2&#8221; GRS Conduit (Underground) in the Same Roadway T-Trench",
@@ -4676,6 +4218,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-50",
    "Description": "2-2&#8221; HDPE Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
@@ -4733,6 +4276,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-51",
    "Description": "Construct Standard 332L (ITS) Traffic Signal Cabinet Concrete Foundation",
@@ -4790,6 +4334,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "E-52",
    "Description": "Labor Cost Only to Install City-Furnished 2070 Intersection Controller 332L (ITS) Cabinet Assembly with 12-Conductor Interconnect Component",
@@ -4847,6 +4392,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "M-1",
    "Description": "Miscellaneous Electrical Work",
@@ -4904,6 +4450,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "M-2",
    "Description": "Remove and Salvage as City's Property",
@@ -4961,6 +4508,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "M-3",
    "Description": "Remove as Contractor's Property",
@@ -5018,6 +4566,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-1",
    "Description": "Trench And Excavation Support Work",
@@ -5075,6 +4624,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-2",
    "Description": "Concrete Manhole For 12-Inch To 24-Inch Diameter Sewers With Frame And Cover Per SFDPW Standard Plan 87,181",
@@ -5083,6 +4633,7 @@ var base_sov =
    "Unit Price": 17500.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_201_MHs_5'], 'SW-02', 17500) 
  },
+
  {
    "Bid Item": "SW-3",
    "Description": "Concrete Manhole For 5-Foot Offset Manhole",
@@ -5140,6 +4691,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-4",
    "Description": "Standard Concrete Manhole For 27-Inch To 48-Inch Diameter Sewers With Frame And Cover Per SFDPW Standard Plan 87,182",
@@ -5148,6 +4700,7 @@ var base_sov =
    "Unit Price": 42000.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_201_MHs_5'], 'SW-04', 42000) 
  },
+
  {
    "Bid Item": "SW-5",
    "Description": "Angled Box Manhole for 27-Inch to 48-Inch Diameter Sewers With Frame And Cover Per SFDPW Standard Plan 87,182",
@@ -5156,6 +4709,7 @@ var base_sov =
    "Unit Price": 48000.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_201_MHs_5'], 'SW-05', 48000) 
  },
+
  {
    "Bid Item": "SW-6",
    "Description": "Clean and Mortar Existing Manhole",
@@ -5213,6 +4767,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-7",
    "Description": "Clean and Televise Existing Main Sewers Prior to Lining Work",
@@ -5270,6 +4825,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-8",
    "Description": "Bypassing Main Sewer Flow Related to Lining Work",
@@ -5327,6 +4883,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-9",
    "Description": "Concrete Catchbasin With New Frame And Grating Per SFDPW Standard Plan 87,188",
@@ -5335,6 +4892,7 @@ var base_sov =
    "Unit Price": 10500.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_203_drains_4'], 'SW-09', 10500)  
  },
+
  {
    "Bid Item": "SW-10",
    "Description": "Concrete Catch Basin With Curb Inlet Per SFDPW Standard Plan 87,187 and Inlet Protection Bar",
@@ -5392,6 +4950,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-11",
    "Description": "8-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5400,6 +4959,7 @@ var base_sov =
    "Unit Price": 900.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-11', 900.00) 
  },
+
  {
    "Bid Item": "SW-12",
    "Description": "12-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5408,6 +4968,7 @@ var base_sov =
    "Unit Price": 575.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-12', 575.00) 
  },
+
  {
    "Bid Item": "SW-13",
    "Description": "12-Inch Diameter VCP Sewer On Crushed Rock Bedding (At Concrete Parking Strip)",
@@ -5416,6 +4977,7 @@ var base_sov =
    "Unit Price": 425.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-13', 425.00) 
  },
+
  {
    "Bid Item": "SW-14",
    "Description": "15-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5424,6 +4986,7 @@ var base_sov =
    "Unit Price": 650.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-14', 650.00)  
  },
+
  {
    "Bid Item": "SW-15",
    "Description": "15-Inch Diameter VCP Sewer On Crushed Rock Bedding (At Concrete Parking Strip)",
@@ -5432,6 +4995,7 @@ var base_sov =
    "Unit Price": 465.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-15', 465.00)  
  },
+
  {
    "Bid Item": "SW-16",
    "Description": "18-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5440,6 +5004,7 @@ var base_sov =
    "Unit Price": 800.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-16', 800.00)   
  },
+
  {
    "Bid Item": "SW-17",
    "Description": "21-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5448,6 +5013,7 @@ var base_sov =
    "Unit Price": 875.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-17', 875.00)   
  },
+
  {
    "Bid Item": "SW-18",
    "Description": "24-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5456,6 +5022,7 @@ var base_sov =
    "Unit Price": 850.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-18', 850.00)  
  },
+
  {
    "Bid Item": "SW-19",
    "Description": "30-Inch Diameter VCP Sewer On Crushed Rock Bedding",
@@ -5513,6 +5080,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-20",
    "Description": "Line Existing 6&#8221; and 8&#8221; Ø Side Sewer With CIPL",
@@ -5570,6 +5138,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-21",
    "Description": "Line Existing 8&#8221;Ø Sewer With CIPL",
@@ -5627,6 +5196,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-22",
    "Description": "Line Existing 12&#8221;Ø Sewer With CIPL",
@@ -5684,6 +5254,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-23",
    "Description": "Line Existing 15&#8221;Ø Sewer With CIPL",
@@ -5741,6 +5312,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-24",
    "Description": "Line Existing 18&#8221;Ø Sewer With CIPL",
@@ -5798,6 +5370,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-25",
    "Description": "Line Existing 21&#8221;Ø Sewer With CIPL",
@@ -5855,6 +5428,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-26",
    "Description": "Line Existing 2'x3' Concrete Sewer With CIPL",
@@ -5912,6 +5486,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-27",
    "Description": "Remove Obstruction By Internal Reaming from Existing Sewer Prior to Lining Work",
@@ -5969,6 +5544,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-28",
    "Description": "Internally Re-instate Side Sewers and Culvert in Lined Main Sewers (Contingency Bid Item)",
@@ -6026,6 +5602,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-29",
    "Description": "10-Inch Diameter VCP Culvert Within Sewer Work Limits (Contingency Bid Item)",
@@ -6034,6 +5611,7 @@ var base_sov =
    "Unit Price": 480.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_204_culverts_3'], 'SW-29', 480.00)  
  },
+
  {
    "Bid Item": "SW-30",
    "Description": "10-Inch Diameter DIP Culvert Within Sewer Work Limits (Contingency Bid Item)",
@@ -6091,6 +5669,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-31",
    "Description": "10-Inch Diameter VCP Culvert Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
@@ -6148,6 +5727,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-32",
    "Description": "Television Inspection Of Existing 6-Inch Or 8-Inch Diameter Side Sewers Within Sewer Work Limits (Contingency Bid Item)",
@@ -6156,6 +5736,7 @@ var base_sov =
    "Unit Price": 120.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_200_laterals_2'], 'SW-32', 120.00)  
  },
+
  {
    "Bid Item": "SW-33",
    "Description": "Television Inspection Of Existing 6-Inch Or 8-Inch Diameter Side Sewers Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
@@ -6213,6 +5794,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-34",
    "Description": "Television Inspection Of Existing 10-Inch Diameter Culverts Within Sewer Work Limits (Contingency Bid Item)",
@@ -6221,6 +5803,7 @@ var base_sov =
    "Unit Price": 180.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_204_culverts_3'], 'SW-34', 180.00)    
  },
+
  {
    "Bid Item": "SW-35",
    "Description": "Television Inspection Of Existing 10-Inch Diameter Culverts Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
@@ -6278,6 +5861,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-36",
    "Description": "6-Inch Or 8-Inch Diameter Side Sewer Connection to VCP Main Sewer (Contingency Bid Item)",
@@ -6286,6 +5870,7 @@ var base_sov =
    "Unit Price": 600.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_200_laterals_2'], 'SW-36', 600.00)  
  },
+
  {
    "Bid Item": "SW-37",
    "Description": "Replacement Or Construction of 6-Inch Or 8-Inch Diameter Side Sewer Within Sewer Work Limits (Contingency Bid Item)",
@@ -6294,6 +5879,7 @@ var base_sov =
    "Unit Price": 325.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_200_laterals_2'], 'SW-37', 325.00)  
  },
+
  {
    "Bid Item": "SW-38",
    "Description": "Replacement Or Construction of 6-Inch Or 8-Inch Diameter Side Sewers Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
@@ -6351,6 +5937,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-39",
    "Description": "Standard Side Sewer Air Vent and Trap Assembly, Including 4-Inch Diameter CIP Building Sewer Extension (Contingency Bid Item)",
@@ -6359,6 +5946,7 @@ var base_sov =
    "Unit Price": 5000.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_200_laterals_2'], 'SW-39', 5000.00)   
  },
+
  {
    "Bid Item": "SW-40",
    "Description": "Post-Construction Television Inspection Of Newly Constructed Main Sewers And Rehabilitated Main Sewers",
@@ -6367,6 +5955,7 @@ var base_sov =
    "Unit Price": 45000.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_202_SW_mains_0'], 'SW-40', 45000.00)  
  },
+
  {
    "Bid Item": "SW-41",
    "Description": "Post-Construction Television Inspection Of Newly Constructed Side Sewers & Culverts (Contingency Bid Item)",
@@ -6375,6 +5964,7 @@ var base_sov =
    "Unit Price": 150.00,
    "Amount to Date": return_pp_history_from_spatial_file(['json_200_laterals_2', 'json_204_culverts_3'], 'SW-41', 150.00)  
  },
+
  {
    "Bid Item": "SW-42",
    "Description": "Cast-Iron Water Trap For Catchbasin Including Cleanout Cap Per SFDPW Standard Plan 87,194 (Contingency Bid Item)",
@@ -6432,6 +6022,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-43",
    "Description": "Reconstruct Pavement Outside Of Sewer &#8221;T&#8221; Trench and Outside Base Repair Limits Shown On R-drawings With 9-Inch Thick Concrete Base Per Excavation Regulations As Directed By The City Representative (Contingency Bid Item)",
@@ -6489,6 +6080,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-44",
    "Description": "Exploratory Potholes (Contingency Bid Item)",
@@ -6546,6 +6138,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-45",
    "Description": "Control Density Fill Bedding Material For Water Main and AWSS Facilities Encountered Within The Sewer Trench Prior To Backfill (Contingency Bid Item)",
@@ -6603,6 +6196,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-46",
    "Description": "Plug and Fill Existing Sewer with Slurry Grout As Indicated on Contract Plans (Contingency Bid Item)",
@@ -6660,6 +6254,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-47",
    "Description": "Allowance for Design Of Structural Support for SFWD Facilities within Sewer Trench",
@@ -6717,6 +6312,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-48",
    "Description": "Allowance to Perform Necessary Work Due to Replacement of Existing Water Facilities Crossing Sewer Trench by SFWD",
@@ -6774,6 +6370,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "SW-49",
    "Description": "Allowance to Perform Necessary Work Due to Unforeseen Conditions Related to Sewer Work",
@@ -6831,6 +6428,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-1A",
    "Description": "Excavation and Backfill for 8-Inch and Smaller Pipe Trench",
@@ -6882,12 +6480,13 @@ var base_sov =
                               "PP05":-22305.41,    
                               "PP06":0.00,                               
                               "PP07":98175.00, 
-                              "PP08":0.00,                               
+                              "PP08":93450,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-1B",
    "Description": "Excavation and Backfill for 12-Inch Pipe Trench",
@@ -6945,6 +6544,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-1C",
    "Description": "Excavation and Backfill for 16-Inch Pipe Trench",
@@ -7002,6 +6602,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-1D",
    "Description": "Excavation and Backfill for 36-Inch Pipe Trench",
@@ -7059,6 +6660,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-2",
    "Description": "Additional Excavation and Backfill",
@@ -7074,7 +6676,7 @@ var base_sov =
                               "PP05":17740.12,    
                               "PP06":5359.50,                               
                               "PP07":3385.80, 
-                              "PP08":0.00,                               
+                              "PP08":6016.50,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -7110,12 +6712,13 @@ var base_sov =
                               "PP05":-275.62,    
                               "PP06":0.00,                              
                               "PP07":299.70,  
-                              "PP08":0.00,                               
+                              "PP08":238.50,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-3",
    "Description": "Removal and Installation of Meter Box",
@@ -7173,6 +6776,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-4A",
    "Description": "Installation of City Furnished 4-, 6- and 8-Inch Ductile Iron Tyton Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
@@ -7224,12 +6828,13 @@ var base_sov =
                               "PP05":-2842.47,    
                               "PP06":0.00,                               
                               "PP07":10797, 
-                              "PP08":0.00,                               
+                              "PP08":10248,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-4B",
    "Description": "Installation of City Furnished 12-Inch Ductile Iron Flex-Ring Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
@@ -7287,6 +6892,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-4C",
    "Description": "Installation of City Furnished 16-Inch Ductile Iron Flex-Ring Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
@@ -7344,6 +6950,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-4D",
    "Description": "Furnish and Installation of 36-Inch HDSS Ductile Iron Pipe with Polyethylene Encasement",
@@ -7401,6 +7008,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-5A",
    "Description": "Installation of City Furnished 4-, 6- and 8- Inch Ductile Iron Tyton Joint Pipe Fittings with Contractor Furnish and Install of Polyethylene Encasement",
@@ -7452,12 +7060,13 @@ var base_sov =
                               "PP05":-619.21,    
                               "PP06":0.00,                               
                               "PP07":318.00, 
-                              "PP08":0.00,                               
+                              "PP08":1428,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-5B",
    "Description": "Installation of City Furnished 12- and 16- inch Ductile Iron Flex-Ring Joint Pipe Fittings with Contractor Furnish and Install of Polyethylene Encasement",
@@ -7515,6 +7124,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-5C",
    "Description": "Furnish and Installation of 36-inch Ductile Iron AWWA C153 Mechanical Joint Fittings with Wedge action restraining glands and polyethylene encasement",
@@ -7572,6 +7182,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-6A",
    "Description": "Installation of 4- and 6-inch Ductile Iron Gate Valves",
@@ -7623,12 +7234,13 @@ var base_sov =
                               "PP05":-1727.27,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":1900,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-6B",
    "Description": "Installation of 8-Inch Ductile Iron Gate Valves",
@@ -7680,12 +7292,13 @@ var base_sov =
                               "PP05":-3818.18,    
                               "PP06":0.00,                               
                               "PP07":9600, 
-                              "PP08":0.00,                               
+                              "PP08":12000,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-6C",
    "Description": "Installation of 12-Inch Ductile Iron Gate Valves",
@@ -7743,6 +7356,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-6D",
    "Description": "Installation of 16-Inch Ductile Iron Gate Valves",
@@ -7800,6 +7414,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-7",
    "Description": "Installation of 2-Inch Air Valve/Blow off Assembly",
@@ -7851,12 +7466,13 @@ var base_sov =
                               "PP05":-2678.57,    
                               "PP06":0.00,                               
                               "PP07":5000, 
-                              "PP08":0.00,                               
+                              "PP08":7500,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-8",
    "Description": "Trench Shoring and Bracing Per All Applicable Safety Orders  (Conditional Bid Item)**",
@@ -7872,7 +7488,7 @@ var base_sov =
                               "PP05":360,    
                               "PP06":216,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":96,                               
                               "PP09":0.00,      
                               "PP10":0.00   
                      },
@@ -7908,12 +7524,13 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":192,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-9",
    "Description": "Pavement Restoration",
@@ -7971,6 +7588,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-10",
    "Description": "Installation of Screw Taps and Service Saddles (47-1-Inch;89-2-Inch)",
@@ -8022,12 +7640,13 @@ var base_sov =
                               "PP05":2000,    
                               "PP06":-2000,                               
                               "PP07":2000, 
-                              "PP08":0.00,                               
+                              "PP08":3000,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-11A",
    "Description": "NOT USED",
@@ -8085,6 +7704,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-11B",
    "Description": "Support for Installation of Service Pipe - Open Cut (70-1-Inch; 70-2-Inch)",
@@ -8142,6 +7762,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-12",
    "Description": "Removal of SFWD - Owned Valve Boxes and Covers",
@@ -8199,6 +7820,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-13",
    "Description": "Repair and Replacement of Side Sewer (Conditional Bid Item)**",
@@ -8256,6 +7878,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-14",
    "Description": "Furnish and Install Corrosion Work for 36&#8221; DIP",
@@ -8313,6 +7936,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-15",
    "Description": "Furnish and Install 36-Inch Diameter Butterfly Valve With Dismantling Joint",
@@ -8370,6 +7994,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-16A",
    "Description": "Furnish and Install 16-Inch Gate Valve with Mechanical Joint and MegaLug 1116 Series and Accessories",
@@ -8427,6 +8052,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-16B",
    "Description": "Furnish and Install 16-Inch Tapping Gate Valve with MegaLug 1116 Series and Accessories",
@@ -8484,6 +8110,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-16C",
    "Description": "Furnish and Install of 6-Inch Air Release and Vacuum Break Valve Assembly and 8-Inch Blow Off",
@@ -8541,6 +8168,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-17",
    "Description": "Installation of 54-Inch x 36-Inch Steel Tee Connection with 24-Inch Direct Buried Manhole and 36-Inch Gate Valve.  Furnish and Installation of 36-Inch Dismantling Joint Smith Blair 975 and Accessories",
@@ -8598,6 +8226,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-18",
    "Description": "Furnish and Install 5-Feet ID Reinforced Concrete Manhole Riser, Accessories, Aluminum Frames and Cover Assemblies at 36-Inch pipeline",
@@ -8655,6 +8284,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-19",
    "Description": "Furnish ASTM A36 Steel Plate (6 ft x 8 ft x 3/8 inch)",
@@ -8712,6 +8342,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-20",
    "Description": "Installation of Flex-Ring Weld Ring on 12-Inch Field-Cut Ductile Iron Pipe (Conditional Bid Item)**",
@@ -8769,6 +8400,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-21",
    "Description": "NOT USED",
@@ -8826,6 +8458,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-22",
    "Description": "Stern Grove Location Restoration for Concrete Wall, Tree Relocation and Pavement Work",
@@ -8883,6 +8516,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-23",
    "Description": "Water Department Night Work Support For Betterment Work And Working Outside Normal Work Hours",
@@ -8940,6 +8574,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "WD-24",
    "Description": "Allowance for Unforseen Conditions Related To Water Work",
@@ -8997,6 +8632,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-1.1",
    "Description": "Allowance for Miscellaneous AWSS Items",
@@ -9054,6 +8690,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-15.1",
    "Description": "AWSS Work-Location No. 15-Removal Work",
@@ -9111,6 +8748,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-15.2",
    "Description": "AWSS Work-Location No. 15-New Work-Materials",
@@ -9168,6 +8806,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-15.3",
    "Description": "AWSS Work-Location No. 15-New Work-Installation",
@@ -9225,6 +8864,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-15.4",
    "Description": "AWSS Settlement Monitoring Work-Location No. 15",
@@ -9282,6 +8922,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-17.4",
    "Description": "AWSS Settlement Monitoring Work-Location No. 17",
@@ -9339,6 +8980,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-19.4",
    "Description": "AWSS Settlement Monitoring Work-Location No. 19",
@@ -9396,6 +9038,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-22.1",
    "Description": "AWSS Work-Location No. 22-Removal Work",
@@ -9453,6 +9096,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-22.2",
    "Description": "AWSS Work-Location No. 22-New Work-Materials",
@@ -9510,6 +9154,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-22.3",
    "Description": "AWSS Work-Location No. 22-New Work-Installation",
@@ -9567,6 +9212,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-24.1",
    "Description": "AWSS Work-Location No. 24-Removal Work",
@@ -9624,6 +9270,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-24.2",
    "Description": "AWSS Work-Location No. 24-New Work-Materials",
@@ -9681,6 +9328,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-24.3",
    "Description": "AWSS Work-Location No. 24-New Work-Installation",
@@ -9738,6 +9386,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-24.4",
    "Description": "AWSS Settlement Monitoring Work-Location No. 24",
@@ -9795,6 +9444,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-26.1",
    "Description": "AWSS Work-Location No. 26-Removal Work",
@@ -9852,6 +9502,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-26.2",
    "Description": "AWSS Work-Location No. 26-New Work-Materials",
@@ -9909,6 +9560,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-26.3",
    "Description": "AWSS Work-Location No. 26-New Work-Installation",
@@ -9966,6 +9618,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-27.1",
    "Description": "AWSS Work-Location No. 27-Removal Work",
@@ -10005,7 +9658,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":54000,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -10023,6 +9676,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-27.2",
    "Description": "AWSS Work-Location No. 27-New Work-Materials",
@@ -10080,6 +9734,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-27.3",
    "Description": "AWSS Work-Location No. 27-New Work-Installation",
@@ -10119,7 +9774,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":463800,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -10137,6 +9792,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-27.4",
    "Description": "AWSS Settlement Monitoring Work-Location No. 27",
@@ -10194,6 +9850,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-28.1",
    "Description": "AWSS Work-Location No. 28-Removal Work",
@@ -10233,7 +9890,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":60000,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -10251,6 +9908,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-28.2",
    "Description": "AWSS Work-Location No. 28-New Work-Materials",
@@ -10308,6 +9966,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-28.3",
    "Description": "AWSS Work-Location No. 28-New Work-Installation",
@@ -10347,7 +10006,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":0.00, 
-                              "PP08":0.00,                               
+                              "PP08":280000,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -10365,6 +10024,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-29.1",
    "Description": "AWSS Work-Location No. 29-Removal Work",
@@ -10404,7 +10064,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":82500, 
-                              "PP08":0.00,                               
+                              "PP08":82500,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -10422,6 +10082,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-29.2",
    "Description": "AWSS Work-Location No. 29-New Work-Materials",
@@ -10479,6 +10140,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-29.3",
    "Description": "AWSS Work-Location No. 29-New Work-Installation",
@@ -10518,7 +10180,7 @@ var base_sov =
                               "PP05":0.00,    
                               "PP06":0.00,                               
                               "PP07":441500, 
-                              "PP08":0.00,                               
+                              "PP08":264900,                               
                               "PP09":0.00,      
                               "PP10":0.00                           
                               },
@@ -10536,6 +10198,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-30.1",
    "Description": "AWSS Work-Location No. 30-Removal Work",
@@ -10593,6 +10256,7 @@ var base_sov =
                               },
                      }   
  },
+
  {
    "Bid Item": "AW-30.2",
    "Description": "AWSS Work-Location No. 30-New Work-Materials",

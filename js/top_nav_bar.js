@@ -27,7 +27,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 
     return_block =
 
-     '<nav class="navbar navbar-expand-lg bg-nav navbar-dark bg-primary">\
+        '<nav class="navbar navbar-expand-lg bg-nav navbar-dark bg-primary">\
         <button class="navbar-toggler"\
                 type="button"\
                 data-bs-toggle="collapse"\
@@ -52,6 +52,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07</a>\
+                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08</a>\
                 </li>\
               </ul>\
             </li>\
@@ -66,12 +67,90 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP05.html">PP05</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP06.html">PP06</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07</a>\
+	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08</a>\
 	        </li>\
 	      </ul>\
 	    </li>\
 	    <li class="nav-item dropdown">\
 	      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">QTYs</a>\
 	        <ul class="dropdown-menu">\
+	          <li>\
+	            <a class="dropdown-item" href="#">Flatwork &raquo;</a>\
+	            <ul class="submenu dropdown-menu">\
+	              <li>\
+	                <a class="dropdown-item" href="#">Grinding, Paving &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-02.html">CR-02: 1/2in HMA</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Agg. Base &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-04.html">CR-04: 12in Ag Base</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-06.html">CR-06: 6in Ag Base</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Sidewalk &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-07.html">CR-07: 3.5in Sidewalk</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-08.html">CR-08: 4in Sidewalk</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-09.html">CR-09: 6in Sidewalk</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-15.html">CR-15: 8in Bus Shelter Foundations</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-16.html">CR-16: Dark Concrete Paving</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">General / Misc. &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-03.html">CR-03: 9in JPCP Base</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-05.html">CR-05: Bus Pad</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-10.html">CR-10: Curb</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-11.html">CR-11: Parking Strip, Gutter</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-12.html">CR-12: Curb Ramps</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	            </ul>\
+	          </li>\
 	          <li>\
 	            <a class="dropdown-item" href="#">Sewer &raquo;</a>\
 	            <ul class="submenu dropdown-menu">\
@@ -187,7 +266,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	              </li>\
 	            </ul>\
 	          </li>\
-	          	        </ul>\
+	        </ul>\
 	          <li class="nav-item active">\
 	            <a class="nav-link" href="' + nav_path + 'specs/specs.html">Specs</a>\
 	          </li>\

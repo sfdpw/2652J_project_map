@@ -165,6 +165,135 @@ function pop_up_creator_for_domain(feature, layer)
 
         popupContent += pp_history_details(feature);
 
+    } else if (layer.feature.L_index_stored_in_each_feature >= CR_fltwrk_index_limits[0] &&
+        layer.feature.L_index_stored_in_each_feature <= CR_fltwrk_index_limits[1])
+
+    {
+    
+        var bid_item_code =  (feature.properties.install_id.substring(0, 5).replace('CR_0','CR_')).replace('_','-');
+
+        var areacalcs = ''
+
+        if (
+            bid_item_code == 'CR-3' || 
+            bid_item_code == 'CR-5' || 
+            bid_item_code == 'CR-7' ||
+            bid_item_code == 'CR-8' ||
+            bid_item_code == 'CR-9' ||
+            bid_item_code == 'CR-11' ||
+            bid_item_code == 'CR-16' ||
+            bid_item_code == 'CR-17'
+            )
+
+        {
+        
+         areacalcs =
+         '<strong>Area Calculation</strong><br>' +
+         '<table style="width:100%">\
+           <tr>\
+             <td>Worksheet ID:</td>\
+             <td style=\"text-align: right\">' + feature.properties.pp_qty_id + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>Modifier:</td>\
+             <td style=\"text-align: right\">' + feature.properties.mdfr_instl.toFixed(2) + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>Width:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.wdth_instl,'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>Length:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.lnth_instl,'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>Area:</td>\
+             <td style=\"text-align: right\">' + 
+             format_unit(
+                feature.properties.wdth_instl*feature.properties.lnth_instl*feature.properties.mdfr_instl,
+                'SF') + '</td>\
+             <td>SF</td>\
+           </tr>\
+         </table><br>';
+        
+       } else if (bid_item_code == 'CR-4' || bid_item_code == 'CR-6')
+
+        {
+         
+         var depthvalue = 1;
+         
+         if (bid_item_code == 'CR-6') {depthvalue = 0.5;}
+         
+         areacalcs =
+         
+         '<strong>Volume Calculation</strong><br>' +
+         '<table>\
+           <tr>\
+             <td>Worksheet ID:</td>\
+             <td style=\"text-align: right\">' + feature.properties.pp_qty_id + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>Modifier:</td>\
+             <td style=\"text-align: right\">' + feature.properties.mdfr_instl.toFixed(2) + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>Width:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.wdth_instl,'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>Length:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.lnth_instl,'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>Depth:</td>\
+             <td style=\"text-align: right\">' + depthvalue.toFixed(2) + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>Volume:</td>\
+             <td style=\"text-align: right\">' + 
+             format_unit(
+                feature.properties.wdth_instl*feature.properties.lnth_instl*
+                feature.properties.mdfr_instl*depthvalue,
+                'CY') + '</td>\
+             <td>CF</td>\
+           </tr>\
+           <tr>\
+             <td>Volume:</td>\
+             <td style=\"text-align: right\">' + 
+             format_unit(
+                feature.properties.wdth_instl*feature.properties.lnth_instl*
+                feature.properties.mdfr_instl*depthvalue/27,
+                'CY') + '</td>\
+             <td>CY</td>\
+           </tr>\
+         </table><br>';
+        
+       }
+
+        var popupContent =
+            '<strong>Instance Id</strong><br>' + 
+            feature.properties.install_id.replace(/_/g, "-") + '<br><br>' + 
+            '<strong>Description</strong><br>' + 
+            unpack_flatwork_feature_description(bid_item_code) + 
+            '<br><br>' +
+            '<strong>Status</strong><br>' + 
+            feature.properties.status + '<br><br>' + 
+            '<strong>Relevant Documents</strong><br>' + 
+            feature.properties.rlvnt +
+            '<br><br>' + areacalcs +
+            '<strong>Payment History</strong><br>';
+            
+        popupContent += pp_history_details(feature);
+
     }
 
     layer.bindPopup(popupContent, {
@@ -239,6 +368,28 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
 
 {
 
+    var row_string = '';
+    var neg_space = '';
+    
+    if (QTY > 0) {neg_space= '&nbsp;';}
+    
+    
+    
+    if (bid_item.includes('CR-'))
+    
+    {
+    
+        row_string = '<tr><td style=\"text-align: left\">' + 
+                     format_unit(QTY, UNIT) + '</td><td>' +
+                     UNIT + ' in</td><td>' +
+                     payment_no.substring(0, 4) + ' from</td><td>' +
+                     FUND + '</td></tr>';
+    
+    
+    } else
+    
+    {
+    
     var NN = 0; // bid item index
 
     while (base_sov[NN]["Bid Item"].replace('-0','-') != bid_item.replace('-0','-')) {
@@ -246,14 +397,7 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
         NN++;
     }
 
-
-
-    var neg_space = '';
-    
-    if (QTY > 0) {neg_space= '&nbsp;';}
-
-
-    var row_string = '<tr><td data-toogle="tooltip" title="' +
+        row_string = '<tr><td data-toogle="tooltip" title="' +
         base_sov[NN]['Bid Item'] + ": " +
         base_sov[NN]['Description'] + " (" + base_sov[NN]['Unit'] + ')">' +
         bid_item + ':</td><td style=\"text-align: left\">' + neg_space +
@@ -261,6 +405,9 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
         UNIT + ' in</td><td>' +
         payment_no.substring(0, 4) + ' from</td><td>' +
         FUND + '</td></tr>';
+
+    }
+
 
     return row_string
 

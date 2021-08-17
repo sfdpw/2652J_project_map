@@ -64,6 +64,8 @@
 
 
     <script src="data/003_stations_084_324.js"></script>
+    
+    
     <script src="data/202_SW_mains_0.js"></script>
     <script src="js/layer_toggle/add_line_layer_SW_main.js"></script>
     <script src="data/201_MHs_5.js"></script>
@@ -75,6 +77,25 @@
     <script src="js/layer_toggle/add_point_layer_SW_drain.js"></script>
     <script src="data/200_laterals_2.js"></script>
     <script src="js/layer_toggle/add_line_layer_SW_lateral.js"></script>
+    
+    <script src="data/400_flatwork.js"></script>
+    <script src="js/layer_toggle/add_polygon_layer_flatwork.js"></script>
+
+
+    <script src="data/534_E_34_pole_relocations_21.js"></script>
+    <script src="data/535_E_35_type_I_PBs_20.js"></script>
+    <script src="data/536_E_36_type_III_PBs_19.js"></script>
+    <script src="data/536_E_37_type_48X_PBs_18.js"></script>
+    <script src="data/539_E_38_1x1in_PVC_conduit_17.js"></script>
+    <script src="data/539_E_39_1x2in_PVC_conduit_16.js"></script>
+    <script src="data/540_E_40_2x2in_PVC_conduit_15.js"></script>
+    <script src="data/544_E_44_1x2in_GRS_and_2x2in_PVC_conduit_14.js"></script>
+    <script src="data/546_E_46_1x2in_GRS_conduit_13.js"></script>
+    
+    
+    
+    
+    
     <script src="js/misc_payment_functions.js"></script>
     <script src="data/base_sov.js"></script>
 
@@ -186,17 +207,60 @@
 
         add_feature_layer('SW_MH', 808, json_201_MHs_5,
             'Remove (E)', 'rgba(254, 54, 107, 1.0)');
+            
+            
+            
+            
+        var CR_fltwrk_index_limits = [851, 865];        
+        
+        add_feature_layer('CR', 851, json_400_flatwork,
+                          'CR-01: Planing', '#7b2f0e');
+        
+        add_feature_layer('CR', 852, json_400_flatwork,
+                          'CR-02: 1/2in HMA', '#fd366c');
+                          
+        add_feature_layer('CR', 853, json_400_flatwork,
+                          'CR-03: 9in JPCP Base', '#42359d');
+        
+        add_feature_layer('CR', 854, json_400_flatwork,
+                          'CR-04: 12in Ag Base', '#d71e44');
+        
+        add_feature_layer('CR', 855, json_400_flatwork,
+                          'CR-05: Bus Pad', '#d574ed');
+        
+        add_feature_layer('CR', 856, json_400_flatwork,
+                          'CR-06: 6in Ag Base', '#cf9f74');   
+             
+        add_feature_layer('CR', 857, json_400_flatwork,
+                          'CR-07: 3.5in Sidewalk', '#c3d92e'); 
+             
+        add_feature_layer('CR', 858, json_400_flatwork,
+                          'CR-08: 4in Sidewalk', '#24cde3'); 
+             
+        add_feature_layer('CR', 859, json_400_flatwork,
+                          'CR-09: 6in Sidewalk', '#1aed34'); 
+        
+        add_feature_layer('CR', 860, json_400_flatwork,
+                          'CR-10: Curb', '#db569b'); 
+          
+        add_feature_layer('CR', 861, json_400_flatwork,
+                          'CR-11: Parking Strip, Gutter', '#70e750');  
+        
+        add_feature_layer('CR', 862, json_400_flatwork,
+                          'CR-12: Curb Ramps', '#52a7ef');   
+        
+        add_feature_layer('CR', 863, json_400_flatwork,
+                          'CR-15: 8in Bus Shelter Foundations', '#606d98');        
+        
+        add_feature_layer('CR', 864, json_400_flatwork,
+                          'CR-16: Dark Concrete Paving', '#606d98');       
+         
+        add_feature_layer('CR', 865, json_400_flatwork,
+                          'CR-17: 2in AC over 4in Ag Base', '#606d98');          
+                            
     </script>
 
-
-
-
-
     <script src="data/211_SMPs_0.js"></script>
-
-
-
-
 
 </head>
 
@@ -214,6 +278,7 @@
             <script src="js/menu_cards/menu_card_sheet_overlays.js"></script>
             <script src="js/menu_cards/menu_card_sewer_features.js"></script>
             <script src="js/menu_cards/menu_card_AWSS_features.js"></script>
+            <script src="js/menu_cards/menu_card_CR_features.js"></script>
         </div>
     </div>
 

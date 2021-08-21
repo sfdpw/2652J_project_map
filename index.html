@@ -80,19 +80,15 @@
     
     <script src="data/400_flatwork.js"></script>
     <script src="js/layer_toggle/add_polygon_layer_flatwork.js"></script>
-
-
-    <script src="data/534_E_34_pole_relocations_21.js"></script>
-    <script src="data/535_E_35_type_I_PBs_20.js"></script>
-    <script src="data/536_E_36_type_III_PBs_19.js"></script>
-    <script src="data/536_E_37_type_48X_PBs_18.js"></script>
-    <script src="data/539_E_38_1x1in_PVC_conduit_17.js"></script>
-    <script src="data/539_E_39_1x2in_PVC_conduit_16.js"></script>
-    <script src="data/540_E_40_2x2in_PVC_conduit_15.js"></script>
-    <script src="data/544_E_44_1x2in_GRS_and_2x2in_PVC_conduit_14.js"></script>
-    <script src="data/546_E_46_1x2in_GRS_conduit_13.js"></script>
     
+    <script src="data/550_E_conduit.js"></script>
+    <script src="js/layer_toggle/add_line_layer_E_conduit.js"></script>   
     
+    <script src="data/590_E_PB.js"></script>
+    <script src="js/layer_toggle/add_point_layer_E_PB.js"></script>    
+
+    <script src="data/593_E_TS_pole_relocations.js"></script>
+    <script src="js/layer_toggle/add_point_layer_E_TS_pole_relocation.js"></script>        
     
     
     
@@ -257,7 +253,46 @@
          
         add_feature_layer('CR', 865, json_400_flatwork,
                           'CR-17: 2in AC over 4in Ag Base', '#606d98');          
+          
+        var E_TS_pole_relocation_index_limits = [893, 893];    
+                                
+        add_feature_layer('E_TR', 893, json_593_E_TS_pole_relocations,
+                          'E-34: Pole Reloc: 24-4-100; 35\' SMA; 15\' LA', '#b49632');        
+ 
+        var E_pullbox_index_limits = [890, 892];  
+                
+        add_feature_layer('E_PB', 890, json_590_E_PB,
+                          'E-35: Type I PB', '#b49632');      
                             
+        add_feature_layer('E_PB', 891, json_590_E_PB,
+                          'E-36: Type III PB', '#f99e59');                                
+                            
+        add_feature_layer('E_PB', 892, json_590_E_PB,
+                          'E-37: Type 48X PB', '#9dd3a7');   
+          
+        var E_conduit_index_limits = [870, 876];          
+           
+        add_feature_layer('E_CT', 870, json_550_E_conduit,
+                          'E-38: 1\" PVC x1', '#21908d');                 
+  
+        add_feature_layer('E_CT', 871, json_550_E_conduit,
+                          'E-39: 2\" PVC x1', '#d7191c');   
+                          
+        add_feature_layer('E_CT', 872, json_550_E_conduit,
+                          'E-40: 2\" PVC x2', '#ff8d13');     
+             
+        add_feature_layer('E_CT', 873, json_550_E_conduit,
+                          'E-44: 2\" GRS x1, 2" PVC x2', '#5dc963');   
+
+        add_feature_layer('E_CT', 874, json_550_E_conduit,
+                          'E-46: 2\" GRS x1', '#84177b');   
+
+        add_feature_layer('E_CT', 875, json_550_E_conduit,
+                          'E-48: 3\" GRS x6', '#b2814d'); 
+                          
+        add_feature_layer('E_CT', 876, json_550_E_conduit,
+                          'E-49: 6\" GRS x6', '#f3a6b2'); 
+                        
     </script>
 
     <script src="data/211_SMPs_0.js"></script>
@@ -279,6 +314,7 @@
             <script src="js/menu_cards/menu_card_sewer_features.js"></script>
             <script src="js/menu_cards/menu_card_AWSS_features.js"></script>
             <script src="js/menu_cards/menu_card_CR_features.js"></script>
+            <script src="js/menu_cards/menu_card_E_features.js"></script>
         </div>
     </div>
 

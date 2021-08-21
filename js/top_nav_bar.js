@@ -152,6 +152,70 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            </ul>\
 	          </li>\
 	          <li>\
+	            <a class="dropdown-item" href="#">Electrical &raquo;</a>\
+	            <ul class="submenu dropdown-menu">\
+	              <li>\
+	                <a class="dropdown-item" href="#">Poll Relocations &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-34.html">E-34 - 24-4-100; 35\' SMA; 15\' LA</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Pullboxes &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-35.html">E-35 - Type I PBs</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-36.html">E-36 - Type III PBs</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-37.html">E-37 - Type 48X PBs</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Conduit &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-38.html">E-38 - 1" PVC x1</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-39.html">E-39 - 2" PVC x1</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-40.html">E-40 - 2" PVC x2</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-44.html">E-44 - 2" GRS x1, 2" PVC x2</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-46.html">E-46 - 2" GRS x1</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-48.html">E-48 - 2" GRS x3</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-49.html">E-49 - 2" GRS x6</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	            </ul>\
+	          </li>\
+	          <li>\
 	            <a class="dropdown-item" href="#">Sewer &raquo;</a>\
 	            <ul class="submenu dropdown-menu">\
 	              <li>\

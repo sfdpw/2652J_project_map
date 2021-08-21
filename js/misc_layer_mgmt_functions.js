@@ -288,6 +288,46 @@ function add_feature_layer(feature_group, layer_index, source_json_layer_obj, pr
       }  
       
       
+     else if (feature_group == 'E_CT')
+
+      {
+     
+      
+       master_layer_array[layer_index].layer_description = property_filters;
+       master_layer_array[layer_index].toggle = 
+       
+          function() {E_conduit_layer_toggle(layer_index, master_layer_array, local_json_layer_obj,           
+                                           property_filters, rgba_code);}
+                                                                               
+      }      
+      
+      
+      else if (feature_group == 'E_PB')
+
+      {
+     
+      
+       master_layer_array[layer_index].layer_description = property_filters;
+       master_layer_array[layer_index].toggle = 
+       
+          function() {E_PB_layer_toggle(layer_index, master_layer_array, local_json_layer_obj,           
+                                           property_filters, rgba_code);}
+                                                                               
+      }  else if (feature_group == 'E_TR')
+
+      {
+     
+      
+       master_layer_array[layer_index].layer_description = property_filters;
+       master_layer_array[layer_index].toggle = 
+       
+          function() {E_TS_relocation_layer_toggle(layer_index, master_layer_array, local_json_layer_obj,           
+                                           property_filters, rgba_code);}
+                                                                               
+      }     
+      
+     
+      
     }                                                                          
                                                                               
  

@@ -35,7 +35,7 @@ var json_102_E_intersection_electricals_322 = {
 
 
 
-{ "type": "Feature", "properties": { "id": "6", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E060pdf1_modified_192','E-06.0',,,'E-06.1',]), "as_built": popup_sheet_entry_creator(), "tcp": popup_tcp_entry_creator(['TCP_102']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.47552290914669, 37.73724376837248 ], [ -122.475552903128275, 37.737699914080508 ], [ -122.475166374653995, 37.737725447700946 ], [ -122.47513607090805, 37.737269731403771 ], [ -122.47552290914669, 37.73724376837248 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "6", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E060pdf1_modified_192','E-06.0',,,'E-06.1',]), "as_built": popup_sheet_entry_creator(), "tcp": popup_tcp_entry_creator(['TCP_102', 'TCP_149']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.47552290914669, 37.73724376837248 ], [ -122.475552903128275, 37.737699914080508 ], [ -122.475166374653995, 37.737725447700946 ], [ -122.47513607090805, 37.737269731403771 ], [ -122.47552290914669, 37.73724376837248 ] ] ] ] } },
 
 
 

@@ -97,9 +97,26 @@ function qty_table_generator_laterals_lat_culv_TVI(qty_bid_item) {
                     lateral_coordinates[0][0][0] +                     
                     "\" target=\"_blank\">" +
                     lateral_properties["MAXIMO_ID"];
-                    lateral_extracted_details[2] = [lateral_properties.SUBMITTALS.TVI_PST_CON.Submittal, 
-                                                    lateral_properties.SUBMITTALS.TVI_PST_CON.Video]
+                    
+                    
+                    if (qty_bid_item == 'SW-32')
+                    
+                    {
+                    
+                    lateral_extracted_details[2] = [lateral_properties.SUBMITTALS.TVI_PRE_CON.Submittal, 
+                                                    lateral_properties.SUBMITTALS.TVI_PRE_CON.Video];
 
+                     } 
+                     
+                     else if (qty_bid_item == 'SW-41')
+                     
+                     {
+                     
+                                         
+                      lateral_extracted_details[2] = [lateral_properties.SUBMITTALS.TVI_PST_CON.Submittal, 
+                                                      lateral_properties.SUBMITTALS.TVI_PST_CON.Video];
+                     
+                     } 
 
 
 
@@ -207,9 +224,24 @@ function qty_table_generator_laterals_lat_culv_TVI(qty_bid_item) {
                     culvert_coordinates[0][0][0] +                     
                     "\" target=\"_blank\">" +
                     culvert_properties["PSR"];
-                    culvert_extracted_details[2] = [culvert_properties.SUBMITTALS.TVI_PST_CON.Submittal, 
-                                                    culvert_properties.SUBMITTALS.TVI_PST_CON.Video]
+                    
+                    if (qty_bid_item == 'SW-34')
+                    
+                    {
+                    
+                     culvert_extracted_details[2] = [culvert_properties.SUBMITTALS.TVI_PRE_CON.Submittal, 
+                                                    culvert_properties.SUBMITTALS.TVI_PRE_CON.Video];
 
+                     }
+                     
+                    if (qty_bid_item == 'SW-41')
+                     
+                    {
+                      
+                     culvert_extracted_details[2] = [culvert_properties.SUBMITTALS.TVI_PST_CON.Submittal, 
+                                                    culvert_properties.SUBMITTALS.TVI_PST_CON.Video];
+                    
+                      }
 
 
 

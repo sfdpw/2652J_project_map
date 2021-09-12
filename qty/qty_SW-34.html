@@ -34,7 +34,7 @@
     <script src="../data/550_E_conduit.js"></script>   
     <script src="../data/548_E_TS_cabinets.js"></script>     
     <script src="../js/misc_payment_functions.js"></script>
-    <script src="misc_qty_functions_culverts.js"></script>
+    <script src="misc_qty_functions_laterals_and_culverts_TVI.js"></script>
     <script src="../data/base_sov.js"></script>
 </head>
 
@@ -52,7 +52,8 @@
         <table class="qty_table" id="qty_table">
             <tbody>
                 <script>
-                    document.getElementById("qty_table").innerHTML += qty_table_generator_sw_mains(qty_bid_item);
+                    document.getElementById("qty_table").innerHTML +=  
+                             qty_table_generator_laterals_lat_culv_TVI(qty_bid_item);
                 </script>
             </tbody>
         </table><br>

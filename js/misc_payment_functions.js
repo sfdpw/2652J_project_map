@@ -37,8 +37,6 @@ function amount_cell(input_num) {
 function format_unit(input_num, unit, prec = 0) {
 
 
-     //console.log('a');
-
     var return_string = '';
 
     if (input_num != 0) {
@@ -236,6 +234,7 @@ function return_pp_history_from_spatial_file(work_type, bid_item_id, unit_price)
 
 
         {
+
 
             for (payment_no in work_instance.properties.PP_HISTORY[bid_item_id])
 

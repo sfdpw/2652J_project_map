@@ -288,7 +288,7 @@ function pop_up_creator_for_domain(feature, layer)
             unpack_flatwork_feature_description(bid_item_code) +
             '<br><br>' +
             '<strong>Status</strong><br>' +
-            feature.properties.status + '<br><br>' +
+            feature.properties.STATUS + '<br><br>' +
             '<strong>Relevant Documents</strong><br>' +
             feature.properties.rlvnt +
             '<br><br>' + areacalcs +
@@ -359,6 +359,29 @@ function pop_up_creator_for_domain(feature, layer)
             '<br><br>' +
             '<strong>Description</strong><br>' +
             unpack_TS_pole_relocation_feature_description(bid_item_code) +
+            '<br><br>' +
+            '<strong>Status</strong><br>' +
+            feature.properties.STATUS + '<br><br>' +
+            '<strong>Relevant Documents</strong><br>' +
+            feature.properties.rlvnt +
+            '<br><br>' +
+            '<strong>Payment History</strong><br>';
+
+        popupContent += pp_history_details(feature);
+
+
+    } else if (layer.feature.L_index_stored_in_each_feature >= E_TS_cabinet_index_limits[0] &&
+        layer.feature.L_index_stored_in_each_feature <= E_TS_cabinet_index_limits[1])
+
+    {
+
+        var bid_item_code = (feature.properties.install_id.substring(0, 4).replace('E_0', 'E_')).replace('_', '-');
+
+        var popupContent =
+            '<strong>Instance Id</strong><br>' +
+            feature.properties.install_id.replace(/_/g, "-") + '<br><br>' +
+            '<strong>Description</strong><br>' +
+            unpack_TS_cabinet_feature_description(bid_item_code) +
             '<br><br>' +
             '<strong>Status</strong><br>' +
             feature.properties.STATUS + '<br><br>' +
@@ -456,20 +479,20 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
 
     {
 
-        if (bid_item.includes('CR-'))
+        //if (bid_item.includes('CR-'))
 
-        {
+        //{
 
-            row_string = '<tr><td style=\"text-align: left\">' +
-                format_unit(QTY, UNIT) + '</td><td>' +
-                UNIT + ' in</td><td>' +
-                payment_no.substring(0, 4) + ' from</td><td>' +
-                FUND + '</td></tr>';
+        //    row_string = '<tr><td style=\"text-align: left\">' +
+        //        format_unit(QTY, UNIT) + '</td><td>' +
+        //        UNIT + ' in</td><td>' +
+        //        payment_no.substring(0, 4) + ' from</td><td>' +
+        //        FUND + '</td></tr>';
 
 
-        } else
+        //} else
 
-        {
+        //{
 
             var NN = 0; // bid item index
 
@@ -487,7 +510,7 @@ function pp_history_row(bid_item, QTY, UNIT, payment_no, FUND)
                 payment_no.substring(0, 4) + ' from</td><td>' +
                 FUND + '</td></tr>';
 
-        }
+        //}
 
     } else {
 

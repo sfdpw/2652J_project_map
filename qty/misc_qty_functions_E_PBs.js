@@ -66,9 +66,6 @@ function qty_table_generator_E_pullboxes(qty_bid_item) {
 
         {
 
-            
-                                     console.log(qty_bid_item)
-
             pullbox_instance_properties = pullbox_instance["properties"];
             pullbox_instance_coordinates = pullbox_instance["geometry"]["coordinates"];
             pullbox_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

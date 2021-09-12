@@ -68,9 +68,6 @@ function qty_table_generator_E_conduits(qty_bid_item) {
 
         {
 
-
-            console.log(qty_bid_item)
-
             conduit_instance_properties = conduit_instance["properties"];
             conduit_instance_coordinates = conduit_instance["geometry"]["coordinates"];
             conduit_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

@@ -67,9 +67,6 @@ function qty_table_generator_flatwork_each_or_ton(qty_bid_item) {
 
         {
 
-            
-                                     console.log(qty_bid_item)
-
             flatwork_instance_properties = flatwork_instance["properties"];
             flatwork_instance_coordinates = flatwork_instance["geometry"]["coordinates"];
             flatwork_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

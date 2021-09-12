@@ -2,7 +2,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
     var NN = 0; // bid item index
 
-    while (base_sov[NN]['Bid Item'] != qty_bid_item) {
+    while (base_sov[NN]['Bid Item'] != qty_bid_item.replace('-0','-')) {
         NN++;
     }
 

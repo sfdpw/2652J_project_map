@@ -34,7 +34,6 @@
 				  	if(nextEl && nextEl.classList.contains('submenu')) {	
 				  		// prevent opening link if link needs to open dropdown
 				  		e.preventDefault();
-				  		console.log(nextEl);
 				  		if(nextEl.style.display == 'block'){
 				  			nextEl.style.display = 'none';
 				  		} else {

@@ -2,8 +2,10 @@ function qty_table_generator_sw_mains_TVI(qty_bid_item) {
 
     var NN = 0; // bid item index
 
-    while (base_sov[NN]['Bid Item'] != qty_bid_item) {
+    while (base_sov[NN]['Bid Item'] != qty_bid_item.replace('-0','-')) {
+    
         NN++;
+        
     }
 
     var unit_price = base_sov[NN]['Unit Price'];
@@ -91,8 +93,24 @@ function qty_table_generator_sw_mains_TVI(qty_bid_item) {
                     sw_main_coordinates[0][0][0] +                     
                     "\" target=\"_blank\">" +
                     sw_main_properties["PSR"];
+
+                    if (qty_bid_item == 'SW-40')
+                    
+                    {
+                    
                     sw_main_extracted_details[1] = sw_main_properties.SUBMITTALS.TVI_PST_CON.Submittal;
                     sw_main_extracted_details[2] = sw_main_properties.SUBMITTALS.TVI_PST_CON.Video;
+
+                    } else if (qty_bid_item == 'SW-07') 
+                    
+                    {
+                    
+                    sw_main_extracted_details[1] = sw_main_properties.SUBMITTALS.TVI_PRE_CON.Submittal;
+                    sw_main_extracted_details[2] = sw_main_properties.SUBMITTALS.TVI_PRE_CON.Video;
+                    
+                    }
+
+
 
                     for (ff = 0; ff < funds.length; ff++)
 

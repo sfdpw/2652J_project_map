@@ -90,7 +90,8 @@
     <script src="data/593_E_TS_pole_relocations.js"></script>
     <script src="js/layer_toggle/add_point_layer_E_TS_pole_relocation.js"></script>        
     
-    
+    <script src="data/548_E_TS_cabinets.js"></script>
+    <script src="js/layer_toggle/add_point_layer_E_TS_cabinets.js"></script>        
     
     <script src="js/misc_payment_functions.js"></script>
     <script src="data/base_sov.js"></script>
@@ -168,12 +169,13 @@
             'rgba(215, 25, 28, 1.0)');
 
 
-        var SW_drain_index_limits = [790, 794];
+        var SW_drain_index_limits = [790, 795];
         add_feature_layer('SW_drain', 790, json_203_drains_4, '(E) to Remain', 'rgba(150, 150, 150, 1.0)');
         add_feature_layer('SW_drain', 791, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,187', 'rgba(100, 171, 176, 1.0)');
         add_feature_layer('SW_drain', 792, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,188', 'rgba(157, 211, 167, 1.0)');
         add_feature_layer('SW_drain', 793, json_203_drains_4, 'Install (N) per SFPW STD Plan 87,189', 'rgba(237, 248, 185, 1.0)');
-        add_feature_layer('SW_drain', 794, json_203_drains_4, 'Abandon (E)', 'rgba(180, 150, 50, 1.0)');
+        add_feature_layer('SW_drain', 794, json_203_drains_4, 'Install (N) CI Trap per SFPW STD Plan 87,194', '#f99e59');        
+        add_feature_layer('SW_drain', 795, json_203_drains_4, 'Abandon (E)', 'rgba(180, 150, 50, 1.0)');
 
         var SW_MH_index_limits = [800, 808];
 
@@ -269,29 +271,50 @@
                             
         add_feature_layer('E_PB', 892, json_590_E_PB,
                           'E-37: Type 48X PB', '#9dd3a7');   
+                          
+        var E_TS_cabinet_index_limits = [895, 895];                                    
           
-        var E_conduit_index_limits = [870, 876];          
+        add_feature_layer('E_CB', 895, json_548_E_TS_cabinets,
+                          'E-51: TS Cabinet Foundation', '#fe366b');         
+       
+       
+       
+        var E_conduit_index_limits = [870, 879];          
            
         add_feature_layer('E_CT', 870, json_550_E_conduit,
-                          'E-38: 1\" PVC x1', '#21908d');                 
+                          'E-38: 1\" PVC x1', '#2e36cb');                 
   
         add_feature_layer('E_CT', 871, json_550_E_conduit,
-                          'E-39: 2\" PVC x1', '#d7191c');   
+                          'E-39: 2\" PVC x1', '#ff8d13');   
                           
         add_feature_layer('E_CT', 872, json_550_E_conduit,
-                          'E-40: 2\" PVC x2', '#ff8d13');     
-             
+                          'E-40: 2\" PVC x2', '#d56592');     
+   
         add_feature_layer('E_CT', 873, json_550_E_conduit,
-                          'E-44: 2\" GRS x1, 2" PVC x2', '#5dc963');   
-
-        add_feature_layer('E_CT', 874, json_550_E_conduit,
-                          'E-46: 2\" GRS x1', '#84177b');   
-
-        add_feature_layer('E_CT', 875, json_550_E_conduit,
-                          'E-48: 3\" GRS x6', '#b2814d'); 
+                          'E-41: 3\" PVC x1', '#15e65a');    
                           
+        add_feature_layer('E_CT', 874, json_550_E_conduit,
+                          'E-42: 3\" PVC x1, 2\" PVC x1', '#4192cb');    
+             
+        add_feature_layer('E_CT', 875, json_550_E_conduit,
+                          'E-44: 2\" GRS x1, 2" PVC x2', '#debb69');   
+
         add_feature_layer('E_CT', 876, json_550_E_conduit,
-                          'E-49: 6\" GRS x6', '#f3a6b2'); 
+                          'E-46: 2\" GRS x1', '#14d6bc');   
+
+        add_feature_layer('E_CT', 877, json_550_E_conduit,
+                          'E-48: 2\" GRS x3', '#e923dc'); 
+                          
+        add_feature_layer('E_CT', 878, json_550_E_conduit,
+                          'E-49: 6\" GRS x6', '#e33b1d'); 
+                          
+        add_feature_layer('E_CT', 879, json_550_E_conduit,
+                          'E-50: 2\" HDPE x2', '#b0cd53'); 
+                          
+
+                          
+                          
+                          
                         
     </script>
 

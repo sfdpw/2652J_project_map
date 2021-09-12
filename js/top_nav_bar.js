@@ -53,6 +53,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08</a>\
+                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09</a>\
                 </li>\
               </ul>\
             </li>\
@@ -68,6 +69,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP06.html">PP06</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08</a>\
+	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09</a>\
 	        </li>\
 	      </ul>\
 	    </li>\
@@ -181,6 +183,15 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                </ul>\
 	              </li>\
 	              <li>\
+	                <a class="dropdown-item" href="#">Traffic Signal Cabinets &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-51.html">E-51 - TS Cabinet Foundation</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
 	                <a class="dropdown-item" href="#">Conduit &raquo;</a>\
 	                <ul class="submenu dropdown-menu">\
 	                  <li>\
@@ -194,6 +205,14 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-40.html">E-40 - 2" PVC x2</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-41.html">E-41 - 3" PVC x1</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-42.html">E-42 - 3" PVC x1, 2" PVC x1</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
@@ -211,6 +230,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-49.html">E-49 - 2" GRS x6</a>\
 	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-50.html">E-50 - 2" HDPE x2</a>\
+	                  </li>\
 	                </ul>\
 	              </li>\
 	            </ul>\
@@ -227,7 +250,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-36.html">SW-36 - Connection between Side Sewer and SW Main</a>\
+        'qty/qty_SW-36.html">SW-36 - Side Sewer Connection to Main</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
@@ -256,40 +279,67 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <a class="dropdown-item" href="#">Mains &raquo;</a>\
 	                <ul class="submenu dropdown-menu">\
 	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-11.html">SW-11 - (N) 8" VCP SW Main</a>\
+	                    <a class="dropdown-item" href="#">VCP Installation / Replacement &raquo;</a>\
+	                    <ul class="submenu dropdown-menu">\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-11.html">SW-11 - (N) 8" VCP SW Main</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-12.html">SW-12 - (N) 12" VCP SW Main</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-13.html">SW-13 - (N) 12" VCP SW Main at Parking Strip</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-14.html">SW-14 - (N) 15" VCP SW Main</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-15.html">SW-15 - (N) 15" VCP SW Main at Parking Strip</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-16.html">SW-16 - (N) 18" VCP SW Main</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-17.html">SW-17 - (N) 21" VCP SW Main</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-18.html">SW-18 - (N) 24" VCP SW Main</a>\
+	                      </li>\
+	                    </ul>\
 	                  </li>\
 	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-12.html">SW-12 - (N) 12" VCP SW Main</a>\
+	                    <a class="dropdown-item" href="#">Lining &raquo;</a>\
+	                    <ul class="submenu dropdown-menu">\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-07.html">SW-07 - Pre-Lining TVI and Cleaning of (E) SW Main</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-08.html">SW-08 - Bypassing (E) SW Main Prior to Lining</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-27.html">SW-27 - Internal Reaming Prior to Lining</a>\
+	                      </li>\
+	                    </ul>\
 	                  </li>\
 	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-13.html">SW-13 - (N) 12" VCP SW Main at Parking Strip</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-14.html">SW-14 - (N) 15" VCP SW Main</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-15.html">SW-15 - (N) 15" VCP SW Main at Parking Strip</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-16.html">SW-16 - (N) 18" VCP SW Main</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-17.html">SW-17 - (N) 21" VCP SW Main</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-18.html">SW-18 - (N) 24" VCP SW Main</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-40.html">SW-40 - Post-Con TVI of (N) SW Main</a>\
+	                    <a class="dropdown-item" href="#">General / Misc. &raquo;</a>\
+	                    <ul class="submenu dropdown-menu">\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-40.html">SW-40 - Post-Con TVI of (N) SW Main</a>\
+        	              </li>\
+	                    </ul>\
 	                  </li>\
 	                </ul>\
 	              </li>\
@@ -299,6 +349,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_SW-09.html">SW-09 - (N) CB - STD 87,188</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_SW-42.html">SW-42 - (N) CI Trap and Cap - STD 87,194</a>\
 	                  </li>\
 	                </ul>\
 	              </li>\
@@ -322,6 +376,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	              <li>\
 	                <a class="dropdown-item" href="#">General / Misc. &raquo;</a>\
 	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_SW-28.html">SW-28 - Reinstating Side Sewer or Culvert Connection to Newly-Lined SW Main</a>\
+	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_SW-41.html">SW-41 - Post-Con TVI of (N) Side Sewer or Culvert</a>\

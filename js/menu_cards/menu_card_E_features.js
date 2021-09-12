@@ -47,6 +47,27 @@ for (var ll = E_pullbox_index_limits[0]; ll <= E_pullbox_index_limits[1]; ll++) 
     electrical_feature_menu += layer_card_entry_generator(ll);
 }
 
+
+electrical_feature_menu +=
+
+               '<tr>\
+                  <td colspan="2">&nbsp;</td>\
+                </tr>\
+                <tr>\
+                  <td><input type="checkbox" id="8xx_ECB_checkbox"\
+                             onchange="feature_layer_toggle(\'8xx_ECB_checkbox\',' +
+    E_TS_cabinet_index_limits[0] + ',' + E_TS_cabinet_index_limits[1] + ')"></td>\
+                  <td><label class="layer_label" for="8xx_ECB_checkbox"><strong>Traffic Signal Cabinets</strong></label></td>\
+                </tr>';
+
+for (var ll =  E_TS_cabinet_index_limits[0]; ll <=  E_TS_cabinet_index_limits[1]; ll++) // TS Cabinets        
+
+{
+    electrical_feature_menu += layer_card_entry_generator(ll);
+}
+
+
+
 electrical_feature_menu +=
 
                '<tr>\

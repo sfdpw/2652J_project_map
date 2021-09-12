@@ -16,6 +16,7 @@ var SFPW_SW_STD = [
                    null, 'SFPW_STD_87187', 'CB w/ Curb Inlet, CI Trap',
                    null, 'SFPW_STD_87188', 'CB w/o Curb Inlet, /w CI Trap ',
                    null, 'SFPW_STD_87189', 'Storm Water Inlet',
+                   null, 'SFPW_STD_87194', 'CB CI Trap',
                    null, 'SFPW_STD_87196', 'SS Installation',
                    null, 'SFPW_STD_87197', 'Sewer Connection Details',
                    null, 'SFPW_STD_87198', '(E) SS Abandonment',

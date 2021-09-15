@@ -14,7 +14,7 @@ function qty_table_generator_laterals_lat_culv_TVI(qty_bid_item) {
         
                  '<thead class="qty_thead">\
                     <tr class="qty_tr">\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Address</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Address / Location</th>\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Asset ID</th>\
                         <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Submittal</th>\
                         <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Video</th>\
@@ -215,7 +215,7 @@ function qty_table_generator_laterals_lat_culv_TVI(qty_bid_item) {
 
                     is_qty_in_pp = true;
 
-                    culvert_extracted_details[0] = "-";
+                    culvert_extracted_details[0] = culvert_properties.LOCATION;
 
                         
                     culvert_extracted_details[1] =
@@ -279,9 +279,9 @@ function qty_table_generator_laterals_lat_culv_TVI(qty_bid_item) {
                     payment_block +=
 
                         '<tr class="qty_tr">\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
+                        <td class="qty_td" style="text-align:left; padding:5px;">' +
                         culvert_extracted_details[0] + '</td>\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
+                        <td class="qty_td" style="text-align:left; padding:5px; width:7%">' +
                         culvert_extracted_details[1] + '</td>\
                         <td class="qty_td" style="text-align:center; padding:5px">' +
                         culvert_extracted_details[2][0] + '</td>\

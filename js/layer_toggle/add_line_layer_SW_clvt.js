@@ -73,7 +73,7 @@ function SW_clvt_layer_styler(feature) {
             break;
 
 
-        case 'Pending Pre-Contruction Television':
+        case 'Pending Pre-Construction Television':
             return {
                 pane: 'P_'.concat(feature.L_index_stored_in_each_feature),
                     opacity: 1,

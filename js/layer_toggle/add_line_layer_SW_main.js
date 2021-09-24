@@ -134,7 +134,7 @@ function SW_main_layer_styler(feature) {
 
     {
 
-        dash_code = '10, 5'
+        dash_code = '9, 9'
 
     }
 

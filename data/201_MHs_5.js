@@ -351,7 +351,7 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-24995", "NODE_ID": "32901", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.47621183830195, 37.749607641069915 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "Unfound_SW_MH_002", "NODE_ID": 'none', "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475987686876522, 37.75052383443149 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-394942", "NODE_ID": '300188', "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475987686876522, 37.75052383443149 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-13231", "NODE_ID": "21527", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.476083876247273, 37.750517602734114 ] } },
 
@@ -409,7 +409,7 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-13288", "NODE_ID": "18930", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.476591107977413, 37.757978078537469 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-13290", "NODE_ID": "18932", "SCOPE": "Remove (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.476602551766163, 37.758144406421216 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-398979", "NODE_ID": "303427", "SCOPE": "Remove (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.476602551766163, 37.758144406421216 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-35991", "NODE_ID": "18877", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.476927844518187, 37.759994358707075 ] } },
 

@@ -197,7 +197,7 @@ function pop_up_creator_for_domain(feature, layer)
            </tr>\
            <tr>\
              <td>Modifier:</td>\
-             <td style=\"text-align: right\">' + feature.properties.mdfr_instl.toFixed(2) + '</td>\
+             <td style=\"text-align: right\">' +  feature.properties.mdfr_instl.toFixed(2) + '</td>\
              <td></td>\
            </tr>\
            <tr>\

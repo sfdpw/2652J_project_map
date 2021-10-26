@@ -54,6 +54,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09</a>\
+                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10</a>\
                 </li>\
               </ul>\
             </li>\
@@ -70,6 +71,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09</a>\
+	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10</a>\
 	        </li>\
 	      </ul>\
 	    </li>\
@@ -246,6 +248,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <ul class="submenu dropdown-menu">\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_SW-20.html">SW-20 - Line (E) Side Sewer</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_SW-32.html">SW-32 - Pre-Con TVI of (E) Side Sewer</a>\
 	                  </li>\
 	                  <li>\
@@ -370,6 +376,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_SW-05.html">SW-05 - (N) MH - STD 87,182 - Angled</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_SW-06.html">SW-06 - Clean and Mortar (E) MH</a>\
 	                  </li>\
 	                </ul>\
 	              </li>\

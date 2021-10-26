@@ -54,17 +54,15 @@ function SW_lateral_layer_toggle(layer_index, master_layer_array, local_json_lay
 
 function SW_lateral_layer_styler(feature) {
 
-
-
     var dash_code = '';
 
-    //if (feature.properties['SCOPE'].includes('Line '))
+    if (feature.properties['SCOPE'].includes('Line '))
 
-    //{
+    {
 
-    //    dash_code = '10, 5'
+        dash_code = '9, 9'
 
-    //}
+    }
 
     switch (String(feature.properties['STATUS'])) {
         case 'No Construction':

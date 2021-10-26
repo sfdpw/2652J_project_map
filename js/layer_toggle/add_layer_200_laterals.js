@@ -128,6 +128,19 @@ function style_200_laterals_2_0(feature) {
           interactive: true,
       }
       break;
+    case 'Line (E) with CIPL':
+      return {
+        pane: 'pane_200_laterals_2',
+          opacity: 1,
+          color: 'rgba(59, 82, 139, 1.0)',
+          dashArray: '9, 9',
+          lineCap: 'round',
+          lineJoin: 'round',
+          weight: 4.0,
+          fillOpacity: 0,
+          interactive: true,
+      }
+      break;
   }
 }
 map.createPane('pane_200_laterals_2');

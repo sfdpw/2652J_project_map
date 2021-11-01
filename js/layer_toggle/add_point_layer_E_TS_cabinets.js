@@ -38,7 +38,7 @@ function E_TS_cabinet_layer_toggle(layer_index, master_layer_array, local_json_l
           
                 var context = {feature: feature, variables: {}};
                 
-                return L.circleMarker(latlng, E_TS_pole_relocation_layer_styler(feature));},});
+                return L.circleMarker(latlng, E_TS_cabinet_layer_styler(feature));},});
                 
                 bounds_group.addLayer(master_layer_array[layer_index].layer);
 
@@ -57,11 +57,31 @@ function E_TS_cabinet_layer_toggle(layer_index, master_layer_array, local_json_l
 
 
 function E_TS_cabinet_layer_styler(feature) {
+              
 
-                    
-
-  switch (String(feature.properties['STATUS'])) {
-    case 'Post-Construction':
+  switch (String(feature.properties['STATUS']).concat(feature.properties.install_id.substring(0, 4))) {
+    case 'Post-ConstructionE_51':
+      return {
+        pane:  'P_'.concat(feature.L_index_stored_in_each_feature),
+          radius: 7.0,
+          opacity: 1,
+          color: 'rgba(35,35,35,1.0)',
+          dashArray: '',
+          lineCap: 'butt',
+          lineJoin: 'miter',
+          weight: 2,
+          fill: true,
+          fillOpacity: 1,
+          fillColor: feature.rgba_code_stored_in_each_feature,
+          interactive: true,
+      }
+      break;      
+      
+   
+  }
+  
+  switch (String(feature.properties['STATUS']).concat(feature.properties.install_id.substring(0, 4))) {
+    case 'Post-ConstructionE_52':
       return {
         pane:  'P_'.concat(feature.L_index_stored_in_each_feature),
           radius: 4.0,
@@ -79,7 +99,10 @@ function E_TS_cabinet_layer_styler(feature) {
       break;      
       
    
-  }
+  }  
+  
+  
+  
 }
 
 function unpack_TS_cabinet_feature_description(property_filters)
@@ -96,6 +119,17 @@ function unpack_TS_cabinet_feature_description(property_filters)
             output_L_desc = 'Concrete Foundation<br>\
                              for Standard 332L (ITS)<br>\
                              Traffic Signal Cabinet';  
+
+        } 
+        
+        else if (property_filters == 'E-52')
+
+        {
+
+            output_L_desc = 'Labor Cost Only to Install<br>\
+                             City-Furnished 2070 Intersection<br>\
+                             Controller 332L (ITS) Cabinet Assembly<br>\
+                             with 12-Conductor Interconnect Component';  
 
         } 
 

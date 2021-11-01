@@ -16,14 +16,53 @@ var electrical_feature_menu =
             <div class="card-body">\
               <div class="scroll_card">\
               <table>\
+               <tr>\
+                  <td><input type="checkbox" id="8xx_ESG_checkbox"\
+                             onchange="feature_layer_toggle(\'8xx_ESG_checkbox\',' +
+   E_signals_index_limits[0] + ',' + E_signals_index_limits[1] + ')"></td>\
+                  <td><label class="layer_label" for="8xx_ESG_checkbox"><strong>Signals</strong></label></td>\
+                </tr>';
+
+for (var ll = E_signals_index_limits[0]; ll <= E_signals_index_limits[1]; ll++) // E Signals
+
+{
+    electrical_feature_menu += layer_card_entry_generator(ll);
+}
+                              
+   electrical_feature_menu +=
+
+               '<tr>\
+                  <td colspan="2">&nbsp;</td>\
+                </tr>\
+                <tr>\
+                  <td><input type="checkbox" id="8xx_ESM_checkbox"\
+                             onchange="feature_layer_toggle(\'8xx_ESM_checkbox\',' +
+   E_signal_mounting_index_limits[0] + ',' + E_signal_mounting_index_limits[1] + ')"></td>\
+                  <td><label class="layer_label" for="8xx_ESM_checkbox"><strong>Signal Mountings</strong></label></td>\
+                </tr>';
+
+for (var ll = E_signal_mounting_index_limits[0]; ll <= E_signal_mounting_index_limits[1]; ll++) // E Signal Mountings    
+
+{
+    electrical_feature_menu += layer_card_entry_generator(ll);
+}
+
+
+
+
+electrical_feature_menu +=
+
+               '<tr>\
+                  <td colspan="2">&nbsp;</td>\
+                </tr>\
                 <tr>\
                   <td><input type="checkbox" id="8xx_ETR_checkbox"\
                              onchange="feature_layer_toggle(\'8xx_ETR_checkbox\',' +
-    E_TS_pole_relocation_index_limits[0] + ',' + E_TS_pole_relocation_index_limits[1] + ')"></td>\
-                  <td><label class="layer_label" for="8xx_ETR_checkbox"><strong>Mast Arm Pole Relocations</strong></label></td>\
+   E_pole_index_limits[0] + ',' + E_pole_index_limits[1] + ')"></td>\
+                  <td><label class="layer_label" for="8xx_ETR_checkbox"><strong>Poles</strong></label></td>\
                 </tr>';
 
-for (var ll = E_TS_pole_relocation_index_limits[0]; ll <= E_TS_pole_relocation_index_limits[1]; ll++) // MA Pole Relocations          
+for (var ll = E_pole_index_limits[0]; ll <= E_pole_index_limits[1]; ll++) // E Poles 
 
 {
     electrical_feature_menu += layer_card_entry_generator(ll);
@@ -47,27 +86,6 @@ for (var ll = E_pullbox_index_limits[0]; ll <= E_pullbox_index_limits[1]; ll++) 
     electrical_feature_menu += layer_card_entry_generator(ll);
 }
 
-
-electrical_feature_menu +=
-
-               '<tr>\
-                  <td colspan="2">&nbsp;</td>\
-                </tr>\
-                <tr>\
-                  <td><input type="checkbox" id="8xx_ECB_checkbox"\
-                             onchange="feature_layer_toggle(\'8xx_ECB_checkbox\',' +
-    E_TS_cabinet_index_limits[0] + ',' + E_TS_cabinet_index_limits[1] + ')"></td>\
-                  <td><label class="layer_label" for="8xx_ECB_checkbox"><strong>Traffic Signal Cabinets</strong></label></td>\
-                </tr>';
-
-for (var ll =  E_TS_cabinet_index_limits[0]; ll <=  E_TS_cabinet_index_limits[1]; ll++) // TS Cabinets        
-
-{
-    electrical_feature_menu += layer_card_entry_generator(ll);
-}
-
-
-
 electrical_feature_menu +=
 
                '<tr>\
@@ -82,6 +100,25 @@ electrical_feature_menu +=
 
 
 for (var ll = E_conduit_index_limits[0]; ll <= E_conduit_index_limits[1]; ll++) // Conduit            
+
+{
+    electrical_feature_menu += layer_card_entry_generator(ll);
+}
+
+
+electrical_feature_menu +=
+
+               '<tr>\
+                  <td colspan="2">&nbsp;</td>\
+                </tr>\
+                <tr>\
+                  <td><input type="checkbox" id="8xx_ECB_checkbox"\
+                             onchange="feature_layer_toggle(\'8xx_ECB_checkbox\',' +
+    E_TS_cabinet_index_limits[0] + ',' + E_TS_cabinet_index_limits[1] + ')"></td>\
+                  <td><label class="layer_label" for="8xx_ECB_checkbox"><strong>Traffic Signal Cabinets</strong></label></td>\
+                </tr>';
+
+for (var ll =  E_TS_cabinet_index_limits[0]; ll <=  E_TS_cabinet_index_limits[1]; ll++) // TS Cabinets        
 
 {
     electrical_feature_menu += layer_card_entry_generator(ll);

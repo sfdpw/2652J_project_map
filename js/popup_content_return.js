@@ -356,30 +356,84 @@ function pop_up_creator_for_domain(feature, layer)
         popupContent += pp_history_details(feature);
 
 
-    } else if (layer.feature.L_index_stored_in_each_feature >= E_TS_pole_relocation_index_limits[0] &&
-        layer.feature.L_index_stored_in_each_feature <= E_TS_pole_relocation_index_limits[1])
+    } else if (layer.feature.L_index_stored_in_each_feature >= E_pole_index_limits[0] &&
+        layer.feature.L_index_stored_in_each_feature <= E_pole_index_limits[1])
 
     {
 
-        var bid_item_code = (feature.properties.install_id.substring(0, 4).replace('E_0', 'E_')).replace('_', '-');
+        var bid_item_code = (feature.properties.BID_ITEM);
 
         var popupContent =
-            '<strong>Instance Id</strong><br>' +
-            feature.properties.install_id.replace(/_/g, "-") + '<br><br>' +
+            '<strong>Location</strong><br>' +
+            feature.properties.LOCATION + '<br><br>' +
             '<strong>Pole ID</strong><br>' +
-            feature.properties.Pole + 
+            feature.properties.POLE_ID + 
             '<br><br>' +
             '<strong>Description</strong><br>' +
-            unpack_TS_pole_relocation_feature_description(bid_item_code) +
+            unpack_TS_pole_feature_description(bid_item_code) +
             '<br><br>' +
             '<strong>Status</strong><br>' +
             feature.properties.STATUS + '<br><br>' +
             '<strong>Relevant Documents</strong><br>' +
-            feature.properties.rlvnt +
+            feature.properties.RLVNT +
             '<br><br>' +
             '<strong>Payment History</strong><br>';
 
-        popupContent += pp_history_details(feature);
+             popupContent += pp_history_details(feature);
+
+
+    } else if (layer.feature.L_index_stored_in_each_feature >= E_signal_mounting_index_limits[0] &&
+        layer.feature.L_index_stored_in_each_feature <= E_signal_mounting_index_limits[1])
+
+    {
+
+        var bid_item_code = (feature.properties.BID_ITEM);
+
+        var popupContent =
+            '<strong>Location</strong><br>' +
+            feature.properties.LOCATION + '<br><br>' +
+            '<strong>Pole ID</strong><br>' +
+            feature.properties.POLE_ID +  '<br><br>' +
+            '<strong>Signal No.(s)</strong><br>' +
+            feature.properties.SIG_NO +  '<br><br>' +
+            '<strong>Description</strong><br>' +
+            unpack_signal_mountings_feature_description(bid_item_code) +
+            '<br><br>' +
+            '<strong>Status</strong><br>' +
+            feature.properties.STATUS + '<br><br>' +
+            '<strong>Relevant Documents</strong><br>' +
+            feature.properties.RLVNT +
+            '<br><br>' +
+            '<strong>Payment History</strong><br>';
+
+             popupContent += pp_history_details(feature);
+
+
+    } else if (layer.feature.L_index_stored_in_each_feature >= E_signals_index_limits[0] &&
+        layer.feature.L_index_stored_in_each_feature <= E_signals_index_limits[1])
+
+    {
+
+        var bid_item_code = (feature.properties.BID_ITEM);
+
+        var popupContent =
+            '<strong>Location</strong><br>' +
+            feature.properties.LOCATION + '<br><br>' +
+            '<strong>Pole ID</strong><br>' +
+            feature.properties.POLE_ID +  '<br><br>' +
+            '<strong>Signal No.(s)</strong><br>' +
+            feature.properties.SIG_NO +  '<br><br>' +
+            '<strong>Signal Type</strong><br>' +
+            feature.properties.SIG_TYPE +
+            '<br><br>' +
+            '<strong>Status</strong><br>' +
+            feature.properties.STATUS + '<br><br>' +
+            '<strong>Relevant Documents</strong><br>' +
+            feature.properties.RLVNT +
+            '<br><br>' +
+            '<strong>Payment History</strong><br>';
+
+             popupContent += pp_history_details(feature);
 
 
     } else if (layer.feature.L_index_stored_in_each_feature >= E_TS_cabinet_index_limits[0] &&

@@ -1,5 +1,5 @@
 
-function E_TS_relocation_layer_toggle(layer_index, master_layer_array, local_json_layer_obj, property_filters, rgba_code)
+function E_signals_layer_toggle(layer_index, master_layer_array, local_json_layer_obj, property_filters, rgba_code)
 
   {
 
@@ -15,7 +15,7 @@ function E_TS_relocation_layer_toggle(layer_index, master_layer_array, local_jso
 
             {
 
-              if (local_json_layer_obj['features'][ii].properties.install_id.includes(property_filters.substring(0,4).replace('-','_')))
+              if (property_filters.includes(local_json_layer_obj['features'][ii].properties.SIG_TYPE))
 
                 {
 
@@ -38,7 +38,7 @@ function E_TS_relocation_layer_toggle(layer_index, master_layer_array, local_jso
           
                 var context = {feature: feature, variables: {}};
                 
-                return L.circleMarker(latlng, E_TS_pole_relocation_layer_styler(feature));},});
+                return L.circleMarker(latlng, E_signal_layer_styler(feature));},});
                 
                 bounds_group.addLayer(master_layer_array[layer_index].layer);
 
@@ -56,7 +56,7 @@ function E_TS_relocation_layer_toggle(layer_index, master_layer_array, local_jso
 }
 
 
-function E_TS_pole_relocation_layer_styler(feature) {
+function E_signal_layer_styler(feature) {
 
                     
 
@@ -82,24 +82,40 @@ function E_TS_pole_relocation_layer_styler(feature) {
   }
 }
 
-function unpack_TS_pole_relocation_feature_description(property_filters)
+//function unpack_signal_feature_description(property_filters)
 
-{
+//{
 
-    var output_L_desc = '';
-
-
-        if (property_filters == 'E-34')
-
-        {
-
-            output_L_desc = 'Relocation of (E) 24-4-100 MA Pole<br>\
-                             with 35-Foot Signal Mast Arm, MAS Mounting<br>\
-                             15-Foot Luminaire Arm, and LED Luminaire';  
-
-        } 
+//    var output_L_desc = '';
 
 
-        return output_L_desc
+//        if (property_filters == 'E-01')
 
-}
+//        {
+
+//            output_L_desc = '(3S12\”) 3 Section,<br>\
+//                             12-inch Vehicle Signal Face<br>\
+//                             with Type 1 LED Red, Yellow, and Green';  
+
+//        } else if (property_filters == 'E-10')
+
+//        {
+
+//            output_L_desc = '(1S-Count) One-Section LED<br>\
+//                             Pedestrian Countdown Signal Housing';
+
+//        } else if (property_filters == 'E-11')
+
+//        {
+
+//            output_L_desc = 'Labor Cost Only To Install<br>\
+//                             City Furnished (1S-Count Module)<br>\
+//                             One-Section LED Pedestrian<br>\
+//                             Countdown Signal Module';
+
+//        }
+
+
+//        return output_L_desc
+
+//}

@@ -29,12 +29,14 @@
     <script src="../data/203_drains_4.js"></script>
     <script src="../data/204_culverts_3.js"></script>
     <script src="../data/400_flatwork.js"></script>
-    <script src="../data/593_E_TS_pole_relocations.js"></script>
+    <script src="../data/500_poles.js"></script>
+    <script src="../data/501_signal_mountings.js"></script>
+    <script src="../data/502_signals.js"></script>
     <script src="../data/590_E_PB.js"></script>
     <script src="../data/550_E_conduit.js"></script>   
     <script src="../data/548_E_TS_cabinets.js"></script>     
     <script src="../js/misc_payment_functions.js"></script>
-    <script src="misc_qty_functions_E_pole_relocations.js"></script>
+    <script src="misc_qty_functions_E_poles.js"></script>
     <script src="../data/base_sov.js"></script>
 </head>
 
@@ -54,7 +56,7 @@
             <tbody>
                 <script>
                     document.getElementById("qty_table").innerHTML +=  
-                    qty_table_generator_E_poll_relocatons(qty_bid_item);
+                    qty_table_generator_E_poles(qty_bid_item);
                 </script>
             </tbody>
         </table><br>

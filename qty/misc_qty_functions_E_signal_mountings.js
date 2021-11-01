@@ -1,4 +1,4 @@
-function qty_table_generator_E_poll_relocatons(qty_bid_item) {
+function qty_table_generator_E_signal_mountings(qty_bid_item) {
 
     var NN = 0; // bid item index
 
@@ -16,9 +16,9 @@ function qty_table_generator_E_poll_relocatons(qty_bid_item) {
                  '<thead class="qty_thead">\
                     <tr class="qty_tr">\
                         <th class="qty_thead" rowspan="2" style="text-align:left;\
-                                              padding:5px; width:12%">Instance ID</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Location</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Pole<br>ID</th>\
+                                              padding:5px;">Location</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Pole ID</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:center; padding:5px">Signal No.</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">Total</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFMTA</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
@@ -47,8 +47,8 @@ function qty_table_generator_E_poll_relocatons(qty_bid_item) {
     var is_qty_in_pp = false;
     var payment_block = '';
 
-    var pullbox_instance_extracted_details = [];
-    var pullbox_instance_properties = [];
+    var signal_mounting_instance_extracted_details = [];
+    var signal_mounting_instance_properties = [];
 
 
     var period_totals = [];
@@ -63,64 +63,63 @@ function qty_table_generator_E_poll_relocatons(qty_bid_item) {
         period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
-        for (const pullbox_instance of json_593_E_TS_pole_relocations["features"])
+        for (const signal_mounting_instance of json_501_signal_mountings["features"])
 
         {
+            signal_mounting_instance_properties = signal_mounting_instance["properties"];
+            signal_mounting_instance_coordinates = signal_mounting_instance["geometry"]["coordinates"];
+            signal_mounting_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-            pullbox_instance_properties = pullbox_instance["properties"];
-            pullbox_instance_coordinates = pullbox_instance["geometry"]["coordinates"];
-            pullbox_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
-            if (pullbox_instance_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
+            if (signal_mounting_instance_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
 
             {
 
 
 
-                if (pullbox_instance_properties["PP_HISTORY"][qty_bid_item].hasOwnProperty('PP' + zeroPad(pp, 2)))
+                if (signal_mounting_instance_properties["PP_HISTORY"][qty_bid_item].hasOwnProperty('PP' + zeroPad(pp, 2)))
 
 
                 {
 
                     is_qty_in_pp = true;
 
-                    pullbox_instance_extracted_details[0] = (pullbox_instance_properties["install_id"].replace(/_/g, "-")).substring(0,13);
+                    signal_mounting_instance_extracted_details[1] = signal_mounting_instance_properties.SIG_NO;
                     
-                    pullbox_instance_extracted_details[1] =
+                    signal_mounting_instance_extracted_details[0] =
                     "<a href=\"..\\index.html#20/" + 
-                    pullbox_instance_coordinates[1] +"/" + 
-                    pullbox_instance_coordinates[0] +                     
+                    signal_mounting_instance_coordinates[0][0][1] +"/" + 
+                    signal_mounting_instance_coordinates[0][0][0] +                     
                     "\" target=\"_blank\">" +
-                    pullbox_instance_properties["location"];
+                    signal_mounting_instance_properties.LOCATION;
                     
-                    pullbox_instance_extracted_details[2] = pullbox_instance_properties["Pole"];
+                    signal_mounting_instance_extracted_details[2] = signal_mounting_instance_properties.POLE_ID;
 
                     for (ff = 0; ff < funds.length; ff++)
 
                     {
 
 
-                        if (pullbox_instance_properties["PP_HISTORY"][qty_bid_item]
+                        if (signal_mounting_instance_properties["PP_HISTORY"][qty_bid_item]
                             ['PP' + zeroPad(pp, 2)].hasOwnProperty(funds[ff]))
 
                         {
 
-                            pullbox_instance_extracted_details[2 * ff + 5] = pullbox_instance_properties["PP_HISTORY"]
+                            signal_mounting_instance_extracted_details[2 * ff + 5] = signal_mounting_instance_properties["PP_HISTORY"]
                                 [qty_bid_item]['PP' + zeroPad(pp, 2)]
                                 [funds[ff]]["QTY"];
 
-                            pullbox_instance_extracted_details[2 * ff + 6] =
-                                pullbox_instance_extracted_details[2 * ff + 5] * unit_price;
+                            signal_mounting_instance_extracted_details[2 * ff + 6] =
+                                signal_mounting_instance_extracted_details[2 * ff + 5] * unit_price;
 
 
-                            pullbox_instance_extracted_details[3] += pullbox_instance_extracted_details[2 * ff + 5];
-                            pullbox_instance_extracted_details[4] += pullbox_instance_extracted_details[2 * ff + 6];
+                            signal_mounting_instance_extracted_details[3] += signal_mounting_instance_extracted_details[2 * ff + 5];
+                            signal_mounting_instance_extracted_details[4] += signal_mounting_instance_extracted_details[2 * ff + 6];
 
 
-                            period_totals[0] += pullbox_instance_extracted_details[2 * ff + 5];
-                            period_totals[1] += pullbox_instance_extracted_details[2 * ff + 6];
-                            period_totals[2 * ff + 2] += pullbox_instance_extracted_details[2 * ff + 5];
-                            period_totals[2 * ff + 3] += pullbox_instance_extracted_details[2 * ff + 6];
+                            period_totals[0] += signal_mounting_instance_extracted_details[2 * ff + 5];
+                            period_totals[1] += signal_mounting_instance_extracted_details[2 * ff + 6];
+                            period_totals[2 * ff + 2] += signal_mounting_instance_extracted_details[2 * ff + 5];
+                            period_totals[2 * ff + 3] += signal_mounting_instance_extracted_details[2 * ff + 6];
 
                         }
 
@@ -130,15 +129,15 @@ function qty_table_generator_E_poll_relocatons(qty_bid_item) {
 
                         '<tr class="qty_tr">\
                         <td class="qty_td" style="text-align:left; padding:5px">' +
-                        pullbox_instance_extracted_details[0] + '</td>\
-                        <td class="qty_td" style="text-align:left; padding:5px">' +
-                        pullbox_instance_extracted_details[1] + '</td>\
+                        signal_mounting_instance_extracted_details[0] + '</td>\
                         <td class="qty_td" style="text-align:center; padding:5px">' +
-                        pullbox_instance_extracted_details[2] + '</td>\
+                        signal_mounting_instance_extracted_details[1] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        signal_mounting_instance_extracted_details[2] + '</td>\
                         <td class="qty_td" style="text-align:right; padding:5px">' +
-                        qty_or_blank(pullbox_instance_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
+                        qty_or_blank(signal_mounting_instance_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
                         <td class="qty_td funding_td_amt" style="text-padding:5px">' +
-                        amount_or_blank(pullbox_instance_extracted_details[4]) + '</td>';
+                        amount_or_blank(signal_mounting_instance_extracted_details[4]) + '</td>';
 
 
                     for (ff = 0; ff < funds.length; ff++)
@@ -148,9 +147,9 @@ function qty_table_generator_E_poll_relocatons(qty_bid_item) {
                         payment_block +=
 
                             '<td class="qty_td" style="text-align:right; padding:5px">' +
-                            qty_or_blank(pullbox_instance_extracted_details[2 * ff + 5], base_sov[NN]['Unit']) + '</td>\
+                            qty_or_blank(signal_mounting_instance_extracted_details[2 * ff + 5], base_sov[NN]['Unit']) + '</td>\
                                      <td class="qty_td funding_td_amt_' + funds[ff] + '" style="padding:5px">' +
-                            amount_or_blank(pullbox_instance_extracted_details[2 * ff + 6]) + '</td>';
+                            amount_or_blank(signal_mounting_instance_extracted_details[2 * ff + 6]) + '</td>';
 
 
                     }

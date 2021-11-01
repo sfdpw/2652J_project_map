@@ -159,8 +159,58 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            <a class="dropdown-item" href="#">Electrical &raquo;</a>\
 	            <ul class="submenu dropdown-menu">\
 	              <li>\
-	                <a class="dropdown-item" href="#">Poll Relocations &raquo;</a>\
+	                <a class="dropdown-item" href="#">Signals &raquo;</a>\
 	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-01.html">E-01 - 3S12"</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-10.html">E-10 - Ped 1S-Count Housing</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-11.html">E-11 - Ped 1S-Count Installation</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Signal Mounting &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-05.html">E-05 - SV-1-T</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-06.html">E-06 - SV-2-TA</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-12.html">E-12 - SP-1</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Poles &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-09.html">E-09 - Signal Backplate</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-29.html">E-29 - 19-2-100; 25\' SMA; 12\' LA</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-31.html">E-31 - 19-4-100; 25\' SMA; 8\' LA</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-33.html">E-33 - 24-4-100; 35\' SMA; 8\' LA</a>\
+	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-34.html">E-34 - 24-4-100; 35\' SMA; 15\' LA</a>\
@@ -181,15 +231,6 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-37.html">E-37 - Type 48X PBs</a>\
-	                  </li>\
-	                </ul>\
-	              </li>\
-	              <li>\
-	                <a class="dropdown-item" href="#">Traffic Signal Cabinets &raquo;</a>\
-	                <ul class="submenu dropdown-menu">\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_E-51.html">E-51 - TS Cabinet Foundation</a>\
 	                  </li>\
 	                </ul>\
 	              </li>\
@@ -235,6 +276,19 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-50.html">E-50 - 2" HDPE x2</a>\
+	                  </li>\
+	                </ul>\
+	              </li>\
+	              <li>\
+	                <a class="dropdown-item" href="#">Traffic Signal Cabinets &raquo;</a>\
+	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-51.html">E-51 - TS Cabinet Foundation</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-52.html">E-52 - TS Cabinet Installation</a>\
 	                  </li>\
 	                </ul>\
 	              </li>\

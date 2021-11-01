@@ -87,7 +87,9 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_18_005", "location": "Kirkham St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP09": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476671221107011, 37.75993275030406 ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_36_E_20_004", "location": "Irving St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.477065546474066, 37.763689913027449 ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_36_E_20_005", "location": "Irving St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.477039988773527, 37.763672622442719 ] } },
 
 // E-37: Type 48X PB
 

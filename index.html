@@ -87,8 +87,14 @@
     <script src="data/590_E_PB.js"></script>
     <script src="js/layer_toggle/add_point_layer_E_PB.js"></script>    
 
-    <script src="data/593_E_TS_pole_relocations.js"></script>
-    <script src="js/layer_toggle/add_point_layer_E_TS_pole_relocation.js"></script>        
+    <script src="data/500_poles.js"></script>
+    <script src="js/layer_toggle/add_line_layer_E_TS_poles.js"></script>        
+ 
+    <script src="data/501_signal_mountings.js"></script>
+    <script src="js/layer_toggle/add_line_layer_E_signal_mountings.js"></script>    
+ 
+     <script src="data/502_signals.js"></script>
+    <script src="js/layer_toggle/add_point_layer_E_signals.js"></script>  
     
     <script src="data/548_E_TS_cabinets.js"></script>
     <script src="js/layer_toggle/add_point_layer_E_TS_cabinets.js"></script>        
@@ -260,27 +266,63 @@
         add_feature_layer('CR', 865, json_400_flatwork,
                           'CR-17: 2in AC over 4in Ag Base', '#606d98');          
           
-        var E_TS_pole_relocation_index_limits = [893, 893];    
+        var E_pole_index_limits = [880, 883];    
                                 
-        add_feature_layer('E_TR', 893, json_593_E_TS_pole_relocations,
-                          'E-34: Pole Reloc: 24-4-100; 35\' SMA; 15\' LA', '#b49632');        
- 
-        var E_pullbox_index_limits = [890, 892];  
+                                
+       add_feature_layer('E_TR', 880, json_500_poles,
+                          'E-29: Relocation - 19-2-100; 25\' SMA; 12\' LA', '#14d6bc');                               
+
+       add_feature_layer('E_TR', 881, json_500_poles,
+                          'E-31: Relocation - 19-4-100; 25\' SMA; 8\' LA', '#4192cb');   
+                          
+       add_feature_layer('E_TR', 882, json_500_poles,
+                          'E-33: Relocation - 24-4-100; 35\' SMA; 8\' LA', '#15e65a');   
+                          
+       add_feature_layer('E_TR', 883, json_500_poles,
+                          'E-34: Relocation - 24-4-100; 35\' SMA; 15\' LA', '#d56592');                                   
+
+       var E_signal_mounting_index_limits = [884, 886];    
+                                
+                                
+       add_feature_layer('E_SM', 884, json_501_signal_mountings,
+                          'E-05: SV-1-T', '#84177b');                               
+
+       add_feature_layer('E_SM', 885, json_501_signal_mountings,
+                          'E-06: SV-2-TA', '#0167ff');   
+                          
+       add_feature_layer('E_SM', 886, json_501_signal_mountings,
+                          'E-12: SP-1', '#15e65a');   
+                          
+       var E_signals_index_limits = [897, 898];    
+                                
+                                
+       add_feature_layer('E_SG', 897, json_502_signals,
+                          'E-01: 3S12\"', '#64abb0');                               
+
+       add_feature_layer('E_SG', 898, json_502_signals,
+                          'E-10/11: 1S-Count', '#ffedaa');   
+                          
+                                                  
+                          
+                          
+       var E_pullbox_index_limits = [892, 894];  
                 
-        add_feature_layer('E_PB', 890, json_590_E_PB,
+       add_feature_layer('E_PB', 892, json_590_E_PB,
                           'E-35: Type I PB', '#b49632');      
                             
-        add_feature_layer('E_PB', 891, json_590_E_PB,
+       add_feature_layer('E_PB', 893, json_590_E_PB,
                           'E-36: Type III PB', '#f99e59');                                
                             
-        add_feature_layer('E_PB', 892, json_590_E_PB,
+       add_feature_layer('E_PB', 894, json_590_E_PB,
                           'E-37: Type 48X PB', '#9dd3a7');   
                           
-        var E_TS_cabinet_index_limits = [895, 895];                                    
+       var E_TS_cabinet_index_limits = [895, 896];                                    
           
         add_feature_layer('E_CB', 895, json_548_E_TS_cabinets,
                           'E-51: TS Cabinet Foundation', '#fe366b');         
-       
+
+        add_feature_layer('E_CB', 896, json_548_E_TS_cabinets,
+                          'E-52: TS Cabinet Intallation', '#64abb0');          
        
        
         var E_conduit_index_limits = [870, 879];          
@@ -339,7 +381,6 @@
             <script src="js/menu_cards/menu_card_sheet_layers.js"></script>
             <script src="js/menu_cards/menu_card_sheet_overlays.js"></script>
             <script src="js/menu_cards/menu_card_sewer_features.js"></script>
-            <script src="js/menu_cards/menu_card_AWSS_features.js"></script>
             <script src="js/menu_cards/menu_card_CR_features.js"></script>
             <script src="js/menu_cards/menu_card_E_features.js"></script>
         </div>

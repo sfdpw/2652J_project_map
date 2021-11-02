@@ -151,10 +151,13 @@ var json_tcp_list = [
 '2652J_TCP_146_sewer_lincoln_to_irving',
 '2652J_TCP_147_sewer_wawona_to_sloat',
 '2652J_TCP_149_wawona',
+'2652J_TCP_159_base_repair_irving',
 '2652J_TCP_162_grind_and_pave_noriega',
 '2652J_TCP_163_grind_and_pave_moraga',
 '2652J_TCP_164_grind_and_pave_lawton',
 '2652J_TCP_165_grind_and_pave_kirkham',
-'2652J_TCP_166_grind_and_pave_irving'
+'2652J_TCP_166_grind_and_pave_irving',
+'2652J_TCP_167_grind_and_pave_lawton',
+'2652J_TCP_168_grind_and_pave_lincoln'
 
 ]

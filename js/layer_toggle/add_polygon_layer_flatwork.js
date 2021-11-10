@@ -205,6 +205,14 @@ function unpack_flatwork_feature_description(property_filters)
 
             output_L_desc = '2in AC Pathway Pavement over 4in Agg. Base';
 
+        } else if (property_filters == 'SW-43')
+
+        {
+
+            output_L_desc = 'Restore Pavement and<br>\
+                             9in Concrete Base Outside<br>\
+                             of T Trench Limits';
+
         }
 
 

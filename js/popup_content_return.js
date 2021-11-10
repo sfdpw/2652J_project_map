@@ -232,6 +232,92 @@ function pop_up_creator_for_domain(feature, layer)
            </tr>\
          </table><br>';
 
+        } else if ( bid_item_code == 'SW-43' )
+
+        {
+
+            areacalcs =
+                '<strong>Area Calculation</strong><br>' +
+                '<table style="width:100%">\
+           <tr>\
+             <td>Worksheet ID:</td>\
+             <td style=\"text-align: right\">' + feature.properties.pp_qty_id + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Total Area Installed</strong></td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Modifier:</td>\
+             <td style=\"text-align: right\">' +  feature.properties.mdfr_instl.toFixed(2) + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Width:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.wdth_instl, 'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Length:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.lnth_instl, 'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Area:</td>\
+             <td style=\"text-align: right\">' +
+                format_unit(
+                    feature.properties.wdth_instl * feature.properties.lnth_instl * feature.properties.mdfr_instl,
+                    'SF') + '</td>\
+             <td>SF</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Incidental Area Deduction</strong></td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Modifier:</td>\
+             <td style=\"text-align: right\">' +  feature.properties.mdfr_inc.toFixed(2) + '</td>\
+             <td></td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Width:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.wdth_inc, 'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Length:</td>\
+             <td style=\"text-align: right\">' + format_unit(feature.properties.lnth_inc, 'LF') + '</td>\
+             <td>LF</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;Area:</td>\
+             <td style=\"text-align: right\">' +
+                format_unit(
+                    feature.properties.wdth_inc * feature.properties.lnth_inc * feature.properties.mdfr_inc,
+                    'SF') + '</td>\
+             <td>SF</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;</td>\
+           </tr>\
+           <tr>\
+             <td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Compensable Area:</strong></td>\
+             <td style=\"text-align: right\">' +
+                format_unit(
+                    feature.properties.wdth_instl * feature.properties.lnth_instl * feature.properties.mdfr_instl +
+                    feature.properties.wdth_inc * feature.properties.lnth_inc * feature.properties.mdfr_inc,
+                    'SF') + '</td>\
+             <td>SF</td>\
+           </tr>\
+         </table><br>';
+
         } else if (bid_item_code == 'CR-4' || bid_item_code == 'CR-6')
 
         {

@@ -55,6 +55,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09</a>\
                   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10</a>\
+                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11</a>\
                 </li>\
               </ul>\
             </li>\
@@ -72,6 +73,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09</a>\
 	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10</a>\
+	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11</a>\
 	        </li>\
 	      </ul>\
 	    </li>\
@@ -447,6 +449,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_SW-41.html">SW-41 - Post-Con TVI of (N) Side Sewer or Culvert</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_SW-43.html">SW-43 - 9\" Base Beyond T-Trench Restoration Limits</a>\
 	                  </li>\
 	                </ul>\
 	              </li>\

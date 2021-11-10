@@ -15,7 +15,7 @@ function qty_table_generator_laterals(qty_bid_item) {
                  '<thead class="qty_thead">\
                     <tr class="qty_tr">\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Address</th>\
-                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Asset ID</th>\
+                        <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px; width:80px">Asset ID</th>\
                         <th class="qty_thead" rowspan="2" style="text-align:left; padding:5px">Block Lot</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">Total</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFMTA</th>\

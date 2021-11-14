@@ -41,41 +41,46 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	    <li class="nav-item active">\
               <a class="nav-link" href="' + nav_path + 'index.html">Map</a>\
             </li>\
-            <li class="nav-item dropdown">\
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SOV</a>\
-              <ul class="dropdown-menu">\
-                <li>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP01.html">PP01</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP02.html">PP02</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11</a>\
-                </li>\
-              </ul>\
-            </li>\
-            <li class="nav-item dropdown">\
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Funding</a>\
-              <ul class="dropdown-menu">\
-	        <li>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP01.html">PP01</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP02.html">PP02</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP03.html">PP03</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP04.html">PP04</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP05.html">PP05</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP06.html">PP06</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10</a>\
-	          <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11</a>\
-	        </li>\
-	      </ul>\
+	    <li class="nav-item dropdown">\
+	      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Payments</a>\
+	        <ul class="dropdown-menu">\
+	          <li>\
+	            <a class="dropdown-item" href="#">SOV &raquo;</a>\
+	            <ul class="submenu dropdown-menu">\
+	              <li>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP01.html">PP01 - Dec 2020</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP02.html">PP02 - Jan 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03 - Feb 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04 - Mar 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05 - Apr 2021</a>\
+                        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07 - Jun 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08 - Jul 2021</a>\
+                        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09 - Aug 2021</a>\
+	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10 - Sep 2021</a>\
+	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11 - Oct 2021</a>\
+	              </li>\
+	            </ul>\
+	          </li>\
+	          <li>\
+	            <a class="dropdown-item" href="#">Funding Breakdown &raquo;</a>\
+	            <ul class="submenu dropdown-menu">\
+	              <li>\
+	                <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP01.html">PP01 - Dec 2020</a>\
+	                <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP02.html">PP02 - Jan 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP03.html">PP03 - Feb 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP04.html">PP04 - Mar 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP05.html">PP05 - Apr 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP06.html">PP06 - May 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07 - Jun 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08 - Jul 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09 - Aug 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10 - Sep 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11 - Oct 2021</a>\
+	              </li>\
+	            </ul>\
+	          </li>\
+	        </ul>\
 	    </li>\
 	    <li class="nav-item dropdown">\
 	      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">QTYs</a>\

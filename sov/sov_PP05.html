@@ -40,17 +40,19 @@
 </head>
 
 <body>
-    <div class="menu_nav" id="menu_nav">
+    <div class="grid-parent-other-page">
+      <div class="grid-div-menu-nav-other" id="menu_nav">
         <script>
             document.getElementById("menu_nav").innerHTML += top_nav('sov', 5);
         </script>
-    </div>
-    <div class="sov_page" id="sov_page">
+      </div>
+      <div class="grid-div-page-body-other" id="sov_page">
         <table class="sov_table" id="sov_table">
-              <script>
-                document.getElementById("sov_table").innerHTML += generate_sov_table(5);
-              </script>
+          <script>
+            document.getElementById("sov_table").innerHTML += generate_sov_table(5);
+          </script>
         </table>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-.sov_page {
+/* .sov_page {
 
     overflow-y: scroll;
     position: absolute;
@@ -9,14 +9,14 @@
     width: 100%;
     float: left;
 
-}
+} */
 
 .sov_table {
 
   border-collapse: collapse;
-  width: 98%;
+  width: 100%;
   font-size: 9px;
-  position: relative;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
  

@@ -19,7 +19,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-
     <link rel="stylesheet" href="css/site_styles.css">
     <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/L.Control.Locate.min.css">
@@ -30,8 +29,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="legend/L_801.png" />
     <script src="js/top_nav_bar.js"></script>
-
-
 
     <script src="js/popup_populator.js"></script>
 
@@ -50,8 +47,6 @@
     <script src="tcps/tcp_list.js"></script>
     <script src="specs/spec_list.js"></script>
 
-
-
     <script src="data/104_U_utility_occupancy_316.js"></script>
     <script src="data/106_PD_pavement_delineation_317.js"></script>
     <script src="data/103_SW_sewer_318.js"></script>
@@ -61,10 +56,7 @@
     <script src="data/102_E_intersection_electricals_322.js"></script>
     <script src="data/101_C_const_details_323.js"></script>
 
-
-
     <script src="data/003_stations_084_324.js"></script>
-    
     
     <script src="data/202_SW_mains_0.js"></script>
     <script src="js/layer_toggle/add_line_layer_SW_main.js"></script>
@@ -218,7 +210,6 @@
             
             
             
-            
         var CR_fltwrk_index_limits = [851, 866];        
         
         add_feature_layer('CR', 851, json_400_flatwork,
@@ -360,12 +351,7 @@
                           
         add_feature_layer('E_CT', 879, json_550_E_conduit,
                           'E-50: 2\" HDPE x2', '#b0cd53'); 
-                          
-
-                          
-                          
-                          
-                        
+         
     </script>
 
     <script src="data/211_SMPs_0.js"></script>
@@ -373,7 +359,36 @@
 </head>
 
 <body>
-    <div class="menu_nav" id="menu_nav">
+
+  <div class="grid-parent-map-page">
+  
+    <div class="grid-div-menu-nav-map" id="menu_nav">
+      <script>
+        document.getElementById("menu_nav").innerHTML += top_nav('map');
+      </script>
+    </div>
+    <div class="grid-div-map" id="map_page">
+      <div class="map" id="map"></div>
+    </div>
+    <div class="grid-div-accordion-menu" id="map_master_menu">
+      <script src="js/menu_cards/menu_card_sheet_layers.js"></script>
+      <script src="js/menu_cards/menu_card_sheet_overlays.js"></script>
+      <script src="js/menu_cards/menu_card_sewer_features.js"></script>
+      <script src="js/menu_cards/menu_card_CR_features.js"></script>
+      <script src="js/menu_cards/menu_card_E_features.js"></script>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+ <!--   <div class="menu_nav" id="menu_nav">
         <script>
             document.getElementById("menu_nav").innerHTML += top_nav('map');
         </script>
@@ -388,7 +403,9 @@
             <script src="js/menu_cards/menu_card_CR_features.js"></script>
             <script src="js/menu_cards/menu_card_E_features.js"></script>
         </div>
-    </div>
+    </div> -->
+
+
 
 
 

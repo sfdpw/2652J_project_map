@@ -42,24 +42,21 @@
 </head>
 
 <body>
-    <div class="menu_nav" id="menu_nav">
-        <script>
-            var qty_bid_item = 'SW-04';
+  <div class="grid-parent-other-page">
+    <div class="grid-div-menu-nav-other" id="menu_nav">
+      <script>
+        var qty_bid_item = 'SW-04';
             document.getElementById("menu_nav").innerHTML += top_nav('qty', null, qty_bid_item.replace('-0','-'));
+      </script>
+    </div>
+    <div class="grid-div-page-body-other">
+      <table class="qty_table" id="qty_table">
+        <script>
+          document.getElementById("qty_table").innerHTML += qty_table_generator_MHs(qty_bid_item);
         </script>
+      </table>
     </div>
-
-
-
-    <div class="qty_page" id="qty_page">
-        <table class="qty_table" id="qty_table">
-            <tbody>
-                <script>
-                    document.getElementById("qty_table").innerHTML += qty_table_generator_MHs(qty_bid_item);
-                </script>
-            </tbody>
-        </table><br>
-    </div>
+  </div>
     
   
 

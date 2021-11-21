@@ -3,20 +3,20 @@ function spec_table()
 {
 
     var div_list_desc = {
-    
-     '00':'Addenda, Procurement and Contracting Requirements',
-     '01':'General Requirements',
-     '02':'Existing Conditions',
-     '03':'Concrete',
-     '05':'Metals',
-     '09':'Finishes',
-     '26':'Electrical',
-     '31':'Earthwork',      
-     '32':'Exterior Improvements',      
-     '33':'Utilities', 
-     '34':'Transportation'
-                                   
-     };
+
+        '00': 'Addenda, Procurement and Contracting Requirements',
+        '01': 'General Requirements',
+        '02': 'Existing Conditions',
+        '03': 'Concrete',
+        '05': 'Metals',
+        '09': 'Finishes',
+        '26': 'Electrical',
+        '31': 'Earthwork',
+        '32': 'Exterior Improvements',
+        '33': 'Utilities',
+        '34': 'Transportation'
+
+    };
 
 
     var active_div_list = [];
@@ -39,44 +39,42 @@ function spec_table()
 
     for (ii = 0; ii < active_div_list.length; ii++) {
 
+         return_block +=
+
+         '<div style="font-size: small" class="card">\
+            <div class="card-header spec_card_header" id="heading_' + active_div_list[ii] + '">\
+              <a class="mb-0">\
+                <button style="font-size: small" class="btn btn-link"\
+                        data-toggle="collapse"\
+                        data-target="#collapse_' + active_div_list[ii] + '"\
+                        aria-expanded="flase"\
+                        aria-controls="collapse_' + active_div_list[ii] + '">\
+                        <strong>' + active_div_list[ii] + ' - ' + div_list_desc[active_div_list[ii]] + '</strong>\
+                </button>\
+              </a>\
+            </div>\
+            <div id="collapse_' + active_div_list[ii] + '"\
+                 class="collapse"\
+                 aria-labelledby="heading_' + active_div_list[ii] + '"\
+                 data-parent="#accordion">\
+              <div style="max-height:140pt; overflow-y:scroll" class="card-body">';
+
+        for (var jj = 0; jj < list_of_specs.length; jj++) {
+
+            if (list_of_specs[jj].substring(8, 10) == active_div_list[ii]) {
+
+                return_block += '<a href="' + list_of_specs[jj] + '" target="_blank">' +
+                    list_of_specs[jj].replace(".pdf", "") + '</a><br>';
+
+            }
+
+        }
+
         return_block +=
 
-            '<div class="card">\
-    <div class="card-header spec_card_header" id="heading_' + active_div_list[ii] + '">\
-      <h5 class="mb-0">\
-        <button class="btn btn-link"\
-                data-toggle="collapse"\
-                data-target="#collapse_' + active_div_list[ii] + '"\
-                aria-expanded="flase"\
-                aria-controls="collapse_' + active_div_list[ii] + '">\
-          <strong>' + active_div_list[ii] + ' - ' + div_list_desc[active_div_list[ii]] + '</strong>\
-        </button>\
-      </h5>\
-    </div>\
-    <div id="collapse_' + active_div_list[ii] + '"\
-         class="collapse"\
-         aria-labelledby="heading_' + active_div_list[ii] + '"\
-         data-parent="#accordion">\
-      <div class="card-body">';
-      
-        for (var jj = 0; jj < list_of_specs.length; jj++) {
-     
-          if (list_of_specs[jj].substring(8, 10) == active_div_list[ii]) {
-     
-            return_block += '<a href="' + list_of_specs[jj] + '" target="_blank">'
-            + list_of_specs[jj].replace(".pdf","") + '</a><br>';
-     
-            }
-     
-       }
-    
-     
-     
-     return_block +=
-     
-     '</div>\
-    </div>\
-  </div>';
+            '</div>\
+           </div>\
+         </div>';
 
     }
 
@@ -90,8 +88,3 @@ function spec_table()
 
 
 }
-
-
-
-
-

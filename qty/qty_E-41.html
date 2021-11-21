@@ -42,25 +42,21 @@
 
 
 <body>
-    <div class="menu_nav" id="menu_nav">
-        <script>
-            var qty_bid_item = 'E-41';
+  <div class="grid-parent-other-page">
+    <div class="grid-div-menu-nav-other" id="menu_nav">
+      <script>
+        var qty_bid_item = 'E-41';
             document.getElementById("menu_nav").innerHTML += top_nav('qty', null, qty_bid_item.replace('-0','-'));
+      </script>
+    </div>
+    <div class="grid-div-page-body-other">
+      <table class="qty_table" id="qty_table">
+        <script>
+          document.getElementById("qty_table").innerHTML += qty_table_generator_E_conduits(qty_bid_item);
         </script>
+      </table>
     </div>
-
-
-
-    <div class="qty_page" id="qty_page">
-        <table class="qty_table" id="qty_table">
-            <tbody>
-                <script>
-                    document.getElementById("qty_table").innerHTML +=  
-                    qty_table_generator_E_conduits(qty_bid_item);
-                </script>
-            </tbody>
-        </table><br>
-    </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

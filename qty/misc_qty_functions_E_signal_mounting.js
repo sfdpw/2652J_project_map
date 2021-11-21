@@ -263,7 +263,7 @@ function qty_table_generator_E_signals(qty_bid_item) {
           <td class="qty_td funding_td_amt_SFPUC-WD" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[9]) + '</strong>\
           </td>\
-         </tr>';    
+         </tr><br>';    
 
 
     return return_block

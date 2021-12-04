@@ -114,7 +114,7 @@ popup_sheet_entry_creator(['layer_2652J_dwg_SW12pdf1_modified_88','SW-12',,,'SW-
 
 
 
-{ "type": "Feature", "properties": { "id": "21", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_SW21pdf1_modified_79','SW-21',,,'SW-21.1',]), "as_built": popup_AB_entry_creator('SW-21'), "tcp": popup_tcp_entry_creator(['TCP_052', 'TCP_053', 'TCP_123', 'TCP_124']), "relevant": popup_sheet_entry_creator([,'SW-G1','Legend, Abbreviations and General Notes',,'SW-G2','Details'].concat(SFPW_SW_STD)), "spec": popup_spec_entry_creator(SW_spec_list_lo) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.47579897228394, 37.751233924985115 ], [ -122.475708829712445, 37.749605741212136 ], [ -122.476613900044853, 37.749539291045352 ], [ -122.476744540388054, 37.751170175535009 ], [ -122.47579897228394, 37.751233924985115 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "21", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_SW21pdf1_modified_79','SW-21',,,'SW-21_rev01',,,'SW-21.1',]), "as_built": popup_AB_entry_creator('SW-21'), "tcp": popup_tcp_entry_creator(['TCP_052', 'TCP_053', 'TCP_123', 'TCP_124']), "relevant": popup_sheet_entry_creator([,'SW-G1','Legend, Abbreviations and General Notes',,'SW-G2','Details'].concat(SFPW_SW_STD)), "spec": popup_spec_entry_creator(SW_spec_list_lo) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.47579897228394, 37.751233924985115 ], [ -122.475708829712445, 37.749605741212136 ], [ -122.476613900044853, 37.749539291045352 ], [ -122.476744540388054, 37.751170175535009 ], [ -122.47579897228394, 37.751233924985115 ] ] ] ] } },
 
 
 

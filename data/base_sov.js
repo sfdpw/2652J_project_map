@@ -7627,7 +7627,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-10",
-   "Description": "Installation of Screw Taps and Service Saddles (47-1-Inch;89-2-Inch)",
+   "Description": "Installation of Screw Taps and Service Saddles (47-1-Inch; 89-2-Inch)",
    "Unit": "EA",
    "Contract QTY": 4.00,
    "Unit Price": 1000.00,
@@ -11612,7 +11612,7 @@ var base_sov =
  
     {
    "Bid Item": "CO-02: PCO-004 - WD-4A",
-   "Description": "Addition",
+   "Description": "Addition - Installation of City Furnished 4-, 6- and 8-Inch Ductile Iron Tyton Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
    "Unit": "LF",
    "Contract QTY": 374,
    "Unit Price": 61,
@@ -11692,7 +11692,7 @@ var base_sov =
  
     {
    "Bid Item": "CO-02: PCO-004 - WD-5A",
-   "Description": "Addition",
+   "Description": "Addition - Installation of City Furnished 4-, 6- and 8- Inch Ductile Iron Tyton Joint Pipe Fittings with Contractor Furnish and Install of Polyethylene Encasement",
    "Unit": "LBS",
    "Contract QTY": 7400.00,
    "Unit Price": 1,
@@ -11772,7 +11772,7 @@ var base_sov =
  
     {
    "Bid Item": "CO-02: PCO-004 - WD-6A",
-   "Description": "Addition",
+   "Description": "Addition - Installation of 4- and 6-inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 11,
    "Unit Price": 1900,
@@ -11852,7 +11852,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-02: PCO-004 - WD-6B",
-   "Description": "Addition",
+   "Description": "Addition - Installation of 8-Inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 15,
    "Unit Price": 2400,
@@ -11932,7 +11932,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-02: PCO-004 - WD-10",
-   "Description": "Addition",
+   "Description": "Addition - Installation of Screw Taps and Service Saddles (47-1-Inch; 89-2-Inch)",
    "Unit": "EA",
    "Contract QTY": 43,
    "Unit Price": 850,
@@ -12012,7 +12012,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-02: PCO-004 - WD-11A",
-   "Description": "Addition",
+   "Description": "New - Water Main Disconnection Pit Excavation and Backfill",
    "Unit": "EA",
    "Contract QTY": 4,
    "Unit Price": 6500,

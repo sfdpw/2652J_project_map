@@ -33,7 +33,7 @@ var json_103_SW_sewer_318 = {
 
 
 
-{ "type": "Feature", "properties": { "id": "1", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_SW01pdf1_modified_99','SW-01',,,'SW-01.1',]), "as_built": popup_AB_entry_creator('SW-01'), "tcp": popup_tcp_entry_creator(), "relevant": popup_sheet_entry_creator([,'SW-G1','Legend, Abbreviations and General Notes',,'SW-G2','Details',,'SW-G3','Details'].concat(SFPW_SW_STD)), "spec": popup_spec_entry_creator(SW_spec_list), "spec": popup_spec_entry_creator(SW_spec_list)}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.475717050670355, 37.72179358750121 ], [ -122.47474994664077, 37.72173356349041 ], [ -122.474816144568578, 37.72010838127202 ], [ -122.475804260722768, 37.7201617781419 ], [ -122.475717050670355, 37.72179358750121 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "1", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_SW01pdf1_modified_99','SW-01',,,'SW-01.1',]), "as_built": popup_AB_entry_creator('SW-01'), "tcp": popup_tcp_entry_creator(), "relevant": popup_sheet_entry_creator([,'SW-G1','Legend, Abbreviations and General Notes',,'SW-G2','Details',,'SW-G3','Details'].concat(SFPW_SW_STD)), "spec": popup_spec_entry_creator(SW_spec_list)}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.475717050670355, 37.72179358750121 ], [ -122.47474994664077, 37.72173356349041 ], [ -122.474816144568578, 37.72010838127202 ], [ -122.475804260722768, 37.7201617781419 ], [ -122.475717050670355, 37.72179358750121 ] ] ] ] } },
 
 
 

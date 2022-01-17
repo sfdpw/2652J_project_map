@@ -14,6 +14,13 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_38_E_15_002", "location": "Noriega St Intersection - NEC", "run_no": "2", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP09": { "SFMTA": { "QTY": 6, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476327489697596, 37.754365316043369 ], [ -122.476326019930781, 37.75436664241829 ], [ -122.476325195427464, 37.754373632772619 ], [ -122.476324693555867, 37.754381519326223 ], [ -122.476324729403828, 37.75438926248794 ], [ -122.476324004785866, 37.754392216469455 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_38_E_12_001", "location": "Quintara St Intersection - SWC", "run_no": "2", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP13": { "SFMTA": { "QTY": 14, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47619389800019, 37.748569610975331 ], [ -122.476155351085225, 37.748541265803063 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_38_E_13_001", "location": "Pacheco St Intersection - SWC", "run_no": "2", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP13": { "SFMTA": { "QTY": 8, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476292005476338, 37.750390425204159 ], [ -122.476319640294804, 37.750403870336683 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_38_E_14_001", "location": "Ortega St Intersection - SWC", "run_no": "2", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP13": { "SFMTA": { "QTY": 10, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476416680739518, 37.752256034644844 ], [ -122.476419944229136, 37.752235086694583 ] ] ] } },
+
+
 // E-39 - 1-2” PVC Schedule 80 Conduit (Underground) in Sidewalk Trench	
 
 
@@ -113,7 +120,15 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_46_E_17_002", "location": "Lawton St Intersection - NEC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP09": { "SFMTA": { "QTY": 3, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476581209877409, 37.758141923009333 ], [ -122.476596762088633, 37.758147425235663 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_46_E_11_002", "location": "Rivera St Intersection - SWC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP13": { "SFMTA": { "QTY": 7, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476063805259457, 37.746705982452703 ], [ -122.476061733719632, 37.746691664829221 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_46_E_11_001", "location": "Rivera St Intersection - SWC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP13": { "SFMTA": { "QTY": 7, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476033933911623, 37.746651501018221 ], [ -122.476017373800218, 37.746650668587009 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_46_E_12_001", "location": "Quintara St Intersection - SWC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP13": { "SFMTA": { "QTY": 19, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476146960595301, 37.748488313350983 ], [ -122.476162412029808, 37.748494044646421 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_46_E_13_001", "location": "Pacheco St Intersection - SWC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP13": { "SFMTA": { "QTY": 12, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476285015326496, 37.750357476523774 ], [ -122.476299423997929, 37.750335100369661 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_46_E_19_002", "location": "Judah St Intersection - NEC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP13": { "SFMTA": { "QTY": 5, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476917422561385, 37.76183117532684 ], [ -122.476902543520239, 37.76182892906553 ] ] ] } },
 
 // E-48 - 3-2” GRS Conduit (Underground) in the Same Roadway T-Trench
 

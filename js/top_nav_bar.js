@@ -60,6 +60,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10 - Sep 2021</a>\
 	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11 - Oct 2021</a>\
 	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP12.html">PP12 - Nov 2021</a>\
+	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP13.html">PP13 - Nov 2021</a>\
 	              </li>\
 	            </ul>\
 	          </li>\
@@ -79,6 +80,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10 - Sep 2021</a>\
 		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11 - Oct 2021</a>\
 		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP12.html">PP12 - Nov 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP13.html">PP13 - Dec 2021</a>\
 	              </li>\
 	            </ul>\
 	          </li>\
@@ -176,6 +178,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-09.html">E-09 - Signal Backplate</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-10.html">E-10 - Ped 1S-Count Housing</a>\
 	                  </li>\
 	                  <li>\
@@ -189,6 +195,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <ul class="submenu dropdown-menu">\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-04.html">E-04 - TV-1-T</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-05.html">E-05 - SV-1-T</a>\
 	                  </li>\
 	                  <li>\
@@ -199,6 +209,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-12.html">E-12 - SP-1</a>\
 	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-13.html">E-13 - TP-1</a>\
+	                  </li>\
 	                </ul>\
 	              </li>\
 	              <li>\
@@ -206,23 +220,43 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <ul class="submenu dropdown-menu">\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_E-09.html">E-09 - Signal Backplate</a>\
+        'qty/qty_E-14.html">E-14 - PPB Poles</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_E-29.html">E-29 - 19-2-100; 25\' SMA; 12\' LA</a>\
+        'qty/qty_E-15.html">E-15 - Type 1-A Pole - 7\'</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_E-31.html">E-31 - 19-4-100; 25\' SMA; 8\' LA</a>\
+        'qty/qty_E-16.html">E-16 - Type 1-A Pole - 10\'</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_E-33.html">E-33 - 24-4-100; 35\' SMA; 8\' LA</a>\
+        'qty/qty_E-21.html">E-21 - 19-2-100 Pole; 25\' SMA; 8\' LA (New)</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_E-34.html">E-34 - 24-4-100; 35\' SMA; 15\' LA</a>\
+        'qty/qty_E-24.html">E-24 - Caltrans Type 15TS</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-28.html">E-28 - 19-2-100; 25\' SMA; 8\' LA (Relocation)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-29.html">E-29 - 19-2-100; 25\' SMA; 12\' LA (Relocation)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-31.html">E-31 - 19-4-100; 25\' SMA; 8\' LA (Relocation)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-33.html">E-33 - 24-4-100; 35\' SMA; 8\' LA (Relocation)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-34.html">E-34 - 24-4-100; 35\' SMA; 15\' LA (Relocation)</a>\
 	                  </li>\
 	                </ul>\
 	              </li>\

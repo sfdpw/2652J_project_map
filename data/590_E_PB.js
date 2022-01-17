@@ -91,6 +91,40 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_20_005", "location": "Irving St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.477039988773527, 37.763672622442719 ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_36_E_11_001", "location": "Rivera St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476033933911623, 37.746651501018221 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_11_002", "location": "Rivera St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476061733719632, 37.746691664829221 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_11_003", "location": "Rivera St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476098288163286, 37.746697808433211 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_12_001", "location": "Quintara St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476162412029808, 37.748494044646421 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_12_002", "location": "Quintara St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476190211837817, 37.748553944785215 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_12_003", "location": "Quintara St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476218626006229, 37.748538585775272 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_12_004", "location": "Quintara St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476226190318627, 37.748542387130215 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_12_005", "location": "Quintara St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47619389800019, 37.748569610975331 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_13_001", "location": "Pacheco St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476297868898172, 37.750323177938192 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_13_002", "location": "Pacheco St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476299423997929, 37.750335100369661 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_13_003", "location": "Pacheco St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476319640294804, 37.750403870336683 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_14_001", "location": "Ortega St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476419944229136, 37.752235086694583 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_14_002", "location": "Ortega St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476454674790361, 37.752284936281228 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_14_003", "location": "Ortega St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476480333936337, 37.752270940383426 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_19_003", "location": "Judah St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476902543520239, 37.76182892906553 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_19_004", "location": "Judah St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476867899353422, 37.761804047469418 ] } },
+
+
+
 // E-37: Type 48X PB
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_20_001", "location": "Irving St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": {"E-37": {"PP07":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.477298968696374, 37.763434654558679 ] } },
@@ -101,7 +135,17 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_15_001", "location": "Noriega St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP09": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476547573752711, 37.754069649908985 ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_37_E_16_001", "location": "Moraga St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP09": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476691353655724, 37.755929529215173 ] } }
+{ "type": "Feature", "properties": { "install_id": "E_37_E_16_001", "location": "Moraga St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP09": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476691353655724, 37.755929529215173 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_37_E_11_001", "location": "Rivera St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476101710342888, 37.746677419347634 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_37_E_12_001", "location": "Quintara St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476151915106684, 37.74851934861497 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_37_E_13_001", "location": "Pacheco St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476289339848108, 37.75031733191468 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_37_E_14_001", "location": "Ortega St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476464778139118, 37.752259709106617 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_37_E_19_001", "location": "Judah St Intersection - NEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476884352692863, 37.761805602566398 ] } }
 
 
 ]

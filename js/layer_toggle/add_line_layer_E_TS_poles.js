@@ -80,13 +80,43 @@ function unpack_TS_pole_feature_description(property_filters)
 
     var output_L_desc = '';
 
+    if (property_filters == 'E-14')
 
-    if (property_filters == 'E-29')
+    {
+
+        output_L_desc = '5\' Pedestrian Push Button Assembly Post<br>\
+                             with Concrete Foundation';
+                         
+
+    } else if (property_filters == 'E-15')
+
+    {
+
+        output_L_desc = 'Type 1-A Pole - 7\' with Concrete Foundation';
+
+    } else if (property_filters == 'E-16')
+
+    {
+
+        output_L_desc = 'Type 1-A Pole - 10\' with Concrete Foundation';
+
+    }  else if (property_filters == 'E-21')
+
+    {
+
+        output_L_desc = 'New Type 19-2-100 Pole<br>\
+                             with 25-foot Signal Mast Arm, MAS Mounting,<br>\
+                             8-Foot Luminaire Arm, LED Luminaire,<br>\
+                             and Concrete Foundation';
+
+    }
+    
+    else if (property_filters == 'E-29')
 
     {
 
         output_L_desc = 'Relocation of (E) 19-2-100 MA Pole<br>\
-                             with 25-Foot Signal Mast Arm, MAS Mounting<br>\
+                             with 25-Foot Signal Mast Arm, MAS Mounting,<br>\
                              12-Foot Luminaire Arm, and LED Luminaire';
 
     } else if (property_filters == 'E-31')
@@ -94,7 +124,7 @@ function unpack_TS_pole_feature_description(property_filters)
     {
 
         output_L_desc = 'Relocation of (E) 19-4-100 MA Pole<br>\
-                             with 25-Foot Signal Mast Arm, MAS Mounting<br>\
+                             with 25-Foot Signal Mast Arm, MAS Mounting,<br>\
                              8-Foot Luminaire Arm, and LED Luminaire';
 
     } else if (property_filters == 'E-33')
@@ -102,7 +132,7 @@ function unpack_TS_pole_feature_description(property_filters)
     {
 
         output_L_desc = 'Relocation of (E) 24-4-100 MA Pole<br>\
-                             with 35-Foot Signal Mast Arm, MAS Mounting<br>\
+                             with 35-Foot Signal Mast Arm, MAS Mounting,<br>\
                              8-Foot Luminaire Arm, and LED Luminaire';
 
     } else if (property_filters == 'E-34')
@@ -110,7 +140,7 @@ function unpack_TS_pole_feature_description(property_filters)
     {
 
         output_L_desc = 'Relocation of (E) 24-4-100 MA Pole<br>\
-                             with 35-Foot Signal Mast Arm, MAS Mounting<br>\
+                             with 35-Foot Signal Mast Arm, MAS Mounting,<br>\
                              15-Foot Luminaire Arm, and LED Luminaire';
 
     }

@@ -1,4 +1,3 @@
-
 function E_signals_layer_toggle(layer_index, master_layer_array, local_json_layer_obj, property_filters, rgba_code)
 
   {

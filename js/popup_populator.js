@@ -65,7 +65,23 @@ function popup_sheet_entry_creator(popup_args = null)
 
                     output_string = output_string.concat("<a href=\".\\sheets\\", file_name, ".pdf\" target=\"_blank\">", STD_file_name_formatted, "<\/a>");
 
-                } else
+                } else if (file_name.includes('SFMTA'))
+                
+                
+                {
+                
+                  var SFMTA_file_name_formatted = (file_name.replace('SFMTA_','')).replace('_',' ');
+                
+                    output_string = output_string.concat("<a href=\".\\sheets\\", file_name, ".pdf\" target=\"_blank\">", SFMTA_file_name_formatted, "<\/a>");
+                
+                
+                
+                
+                }
+                
+                
+                
+                 else
 
                 {
 

@@ -61,6 +61,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11 - Oct 2021</a>\
 	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP12.html">PP12 - Nov 2021</a>\
 	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP13.html">PP13 - Nov 2021</a>\
+	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP14.html">PP14 - Dec 2021</a>\
 	              </li>\
 	            </ul>\
 	          </li>\
@@ -81,6 +82,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11 - Oct 2021</a>\
 		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP12.html">PP12 - Nov 2021</a>\
 		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP13.html">PP13 - Dec 2021</a>\
+		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP14.html">PP14 - Dec 2021</a>\
 	              </li>\
 	            </ul>\
 	          </li>\
@@ -95,6 +97,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	              <li>\
 	                <a class="dropdown-item" href="#">Grinding, Paving &raquo;</a>\
 	                <ul class="submenu dropdown-menu">\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-01.html">CR-01: Planing</a>\
+	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_CR-02.html">CR-02: 1/2in HMA</a>\

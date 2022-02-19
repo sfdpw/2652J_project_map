@@ -2,9 +2,8 @@ function qty_table_generator_flatwork_area_with_deduction(qty_bid_item) {
 
     var NN = 0; // bid item index
 
-    while (base_sov[NN]['Bid Item'] != qty_bid_item) {
-        NN++;
-        
+    while (base_sov[NN]['Bid Item'] != qty_bid_item.replace('CR-0','CR-')) {
+        NN++;    
     }
 
     var unit_price = base_sov[NN]['Unit Price'];

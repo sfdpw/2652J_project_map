@@ -143,13 +143,38 @@ function generate_sov_table(pp_no) {
 
 
 
-        return_block +=
+        return_block += '<tr class="sov_tr">';
 
-            '<tr class="sov_tr">\
-                    <td class="sov_td" style="text-align:center">' + base_sov[ii]["Bid Item"] + '</td>\
-                    <td class="sov_td">' + base_sov[ii]["Description"] + '</td>\
-                    <td class="sov_td" style="text-align:center">' + base_sov[ii]["Unit"] + '</td>\
-                    <td class="sov_td" style="text-align:center">';
+        if (base_sov[ii].Worksheet == 1)
+        
+          {
+                    
+           return_block += '<td class="sov_td" style="text-align:center; text-decoration: underline;">'
+                            + "<a href=\"..\\qty/" + 'qty_' + base_sov[ii]["Bid Item"].replace('-','-0') + 
+                              ".html\" target=\"_blank\">" + base_sov[ii]["Bid Item"] + "</td>";
+           
+           }
+
+        else if (base_sov[ii].Worksheet == 2)
+        
+          {
+                    
+            return_block += '<td class="sov_td" style="text-align:center; text-decoration: underline;">'
+                            + "<a href=\"..\\qty/" + 'qty_' + base_sov[ii]["Bid Item"] + 
+                              ".html\" target=\"_blank\">" + base_sov[ii]["Bid Item"] + "</td>";          
+           }
+           
+        else
+        
+          {
+          
+           return_block += '<td class="sov_td" style="text-align:center">' + base_sov[ii]["Bid Item"] + '</td>';
+          
+           }   
+            
+           return_block += '<td class="sov_td">' + base_sov[ii]["Description"] + '</td>\
+                            <td class="sov_td" style="text-align:center">' + base_sov[ii]["Unit"] + '</td>\
+                            <td class="sov_td" style="text-align:center">';
 
         if (base_sov[ii]["Unit"] == 'LS' || base_sov[ii]["Unit"] == 'AL') {
 

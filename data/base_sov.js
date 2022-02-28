@@ -3,6 +3,7 @@ var base_sov =
 [
  {
    "Bid Item": "G-1",
+   "Worksheet": 0, 
    "Description": "Traffic Routing",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -81,6 +82,7 @@ var base_sov =
 
  {
    "Bid Item": "G-2",
+   "Worksheet": 0, 
    "Description": "F&I Temporary Traffic Striping Tape",
    "Unit": "LF",
    "Contract QTY": 80000.00,
@@ -159,6 +161,7 @@ var base_sov =
 
  {
    "Bid Item": "G-3",
+   "Worksheet": 0, 
    "Description": "F&I Changeable Message Signs",
    "Unit": "EA",
    "Contract QTY": 6.00,
@@ -238,6 +241,7 @@ var base_sov =
 
  {
    "Bid Item": "G-4",
+   "Worksheet": 0, 
    "Description": "NOT USED",
    "Unit": "-",
    "Contract QTY": "-",
@@ -316,6 +320,7 @@ var base_sov =
 
  {
    "Bid Item": "G-5",
+   "Worksheet": 0, 
    "Description": "NOT USED",
    "Unit": "-",
    "Contract QTY": "-",
@@ -394,6 +399,7 @@ var base_sov =
 
  {
    "Bid Item": "G-6",
+   "Worksheet": 0, 
    "Description": "Allowance for Uniformed San Francisco Police Department (SFPD) Officers for Traffic Control, As Required by the Engineer",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -472,6 +478,7 @@ var base_sov =
 
  {
    "Bid Item": "G-7",
+   "Worksheet": 0, 
    "Description": "SOILS OFF-HAUL-Transportation of surplus California Class I (non-RCRA) Hazardous Waste (soils) to a Class I Disposal Facility",
    "Unit": "TON",
    "Contract QTY": 3068.00,
@@ -550,6 +557,7 @@ var base_sov =
 
  {
    "Bid Item": "G-8",
+   "Worksheet": 0, 
    "Description": "SOILS OFF-HAUL-Disposal of surplus California Class I (non-RCRA) Hazardous Waste (soils) at a Class I Disposal Facility",
    "Unit": "TON",
    "Contract QTY": 3068.00,
@@ -628,6 +636,7 @@ var base_sov =
 
  {
    "Bid Item": "G-9",
+   "Worksheet": 0, 
    "Description": "SOILS OFF-HAUL-Transportation of surplus non-hazardous soils (Class II & III) California Designated Waste (soils) to a Class II & III Disposal Facility",
    "Unit": "TON",
    "Contract QTY": 27555.00,
@@ -706,6 +715,7 @@ var base_sov =
 
  {
    "Bid Item": "G-10",
+   "Worksheet": 0, 
    "Description": "SOILS OFF-HAUL-Disposal of surplus non-hazardous soils (Class II & III) California Designated Waste (soils) at a Class II & III Disposal Facility",
    "Unit": "TON",
    "Contract QTY": 27555.00,
@@ -784,6 +794,7 @@ var base_sov =
 
  {
    "Bid Item": "G-11",
+   "Worksheet": 0, 
    "Description": "Mobilization (Maximum 3% of the Sum of Bid Items G-1 through AW-30.3, Excluding Allowances, Mobilization, and Demobilization Bid Items)",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -862,6 +873,7 @@ var base_sov =
 
  {
    "Bid Item": "G-12",
+   "Worksheet": 0, 
    "Description": "Demobilization (Maximum 2% of the Sum of Bid Items G-1 through AW-30.3, Excluding Allowances, Mobilization, and Demobilization Bid Items)",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -940,6 +952,7 @@ var base_sov =
 
  {
    "Bid Item": "G-13",
+   "Worksheet": 0, 
    "Description": "Allowance for City's Share of Partnering Faciliatation and Related Costs",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -1018,6 +1031,7 @@ var base_sov =
 
  {
    "Bid Item": "G-14",
+   "Worksheet": 0, 
    "Description": "Allowance for Unforeseen Environmental Conditions",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -1096,6 +1110,7 @@ var base_sov =
  
  {
    "Bid Item": "G-15",
+   "Worksheet": 0, 
    "Description": "Allowance For Graffiti Removal",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -1174,6 +1189,7 @@ var base_sov =
  
  {
    "Bid Item": "G-16",
+   "Worksheet": 0, 
    "Description": "Allowance for Certified Biologist and Qualified Arborist",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -1252,6 +1268,7 @@ var base_sov =
  
  {
    "Bid Item": "CR-1",
+   "Worksheet": 1, 
    "Description": "Full Depth Planing Per 3-Inch Depth of Cut",
    "Unit": "SF",
    "Contract QTY": 32620.00,
@@ -1261,6 +1278,7 @@ var base_sov =
  
  {
    "Bid Item": "CR-2",
+   "Worksheet": 1, 
    "Description": "Hot Mix Asphalt Concrete (Type A, ½-Inch Maximum With Medium Grading)",
    "Unit": "TON",
    "Contract QTY": 1670.00,
@@ -1270,6 +1288,7 @@ var base_sov =
  
  {
    "Bid Item": "CR-3",
+   "Worksheet": 1, 
    "Description": "9-Inch Thick Jointed Plain Concrete Pavement with Rapid Setting Concrete (JPCP-RSC) Base",
    "Unit": "SF",
    "Contract QTY": 66940.00,
@@ -1279,6 +1298,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-4",
+   "Worksheet": 1, 
    "Description": "12-Inch Thick Class II Aggregate Base",
    "Unit": "CY",
    "Contract QTY": 2479.00,
@@ -1288,6 +1308,7 @@ var base_sov =
  
  {
    "Bid Item": "CR-5",
+   "Worksheet": 1, 
    "Description": "10-Inch Thick Jointed Plain Concrete Pavement  (JPCP) Bus Pad",
    "Unit": "SF",
    "Contract QTY": 22785.00,
@@ -1297,6 +1318,7 @@ var base_sov =
  
  {
    "Bid Item": "CR-6",
+   "Worksheet": 1, 
    "Description": "6-Inch Thick Class II Aggregate Subbase for Bus Pad, Sidewalk, Curb, Gutter and Parking Strip",
    "Unit": "CY",
    "Contract QTY": 2028.00,
@@ -1306,6 +1328,7 @@ var base_sov =
  
  {
    "Bid Item": "CR-7",
+   "Worksheet": 1, 
    "Description": "3-1/2-Inch Thick Concrete Sidewalk",
    "Unit": "SF",
    "Contract QTY": 56130.00,
@@ -1315,6 +1338,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-8",
+   "Worksheet": 1, 
    "Description": "4-Inch Thick Concrete Sidewalk",
    "Unit": "SF",
    "Contract QTY": 10550.00,
@@ -1324,6 +1348,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-9",
+   "Worksheet": 1, 
    "Description": "6-Inch Thick Concrete Sidewalk",
    "Unit": "SF",
    "Contract QTY": 3950.00,
@@ -1333,6 +1358,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-10",
+   "Worksheet": 2, 
    "Description": "4-Inch or 6-Inch Wide Concrete Curb",
    "Unit": "LF",
    "Contract QTY": 8710.00,
@@ -1342,6 +1368,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-11",
+   "Worksheet": 2, 
    "Description": "12-Inch Thick Concrete Parking Strip or Gutter",
    "Unit": "SF",
    "Contract QTY": 26240.00,
@@ -1351,6 +1378,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-12",
+   "Worksheet": 2, 
    "Description": "Concrete Curb Ramp w/ Concrete Detectable Surface Tiles",
    "Unit": "EA",
    "Contract QTY": 92.00,
@@ -1360,6 +1388,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-13",
+   "Worksheet": 0, 
    "Description": "Adjust City-Owned Manhole and Catchbasin Frame And Casting To Grade (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 13.00,
@@ -1438,6 +1467,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-14",
+   "Worksheet": 0, 
    "Description": "Adjust City-Owned Hydrant and Watermain Valve Box Casting Cover To Grade (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 61.00,
@@ -1516,6 +1546,7 @@ var base_sov =
 
  {
    "Bid Item": "CR-15",
+   "Worksheet": 2, 
    "Description": "8-Inch Thick Reinforced Sidewalk for Bus Shelter Foundations",
    "Unit": "EA",
    "Contract QTY": 18.00,
@@ -1525,84 +1556,17 @@ var base_sov =
 
  {
    "Bid Item": "CR-16",
+   "Worksheet": 2, 
    "Description": "Irving Street Concrete Paving With Integral Color",
    "Unit": "SF",
    "Contract QTY": 370.00,
    "Unit Price": 40.00,
-   "Amount to Date":{
-                     "SFMTA":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":14800.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00,
-                              "PP11":0.00,
-                              "PP12":0.00,
-                              "PP13":0.00,
-                              "PP14":0.00, 
-                              "PP15":0.00  
-                     },
-                     "SFPUC-SW":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00,
-                              "PP11":0.00,
-                              "PP12":0.00,
-                              "PP13":0.00,
-                              "PP14":0.00, 
-                              "PP15":0.00                          
-                              }, 
-                     "SFPUC-AWSS":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00,
-                              "PP11":0.00,
-                              "PP12":0.00,
-                              "PP13":0.00,
-                              "PP14":0.00, 
-                              "PP15":0.00                          
-                              },
-                     "SFPUC-WD":{
-                              "PP01":0.00,
-                              "PP02":0.00,
-                              "PP03":0.00,    
-                              "PP04":0.00,   
-                              "PP05":0.00,    
-                              "PP06":0.00,                               
-                              "PP07":0.00, 
-                              "PP08":0.00,                               
-                              "PP09":0.00,      
-                              "PP10":0.00,
-                              "PP11":0.00,
-                              "PP12":0.00,
-                              "PP13":0.00,
-                              "PP14":0.00, 
-                              "PP15":0.00                          
-                              },
-                     }   
+   "Amount to Date": return_pp_history_from_spatial_file(['json_400_flatwork'], 'CR-16', 40)       
  },
 
  {
    "Bid Item": "CR-17",
+   "Worksheet": 0, 
    "Description": "2-Inch Thick Asphalt Concrete Pathway Pavement over 4-Inch Aggregate Base",
    "Unit": "SF",
    "Contract QTY": 480.00,
@@ -1681,6 +1645,7 @@ var base_sov =
 
  {
    "Bid Item": "E-1",
+   "Worksheet": 1, 
    "Description": "(3S12&#8221;) 3 Section, 12-inch Vehicle Signal Face with Type 1 LED Red, Yellow, and Green",
    "Unit": "EA",
    "Contract QTY": 101.00,
@@ -1690,6 +1655,7 @@ var base_sov =
 
  {
    "Bid Item": "E-2",
+   "Worksheet": 0, 
    "Description": "(3S12&#8221;LA) 3 Section, 12-inch Vehicle Signal Face with Type 1 LED Red Left Arrow, Yellow Left Arrow, and Green Left Arrow",
    "Unit": "EA",
    "Contract QTY": 6.00,
@@ -1768,6 +1734,7 @@ var base_sov =
 
  {
    "Bid Item": "E-3",
+   "Worksheet": 0, 
    "Description": "(5S12&#8221;GYRA) 5 Section, 12-inch Vehicle Signal Face with Type 1 LED Red, Yellow, Green, Yellow Right Arrow and Green Right Arrow",
    "Unit": "EA",
    "Contract QTY": 2.00,
@@ -1846,6 +1813,7 @@ var base_sov =
 
  {
    "Bid Item": "E-4",
+   "Worksheet": 1, 
    "Description": "(TV-1-T) One-Way Post Top-Mounted Vehicle Signal Mounting with Terminal Compartment",
    "Unit": "EA",
    "Contract QTY": 5.00,
@@ -1855,6 +1823,7 @@ var base_sov =
 
  {
    "Bid Item": "E-5",
+   "Worksheet": 1, 
    "Description": "(SV-1-T) One-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment",
    "Unit": "EA",
    "Contract QTY": 39.00,
@@ -1864,6 +1833,7 @@ var base_sov =
 
  {
    "Bid Item": "E-6",
+   "Worksheet": 1, 
    "Description": "(SV-2-TA) Two-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment in Configuration (SV-1-T) One-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment &#8221;A&#8221;",
    "Unit": "EA",
    "Contract QTY": 10.00,
@@ -1873,6 +1843,7 @@ var base_sov =
 
  {
    "Bid Item": "E-7",
+   "Worksheet": 0, 
    "Description": "(SV-2-TA-SF) Two-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment in Configuration &#8221;A&#8221; SF Standard",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -1951,6 +1922,7 @@ var base_sov =
 
  {
    "Bid Item": "E-8",
+   "Worksheet": 0, 
    "Description": "(SV-3-TA) Three-Way Post Side-Mounted Vehicle Signal Mounting with Terminal Compartment in Configuration &#8221;A&#8221;",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2029,6 +2001,7 @@ var base_sov =
 
  {
    "Bid Item": "E-9",
+   "Worksheet": 1, 
    "Description": "Signal Back Plate",
    "Unit": "EA",
    "Contract QTY": 107.00,
@@ -2038,6 +2011,7 @@ var base_sov =
 
  {
    "Bid Item": "E-10",
+   "Worksheet": 2, 
    "Description": "(1S-Count) One-Section LED Pedestrian Countdown Signal Housing",
    "Unit": "EA",
    "Contract QTY": 57.00,
@@ -2047,6 +2021,7 @@ var base_sov =
 
  {
    "Bid Item": "E-11",
+   "Worksheet": 2, 
    "Description": "Labor Cost Only To Install City Furnished (1S-Count Module) One-Section LED Pedestrian Countdown Signal Module",
    "Unit": "EA",
    "Contract QTY": 57.00,
@@ -2056,6 +2031,7 @@ var base_sov =
 
  {
    "Bid Item": "E-12",
+   "Worksheet": 2, 
    "Description": "(SP-1) One-Way Side-Mounted Pedestrian Signal Mounting",
    "Unit": "EA",
    "Contract QTY": 55.00,
@@ -2065,6 +2041,7 @@ var base_sov =
 
  {
    "Bid Item": "E-13",
+   "Worksheet": 2, 
    "Description": "(TP-1) One-Way Top-Mounted Pedestrian Signal Mounting",
    "Unit": "EA",
    "Contract QTY": 2.00,
@@ -2074,6 +2051,7 @@ var base_sov =
 
  {
    "Bid Item": "E-14",
+   "Worksheet": 2, 
    "Description": "Pedestrian Push Button Assembly Post (5') with Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 17.00,
@@ -2083,6 +2061,7 @@ var base_sov =
 
  {
    "Bid Item": "E-15",
+   "Worksheet": 2, 
    "Description": "Type 1-A Pole (7') with Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -2092,6 +2071,7 @@ var base_sov =
 
  {
    "Bid Item": "E-16",
+   "Worksheet": 2, 
    "Description": "Type 1-A Pole (10') with Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -2101,6 +2081,7 @@ var base_sov =
 
  {
    "Bid Item": "E-17",
+   "Worksheet": 0, 
    "Description": "Type 1-A Pole (13') with Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 2.00,
@@ -2179,6 +2160,7 @@ var base_sov =
 
  {
    "Bid Item": "E-18",
+   "Worksheet": 0, 
    "Description": "Type 16-2-100 Pole with 20-foot Signal Mast Arm, MAS Mounting, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2257,6 +2239,7 @@ var base_sov =
 
  {
    "Bid Item": "E-19",
+   "Worksheet": 0, 
    "Description": "Type 17-2-100 Pole with 20-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2335,6 +2318,7 @@ var base_sov =
 
  {
    "Bid Item": "E-20",
+   "Worksheet": 0, 
    "Description": "Type 19-2-100 Pole with 20-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2413,6 +2397,7 @@ var base_sov =
 
  {
    "Bid Item": "E-21",
+   "Worksheet": 2, 
    "Description": "Type 19-2-100 Pole with 25-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 10.00,
@@ -2422,6 +2407,7 @@ var base_sov =
 
  {
    "Bid Item": "E-22",
+   "Worksheet": 0, 
    "Description": "Type 26-3-100 Pole with 45-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2500,6 +2486,7 @@ var base_sov =
 
  {
    "Bid Item": "E-23",
+   "Worksheet": 0, 
    "Description": "Type 26-4-100 Pole with 45-foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2578,6 +2565,7 @@ var base_sov =
 
  {
    "Bid Item": "E-24",
+   "Worksheet": 2, 
    "Description": "Caltrans Type 15TS Street Light Pole with 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 15.00,
@@ -2587,6 +2575,7 @@ var base_sov =
 
  {
    "Bid Item": "E-25",
+   "Worksheet": 0, 
    "Description": "Caltrans Type 21TS Street Light Pole with 8-Foot Luminaire Arm, LED Luminaire, and Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2665,6 +2654,7 @@ var base_sov =
 
  {
    "Bid Item": "E-26",
+   "Worksheet": 0, 
    "Description": "Spare for Caltrans Type 15TS Street Light Pole with 8-Foot Luminaire Arm and LED Luminaire",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -2743,6 +2733,7 @@ var base_sov =
 
  {
    "Bid Item": "E-27",
+   "Worksheet": 0, 
    "Description": "Relocation of Existing 19A-3-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2821,6 +2812,7 @@ var base_sov =
 
  {
    "Bid Item": "E-28",
+   "Worksheet": 2, 
    "Description": "Relocation of Existing 19-2-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 13.00,
@@ -2830,6 +2822,7 @@ var base_sov =
 
  {
    "Bid Item": "E-29",
+   "Worksheet": 2, 
    "Description": "Relocation of Existing 19-2-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 12-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -2839,6 +2832,7 @@ var base_sov =
 
  {
    "Bid Item": "E-30",
+   "Worksheet": 0, 
    "Description": "Relocation of Existing 19-2-100 Mast Arm Pole with 30-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -2917,6 +2911,7 @@ var base_sov =
 
  {
    "Bid Item": "E-31",
+   "Worksheet": 2, 
    "Description": "Relocation of Existing 19-4-100 Mast Arm Pole with 25-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 2.00,
@@ -2926,6 +2921,7 @@ var base_sov =
 
  {
    "Bid Item": "E-32",
+   "Worksheet": 0, 
    "Description": "Relocation of Existing 24-3-100 Mast Arm Pole with 35-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -3004,6 +3000,7 @@ var base_sov =
 
  {
    "Bid Item": "E-33",
+   "Worksheet": 2, 
    "Description": "Relocation of Existing 24-4-100 Mast Arm Pole with 35-Foot Signal Mast Arm, MAS Mounting, 8-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -3013,6 +3010,7 @@ var base_sov =
 
  {
    "Bid Item": "E-34",
+   "Worksheet": 2, 
    "Description": "Relocation of Existing 24-4-100 Mast Arm Pole with 35-Foot Signal Mast Arm, MAS Mounting, 15-Foot Luminaire Arm, and LED Luminaire to Adjacent Location",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -3022,6 +3020,7 @@ var base_sov =
 
  {
    "Bid Item": "E-35",
+   "Worksheet": 2, 
    "Description": "Pull Box Type I",
    "Unit": "EA",
    "Contract QTY": 19.00,
@@ -3031,6 +3030,7 @@ var base_sov =
 
  {
    "Bid Item": "E-36",
+   "Worksheet": 2, 
    "Description": "Pull Box Type III",
    "Unit": "EA",
    "Contract QTY": 128.00,
@@ -3040,6 +3040,7 @@ var base_sov =
 
  {
    "Bid Item": "E-37",
+   "Worksheet": 2, 
    "Description": "Pull Box Type 48X",
    "Unit": "EA",
    "Contract QTY": 17.00,
@@ -3049,6 +3050,7 @@ var base_sov =
 
  {
    "Bid Item": "E-38",
+   "Worksheet": 2, 
    "Description": "1-1&#8221; PVC Schedule 80 Conduit (Underground) in Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 220.00,
@@ -3058,6 +3060,7 @@ var base_sov =
 
  {
    "Bid Item": "E-39",
+   "Worksheet": 2, 
    "Description": "1-2&#8221; PVC Schedule 80 Conduit (Underground) in Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 665.00,
@@ -3067,6 +3070,7 @@ var base_sov =
 
  {
    "Bid Item": "E-40",
+   "Worksheet": 2, 
    "Description": "2-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 45.00,
@@ -3076,6 +3080,7 @@ var base_sov =
 
  {
    "Bid Item": "E-41",
+   "Worksheet": 2, 
    "Description": "1-3&#8221; PVC Schedule 80 Conduit (Underground) in Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 30.00,
@@ -3085,6 +3090,7 @@ var base_sov =
 
  {
    "Bid Item": "E-42",
+   "Worksheet": 2, 
    "Description": "1-3&#8221; & 1-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 180.00,
@@ -3094,6 +3100,7 @@ var base_sov =
 
  {
    "Bid Item": "E-43",
+   "Worksheet": 0, 
    "Description": "1-2&#8221; GRS Conduit and 1-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 20.00,
@@ -3172,6 +3179,7 @@ var base_sov =
 
  {
    "Bid Item": "E-44",
+   "Worksheet": 2, 
    "Description": "1-2&#8221; GRS Conduit and 2-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench",
    "Unit": "LF",
    "Contract QTY": 1545.00,
@@ -3181,6 +3189,7 @@ var base_sov =
 
  {
    "Bid Item": "E-45",
+   "Worksheet": 0, 
    "Description": "1-2&#8221; GRS Conduit and 3-2&#8221; PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench",
    "Unit": "LF",
    "Contract QTY": 280.00,
@@ -3259,6 +3268,7 @@ var base_sov =
 
  {
    "Bid Item": "E-46",
+   "Worksheet": 2, 
    "Description": "1-2&#8221; GRS Conduit (Underground) in Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 845.00,
@@ -3268,6 +3278,7 @@ var base_sov =
 
  {
    "Bid Item": "E-47",
+   "Worksheet": 0, 
    "Description": "2-2&#8221; GRS Conduit (Underground) in the Same Roadway T-Trench",
    "Unit": "LF",
    "Contract QTY": 25.00,
@@ -3346,6 +3357,7 @@ var base_sov =
 
  {
    "Bid Item": "E-48",
+   "Worksheet": 2, 
    "Description": "3-2&#8221; GRS Conduit (Underground) in the Same Roadway T-Trench",
    "Unit": "LF",
    "Contract QTY": 265.00,
@@ -3355,6 +3367,7 @@ var base_sov =
 
  {
    "Bid Item": "E-49",
+   "Worksheet": 2, 
    "Description": "6-2&#8221; GRS Conduit (Underground) in the Same Roadway T-Trench",
    "Unit": "LF",
    "Contract QTY": 130.00,
@@ -3364,6 +3377,7 @@ var base_sov =
 
  {
    "Bid Item": "E-50",
+   "Worksheet": 2, 
    "Description": "2-2&#8221; HDPE Schedule 80 Conduit (Underground) in the Same Sidewalk Trench",
    "Unit": "LF",
    "Contract QTY": 75.00,
@@ -3373,6 +3387,7 @@ var base_sov =
 
  {
    "Bid Item": "E-51",
+   "Worksheet": 2, 
    "Description": "Construct Standard 332L (ITS) Traffic Signal Cabinet Concrete Foundation",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -3382,6 +3397,7 @@ var base_sov =
 
  {
    "Bid Item": "E-52",
+   "Worksheet": 2, 
    "Description": "Labor Cost Only to Install City-Furnished 2070 Intersection Controller 332L (ITS) Cabinet Assembly with 12-Conductor Interconnect Component",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -3391,6 +3407,7 @@ var base_sov =
 
  {
    "Bid Item": "M-1",
+   "Worksheet": 0, 
    "Description": "Miscellaneous Electrical Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -3469,6 +3486,7 @@ var base_sov =
 
  {
    "Bid Item": "M-2",
+   "Worksheet": 0, 
    "Description": "Remove and Salvage as City's Property",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -3547,6 +3565,7 @@ var base_sov =
 
  {
    "Bid Item": "M-3",
+   "Worksheet": 0, 
    "Description": "Remove as Contractor's Property",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -3625,6 +3644,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-1",
+   "Worksheet": 0, 
    "Description": "Trench And Excavation Support Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -3703,6 +3723,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-2",
+   "Worksheet": 1, 
    "Description": "Concrete Manhole For 12-Inch To 24-Inch Diameter Sewers With Frame And Cover Per SFDPW Standard Plan 87,181",
    "Unit": "EA",
    "Contract QTY": 100.00,
@@ -3712,6 +3733,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-3",
+   "Worksheet": 0, 
    "Description": "Concrete Manhole For 5-Foot Offset Manhole",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -3790,6 +3812,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-4",
+   "Worksheet": 1, 
    "Description": "Standard Concrete Manhole For 27-Inch To 48-Inch Diameter Sewers With Frame And Cover Per SFDPW Standard Plan 87,182",
    "Unit": "EA",
    "Contract QTY": 8.00,
@@ -3799,6 +3822,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-5",
+   "Worksheet": 1, 
    "Description": "Angled Box Manhole for 27-Inch to 48-Inch Diameter Sewers With Frame And Cover Per SFDPW Standard Plan 87,182",
    "Unit": "EA",
    "Contract QTY": 2.00,
@@ -3808,6 +3832,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-6",
+   "Worksheet": 1, 
    "Description": "Clean and Mortar Existing Manhole",
    "Unit": "EA",
    "Contract QTY": 28.00,
@@ -3817,6 +3842,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-7",
+   "Worksheet": 1, 
    "Description": "Clean and Televise Existing Main Sewers Prior to Lining Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -3826,6 +3852,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-8",
+   "Worksheet": 1, 
    "Description": "Bypassing Main Sewer Flow Related to Lining Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -3835,6 +3862,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-9",
+   "Worksheet": 1, 
    "Description": "Concrete Catchbasin With New Frame And Grating Per SFDPW Standard Plan 87,188",
    "Unit": "EA",
    "Contract QTY": 37.00,
@@ -3844,6 +3872,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-10",
+   "Worksheet": 0, 
    "Description": "Concrete Catch Basin With Curb Inlet Per SFDPW Standard Plan 87,187 and Inlet Protection Bar",
    "Unit": "EA",
    "Contract QTY": 16.00,
@@ -3922,6 +3951,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-11",
+   "Worksheet": 2, 
    "Description": "8-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 59.00,
@@ -3931,6 +3961,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-12",
+   "Worksheet": 2, 
    "Description": "12-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 3348.00,
@@ -3940,6 +3971,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-13",
+   "Worksheet": 2, 
    "Description": "12-Inch Diameter VCP Sewer On Crushed Rock Bedding (At Concrete Parking Strip)",
    "Unit": "LF",
    "Contract QTY": 2385.00,
@@ -3949,6 +3981,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-14",
+   "Worksheet": 2, 
    "Description": "15-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 1208.00,
@@ -3958,6 +3991,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-15",
+   "Worksheet": 2, 
    "Description": "15-Inch Diameter VCP Sewer On Crushed Rock Bedding (At Concrete Parking Strip)",
    "Unit": "LF",
    "Contract QTY": 170.00,
@@ -3967,6 +4001,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-16",
+   "Worksheet": 2, 
    "Description": "18-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 237.00,
@@ -3976,6 +4011,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-17",
+   "Worksheet": 2, 
    "Description": "21-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 822.00,
@@ -3985,6 +4021,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-18",
+   "Worksheet": 2, 
    "Description": "24-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 1256.00,
@@ -3994,6 +4031,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-19",
+   "Worksheet": 0, 
    "Description": "30-Inch Diameter VCP Sewer On Crushed Rock Bedding",
    "Unit": "LF",
    "Contract QTY": 125.00,
@@ -4072,6 +4110,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-20",
+   "Worksheet": 2, 
    "Description": "Line Existing 6&#8221; and 8&#8221; Ø Side Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 166.00,
@@ -4081,6 +4120,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-21",
+   "Worksheet": 2, 
    "Description": "Line Existing 8&#8221;Ø Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 1024.00,
@@ -4090,6 +4130,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-22",
+   "Worksheet": 0, 
    "Description": "Line Existing 12&#8221;Ø Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 4028.00,
@@ -4168,6 +4209,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-23",
+   "Worksheet": 0, 
    "Description": "Line Existing 15&#8221;Ø Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 597.00,
@@ -4246,6 +4288,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-24",
+   "Worksheet": 0, 
    "Description": "Line Existing 18&#8221;Ø Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 394.00,
@@ -4324,6 +4367,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-25",
+   "Worksheet": 0, 
    "Description": "Line Existing 21&#8221;Ø Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 46.00,
@@ -4402,6 +4446,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-26",
+   "Worksheet": 0, 
    "Description": "Line Existing 2'x3' Concrete Sewer With CIPL",
    "Unit": "LF",
    "Contract QTY": 338.00,
@@ -4480,6 +4525,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-27",
+   "Worksheet": 2, 
    "Description": "Remove Obstruction By Internal Reaming from Existing Sewer Prior to Lining Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -4489,6 +4535,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-28",
+   "Worksheet": 2, 
    "Description": "Internally Re-instate Side Sewers and Culvert in Lined Main Sewers (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 183.00,
@@ -4498,6 +4545,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-29",
+   "Worksheet": 2, 
    "Description": "10-Inch Diameter VCP Culvert Within Sewer Work Limits (Contingency Bid Item)",
    "Unit": "LF",
    "Contract QTY": 993.00,
@@ -4507,6 +4555,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-30",
+   "Worksheet": 0, 
    "Description": "10-Inch Diameter DIP Culvert Within Sewer Work Limits (Contingency Bid Item)",
    "Unit": "LF",
    "Contract QTY": 35.00,
@@ -4585,6 +4634,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-31",
+   "Worksheet": 0, 
    "Description": "10-Inch Diameter VCP Culvert Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
    "Unit": "LF",
    "Contract QTY": 75.00,
@@ -4663,6 +4713,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-32",
+   "Worksheet": 2, 
    "Description": "Television Inspection Of Existing 6-Inch Or 8-Inch Diameter Side Sewers Within Sewer Work Limits (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 450.00,
@@ -4672,6 +4723,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-33",
+   "Worksheet": 0, 
    "Description": "Television Inspection Of Existing 6-Inch Or 8-Inch Diameter Side Sewers Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 50.00,
@@ -4750,6 +4802,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-34",
+   "Worksheet": 2, 
    "Description": "Television Inspection Of Existing 10-Inch Diameter Culverts Within Sewer Work Limits (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 49.00,
@@ -4759,6 +4812,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-35",
+   "Worksheet": 0, 
    "Description": "Television Inspection Of Existing 10-Inch Diameter Culverts Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 10.00,
@@ -4837,6 +4891,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-36",
+   "Worksheet": 2, 
    "Description": "6-Inch Or 8-Inch Diameter Side Sewer Connection to VCP Main Sewer (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 279.00,
@@ -4846,6 +4901,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-37",
+   "Worksheet": 2, 
    "Description": "Replacement Or Construction of 6-Inch Or 8-Inch Diameter Side Sewer Within Sewer Work Limits (Contingency Bid Item)",
    "Unit": "LF",
    "Contract QTY": 1878.00,
@@ -4855,6 +4911,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-38",
+   "Worksheet": 0, 
    "Description": "Replacement Or Construction of 6-Inch Or 8-Inch Diameter Side Sewers Outside Sewer Work Limits But Within Contract Limits (Contingency Bid Item)",
    "Unit": "LF",
    "Contract QTY": 250.00,
@@ -4933,6 +4990,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-39",
+   "Worksheet": 2, 
    "Description": "Standard Side Sewer Air Vent and Trap Assembly, Including 4-Inch Diameter CIP Building Sewer Extension (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 40.00,
@@ -4942,6 +5000,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-40",
+   "Worksheet": 2, 
    "Description": "Post-Construction Television Inspection Of Newly Constructed Main Sewers And Rehabilitated Main Sewers",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -4951,6 +5010,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-41",
+   "Worksheet": 2, 
    "Description": "Post-Construction Television Inspection Of Newly Constructed Side Sewers & Culverts (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 200.00,
@@ -4960,6 +5020,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-42",
+   "Worksheet": 2, 
    "Description": "Cast-Iron Water Trap For Catchbasin Including Cleanout Cap Per SFDPW Standard Plan 87,194 (Contingency Bid Item)",
    "Unit": "EA",
    "Contract QTY": 46.00,
@@ -4969,6 +5030,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-43",
+   "Worksheet": 2, 
    "Description": "Reconstruct Pavement Outside Of Sewer &#8221;T&#8221; Trench and Outside Base Repair Limits Shown On R-drawings With 9-Inch Thick Concrete Base Per Excavation Regulations As Directed By The City Representative (Contingency Bid Item)",
    "Unit": "SF",
    "Contract QTY": 29000.00,
@@ -4978,6 +5040,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-44",
+   "Worksheet": 0, 
    "Description": "Exploratory Potholes (Contingency Bid Item)",
    "Unit": "CY",
    "Contract QTY": 750.00,
@@ -5056,6 +5119,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-45",
+   "Worksheet": 0, 
    "Description": "Control Density Fill Bedding Material For Water Main and AWSS Facilities Encountered Within The Sewer Trench Prior To Backfill (Contingency Bid Item)",
    "Unit": "CY",
    "Contract QTY": 150.00,
@@ -5134,6 +5198,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-46",
+   "Worksheet": 0, 
    "Description": "Plug and Fill Existing Sewer with Slurry Grout As Indicated on Contract Plans (Contingency Bid Item)",
    "Unit": "CY",
    "Contract QTY": 68.00,
@@ -5212,6 +5277,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-47",
+   "Worksheet": 0, 
    "Description": "Allowance for Design Of Structural Support for SFWD Facilities within Sewer Trench",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -5290,6 +5356,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-48",
+   "Worksheet": 0, 
    "Description": "Allowance to Perform Necessary Work Due to Replacement of Existing Water Facilities Crossing Sewer Trench by SFWD",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -5368,6 +5435,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-49",
+   "Worksheet": 0, 
    "Description": "Allowance to Perform Necessary Work Due to Unforeseen Conditions Related to Sewer Work",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -5446,6 +5514,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-1A",
+   "Worksheet": 0, 
    "Description": "Excavation and Backfill for 8-Inch and Smaller Pipe Trench",
    "Unit": "LF",
    "Contract QTY": 3700.00,
@@ -5524,6 +5593,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-1B",
+   "Worksheet": 0, 
    "Description": "Excavation and Backfill for 12-Inch Pipe Trench",
    "Unit": "LF",
    "Contract QTY": 200.00,
@@ -5602,6 +5672,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-1C",
+   "Worksheet": 0, 
    "Description": "Excavation and Backfill for 16-Inch Pipe Trench",
    "Unit": "LF",
    "Contract QTY": 1800.00,
@@ -5680,6 +5751,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-1D",
+   "Worksheet": 0, 
    "Description": "Excavation and Backfill for 36-Inch Pipe Trench",
    "Unit": "LF",
    "Contract QTY": 2100.00,
@@ -5758,6 +5830,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-2",
+   "Worksheet": 0, 
    "Description": "Additional Excavation and Backfill",
    "Unit": "CY",
    "Contract QTY": 1200.00,
@@ -5836,6 +5909,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-3",
+   "Worksheet": 0, 
    "Description": "Removal and Installation of Meter Box",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -5914,6 +5988,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-4A",
+   "Worksheet": 0, 
    "Description": "Installation of City Furnished 4-, 6- and 8-Inch Ductile Iron Tyton Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
    "Unit": "LF",
    "Contract QTY": 2910.00,
@@ -5992,6 +6067,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-4B",
+   "Worksheet": 0, 
    "Description": "Installation of City Furnished 12-Inch Ductile Iron Flex-Ring Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
    "Unit": "LF",
    "Contract QTY": 200.00,
@@ -6070,6 +6146,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-4C",
+   "Worksheet": 0, 
    "Description": "Installation of City Furnished 16-Inch Ductile Iron Flex-Ring Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
    "Unit": "LF",
    "Contract QTY": 1800.00,
@@ -6148,6 +6225,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-4D",
+   "Worksheet": 0, 
    "Description": "Furnish and Installation of 36-Inch HDSS Ductile Iron Pipe with Polyethylene Encasement",
    "Unit": "LF",
    "Contract QTY": 2100.00,
@@ -6226,6 +6304,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-5A",
+   "Worksheet": 0, 
    "Description": "Installation of City Furnished 4-, 6- and 8- Inch Ductile Iron Tyton Joint Pipe Fittings with Contractor Furnish and Install of Polyethylene Encasement",
    "Unit": "LBS",
    "Contract QTY": 44298.00,
@@ -6304,6 +6383,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-5B",
+   "Worksheet": 0, 
    "Description": "Installation of City Furnished 12- and 16- inch Ductile Iron Flex-Ring Joint Pipe Fittings with Contractor Furnish and Install of Polyethylene Encasement",
    "Unit": "LBS",
    "Contract QTY": 20781.00,
@@ -6382,6 +6462,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-5C",
+   "Worksheet": 0, 
    "Description": "Furnish and Installation of 36-inch Ductile Iron AWWA C153 Mechanical Joint Fittings with Wedge action restraining glands and polyethylene encasement",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -6460,6 +6541,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-6A",
+   "Worksheet": 0, 
    "Description": "Installation of 4- and 6-inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 33.00,
@@ -6538,6 +6620,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-6B",
+   "Worksheet": 0, 
    "Description": "Installation of 8-Inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 44.00,
@@ -6616,6 +6699,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-6C",
+   "Worksheet": 0, 
    "Description": "Installation of 12-Inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -6694,6 +6778,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-6D",
+   "Worksheet": 0, 
    "Description": "Installation of 16-Inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -6772,6 +6857,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-7",
+   "Worksheet": 0, 
    "Description": "Installation of 2-Inch Air Valve/Blow off Assembly",
    "Unit": "EA",
    "Contract QTY": 42.00,
@@ -6850,6 +6936,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-8",
+   "Worksheet": 0, 
    "Description": "Trench Shoring and Bracing Per All Applicable Safety Orders  (Conditional Bid Item)**",
    "Unit": "SF",
    "Contract QTY": 38210.00,
@@ -6928,6 +7015,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-9",
+   "Worksheet": 0, 
    "Description": "Pavement Restoration",
    "Unit": "SF",
    "Contract QTY": 54480.00,
@@ -7006,6 +7094,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-10",
+   "Worksheet": 0, 
    "Description": "Installation of Screw Taps and Service Saddles (47-1-Inch; 89-2-Inch)",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -7084,6 +7173,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-11A",
+   "Worksheet": 0, 
    "Description": "NOT USED",
    "Unit": "",
    "Contract QTY": "",
@@ -7162,6 +7252,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-11B",
+   "Worksheet": 0, 
    "Description": "Support for Installation of Service Pipe - Open Cut (70-1-Inch; 70-2-Inch)",
    "Unit": "LF",
    "Contract QTY": 120.00,
@@ -7240,6 +7331,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-12",
+   "Worksheet": 0, 
    "Description": "Removal of SFWD - Owned Valve Boxes and Covers",
    "Unit": "EA",
    "Contract QTY": 18.00,
@@ -7318,6 +7410,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-13",
+   "Worksheet": 0, 
    "Description": "Repair and Replacement of Side Sewer (Conditional Bid Item)**",
    "Unit": "LF",
    "Contract QTY": 960.00,
@@ -7396,6 +7489,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-14",
+   "Worksheet": 0, 
    "Description": "Furnish and Install Corrosion Work for 36&#8221; DIP",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -7474,6 +7568,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-15",
+   "Worksheet": 0, 
    "Description": "Furnish and Install 36-Inch Diameter Butterfly Valve With Dismantling Joint",
    "Unit": "EA",
    "Contract QTY": 2.00,
@@ -7552,6 +7647,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-16A",
+   "Worksheet": 0, 
    "Description": "Furnish and Install 16-Inch Gate Valve with Mechanical Joint and MegaLug 1116 Series and Accessories",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -7630,6 +7726,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-16B",
+   "Worksheet": 0, 
    "Description": "Furnish and Install 16-Inch Tapping Gate Valve with MegaLug 1116 Series and Accessories",
    "Unit": "EA",
    "Contract QTY": 1.00,
@@ -7708,6 +7805,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-16C",
+   "Worksheet": 0, 
    "Description": "Furnish and Install of 6-Inch Air Release and Vacuum Break Valve Assembly and 8-Inch Blow Off",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -7786,6 +7884,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-17",
+   "Worksheet": 0, 
    "Description": "Installation of 54-Inch x 36-Inch Steel Tee Connection with 24-Inch Direct Buried Manhole and 36-Inch Gate Valve.  Furnish and Installation of 36-Inch Dismantling Joint Smith Blair 975 and Accessories",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -7864,6 +7963,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-18",
+   "Worksheet": 0, 
    "Description": "Furnish and Install 5-Feet ID Reinforced Concrete Manhole Riser, Accessories, Aluminum Frames and Cover Assemblies at 36-Inch pipeline",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -7942,6 +8042,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-19",
+   "Worksheet": 0, 
    "Description": "Furnish ASTM A36 Steel Plate (6 ft x 8 ft x 3/8 inch)",
    "Unit": "EA",
    "Contract QTY": 3.00,
@@ -8020,6 +8121,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-20",
+   "Worksheet": 0, 
    "Description": "Installation of Flex-Ring Weld Ring on 12-Inch Field-Cut Ductile Iron Pipe (Conditional Bid Item)**",
    "Unit": "EA",
    "Contract QTY": 4.00,
@@ -8098,6 +8200,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-21",
+   "Worksheet": 0, 
    "Description": "NOT USED",
    "Unit": "",
    "Contract QTY": "",
@@ -8176,6 +8279,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-22",
+   "Worksheet": 0, 
    "Description": "Stern Grove Location Restoration for Concrete Wall, Tree Relocation and Pavement Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8254,6 +8358,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-23",
+   "Worksheet": 0, 
    "Description": "Water Department Night Work Support For Betterment Work And Working Outside Normal Work Hours",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -8332,6 +8437,7 @@ var base_sov =
 
  {
    "Bid Item": "WD-24",
+   "Worksheet": 0, 
    "Description": "Allowance for Unforseen Conditions Related To Water Work",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -8410,6 +8516,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-1.1",
+   "Worksheet": 0, 
    "Description": "Allowance for Miscellaneous AWSS Items",
    "Unit": "AL",
    "Contract QTY": 1.00,
@@ -8488,6 +8595,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-15.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 15-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8566,6 +8674,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-15.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 15-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8644,6 +8753,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-15.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 15-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8722,6 +8832,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-15.4",
+   "Worksheet": 0, 
    "Description": "AWSS Settlement Monitoring Work-Location No. 15",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8800,6 +8911,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-17.4",
+   "Worksheet": 0, 
    "Description": "AWSS Settlement Monitoring Work-Location No. 17",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8878,6 +8990,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-19.4",
+   "Worksheet": 0, 
    "Description": "AWSS Settlement Monitoring Work-Location No. 19",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -8956,6 +9069,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-22.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 22-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9034,6 +9148,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-22.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 22-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9112,6 +9227,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-22.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 22-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9190,6 +9306,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-24.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 24-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9268,6 +9385,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-24.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 24-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9346,6 +9464,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-24.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 24-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9424,6 +9543,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-24.4",
+   "Worksheet": 0, 
    "Description": "AWSS Settlement Monitoring Work-Location No. 24",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9502,6 +9622,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-26.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 26-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9580,6 +9701,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-26.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 26-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9658,6 +9780,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-26.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 26-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9736,6 +9859,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-27.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 27-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9814,6 +9938,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-27.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 27-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9892,6 +10017,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-27.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 27-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -9970,6 +10096,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-27.4",
+   "Worksheet": 0, 
    "Description": "AWSS Settlement Monitoring Work-Location No. 27",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10048,6 +10175,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-28.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 28-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10126,6 +10254,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-28.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 28-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10204,6 +10333,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-28.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 28-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10282,6 +10412,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-29.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 29-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10360,6 +10491,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-29.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 29-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10438,6 +10570,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-29.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 29-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10516,6 +10649,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-30.1",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 30-Removal Work",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10594,6 +10728,7 @@ var base_sov =
 
  {
    "Bid Item": "AW-30.2",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 30-New Work-Materials",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10672,6 +10807,7 @@ var base_sov =
  
  {
    "Bid Item": "AW-30.3",
+   "Worksheet": 0, 
    "Description": "AWSS Work-Location No. 30-New Work-Installation",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10751,6 +10887,7 @@ var base_sov =
                      
  {
    "Bid Item": "CO-01: PCO-001",
+   "Worksheet": 0, 
    "Description": "TS Pole Painting",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10831,6 +10968,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-01: PCO-005",
+   "Worksheet": 0, 
    "Description": "2018 Caltrans Anchor Bolts",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10911,6 +11049,7 @@ var base_sov =
  
    {
    "Bid Item": "CO-02: PCO-002",
+   "Worksheet": 0, 
    "Description": "Traffic Signal Pole Changes",
    "Unit": "LS",
    "Contract QTY": 1.00,
@@ -10991,6 +11130,7 @@ var base_sov =
  
     {
    "Bid Item": "CO-02: PCO-004 - WD-4A",
+   "Worksheet": 0, 
    "Description": "Addition - Installation of City Furnished 4-, 6- and 8-Inch Ductile Iron Tyton Joint Pipe with Contractor Furnish and Install Polyethylene Encasement",
    "Unit": "LF",
    "Contract QTY": 374,
@@ -11071,6 +11211,7 @@ var base_sov =
  
     {
    "Bid Item": "CO-02: PCO-004 - WD-5A",
+   "Worksheet": 0, 
    "Description": "Addition - Installation of City Furnished 4-, 6- and 8- Inch Ductile Iron Tyton Joint Pipe Fittings with Contractor Furnish and Install of Polyethylene Encasement",
    "Unit": "LBS",
    "Contract QTY": 7400.00,
@@ -11151,6 +11292,7 @@ var base_sov =
  
     {
    "Bid Item": "CO-02: PCO-004 - WD-6A",
+   "Worksheet": 0, 
    "Description": "Addition - Installation of 4- and 6-inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 11,
@@ -11231,6 +11373,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-02: PCO-004 - WD-6B",
+   "Worksheet": 0, 
    "Description": "Addition - Installation of 8-Inch Ductile Iron Gate Valves",
    "Unit": "EA",
    "Contract QTY": 15,
@@ -11311,6 +11454,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-02: PCO-004 - WD-10",
+   "Worksheet": 0, 
    "Description": "Addition - Installation of Screw Taps and Service Saddles (47-1-Inch; 89-2-Inch)",
    "Unit": "EA",
    "Contract QTY": 43,
@@ -11391,6 +11535,7 @@ var base_sov =
  
   {
    "Bid Item": "CO-02: PCO-004 - WD-11A",
+   "Worksheet": 0, 
    "Description": "New - Water Main Disconnection Pit Excavation and Backfill",
    "Unit": "EA",
    "Contract QTY": 4,
@@ -11471,6 +11616,7 @@ var base_sov =
  
    {
    "Bid Item": "CO-03: PCO-007",
+   "Worksheet": 0, 
    "Description": "Holloway and Winston Median Curb Ramps",
    "Unit": "LS",
    "Contract QTY": 1,
@@ -11551,6 +11697,7 @@ var base_sov =
  
  {
    "Bid Item": "CO-03: PCO-008",
+   "Worksheet": 0, 
    "Description": "SFPUC Repair Support Allowance",
    "Unit": "LS",
    "Contract QTY": 1,

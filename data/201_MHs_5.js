@@ -9,7 +9,7 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-394880", "NODE_ID": "300151", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475488528170388, 37.741547262635713 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-394885", "NODE_ID": "300154", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475712026738918, 37.742821946380531 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-394885", "NODE_ID": "300154", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475712026738918, 37.742821946380531 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-394891", "NODE_ID": "300157", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP09":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475862777502286, 37.744560560533451 ] } },
 
@@ -121,9 +121,9 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347570", "NODE_ID": "287960", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475480336314121, 37.741350735367433 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347573", "NODE_ID": "287962", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47573090278506, 37.742478100942705 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347573", "NODE_ID": "287962", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47573090278506, 37.742478100942705 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347574", "NODE_ID": "287961", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47569317001323, 37.742529512568829 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347574", "NODE_ID": "287961", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47569317001323, 37.742529512568829 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347576", "NODE_ID": "287965", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP09":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475992002746608, 37.746446952109487 ] } },
 
@@ -137,9 +137,9 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347585", "NODE_ID": "287976", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02":{"PP05":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.476345977230864, 37.754243622279603 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347586", "NODE_ID": "287975", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.476236882843438, 37.75269012455955 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347586", "NODE_ID": "287975", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.476236882843438, 37.75269012455955 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347587", "NODE_ID": "287974", "SCOPE": "Install (N) per SFPW STD Plan 87,182", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-4" }, "geometry": { "type": "Point", "coordinates": [ -122.476230818647977, 37.752598379150605 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347587", "NODE_ID": "287974", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.476230818647977, 37.752598379150605 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347588", "NODE_ID": "287973", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP10":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.476219936424002, 37.750452156284645 ] } },
 
@@ -161,11 +161,11 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347540", "NODE_ID": "287945", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475267328179029, 37.734913386571762 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347547", "NODE_ID": "287955", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47528251529333, 37.738369039945148 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347547", "NODE_ID": "287955", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47528251529333, 37.738369039945148 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347548", "NODE_ID": "287954", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475231578090799, 37.737638195847971 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347548", "NODE_ID": "287954", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475231578090799, 37.737638195847971 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347549", "NODE_ID": "287952", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475182734553243, 37.736916845373571 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347549", "NODE_ID": "287952", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP15":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475182734553243, 37.736916845373571 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347550", "NODE_ID": "287951", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475102411782217, 37.735432067435084 ] } },
 

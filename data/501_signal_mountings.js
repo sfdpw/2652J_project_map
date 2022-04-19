@@ -28,7 +28,11 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-19.0", "LOCATION": "Judah St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476917422561385, 37.76183117532684 ], [ -122.476925695481015, 37.761804933710863 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-10.0", "LOCATION": "Santiago St Intersection - SWC", "POLE_ID": "H", "MNTG_TYPE": "SV-1-T", "SIG_NO": "61", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475893223051671, 37.744803598493263 ], [ -122.475885363252289, 37.744830787617737 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475951708531142, 37.748749215217536 ], [ -122.475943387941896, 37.748777270652354 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476091841688188, 37.750604178920128 ], [ -122.476083979153671, 37.750632060610023 ] ] ] } },
 
 // E-06: SV-2-TA
 
@@ -71,9 +75,15 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-19.0", "LOCATION": "Judah St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476917422561385, 37.76183117532684 ], [ -122.476918749702449, 37.761828602061215 ], [ -122.476937421771268, 37.761812330873369 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-10.0", "LOCATION": "Santiago St Intersection - SWC", "POLE_ID": "H", "MNTG_TYPE": "SP-1", "SIG_NO": "68", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475893223051671, 37.744803598493263 ], [ -122.475890764923463, 37.744803741968916 ], [ -122.475863923344008, 37.744831247623729 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476067783858852, 37.750621903936775 ], [ -122.476080857668691, 37.750632219052832 ], [ -122.476083979153671, 37.750632060610023 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Qunitara St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475974133200026, 37.748761849621125 ], [ -122.475945504695687, 37.748777147951479 ], [ -122.475943387941896, 37.748777270652354 ] ] ] } },
+
 // E-13: TP-1
 
-{ "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "TP-1", "SIG_NO": "89", "STATUS": "Post-Construction", "BID_ITEM": "E-13", "PP_HISTORY": { "E-13": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47643245160468, 37.756188333074007 ], [ -122.476434603277283, 37.756187201712109 ], [ -122.476445219341841, 37.756175595271223 ] ] ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "TP-1", "SIG_NO": "89", "STATUS": "Post-Construction", "BID_ITEM": "E-13", "PP_HISTORY": { "E-13": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47643245160468, 37.756188333074007 ], [ -122.476434603277283, 37.756187201712109 ], [ -122.476445219341841, 37.756175595271223 ] ] ] } },
 
 
 ]

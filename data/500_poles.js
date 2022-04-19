@@ -30,6 +30,10 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-19.0", "LOCATION": "Judah St Intersection - NEC", "POLE_ID": "D", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476917422561385, 37.76183117532684 ], [ -122.476983312714069, 37.761826164449843 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-10.0", "LOCATION": "Santiago St Intersection - SWC", "POLE_ID": "H", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475893223051671, 37.744803598493263 ], [ -122.475829807394277, 37.744807299928745 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476007722169001, 37.748773541420412 ], [ -122.475943387941896, 37.748777270652354 ] ] ] } },
+
 // E-29
 
 { "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 12ft Luminaire Arm", "BID_ITEM": "E-29", "STATUS": "Post-Construction", "PP_HISTORY": {"E-29": {"PP10":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476596762088633, 37.758147425235663 ], [ -122.47665424866878, 37.758144366934843 ] ] ] } },
@@ -37,6 +41,8 @@ var json_500_poles = {
 { "type": "Feature", "properties": { "SHEET": "E-11.0", "LOCATION": "Rivera St Intersection - SWC", "POLE_ID": "H", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 12ft Luminaire Arm", "BID_ITEM": "E-29", "STATUS": "Post-Construction", "PP_HISTORY": { "E-29": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476017373800218, 37.746650668587009 ], [ -122.475953449177041, 37.746654738195005 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - SWC", "POLE_ID": "G", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 12ft Luminaire Arm", "BID_ITEM": "E-29", "STATUS": "Post-Construction", "PP_HISTORY": { "E-29": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476285015326496, 37.750357476523774 ], [ -122.476220910658697, 37.750362141823047 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 12ft Luminaire Arm", "BID_ITEM": "E-29", "STATUS": "Post-Construction", "PP_HISTORY": { "E-29": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476147633494151, 37.750627314531151 ], [ -122.476083979153671, 37.750632060610023 ] ] ] } },
 
 // E-31
 

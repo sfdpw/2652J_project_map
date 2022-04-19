@@ -60,6 +60,17 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-19.0", "LOCATION": "Judah St Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.476983312714069, 37.761826164449843 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-10.0", "LOCATION": "Santiago St Intersection - SWC", "POLE_ID": "H", "SIG_TYPE": "3S12\"", "SIG_NO": "61", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } },  "E-09": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.475885363252289, 37.744830787617737 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-10.0", "LOCATION": "Santiago St Intersection - SWC", "POLE_ID": "H", "SIG_TYPE": "3S12\"", "SIG_NO": "64", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.475829807394277, 37.744807299928745 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "21", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } },  "E-09": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.475951708531142, 37.748749215217536 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.476007722169001, 37.748773541420412 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "21", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } },  "E-09": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.476091841688188, 37.750604178920128 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.476147633494151, 37.750627314531151 ] } },
 
 // Pedestrian Signals
 
@@ -91,6 +102,12 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - SWC", "POLE_ID": "L", "SIG_TYPE": "1S-Count", "SIG_NO": "49", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.476837356068316, 37.757911113878158 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-19.0", "LOCATION": "Judah St Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.476937421771268, 37.761812330873369 ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-19.0", "LOCATION": "Judah St Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.476937421771268, 37.761812330873369 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-10.0", "LOCATION": "Santiago St Intersection - SWC", "POLE_ID": "H", "SIG_TYPE": "1S-Count", "SIG_NO": "68", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475863923344008, 37.744831247623729 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475974133200026, 37.748761849621125 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.476067783858852, 37.750621903936775 ] } }
 ]
 }

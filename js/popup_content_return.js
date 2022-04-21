@@ -31,9 +31,15 @@ function pop_up_creator_for_domain(feature, layer)
 <strong>Scope</strong><br>' +
             (feature.properties['SCOPE_DTLS'] !== null ? Autolinker.link(feature.properties['SCOPE_DTLS'].toLocaleString()) : '') +
             '<br><br>\
+<strong>Pre-Con Submittal - Video - Response</strong><br>' +
+            feature.properties.SUBMITTALS.TVI_PRE_CON.Submittal + ' - ' +
+            feature.properties.SUBMITTALS.TVI_PRE_CON.Video + ' - ' +
+            feature.properties.SUBMITTALS.TVI_PRE_CON.Response +         
+            '<br><br>\
 <strong>Post-Con Submittal - Video - Response</strong><br>' +
             feature.properties.SUBMITTALS.TVI_PST_CON.Submittal + ' - ' +
-            feature.properties.SUBMITTALS.TVI_PST_CON.Video +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Video + ' - ' +
+            feature.properties.SUBMITTALS.TVI_PST_CON.Response +           
             '<br><br>\
 <strong>Status</strong><br>' +
             (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +

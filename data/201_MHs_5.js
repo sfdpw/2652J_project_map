@@ -103,7 +103,7 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347519", "NODE_ID": "287930", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474874409442151, 37.730199955401076 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347523", "NODE_ID": "287936", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47521546292856, 37.734209023006947 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347523", "NODE_ID": "287936", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.475211281561826, 37.734175156343717 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347524", "NODE_ID": "287935", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47522141074468, 37.734374671396374 ] } },
 

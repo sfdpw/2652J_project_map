@@ -27,7 +27,7 @@ var json_203_drains_4 = {
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-394857", "NODE_ID": "300135", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475282439756043, 37.734846572370877 ] } },
 
-{ "type": "Feature", "properties": {"MAXIMO_ID": "N-394858", "NODE_ID": "300134", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475066330253654, 37.734848146504149 ] } },
+{ "type": "Feature", "properties": {"MAXIMO_ID": "N-394858", "NODE_ID": "300134", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP17":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475066330253654, 37.734848146504149 ] } },
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-394861", "NODE_ID": "300136", "SCOPE": "Install (N) per SFPW STD Plan 87,187", "BID_ITEM": "SW-10", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475069227441267, 37.735052801021666 ] } },
 

@@ -48,22 +48,42 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            <a class="dropdown-item" href="#">SOV &raquo;</a>\
 	            <ul class="submenu dropdown-menu">\
 	              <li>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP01.html">PP01 - Dec 2020</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP02.html">PP02 - Jan 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03 - Feb 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04 - Mar 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05 - Apr 2021</a>\
-                        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07 - Jun 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08 - Jul 2021</a>\
-                        <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09 - Aug 2021</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10 - Sep 2021</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11 - Oct 2021</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP12.html">PP12 - Nov 2021</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP13.html">PP13 - Dec 2021</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP14.html">PP14 - Jan 2022</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP15.html">PP15 - Feb 2022</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP16.html">PP16 - Mar 2022</a>\
+	                <a class="dropdown-item" href="#">2020 &raquo;</a>\
+	                  <ul class="submenu dropdown-menu">\
+	                    <li>\
+		              <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP01.html">PP01 - Dec 2020</a>\
+		            </li>\
+		          </ul>\
+		       </li>\
+		       <li>\
+                        <a class="dropdown-item" href="#">2021 &raquo;</a>\
+	                  <ul class="submenu dropdown-menu">\
+	                    <li>\
+			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP02.html">PP02 - Jan 2021</a>\
+			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03 - Feb 2021</a>\
+			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04 - Mar 2021</a>\
+			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05 - Apr 2021</a>\
+                             <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
+			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07 - Jun 2021</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08 - Jul 2021</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09 - Aug 2021</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10 - Sep 2021</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP11.html">PP11 - Oct 2021</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP12.html">PP12 - Nov 2021</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP13.html">PP13 - Dec 2021</a>\
+	      		    </li>\
+		          </ul>\
+		       </li>\
+		       <li>\
+                        <a class="dropdown-item" href="#">2022 &raquo;</a>\
+	                  <ul class="submenu dropdown-menu">\
+	                    <li>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP14.html">PP14 - Jan 2022</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP15.html">PP15 - Feb 2022</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP16.html">PP16 - Mar 2022</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP17.html">PP17 - Apr 2022</a>\
+	      		    </li>\
+	      		  </ul>\
 	              </li>\
 	            </ul>\
 	          </li>\
@@ -71,22 +91,42 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            <a class="dropdown-item" href="#">Funding Breakdown &raquo;</a>\
 	            <ul class="submenu dropdown-menu">\
 	              <li>\
+	                <a class="dropdown-item" href="#">2020 &raquo;</a>\
+	                  <ul class="submenu dropdown-menu">\
+	                    <li>\
 	                <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP01.html">PP01 - Dec 2020</a>\
-	                <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP02.html">PP02 - Jan 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP03.html">PP03 - Feb 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP04.html">PP04 - Mar 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP05.html">PP05 - Apr 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP06.html">PP06 - May 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07 - Jun 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08 - Jul 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09 - Aug 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10 - Sep 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11 - Oct 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP12.html">PP12 - Nov 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP13.html">PP13 - Dec 2021</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP14.html">PP14 - Jan 2022</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP15.html">PP15 - Feb 2022</a>\
-		        <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP16.html">PP16 - Mar 2022</a>\
+		            </li>\
+		          </ul>\
+		       </li>\
+		       <li>\
+                        <a class="dropdown-item" href="#">2021 &raquo;</a>\
+	                  <ul class="submenu dropdown-menu">\
+	                    <li>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP02.html">PP02 - Jan 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP03.html">PP03 - Feb 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP04.html">PP04 - Mar 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP05.html">PP05 - Apr 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP06.html">PP06 - May 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP07.html">PP07 - Jun 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP08.html">PP08 - Jul 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP09.html">PP09 - Aug 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP10.html">PP10 - Sep 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP11.html">PP11 - Oct 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP12.html">PP12 - Nov 2021</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP13.html">PP13 - Dec 2021</a>\
+	      		    </li>\
+		          </ul>\
+		       </li>\
+		       <li>\
+                        <a class="dropdown-item" href="#">2022 &raquo;</a>\
+	                  <ul class="submenu dropdown-menu">\
+	                    <li>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP14.html">PP14 - Jan 2022</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP15.html">PP15 - Feb 2022</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP16.html">PP16 - Mar 2022</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP17.html">PP17 - Apr 2022</a>\
+	                    </li>\
+	                  </ul>\
 	              </li>\
 	            </ul>\
 	          </li>\
@@ -442,6 +482,18 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                      <li>\
 	                        <a class="dropdown-item" href="' + nav_path +
                                    'qty/qty_SW-08.html">SW-08 - Bypassing (E) SW Main Prior to Lining</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-22.html">SW-22 - Line (E) 12" SW Main with CIPL</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-25.html">SW-25 - Line (E) 21" SW Main with CIPL</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-26.html">SW-26 - Line (E) 2\' x 3\' SW Main with CIPL</a>\
 	                      </li>\
 	                      <li>\
 	                        <a class="dropdown-item" href="' + nav_path +

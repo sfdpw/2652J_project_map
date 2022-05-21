@@ -30,7 +30,7 @@ var json_102_E_intersection_electricals_322 = {
 
 
 
-{ "type": "Feature", "properties": { "id": "5", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E050pdf1_modified_193','E-05.0',,,'E-05.1',,,'E-05.2',]), "as_built": popup_AB_entry_creator('E-05'), "tcp": popup_tcp_entry_creator(['TCP_141', 'TCP_142']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details',,'SFMTA_STR-7025_rev01','Signal Head Mountings']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.475348375553537, 37.734365398906299 ], [ -122.475376583021898, 37.734911646382564 ], [ -122.474926672318546, 37.734935563827904 ], [ -122.474891029114872, 37.734390855683962 ], [ -122.475348375553537, 37.734365398906299 ] ] ] ] } },
+{ "type": "Feature", "properties": { "id": "5", "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_E050pdf1_modified_193','E-05.0',,,'E-05.1',,,'E-05.2',]), "as_built": popup_AB_entry_creator('E-05'), "tcp": popup_tcp_entry_creator(['TCP_141', 'TCP_142', 'TCP_234', 'TCP_235', 'TCP_236', 'TCP_237', 'TCP_238']), "relevant": popup_sheet_entry_creator([,'E-00.1','Legend, Symbols and Abbreviations',,'E-00.2','General Notes',,'E-00.3','Details',,'SFMTA_STR-7025_rev01','Signal Head Mountings']), "spec": popup_spec_entry_creator(E_spec_list) }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -122.475348375553537, 37.734365398906299 ], [ -122.475376583021898, 37.734911646382564 ], [ -122.474926672318546, 37.734935563827904 ], [ -122.474891029114872, 37.734390855683962 ], [ -122.475348375553537, 37.734365398906299 ] ] ] ] } },
 
 
 

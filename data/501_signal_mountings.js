@@ -34,6 +34,11 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476091841688188, 37.750604178920128 ], [ -122.476083979153671, 37.750632060610023 ] ] ] } },
 
+
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475557891665787, 37.743196894196743 ], [ -122.475565942690253, 37.743170223715012 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - SWC", "POLE_ID": "G", "MNTG_TYPE": "SV-1-T", "SIG_NO": "61", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475769189647906, 37.742940818832764 ], [ -122.475760345365231, 37.74296816038536 ] ] ] } },
+
 // E-06: SV-2-TA
 
 { "type": "Feature", "properties": { "SHEET": "E-20.0", "LOCATION": "Irving St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", "STATUS": "Post-Construction", "BID_ITEM": "E-06", "PP_HISTORY": {"E-06": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.477060931950462, 37.763642429055992 ], [ -122.477034670848738, 37.76365116898549 ], [ -122.477007733555027, 37.763645219207561 ] ] ] } },
@@ -80,6 +85,10 @@ var json_501_signal_mountings = {
 { "type": "Feature", "properties": { "SHEET": "E-13.0", "LOCATION": "Pacheco St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476067783858852, 37.750621903936775 ], [ -122.476080857668691, 37.750632219052832 ], [ -122.476083979153671, 37.750632060610023 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Qunitara St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475974133200026, 37.748761849621125 ], [ -122.475945504695687, 37.748777147951479 ], [ -122.475943387941896, 37.748777270652354 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47558122307413, 37.743183970224479 ], [ -122.475557891665787, 37.743196894196743 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - SWC", "POLE_ID": "G", "MNTG_TYPE": "SP-1", "SIG_NO": "68", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475769189647906, 37.742940818832764 ], [ -122.475750465586614, 37.742956101069602 ] ] ] } },
 
 // E-13: TP-1
 

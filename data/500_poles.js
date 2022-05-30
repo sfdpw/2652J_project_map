@@ -34,6 +34,10 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP16": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476007722169001, 37.748773541420412 ], [ -122.475943387941896, 37.748777270652354 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - SWC", "POLE_ID": "G", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475769189647906, 37.742940818832764 ], [ -122.47570458659024, 37.742943984910269 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475557891665787, 37.743196894196743 ], [ -122.475621891661078, 37.743193677864042 ] ] ] } },
+
 // E-29
 
 { "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 12ft Luminaire Arm", "BID_ITEM": "E-29", "STATUS": "Post-Construction", "PP_HISTORY": {"E-29": {"PP10":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476596762088633, 37.758147425235663 ], [ -122.47665424866878, 37.758144366934843 ] ] ] } },

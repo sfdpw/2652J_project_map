@@ -86,8 +86,8 @@ function qty_table_generator_E_point_poles(qty_bid_item) {
                     
                     pole_instance_extracted_details[1] =
                     "<a href=\"..\\index.html#20/" + 
-                    pole_instance_coordinates[0][1] +"/" + 
-                    pole_instance_coordinates[0][0] +                     
+                    pole_instance_coordinates[1] +"/" + 
+                    pole_instance_coordinates[0] +                     
                     "\" target=\"_blank\">" +
                     pole_instance_properties["LOCATION"];
                     

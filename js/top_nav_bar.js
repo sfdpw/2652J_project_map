@@ -356,6 +356,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-45.html">E-45 - 2" GRS x1, 2" PVC x3</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-46.html">E-46 - 2" GRS x1</a>\
 	                  </li>\
 	                  <li>\

@@ -20,6 +20,7 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_38_E_14_001", "location": "Ortega St Intersection - SWC", "run_no": "2", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP13": { "SFMTA": { "QTY": 10, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476416680739518, 37.752256034644844 ], [ -122.476419944229136, 37.752235086694583 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_38_E_09_001", "location": "Taraval St Intersection - NEC", "run_no": "4", "STATUS": "Post-Construction", 'PP_HISTORY': { "E-38": { "PP17": { "SFMTA": { "QTY": 5, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475519092709064, 37.743166549901893 ], [ -122.475529074704227, 37.743157619671251 ] ] ] } },
 
 // E-39 - 1-2” PVC Schedule 80 Conduit (Underground) in Sidewalk Trench	
 
@@ -88,6 +89,13 @@ var json_550_E_conduit = {
 
 //{ "type": "Feature", "properties": { "install_id": "E_44_E_16_002_Run_25", "location": "Moraga St Intersection - South Side", "run_no": "25<br>(9 and 10 shown separately)", "STATUS": "Post-Construction", "PP_HISTORY": {"E-44": {"PP05":{"SFMTA":{"QTY":43.0, "UNIT":"LF"}}}}, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476661879010834, 37.756020220328651 ], [ -122.476637505999278, 37.75602694112586 ], [ -122.476611351571592, 37.756032528294625 ], [ -122.476581391391235, 37.756036576967638 ], [ -122.476552240945509, 37.756037224755318 ], [ -122.476527786960489, 37.756037386702239 ], [ -122.476495397576329, 37.756033823869984 ], [ -122.476473372795112, 37.756030422984651 ], [ -122.476445801331849, 37.756024046324669 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_44_E_04_001", "location": "Ocean Ave Intersection - West Side", "run_no": "4, 5 and 6", "STATUS": "Post-Construction", "PP_HISTORY": { "E-44": { "PP17": { "SFMTA": { "QTY": 79, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475126886830836, 37.732439250379862 ], [ -122.47516919167731, 37.732671536769182 ] ] ] } },
+
+// E-45 - 1-2” GRS Conduit and 3-2” PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench
+
+{ "type": "Feature", "properties": { "install_id": "E_45_E_04_001", "location": "Ocean Ave Intersection - North Side", "run_no": "10A, 10B, 11, 12", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP17": { "SFMTA": { "QTY": 55, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475133195241881, 37.732697218239551 ], [ -122.474989400534938, 37.732586041938504 ] ] ] } },
+
+
 // E-46 - 1-2” GRS Conduit (Underground) in Sidewalk Trench
 
 { "type": "Feature", "properties": { "install_id": "E_46_E_16_001", "location": "Moraga St Intersection - NWC", "run_no": "28", "STATUS": "Post-Construction", "PP_HISTORY": {"E-46": {"PP05":{"SFMTA":{"QTY":3.0, "UNIT":"LF"}}}}, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476701846826131, 37.756146792089389 ], [ -122.476694336520936, 37.756154472928358 ] ] ] } },
@@ -137,6 +145,10 @@ var json_550_E_conduit = {
 { "type": "Feature", "properties": { "install_id": "E_46_E_12_001", "location": "Quintara St Intersection - NEC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP16": { "SFMTA": { "QTY": 7, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475920565146936, 37.748777683721499 ], [ -122.475943387941896, 37.748777270652354 ] ] ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_46_E_13_001", "location": "Pacheco St Intersection - NEC", "run_no": "1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP16": { "SFMTA": { "QTY": 10, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476069140665857, 37.750640901039169 ], [ -122.476083979153671, 37.750632060610023 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_46_E_09_001", "location": "Taraval St Intersection - SWC", "run_no": "1", 'STATUS': "Post-Construction", 'PP_HISTORY': {'E-46': {'PP17':{'SFMTA':{'QTY':7, 'UNIT':'LF'}}}}, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475769189647906, 37.742940818832764 ], [ -122.475784076487415, 37.74293065843726 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_46_E_09_002", "location": "Taraval St Intersection - NEC", "run_no": "1", 'STATUS': "Post-Construction", 'PP_HISTORY': {'E-46': {'PP17':{'SFMTA':{'QTY':5, 'UNIT':'LF'}}}}, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475557891665787, 37.743196894196743 ], [ -122.475544831434831, 37.743189261758843 ] ] ] } },
 
 // E-48 - 3-2” GRS Conduit (Underground) in the Same Roadway T-Trench
 

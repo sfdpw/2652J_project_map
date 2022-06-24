@@ -11,6 +11,7 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - SWC", "POLE_ID": "F", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476690413786102, 37.755997697336561 ], [ -122.476621167288158, 37.755999942002219 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475205647013524, 37.737598523134075 ], [ -122.475278773380637, 37.737593981123702 ] ] ] } },
 
 // E-24
 
@@ -23,6 +24,8 @@ var json_500_poles = {
 { "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - SWC", "POLE_ID": "L", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476844979986979, 37.75789595094431 ], [ -122.476846056695848, 37.757923677474949 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-18.0", "LOCATION": "Kirkham St Intersection - SWC", "POLE_ID": "J", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476961939285758, 37.759761422774041 ], [ -122.476963470524254, 37.759781079362597 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NWC", "POLE_ID": "A", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475485383291797, 37.737519130648863 ], [ -122.475484255753798, 37.737499962503009 ] ] ] } },
 
 // E-28
 

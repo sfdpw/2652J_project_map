@@ -183,6 +183,19 @@ function generate_funding_table(pp_no) {
                             ".html\" target=\"_blank\">" + base_sov[ii]["Bid Item"] + "</td>";
                                   
            }
+
+        else if (base_sov[ii].Worksheet == 3)
+        
+          {
+                    
+            return_block += '<td class="funding_td"\
+                             data-toogle="tooltip" title="' + base_sov[ii]["Description"] +
+                            ' (' + base_sov[ii]["Unit"] + ')"' +
+                            'style="text-align:center; text-decoration: underline;">' +
+                            "<a href=\"..\\qty/" + base_sov[ii]["Worksheet_Link"] + 
+                            ".html\" target=\"_blank\">" + base_sov[ii]["Bid Item"] + "</td>";
+                                  
+           }
            
         else
         

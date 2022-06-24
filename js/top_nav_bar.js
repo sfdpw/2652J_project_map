@@ -82,6 +82,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP15.html">PP15 - Feb 2022</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP16.html">PP16 - Mar 2022</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP17.html">PP17 - Apr 2022</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP18.html">PP18 - May 2022</a>\
 	      		    </li>\
 	      		  </ul>\
 	              </li>\
@@ -125,6 +126,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP15.html">PP15 - Feb 2022</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP16.html">PP16 - Mar 2022</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP17.html">PP17 - Apr 2022</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP18.html">PP18 - May 2022</a>\
 	                    </li>\
 	                  </ul>\
 	              </li>\
@@ -181,7 +183,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_CR-15.html">CR-15: 8in Bus Shelter Foundations</a>\
+        'qty/qty_CO-05_PCO-009_CR-15_Add.html">CR-15: 8in Shelter Foundations (Unreinforced per PCO 9)</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
@@ -576,6 +578,9 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	        </ul>\
 	        <li class="nav-item active">\
 	          <a class="nav-link" href="' + nav_path + 'specs/specs.html">Specs</a>\
+	        </li>\
+	        <li class="nav-item active">\
+	          <a class="nav-link" href="' + nav_path + 'other/2652J_mixes.pdf" target="_blank">Mixes</a>\
 	        </li>\
 	      </div>';
 

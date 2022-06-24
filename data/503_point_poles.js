@@ -26,9 +26,15 @@ var json_503_point_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - NEC", "POLE_ID": "C", "STATUS": "Post-Construction", "POLE_TYPE": "7ft Type 1-A Pole", "BID_ITEM": "E-15", "PP_HISTORY": { "E-15": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47643245160468, 37.756188333074007 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "F", "STATUS": "Post-Construction", "POLE_TYPE": "7ft Type 1-A Pole", "BID_ITEM": "E-15", "PP_HISTORY": { "E-15": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475478659687653, 37.737370873788834 ] } },
+
 // E-16: 10ft Type 1-A
 
-{ "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - SEC", "POLE_ID": "E", "STATUS": "Post-Construction", "POLE_TYPE": "10ft Type 1-A Pole", "BID_ITEM": "E-16", "PP_HISTORY": { "E-16": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476444770910533, 37.75600270518985 ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - SEC", "POLE_ID": "E", "STATUS": "Post-Construction", "POLE_TYPE": "10ft Type 1-A Pole", "BID_ITEM": "E-16", "PP_HISTORY": { "E-16": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476444770910533, 37.75600270518985 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "B", "STATUS": "Post-Construction", "POLE_TYPE": "10ft Type 1-A Pole", "BID_ITEM": "E-16", "PP_HISTORY": { "E-16": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.4754504235231, 37.737588890287107 ] } }
+
+
 
 ]
 }

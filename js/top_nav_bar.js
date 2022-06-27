@@ -527,7 +527,11 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                <ul class="submenu dropdown-menu">\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-        'qty/qty_SW-09.html">SW-09 - (N) CB - STD 87,188</a>\
+        'qty/qty_SW-09.html">SW-09 - (N) CB - Standard - STD 87,188</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_SW-10.html">SW-10 - (N) CB - Curb Inlet - STD 87,187</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +

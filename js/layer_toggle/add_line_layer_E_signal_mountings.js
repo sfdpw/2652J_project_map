@@ -80,8 +80,17 @@ function unpack_signal_mountings_feature_description(property_filters)
 
     var output_L_desc = '';
 
+    if ( property_filters == 'E-04' )
+    
+    {
 
-    if (property_filters == 'E-05')
+        output_L_desc = '(TV-1-T) One-Way Post<br>\
+                         Top-Mounted Vehicle Signal<br>\
+                         Mounting with Terminal Compartment';
+
+    }
+
+    else if (property_filters == 'E-05')
 
     {
 
@@ -105,6 +114,13 @@ function unpack_signal_mountings_feature_description(property_filters)
     {
 
         output_L_desc = '(SP-1) One-Way Side-Mounted<br>\
+                         Pedestrian Signal Mounting';
+
+    } else if (property_filters == 'E-13')
+
+    {
+
+        output_L_desc = '(TP-1) One-Way Top-Mounted<br>\
                          Pedestrian Signal Mounting';
 
     } 

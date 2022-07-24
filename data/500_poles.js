@@ -11,7 +11,11 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - SWC", "POLE_ID": "F", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476690413786102, 37.755997697336561 ], [ -122.476621167288158, 37.755999942002219 ] ] ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475205647013524, 37.737598523134075 ], [ -122.475278773380637, 37.737593981123702 ] ] ] } },
+//{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475205647013524, 37.737598523134075 ], [ -122.475278773380637, 37.737593981123702 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "E", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475432552942948, 37.737324046820497 ], [ -122.475373458491575, 37.73732802503779 ] ] ] } },
+
+
 
 // E-24
 
@@ -40,6 +44,8 @@ var json_500_poles = {
 { "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - SWC", "POLE_ID": "G", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475769189647906, 37.742940818832764 ], [ -122.47570458659024, 37.742943984910269 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475557891665787, 37.743196894196743 ], [ -122.475621891661078, 37.743193677864042 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476210028000324, 37.752495739920633 ], [ -122.476273265989263, 37.752492259471616 ] ] ] } },
 
 // E-29
 

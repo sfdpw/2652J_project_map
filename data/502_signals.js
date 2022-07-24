@@ -80,7 +80,15 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-01" }, "geometry": { "type": "Point", "coordinates": [ -122.475621891661078, 37.743193677864042 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.476273265989263, 37.752492259471616 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "21", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.476218257197587, 37.752468810683759 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NWC", "POLE_ID": "B", "SIG_TYPE": "3S12\"", "SIG_NO": "65", "MNTG_TYPE": "TV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475439374001354, 37.737609515367595 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "E", "SIG_TYPE": "3S12\"", "SIG_NO": "61", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475419356503423, 37.737348865127622 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "E", "SIG_TYPE": "3S12\"", "SIG_NO": "64", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475373458491575, 37.73732802503779 ] } },
 
 
 // Pedestrian Signals
@@ -123,6 +131,15 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - SWC", "POLE_ID": "G", "SIG_TYPE": "1S-Count", "SIG_NO": "68", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475750465586614, 37.742956101069602 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.47558122307413, 37.743183970224479 ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.47558122307413, 37.743183970224479 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NWC", "POLE_ID": "B", "SIG_TYPE": "1S-Count", "SIG_NO": "69", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475432177140718, 37.737579430130346 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "E", "SIG_TYPE": "1S-Count", "SIG_NO": "68", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475412710222457, 37.737342081204659 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "F", "SIG_TYPE": "1S-Count", "SIG_NO": "49", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475466177883149, 37.73738201050854 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.476194837905155, 37.752485396891444 ] } }
+
 ]
 }

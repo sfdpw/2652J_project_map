@@ -189,6 +189,10 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_06_007", "location": "Wawona St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475468788647319, 37.737355731601632 ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_36_E_05_001", "location": "Sloat Blvd Intersection - West Median", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475288653515946, 37.734654696079154 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_05_002", "location": "Sloat Blvd Intersection - East Median", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475019019001138, 37.734609037307287 ] } },
+
 // E-37: Type 48X PB
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_20_001", "location": "Irving St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-37": {"PP07":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.477298968696374, 37.763434654558679 ] } },

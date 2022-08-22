@@ -63,7 +63,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03 - Feb 2021</a>\
 			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04 - Mar 2021</a>\
 			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05 - Apr 2021</a>\
-                             <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
+                              <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
 			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07 - Jun 2021</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08 - Jul 2021</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09 - Aug 2021</a>\
@@ -84,6 +84,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP17.html">PP17 - Apr 2022</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP18.html">PP18 - May 2022</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP19.html">PP19 - Jun 2022</a>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP20.html">PP20 - Jul 2022</a>\
 	      		    </li>\
 	      		  </ul>\
 	              </li>\
@@ -129,6 +130,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP17.html">PP17 - Apr 2022</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP18.html">PP18 - May 2022</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP19.html">PP19 - Jun 2022</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP20.html">PP20 - Jul 2022</a>\
 	                    </li>\
 	                  </ul>\
 	              </li>\

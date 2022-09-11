@@ -598,7 +598,6 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 		    </li>\
 		  </ul>\
 	        </li>\
-	        </li>\
 	        <li class="nav-item active">\
 	          <a class="nav-link" href="' + nav_path + 'specs/specs.html">Specs</a>\
 	        </li>\

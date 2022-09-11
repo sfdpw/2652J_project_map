@@ -297,4 +297,4 @@ function tracking_table_generator_sw_mains(asset_type) {
    return_block += '<br>';
    return return_block
 
-}4
+}

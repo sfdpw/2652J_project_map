@@ -331,4 +331,4 @@ function tracking_table_generator_sw_laterals() {
    return_block += '<br>';
    return return_block
 
-}4
+}

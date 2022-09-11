@@ -126,19 +126,12 @@ function tracking_table_generator_sw_laterals() {
     
      }
      
-   var post_con_tvi_dates =
-   
-     {
-   
-      '999':   'jjjj',       
-      
-      }  
      
    if ( sw_lateral_row[12] == 'MCN' || sw_lateral_row[12] == 'NET' )
    
      {
-     
-      sw_lateral_row[13] = 'date pending';
+    
+      sw_lateral_row[13] = json_submittals[sw_lateral_row[10]].dates.cm_to_cnt;
       
       }
       
@@ -171,7 +164,7 @@ function tracking_table_generator_sw_laterals() {
          
         }
         
-      else if (sw_lateral_row[12] == 'R&R' )
+      else if (sw_lateral_row[12].includes('R&R') )
       
         {
         

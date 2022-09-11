@@ -139,7 +139,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	        </ul>\
 	    </li>\
 	    <li class="nav-item dropdown">\
-	      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">QTYs</a>\
+	      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PP QTYs</a>\
 	        <ul class="dropdown-menu">\
 	          <li>\
 	            <a class="dropdown-item" href="#">Flatwork &raquo;</a>\
@@ -584,6 +584,21 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            </ul>\
 	          </li>\
 	        </ul>\
+	        <li class="nav-item dropdown">\
+	          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SW Tracking</a>\
+	          <ul class="dropdown-menu">\
+	            <li>\
+		      <a class="dropdown-item" href="' + nav_path + 'tracking/sw_tracking_mains.html">Mains</a>\
+		    </li>\
+	            <li>\
+		      <a class="dropdown-item" href="' + nav_path + 'tracking/sw_tracking_culverts.html">Culverts</a>\
+		    </li>\
+	            <li>\
+		      <a class="dropdown-item" href="' + nav_path + 'tracking/sw_tracking_laterals.html">Laterals</a>\
+		    </li>\
+		  </ul>\
+	        </li>\
+	        </li>\
 	        <li class="nav-item active">\
 	          <a class="nav-link" href="' + nav_path + 'specs/specs.html">Specs</a>\
 	        </li>\
@@ -619,7 +634,9 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            title="' + base_sov[NN]['Description'] +
             ' (' + base_sov[NN]['Unit'] + ')"\> Quantity Details for ' + bid_item_id + '</div>';
 
-    }
+    } 
+    
+    
 
     return_block += '</nav>';
 

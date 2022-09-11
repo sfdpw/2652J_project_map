@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2652J Tracking - SW Mains</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,width=device-width">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="../css/site_styles.css">
+    <link rel="stylesheet" href="tracking.css">
+    <link rel="stylesheet" href="../funding/funding.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="../legend/L_801.png" />
+    <script src="../js/top_nav_bar.js"></script>
+    <script src="../data/200_laterals_2.js"></script>
+    <script src="../data/201_MHs_5.js"></script>
+    <script src="../data/202_SW_mains_0.js"></script>
+    <script src="../data/203_drains_4.js"></script>
+    <script src="../data/204_culverts_3.js"></script>
+    <script src="../data/400_flatwork.js"></script>
+    <script src="../data/500_poles.js"></script>
+    <script src="../data/501_signal_mountings.js"></script>
+    <script src="../data/502_signals.js"></script>
+    <script src="../data/503_point_poles.js"></script>
+    <script src="../data/590_E_PB.js"></script>
+    <script src="../data/550_E_conduit.js"></script>   
+    <script src="../data/548_E_TS_cabinets.js"></script>     
+    <script src="../js/misc_payment_functions.js"></script>
+    <script src="sw_tracking_mains.js"></script>
+    <script src="../data/base_sov.js"></script>
+</head>
+
+<body>
+  <table class="track_table no_menu" id="tracking_table">
+    <script>
+      document.getElementById("tracking_table").innerHTML += tracking_table_generator_sw_mains();
+    </script>
+  </table>
+</body>
+
+</html>

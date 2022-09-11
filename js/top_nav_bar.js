@@ -634,6 +634,18 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	            title="' + base_sov[NN]['Description'] +
             ' (' + base_sov[NN]['Unit'] + ')"\> Quantity Details for ' + bid_item_id + '</div>';
 
+    } else if (nav_element.includes('Asset_Tracking'))
+
+    {
+
+        return_block +=
+
+            '<div style="float:right;\
+                    padding-right:10px;\
+                    color:white;\
+                    font-weight:bold"\
+                    >' + nav_element.replace(/_/g, " ") + '</div>';
+
     } 
     
     

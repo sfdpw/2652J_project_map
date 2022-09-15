@@ -524,6 +524,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                        <a class="dropdown-item" href="' + nav_path +
                                    'qty/qty_SW-40.html">SW-40 - Post-Con TVI of (N) SW Main</a>\
         	              </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-46.html">SW-46 - Plug and Fill (E) SW Main</a>\
+        	              </li>\
 	                    </ul>\
 	                  </li>\
 	                </ul>\

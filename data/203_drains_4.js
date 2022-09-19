@@ -149,7 +149,7 @@ var json_203_drains_4 = {
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-52537", "NODE_ID": "166398", "SCOPE": "Abandon (E)", "BID_ITEM": 'none', "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.47707728135542, 37.763662043055675 ] } },
 
-{ "type": "Feature", "properties": {"MAXIMO_ID": "N-49653", "NODE_ID": "163833", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475049732901851, 37.723292017418309 ] } },
+{ "type": "Feature", "properties": {"MAXIMO_ID": "N-49653", "NODE_ID": "163833", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-42": {"PP21":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475049732901851, 37.723292017418309 ] } },
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-50431", "NODE_ID": "162734", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475140475879101, 37.72329745846455 ] } },
 
@@ -179,11 +179,11 @@ var json_203_drains_4 = {
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-336107", "NODE_ID": "269348", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475063075579115, 37.724709229342785 ] } },
 
-{ "type": "Feature", "properties": {"MAXIMO_ID": "N-73631", "NODE_ID": "239433", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.474970517023095, 37.724704160804478 ] } },
+{ "type": "Feature", "properties": {"MAXIMO_ID": "N-73631", "NODE_ID": "239433", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-42": {"PP21":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}  }, "geometry": { "type": "Point", "coordinates": [ -122.474970517023095, 37.724704160804478 ] } },
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-73627", "NODE_ID": "239374", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.474809697091686, 37.725468140806036 ] } },
 
-{ "type": "Feature", "properties": {"MAXIMO_ID": "N-73575", "NODE_ID": "239375", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.474928326519645, 37.725463283132207 ] } },
+{ "type": "Feature", "properties": {"MAXIMO_ID": "N-73575", "NODE_ID": "239375", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-42": {"PP21":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}  }, "geometry": { "type": "Point", "coordinates": [ -122.474928326519645, 37.725463283132207 ] } },
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-73628", "NODE_ID": "239377", "SCOPE": "(E) to Remain", "BID_ITEM": 'none', "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {} }, "geometry": { "type": "Point", "coordinates": [ -122.475018268082593, 37.725467798017668 ] } },
 

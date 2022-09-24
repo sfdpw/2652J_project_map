@@ -7945,7 +7945,7 @@ var base_sov =
 
  {
    "Bid Item": "SW-46",
-   "Worksheet": 0, 
+   "Worksheet": 2, 
    "Description": "Plug and Fill Existing Sewer with Slurry Grout As Indicated on Contract Plans (Contingency Bid Item)",
    "Unit": "CY",
    "Contract QTY": 68.00,
@@ -22409,7 +22409,7 @@ var base_sov =
                               "PP18":26042.95,
                               "PP19":0.00,
                               "PP20":0.00,
-                              "PP21":16125,
+                              "PP21":0.00,
                               "PP22":0.00,
                               "PP23":0.00,
                               "PP24":0.00,
@@ -22507,7 +22507,7 @@ var base_sov =
                               "PP18":0.00,
                               "PP19":0.00,
                               "PP20":0.00,                          
-                              "PP21":0.00,
+                              "PP21":16125,
                               "PP22":0.00,
                               "PP23":0.00,
                               "PP24":0.00,

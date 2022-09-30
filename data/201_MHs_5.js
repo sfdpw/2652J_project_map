@@ -59,9 +59,9 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347479", "NODE_ID": "27385", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474741013116457, 37.726910922104828 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347480", "NODE_ID": "196764", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474735476429103, 37.727005714972812 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347480", "NODE_ID": "40106", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474735476429103, 37.727005714972812 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347481", "NODE_ID": "198313", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP18":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474692708506495, 37.7277779394677 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-347481", "NODE_ID": "40107", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP18":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474692708506495, 37.7277779394677 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-347482", "NODE_ID": "27377", "SCOPE": "Replace (E) with (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP18":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.47464866794239, 37.728617076223898 ] } },
 

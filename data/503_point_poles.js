@@ -22,6 +22,8 @@ var json_503_point_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-09.0", "LOCATION": "Taraval St Intersection - NEC - L CR", "POLE_ID": "I", "STATUS": "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", "PP_HISTORY": { "E-14": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475519092709064, 37.743166549901893 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-07.0", "LOCATION": "Vicente St Intersection - NEC", "POLE_ID": "D", "STATUS": "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", "PP_HISTORY": { "E-14": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475306797010546, 37.739418722035786 ] } },
+
 // E-15: 7ft Type 1-A
 
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - NEC", "POLE_ID": "C", "STATUS": "Post-Construction", "POLE_TYPE": "7ft Type 1-A Pole", "BID_ITEM": "E-15", "PP_HISTORY": { "E-15": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47643245160468, 37.756188333074007 ] } },

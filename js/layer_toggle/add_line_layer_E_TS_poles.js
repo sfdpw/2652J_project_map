@@ -127,6 +127,14 @@ function unpack_TS_pole_feature_description(property_filters)
                              with 25-Foot Signal Mast Arm, MAS Mounting,<br>\
                              8-Foot Luminaire Arm, and LED Luminaire';
 
+    } else if (property_filters == 'E-32')
+
+    {
+
+        output_L_desc = 'Relocation of (E) 24-3-100 MA Pole<br>\
+                             with 35-Foot Signal Mast Arm, MAS Mounting,<br>\
+                             8-Foot Luminaire Arm, and LED Luminaire';
+
     } else if (property_filters == 'E-33')
 
     {

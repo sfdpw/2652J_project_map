@@ -310,6 +310,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-32.html">E-32 - 24-3-100; 35\' SMA; 8\' LA (Relocation)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-33.html">E-33 - 24-4-100; 35\' SMA; 8\' LA (Relocation)</a>\
 	                  </li>\
 	                  <li>\

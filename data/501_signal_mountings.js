@@ -45,6 +45,8 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": { "E-05": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476210028000324, 37.752495739920633 ], [ -122.476218257197587, 37.752468810683759 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-07.0", "LOCATION": "Vicente St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475340464075089, 37.739456541963776 ], [ -122.475348969672439, 37.739429381792341 ] ] ] } },
+
 // E-06: SV-2-TA
 
 { "type": "Feature", "properties": { "SHEET": "E-20.0", "LOCATION": "Irving St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", "STATUS": "Post-Construction", "BID_ITEM": "E-06", "PP_HISTORY": {"E-06": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.477060931950462, 37.763642429055992 ], [ -122.477034670848738, 37.76365116898549 ], [ -122.477007733555027, 37.763645219207561 ] ] ] } },
@@ -55,6 +57,15 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - SWC", "POLE_ID": "L", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "45, 82", "STATUS": "Post-Construction", "BID_ITEM": "E-06", "PP_HISTORY": { "E-06": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476872341424368, 37.757901360230072 ], [ -122.476844979986979, 37.75789595094431 ], [ -122.47682285466685, 37.757913182066581 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "25, 41", 'STATUS': "Post-Construction", "BID_ITEM": "E-06", 'PP_HISTORY': { "E-06": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475218987265748, 37.737428012496835 ], [ -122.475194341513941, 37.737414492864239 ], [ -122.475202797760488, 37.737388438150575 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-08.0", "LOCATION": "Ulloa St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", 'STATUS': "Post-Construction", "BID_ITEM": "E-06", 'PP_HISTORY': { "E-06": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475434697433371, 37.741286960965247 ], [ -122.475422588616311, 37.741293528930377 ], [ -122.47540156890868, 37.741292207564172 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "D", "MNTG_TYPE": "SP-1", "SIG_NO": "48", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475194341513941, 37.737414492864239 ], [ -122.475209593355345, 37.737399768307334 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-07.0", "LOCATION": "Vicente St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475340464075089, 37.739456541963776 ], [ -122.475358047121318, 37.73944430545221 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-08.0", "LOCATION": "Ulloa St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SP-1", "SIG_NO": "89", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475422588616311, 37.741293528930377 ], [ -122.475433448243152, 37.741282713718483 ] ] ] } },
 
 // E-12: SP-1
 

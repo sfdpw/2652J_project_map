@@ -26,8 +26,9 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_35_E_06_004", "location": "Wawona St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-35": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475459089732297, 37.737362997957618 ] } },
 
-// E-36: Type III PB
+{ "type": "Feature", "properties": { "install_id": "E_35_E_09_001", "location": "Taraval St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-35": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475812534692281, 37.742952874513762 ] } },
 
+// E-36: Type III PB
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_01_001", "location": "Holloway St Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-36": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475192, 37.721152 ] } },
 
@@ -225,7 +226,9 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_08_001", "location": "Ulloa St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475751667590671, 37.741111261507214 ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_37_E_07_001", "location": "Vicente St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475620019680477, 37.739222981496368 ] } }
+{ "type": "Feature", "properties": { "install_id": "E_37_E_07_001", "location": "Vicente St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475620019680477, 37.739222981496368 ] } },
+
+
 
 ]
 }

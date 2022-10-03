@@ -136,13 +136,19 @@ function unpack_conduit_feature_description(property_filters)
 
         {
 
-            output_L_desc = '3\" PVC x1,<br> 2\" PVC x1';
+            output_L_desc = '3\" PVC x1,<br>2\" PVC x1';
 
         } else if (property_filters == 'E-44')
 
         {
 
             output_L_desc = '2\" GRS x1,<br>2\" PVC x2';
+
+        } else if (property_filters == 'E-45')
+
+        {
+
+            output_L_desc = '2\" GRS x1,<br>2\" PVC x3';
 
         } else if (property_filters == 'E-46')
 

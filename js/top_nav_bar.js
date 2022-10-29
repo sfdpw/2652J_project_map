@@ -511,6 +511,14 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                      </li>\
 	                      <li>\
 	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-23.html">SW-23 - Line (E) 15" SW Main with CIPL</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
+                                   'qty/qty_SW-24.html">SW-24 - Line (E) 18" SW Main with CIPL</a>\
+	                      </li>\
+	                      <li>\
+	                        <a class="dropdown-item" href="' + nav_path +
                                    'qty/qty_SW-25.html">SW-25 - Line (E) 21" SW Main with CIPL</a>\
 	                      </li>\
 	                      <li>\

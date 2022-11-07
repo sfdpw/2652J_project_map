@@ -126,19 +126,6 @@ function tracking_table_generator_sw_culverts() {
     
      }
      
-//   var post_con_culvert_tvi_dates =
-   
-//     {
-   
-   
-//      '110':   '5/18/2021',
-//      '110.1': '5/25/2021',
-//      '110.2': '9/1/2021',
-//      '110.3': '12/28/2021',
-//      '146':   '10/27/2021',
-//      '193':   '8/31/2022',          
-      
-//      }  
      
    if ( sw_culvert_row[12] == 'MCN' || sw_culvert_row[12] == 'NET' )
    
@@ -213,7 +200,7 @@ function tracking_table_generator_sw_culverts() {
       else 
           
             {
-            
+                
              sw_culvert_row[0] = 'B';
         
              }
@@ -224,7 +211,9 @@ function tracking_table_generator_sw_culverts() {
     
       {
       
-       if ( sw_culvert_row[6][0] != '' )
+       if ( sw_culvert_row[6][0].includes('SW-29') ||
+            sw_culvert_row[6][0].includes('SW-30') ||
+            sw_culvert_row[6][0].includes('SW-31') )
        
          {
          
@@ -259,6 +248,7 @@ function tracking_table_generator_sw_culverts() {
        
          {
          
+
           sw_culvert_row[0] = 'L';
          
           }   

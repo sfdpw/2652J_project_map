@@ -125,6 +125,8 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_44_E_05_004", "location": "Sloat Blvd Intersection - SEC", "run_no": "22, 23 and 43", "STATUS": "Post-Construction", "PP_HISTORY": { "E-44": { "PP19": { "SFMTA": { "QTY": 50, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475019019001138, 37.734609037307287 ], [ -122.475001180225291, 37.734499833795098 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_44_E_04_002", "location": "Ocean Ave Intersection - East Side", "run_no": "16, 17 and 18", "STATUS": "Post-Construction", "PP_HISTORY": { "E-44": { "PP22": { "SFMTA": { "QTY": 91, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474828436995097, 37.73247362388755 ], [ -122.474821404507878, 37.732235735840533 ] ] ] } },
+
 // E-45 - 1-2” GRS Conduit and 3-2” PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench
 
 { "type": "Feature", "properties": { "install_id": "E_45_E_04_001", "location": "Ocean Ave Intersection - North Side", "run_no": "10A, 10B, 11, 12", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP17": { "SFMTA": { "QTY": 55, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475133195241881, 37.732697218239551 ], [ -122.474989400534938, 37.732586041938504 ] ] ] } },

@@ -61,13 +61,17 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-08.0", "LOCATION": "Ulloa St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", 'STATUS': "Post-Construction", "BID_ITEM": "E-06", 'PP_HISTORY': { "E-06": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475434697433371, 37.741286960965247 ], [ -122.475422588616311, 37.741293528930377 ], [ -122.47540156890868, 37.741292207564172 ] ] ] } },
 
+// E-7: SV-2-TA-SF
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-2-TA-SF", "SIG_NO": "21, 42", "STATUS": "Post-Construction", "BID_ITEM": "E-07", "PP_HISTORY": { "E-07": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475228188902179, 37.737582409264192 ], [ -122.475205647013524, 37.737598523134075 ], [ -122.475214957160759, 37.737571777209972 ] ] ] } },
+
+// E-12: SP-1
+
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "D", "MNTG_TYPE": "SP-1", "SIG_NO": "48", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475194341513941, 37.737414492864239 ], [ -122.475209593355345, 37.737399768307334 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-07.0", "LOCATION": "Vicente St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475340464075089, 37.739456541963776 ], [ -122.475358047121318, 37.73944430545221 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-08.0", "LOCATION": "Ulloa St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SP-1", "SIG_NO": "89", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475422588616311, 37.741293528930377 ], [ -122.475433448243152, 37.741282713718483 ] ] ] } },
-
-// E-12: SP-1
 
 { "type": "Feature", "properties": { "SHEET": "E-21.0", "LOCATION": "Lincoln Way Intersection - SWC", "POLE_ID": "J", "MNTG_TYPE": "SP-1", "SIG_NO": "49", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": {"E-12": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.477471045889644, 37.76533556150212 ], [ -122.477459829631698, 37.765354802960651 ] ] ] }},
 
@@ -112,6 +116,8 @@ var json_501_signal_mountings = {
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "E", "MNTG_TYPE": "SP-1", "SIG_NO": "68", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475432552942948, 37.737324046820497 ], [ -122.475412710222457, 37.737342081204659 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "28", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476210028000324, 37.752495739920633 ], [ -122.476194837905155, 37.752485396891444 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SP-1", "SIG_NO": "89", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475205647013524, 37.737598523134075 ], [ -122.47520632486588, 37.737595890975591 ], [ -122.475226522435989, 37.737572143832544 ] ] ] } },
 
 // E-13: TP-1
 

@@ -8,7 +8,7 @@ var json_590_E_PB = {
 // E-35: Type I PB
 
 
-{ "type": "Feature", "properties": { "install_id": "E_35_E_02_001", "location": "Winston St Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-35": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474888, 37.727026 ] } },
+{ "type": "Feature", "properties": { "install_id": "E_35_E_02_001", "location": "Winston Dr Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-35": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474888, 37.727026 ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_35_E_16_001", "location": "Moraga St Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-35": {"PP05":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476443703013359, 37.756202311182655 ] } },
 
@@ -28,11 +28,17 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_35_E_09_001", "location": "Taraval St Intersection - SWC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-35": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475812534692281, 37.742952874513762 ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_35_E_02_002", "location": "Winston St Intersection - NWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-35": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475062410175852, 37.727063496041495 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_35_E_02_003", "location": "Winston St Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-35": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474717708105231, 37.726781755410158 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_35_E_04_001", "location": "Ocean Ave Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-35": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47510128026056, 37.732400304685264 ] } },
+
 // E-36: Type III PB
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_01_001", "location": "Holloway St Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-36": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475192, 37.721152 ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_36_E_02_001", "location": "Winston St Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-36": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474888, 37.727038 ] } },
+{ "type": "Feature", "properties": { "install_id": "E_36_E_02_001", "location": "Winston Dr Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-36": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474888, 37.727038 ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_16_001", "location": "Moraga St Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-36": {"PP05":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476433198321587, 37.756206305362021 ] } },
 
@@ -172,7 +178,7 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_04_001", "location": "Ocean Ave Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475126886830836, 37.732439250379862 ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_36_E_04_002", "location": "Ocean Ave Intersection - NWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47516919167731, 37.732671536769182 ] } },
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_002", "location": "Ocean Ave Intersection - NWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } }, "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47516919167731, 37.732671536769182 ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_04_003", "location": "Ocean Ave Intersection - NWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475133195241881, 37.732697218239551 ] } },
 
@@ -193,6 +199,34 @@ var json_590_E_PB = {
 { "type": "Feature", "properties": { "install_id": "E_36_E_05_001", "location": "Sloat Blvd Intersection - West Median", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475288653515946, 37.734654696079154 ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_05_002", "location": "Sloat Blvd Intersection - East Median", "STATUS": "Post-Construction", "PP_HISTORY": { "E-36": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475019019001138, 37.734609037307287 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_01_002", "location": "Holloway Ave Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475006939325766, 37.720993149514428 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_01_003", "location": "Holloway Ave Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474997761666884, 37.720989033064491 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_01_004", "location": "Holloway Ave Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47504830627355, 37.720915544310593 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_01_005", "location": "Holloway Ave Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475047226548995, 37.720853527630304 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_02_002", "location": "Winston Dr Intersection - NWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475049768400567, 37.727089049523038 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_02_003", "location": "Winston Dr Intersection - NWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475071632823173, 37.727053688543201 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_02_004", "location": "Winston Dr Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47466880557964, 37.726811740261354 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_02_005", "location": "Winston Dr Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474712444447846, 37.726767651507878 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_004", "location": "Ocean Ave Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474856527253991, 37.732555796530463 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_005", "location": "Ocean Ave Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474839881940227, 37.732502848526742 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_006", "location": "Ocean Ave Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474828436995097, 37.73247362388755 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_007", "location": "Ocean Ave Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474821404507878, 37.732235735840533 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_008", "location": "Ocean Ave Intersection - SEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474778577578107, 37.732220980427961 ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_36_E_04_009", "location": "Ocean Ave Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475097636190057, 37.732386718150224 ] } },
 
 // E-37: Type 48X PB
 
@@ -228,7 +262,7 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_07_001", "location": "Vicente St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475620019680477, 37.739222981496368 ] } },
 
-
+{ "type": "Feature", "properties": { "install_id": "E_37_E_01_001", "location": "Holloway Ave Intersection - SEC", "STATUS": "Post-Construction", "PP_HISTORY": { "E-37": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475043649961634, 37.720887921352741 ] } }
 
 ]
 }

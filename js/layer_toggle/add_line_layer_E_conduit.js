@@ -138,6 +138,12 @@ function unpack_conduit_feature_description(property_filters)
 
             output_L_desc = '3\" PVC x1,<br>2\" PVC x1';
 
+        } else if (property_filters == 'E-43')
+
+        {
+
+            output_L_desc = '2\" GRS x1,<br>2\" PVC x1';
+
         } else if (property_filters == 'E-44')
 
         {
@@ -156,7 +162,13 @@ function unpack_conduit_feature_description(property_filters)
 
             output_L_desc = '2\" GRS x1';
 
-        }  else if (property_filters == 'E-48')
+        } else if (property_filters == 'E-47')
+
+        {
+
+            output_L_desc = '2\" GRS x2';
+
+        } else if (property_filters == 'E-48')
 
         {
 

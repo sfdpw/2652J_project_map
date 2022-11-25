@@ -5,7 +5,9 @@ var json_500_poles = {
 "features": [
 
 
+// E-20
 
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "A", "POLE_TYPE": "19-2-100, 20ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-20", "STATUS": "Post-Construction", "PP_HISTORY": { "E-20": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475152297730034, 37.732663969623886 ], [ -122.475177256842429, 37.732614956261145 ] ] ] } },
 
 // E-21
 
@@ -35,6 +37,10 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SEC", "POLE_ID": "D", "POLE_TYPE": "15TS", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475194341513941, 37.737414492864239 ], [ -122.475214279206639, 37.73741382169537 ] ] ] } },
 
+// E-25
+
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - SEC", "POLE_ID": "G", "POLE_TYPE": "Caltrans Type 21TS, 8ft Luminaire Arm", "BID_ITEM": "E-25", "STATUS": "Post-Construction", "PP_HISTORY": { "E-25": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475055477487345, 37.720949889032816 ], [ -122.475073574728981, 37.7209507938949 ] ] ] } },
+
 // E-28
 
 { "type": "Feature", "properties": { "SHEET": "E-12.0", "LOCATION": "Quintara St Intersection - SWC", "POLE_ID": "G", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476146960595301, 37.748488313350983 ], [ -122.476082748642327, 37.748492266860943 ] ] ] } },
@@ -52,6 +58,8 @@ var json_500_poles = {
 { "type": "Feature", "properties": { "SHEET": "E-14.0", "LOCATION": "Ortega St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP19": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476210028000324, 37.752495739920633 ], [ -122.476273265989263, 37.752492259471616 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-07.0", "LOCATION": "Vicente St Interserction - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-28": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475340464075089, 37.739456541963776 ], [ -122.475407354047562, 37.739452899880277 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "E", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474793077258084, 37.732222389945676 ], [ -122.474749040636723, 37.732307379954591 ] ] ] } },
 
 // E-29
 

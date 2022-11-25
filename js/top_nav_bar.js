@@ -298,11 +298,23 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-17.html">E-17 - Type 1-A Pole - 13\'</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-20.html">E-20 - 19-2-100 Pole; 20\' SMA; 8\' LA (New)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-21.html">E-21 - 19-2-100 Pole; 25\' SMA; 8\' LA (New)</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-24.html">E-24 - Caltrans Type 15TS</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-25.html">E-25 - Caltrans Type 21TS</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
@@ -372,6 +384,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-43.html">E-43 - 2" GRS x1, 2" PVC x1</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-44.html">E-44 - 2" GRS x1, 2" PVC x2</a>\
 	                  </li>\
 	                  <li>\
@@ -381,6 +397,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-46.html">E-46 - 2" GRS x1</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-47.html">E-47 - 2" GRS x2</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +

@@ -110,6 +110,16 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475278773380637, 37.737593981123702 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - SEC", "POLE_ID": "G", "SIG_TYPE": "3S12\"", "SIG_NO": "25", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475064450702774, 37.720914410898715 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "A", "SIG_TYPE": "3S12\"", "SIG_NO": "81", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475131758198259, 37.732644770628703 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "A", "SIG_TYPE": "3S12\"", "SIG_NO": "84", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1" }, "geometry": { "type": "Point", "coordinates": [ -122.475177256842429, 37.732614956261145 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "B", "SIG_TYPE": "3S12\"", "SIG_NO": "65", "MNTG_TYPE": "TV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475121067420346, 37.732717142838531 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "F", "SIG_TYPE": "3S12\"", "SIG_NO": "25", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.474839605043158, 37.73221744113232 ] } },
+
 // Pedestrian Signals
 
 { "type": "Feature", "properties": { "SHEET": "E-21.0", "LOCATION": "Lincoln Way Intersection - SWC", "POLE_ID": "J", "TRFC_TYPE":"PED", "SIG_TYPE": "1S-Count", "SIG_NO": "49", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": {"E-10": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10" }, "geometry": { "type": "Point", "coordinates": [ -122.477459829631698, 37.765354802960651 ] } },
@@ -166,7 +176,17 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-08.0", "LOCATION": "Ulloa St Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "1S-Count", "SIG_NO": "89", "MNTG_TYPE": "SP-1", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-10": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475433448243152, 37.741282713718483 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "89", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475226522435989, 37.737572143832544 ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "89", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475226522435989, 37.737572143832544 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - SEC", "POLE_ID": "G", "SIG_TYPE": "1S-Count", "SIG_NO": "29", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475064262189861, 37.720965196283025 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "A", "SIG_TYPE": "1S-Count", "SIG_NO": "88", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475144660861304, 37.732647032783923 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "B", "SIG_TYPE": "1S-Count", "SIG_NO": "69", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475120464179057, 37.732678535389752 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "F", "SIG_TYPE": "1S-Count", "SIG_NO": "29", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.474840392608129, 37.732258176682805 ] } }
+
+
 
 ]
 }

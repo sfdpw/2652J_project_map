@@ -100,7 +100,24 @@ function unpack_TS_pole_feature_description(property_filters)
 
         output_L_desc = 'Type 1-A Pole - 10\' with Concrete Foundation';
 
-    }  else if (property_filters == 'E-21')
+    } else if (property_filters == 'E-17')
+
+    {
+
+        output_L_desc = 'Type 1-A Pole - 13\' with Concrete Foundation';
+
+    } else if (property_filters == 'E-20')
+
+    {
+
+        output_L_desc = 'New Type 19-2-100 Pole<br>\
+                             with 20-foot Signal Mast Arm, MAS Mounting,<br>\
+                             8-Foot Luminaire Arm, LED Luminaire,<br>\
+                             and Concrete Foundation';
+
+    }
+    
+    else if (property_filters == 'E-21')
 
     {
 
@@ -111,6 +128,37 @@ function unpack_TS_pole_feature_description(property_filters)
 
     }
     
+    else if (property_filters == 'E-24')
+
+    {
+
+        output_L_desc = 'New Caltrans Type 15TS Street Light Pole<br>\
+                         with 8-Foot Luminaire Arm, LED Luminaire,<br>\
+                         and Concrete Foundation';
+
+    }
+    
+    else if (property_filters == 'E-25')
+
+    {
+
+        output_L_desc = 'New Caltrans Type 21TS Street Light Pole<br>\
+                         with 8-Foot Luminaire Arm, LED Luminaire,<br>\
+                         and Concrete Foundation';
+
+    }
+    
+
+    else if (property_filters == 'E-28')
+
+    {
+
+        output_L_desc = 'Relocation of (E) 19-2-100 MA Pole<br>\
+                             with 25-Foot Signal Mast Arm, MAS Mounting,<br>\
+                             8-Foot Luminaire Arm, and LED Luminaire';
+
+    }
+
     else if (property_filters == 'E-29')
 
     {

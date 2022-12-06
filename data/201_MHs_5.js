@@ -31,7 +31,7 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-394872", "NODE_ID": "300142", "SCOPE": "Install (N) per SFPW STD Plan 87,182", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-04": {"PP17":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-4" }, "geometry": { "type": "Point", "coordinates": [ -122.475404952345627, 37.741203857274016 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-394780", "NODE_ID": "300067", "SCOPE": "Replace (E) with angled (N) per SFPW STD Plan 87,182", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-5" }, "geometry": { "type": "Point", "coordinates": [ -122.474894181523624, 37.724208317609246 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-394780", "NODE_ID": "300067", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-5" }, "geometry": { "type": "Point", "coordinates": [ -122.474894181523624, 37.724208317609246 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-394782", "NODE_ID": "300069", "SCOPE": "Install (N) per SFPW STD Plan 87,181", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-02": {"PP20":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-2" }, "geometry": { "type": "Point", "coordinates": [ -122.474987696937362, 37.731425983001742 ] } },
 
@@ -235,9 +235,9 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-12763", "NODE_ID": "17716", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP10":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.477271723727725, 37.765394597922295 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-12508", "NODE_ID": "28420", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475246843217491, 37.723326541085264 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-12508", "NODE_ID": "28420", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475246843217491, 37.723326541085264 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-32955", "NODE_ID": "28422", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475152123149542, 37.723322418168138 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-32955", "NODE_ID": "28422", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475152123149542, 37.723322418168138 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-25892", "NODE_ID": "28423", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.475316567179505, 37.723552798174005 ] } },
 
@@ -249,19 +249,19 @@ var json_201_MHs_5 = {
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-26691", "NODE_ID": "27408", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.475234523136706, 37.724017146427201 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-26696", "NODE_ID": "27395", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475168183802623, 37.724702215625662 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-26696", "NODE_ID": "27395", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475168183802623, 37.724702215625662 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-26764", "NODE_ID": "27394", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475075400243909, 37.72469600765568 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-26764", "NODE_ID": "27394", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475075400243909, 37.72469600765568 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-336201", "NODE_ID": "269959", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.475167935845747, 37.725156621395612 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-27061", "NODE_ID": "27389", "SCOPE": "(E) to Remain", "STATUS": "No Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": 'none' }, "geometry": { "type": "Point", "coordinates": [ -122.474707457180671, 37.724897216879022 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-64193", "NODE_ID": "198315", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475124842976768, 37.725474771193177 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-64193", "NODE_ID": "198315", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475124842976768, 37.725474771193177 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-27692", "NODE_ID": "27386", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475081184194821, 37.726248561990801 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-27692", "NODE_ID": "27386", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475081184194821, 37.726248561990801 ] } },
 
-{ "type": "Feature", "properties": { "MAXIMO_ID": "N-63687", "NODE_ID": "198232", "SCOPE": "Mortar (E)", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475039026262522, 37.727021843506684 ] } },
+{ "type": "Feature", "properties": { "MAXIMO_ID": "N-63687", "NODE_ID": "198232", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP24":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.475039026262522, 37.727021843506684 ] } },
 
 { "type": "Feature", "properties": { "MAXIMO_ID": "N-64194", "NODE_ID": "198314", "SCOPE": "Mortar (E)", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-06": {"PP23":{"SFPUC-SW":{"QTY":1, "UNIT":"EA"}}}}, "BID_ITEM": "SW-6" }, "geometry": { "type": "Point", "coordinates": [ -122.474996117629601, 37.727793641054625 ] } },
 

@@ -106,7 +106,30 @@ function unpack_TS_pole_feature_description(property_filters)
 
         output_L_desc = 'Type 1-A Pole - 13\' with Concrete Foundation';
 
-    } else if (property_filters == 'E-20')
+    } 
+
+    else if (property_filters == 'E-18')
+
+    {
+
+        output_L_desc = 'New Type 16-2-100 Pole<br>\
+                             with 20-foot Signal Mast Arm, MAS Mounting,<br>\
+                             and Concrete Foundation';
+
+    }
+
+    else if (property_filters == 'E-19')
+
+    {
+
+        output_L_desc = 'New Type 17-2-100 Pole<br>\
+                             with 20-foot Signal Mast Arm, MAS Mounting,<br>\
+                             8-Foot Luminaire Arm, LED Luminaire,<br>\
+                             and Concrete Foundation';
+
+    }
+    
+    else if (property_filters == 'E-20')
 
     {
 
@@ -148,6 +171,15 @@ function unpack_TS_pole_feature_description(property_filters)
 
     }
     
+    else if (property_filters == 'E-27')
+
+    {
+
+        output_L_desc = 'Relocation of (E) 19A-3-100 MA Pole<br>\
+                             with 25-Foot Signal Mast Arm, MAS Mounting,<br>\
+                             8-Foot Luminaire Arm, and LED Luminaire';
+
+    }
 
     else if (property_filters == 'E-28')
 

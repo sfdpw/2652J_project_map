@@ -4,6 +4,13 @@ var json_500_poles = {
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 
+// E-18
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "H", "POLE_TYPE": "16-2-100, 20ft Signal Arm", "BID_ITEM": "E-18", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-18": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474671533112584, 37.726827127842022 ], [ -122.474670883027471, 37.726859632097216 ] ] ] } },
+
+// E-19
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at NWC", "POLE_ID": "A", "POLE_TYPE": "17-2-100, 20ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-19", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-19": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475063274396291, 37.727051147168879 ], [ -122.47506496461753, 37.726995987447786 ] ] ] } },
 
 // E-20
 
@@ -21,6 +28,10 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-21": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475205647013524, 37.737598523134075 ], [ -122.475278773380637, 37.737593981123702 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "D", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-21": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474709758116788, 37.727099350979344 ], [ -122.474763715180416, 37.727104291626134 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at SWC", "POLE_ID": "J", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-21", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-21": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475069125162264, 37.726784449754994 ], [ -122.474989164694506, 37.726782499499691 ] ] ] } },
+
 // E-24
 
 { "type": "Feature", "properties": { "SHEET": "E-11.0", "LOCATION": "Rivera St Intersection - SWC", "POLE_ID": "I", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476063805259457, 37.746705982452703 ], [ -122.476065240385694, 37.746732962826059 ] ] ] } },
@@ -37,9 +48,21 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SEC", "POLE_ID": "D", "POLE_TYPE": "15TS", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475194341513941, 37.737414492864239 ], [ -122.475214279206639, 37.73741382169537 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at NWC", "POLE_ID": "B", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475052808787694, 37.727079437276217 ], [ -122.475030675763193, 37.727079335280713 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "F", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474644571780615, 37.72697025108851 ], [ -122.474645183753637, 37.726949444005569 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "I", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474726729159528, 37.726763149216417 ], [ -122.474748352206504, 37.726763761189446 ] ] ] } },
+
+
 // E-25
 
 { "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - SEC", "POLE_ID": "G", "POLE_TYPE": "Caltrans Type 21TS, 8ft Luminaire Arm", "BID_ITEM": "E-25", "STATUS": "Post-Construction", "PP_HISTORY": { "E-25": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475055477487345, 37.720949889032816 ], [ -122.475073574728981, 37.7209507938949 ] ] ] } },
+
+// E-27
+
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "POLE_TYPE": "19A-3-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-27", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-27": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475051992823808, 37.721260848726871 ], [ -122.475109633033355, 37.721261269458346 ] ] ] } },
+
 
 // E-28
 

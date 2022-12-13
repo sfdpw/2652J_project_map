@@ -26,6 +26,10 @@ var json_503_point_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "EA", "STATUS": "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", "PP_HISTORY": { "E-14": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474794954009027, 37.732258986589905 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "E, G", 'STATUS': "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", 'PP_HISTORY': { "E-14": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474677838938035, 37.727032343457672 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "-", 'STATUS': "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", 'PP_HISTORY': { "E-14": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474701875834768, 37.726782271970315 ] } },
+
 // E-15: 7ft Type 1-A
 
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - NEC", "POLE_ID": "C", "STATUS": "Post-Construction", "POLE_TYPE": "7ft Type 1-A Pole", "BID_ITEM": "E-15", "PP_HISTORY": { "E-15": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47643245160468, 37.756188333074007 ] } },
@@ -37,6 +41,8 @@ var json_503_point_poles = {
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - SEC", "POLE_ID": "E", "STATUS": "Post-Construction", "POLE_TYPE": "10ft Type 1-A Pole", "BID_ITEM": "E-16", "PP_HISTORY": { "E-16": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476444770910533, 37.75600270518985 ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SWC", "POLE_ID": "B", "STATUS": "Post-Construction", "POLE_TYPE": "10ft Type 1-A Pole", "BID_ITEM": "E-16", "PP_HISTORY": { "E-16": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.4754504235231, 37.737588890287107 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "E", 'STATUS': "Post-Construction", "POLE_TYPE": "10ft Type 1-A Pole", "BID_ITEM": "E-16", 'PP_HISTORY': { "E-16": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475002653960345, 37.721219802525958 ] } },
 
 // E-17: 13ft Type 1-A
 

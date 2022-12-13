@@ -308,6 +308,14 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-18.html">E-18 - 16-2-100 Pole; 20\' SMA (New)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-19.html">E-19 - 17-2-100 Pole; 20\' SMA; 8\' LA (New)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-20.html">E-20 - 19-2-100 Pole; 20\' SMA; 8\' LA (New)</a>\
 	                  </li>\
 	                  <li>\
@@ -321,6 +329,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-25.html">E-25 - Caltrans Type 21TS</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-27.html">E-27 - 19A-3-100; 25\' SMA; 8\' LA (Relocation)</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +

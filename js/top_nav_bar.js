@@ -242,6 +242,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_E-02.html">E-02 - 3S12"LA</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_E-09.html">E-09 - Signal Backplate</a>\
 	                  </li>\
 	                  <li>\

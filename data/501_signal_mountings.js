@@ -15,6 +15,8 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "F", "MNTG_TYPE": "TV-1-T", "SIG_NO": "25", "STATUS": "Post-Construction", "BID_ITEM": "E-4", "PP_HISTORY": { "E-04": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474829337372071, 37.73224366118697 ], [ -122.474829115345699, 37.732241336193951 ], [ -122.474839605043158, 37.73221744113232 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "E", "MNTG_TYPE": "TV-1-T", "SIG_NO": "85", 'STATUS': "Post-Construction", "BID_ITEM": "E-04", 'PP_HISTORY': { "E-04": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475002653960345, 37.721219802525958 ], [ -122.4749743878684, 37.721217557591508 ] ] ] } },
+
 // E-05: SV-1-T
 
 { "type": "Feature", "properties": { "SHEET": "E-15.0", "LOCATION": "Noriega St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", "STATUS": "Post-Construction", "BID_ITEM": "E-05", "PP_HISTORY": {"E-05": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476330895254833, 37.754407043081507 ], [ -122.47633946504223, 37.754379627932835 ] ] ] } },
@@ -54,6 +56,18 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "A", "MNTG_TYPE": "SV-1-T", "SIG_NO": "81", "STATUS": "Post-Construction", "BID_ITEM": "E-5", "PP_HISTORY": { "E-05": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475152297730034, 37.732663969623886 ], [ -122.475131758198259, 37.732644770628703 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at NWC", "POLE_ID": "B", "MNTG_TYPE": "SV-1-T", "SIG_NO": "65", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475052808787694, 37.727079437276217 ], [ -122.475049831794024, 37.72708034886098 ], [ -122.475034054364428, 37.727100677839978 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - North Median", "POLE_ID": "C", "MNTG_TYPE": "SV-1-T", "SIG_NO": "53", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474879084944646, 37.72705212797981 ], [ -122.474878727960373, 37.727011890753261 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-1-T", "SIG_NO": "21", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474709758116788, 37.727099350979344 ], [ -122.474716331992951, 37.727072182845873 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "H", "MNTG_TYPE": "SV-1-T", "SIG_NO": "41", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474671533112584, 37.726827127842022 ], [ -122.474699866093644, 37.726828694077682 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "I", "MNTG_TYPE": "SV-1-T", "SIG_NO": "25", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474726729159528, 37.726763149216417 ], [ -122.474732224167496, 37.726735635929273 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at SWC", "POLE_ID": "J", "MNTG_TYPE": "SV-1-T", "SIG_NO": "61", 'STATUS': "Post-Construction", "BID_ITEM": "E-05", 'PP_HISTORY': { "E-05": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475069125162264, 37.726784449754994 ], [ -122.475053140273161, 37.726808154733035 ] ] ] } },
+
 // E-06: SV-2-TA
 
 { "type": "Feature", "properties": { "SHEET": "E-20.0", "LOCATION": "Irving St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", "STATUS": "Post-Construction", "BID_ITEM": "E-06", "PP_HISTORY": {"E-06": { "PP10": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.477060931950462, 37.763642429055992 ], [ -122.477034670848738, 37.76365116898549 ], [ -122.477007733555027, 37.763645219207561 ] ] ] } },
@@ -68,7 +82,11 @@ var json_501_signal_mountings = {
 
 { "type": "Feature", "properties": { "SHEET": "E-08.0", "LOCATION": "Ulloa St Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", 'STATUS': "Post-Construction", "BID_ITEM": "E-06", 'PP_HISTORY': { "E-06": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475434697433371, 37.741286960965247 ], [ -122.475422588616311, 37.741293528930377 ], [ -122.47540156890868, 37.741292207564172 ] ] ] } },
 
-// E-7: SV-2-TA-SF
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at NWC", "POLE_ID": "A", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "52, 81", 'STATUS': "Post-Construction", "BID_ITEM": "E-06", 'PP_HISTORY': { "E-06": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475034921325886, 37.727045103039423 ], [ -122.475063274396291, 37.727051147168879 ], [ -122.475046338447683, 37.727027432318259 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "F", "MNTG_TYPE": "SV-2-TA", "SIG_NO": "42, 85", 'STATUS': "Post-Construction", "BID_ITEM": "E-06", 'PP_HISTORY': { "E-06": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474672671542194, 37.726966617498675 ], [ -122.474644571780615, 37.72697025108851 ], [ -122.474617479224818, 37.726959388567295 ] ] ] } },
+
+// E-07: SV-2-TA-SF
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NEC", "POLE_ID": "C", "MNTG_TYPE": "SV-2-TA-SF", "SIG_NO": "21, 42", "STATUS": "Post-Construction", "BID_ITEM": "E-07", "PP_HISTORY": { "E-07": { "PP22": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475228188902179, 37.737582409264192 ], [ -122.475205647013524, 37.737598523134075 ], [ -122.475214957160759, 37.737571777209972 ] ] ] } },
 
@@ -133,6 +151,21 @@ var json_501_signal_mountings = {
 { "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - NWC", "POLE_ID": "B", "MNTG_TYPE": "SP-1", "SIG_NO": "69", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475127338617625, 37.732689531977698 ], [ -122.475120464179057, 37.732678535389752 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "F", "MNTG_TYPE": "SP-1", "SIG_NO": "29", "STATUS": "Post-Construction", "BID_ITEM": "E-12", "PP_HISTORY": { "E-12": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474829337372071, 37.73224366118697 ], [ -122.474829433722959, 37.732246446989166 ], [ -122.474840392608129, 37.732258176682805 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "E", "MNTG_TYPE": "SP-1", "SIG_NO": "89", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475002653960345, 37.721219802525958 ], [ -122.475016552572939, 37.721227587041831 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SWC", "POLE_ID": "A", "MNTG_TYPE": "SP-1", "SIG_NO": "88", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475063274396291, 37.727051147168879 ], [ -122.47504960867856, 37.727022440913252 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at NWC", "POLE_ID": "B", "MNTG_TYPE": "SP-1", "SIG_NO": "69", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475052808787694, 37.727079437276217 ], [ -122.475048891522604, 37.727079024513053 ], [ -122.47502806531547, 37.727066976294068 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - NEC", "POLE_ID": "D", "MNTG_TYPE": "SP-1", "SIG_NO": "28", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474709758116788, 37.727099350979344 ], [ -122.474728810505241, 37.727085564974793 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection -", "POLE_ID": "F", "MNTG_TYPE": "SP-1", "SIG_NO": "89", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474644571780615, 37.72697025108851 ], [ -122.474662832163261, 37.726980401234897 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "I", "MNTG_TYPE": "SP-1", "SIG_NO": "29", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474726729159528, 37.726763149216417 ], [ -122.474726783344579, 37.726765751695638 ], [ -122.474741929676995, 37.726775963995536 ] ] ] } },
+
+
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at SWC", "POLE_ID": "J", "MNTG_TYPE": "SP-1", "SIG_NO": "68", 'STATUS': "Post-Construction", "BID_ITEM": "E-12", 'PP_HISTORY': { "E-12": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475069125162264, 37.726784449754994 ], [ -122.475045018880834, 37.726793410007858 ] ] ] } },
 
 // E-13: TP-1
 

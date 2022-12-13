@@ -14,7 +14,7 @@ function E_signals_layer_toggle(layer_index, master_layer_array, local_json_laye
 
             {
 
-              if (property_filters.includes(local_json_layer_obj['features'][ii].properties.SIG_TYPE))
+              if (property_filters == local_json_layer_obj['features'][ii].properties.SIG_TYPE)
 
                 {
 

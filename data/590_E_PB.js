@@ -240,7 +240,7 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_02_007", "location": "Winston Dr Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474659402380809, 37.726996944487716 ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_36_E_02_008", "location": "Winston Dr  - East of NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474423681208862, 37.726989967285405 ] } },
+{ "type": "Feature", "properties": { "install_id": "E_36_E_02_008", "location": "Winston Dr  - East of NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474548484746236, 37.727006526445329 ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_02_009", "location": "Winston Dr Intersection - Island at SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475076703740072, 37.726791425278726 ] } },
 

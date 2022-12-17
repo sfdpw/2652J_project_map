@@ -26,6 +26,10 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_38_E_04_001", "location": "Ocean Ave Intersection - SEC", "run_no": "-", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-38": { "PP23": { "SFMTA": { "QTY": 4, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474794954009027, 37.732258986589905 ], [ -122.474778577578107, 37.732220980427961 ] ] ] } },
 
+{ "type": "Feature", "properties": { "install_id": "E_38_E_02_001", "location": "Winston Dr Intersection - NEC", "run_no": "20", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP24": { "SFMTA": { "QTY": 13, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474659402380809, 37.726996944487716 ], [ -122.474677838938035, 37.727032343457672 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_38_E_02_002", "location": "Winston Dr Intersection - SEC", "run_no": "21", "STATUS": "Post-Construction", "PP_HISTORY": { "E-38": { "PP24": { "SFMTA": { "QTY": 10, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47466880557964, 37.726811740261354 ], [ -122.474701875834768, 37.726782271970315 ] ] ] } },
+
 // E-39 - 1-2” PVC Schedule 80 Conduit (Underground) in Sidewalk Trench	
 
 
@@ -72,6 +76,24 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_39_E_04_003", "location": "Ocean Ave Intersection - SEC", "run_no": "-", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-39": { "PP23": { "SFMTA": { "QTY": 7, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474778577578107, 37.732220980427961 ], [ -122.474793077258084, 37.732222389945676 ] ] ] } },
 
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_002", "location": "Winston Dr Intersection - Island at NWC", "run_no": "4", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 4, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475063274396291, 37.727051147168879 ], [ -122.475071632823173, 37.727053688543201 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_003", "location": "Winston Dr Intersection - Island at NWC", "run_no": "6", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 4, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475049768400567, 37.727089049523038 ], [ -122.475052808787694, 37.727079437276217 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_004", "location": "Winston Dr Intersection - NEC", "run_no": "19", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 52, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474709758116788, 37.727099350979344 ], [ -122.474687577680555, 37.727023067226696 ], [ -122.474659402380809, 37.726996944487716 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_005", "location": "Winston Dr Intersection - NEC", "run_no": "22", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 7, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474644571780615, 37.72697025108851 ], [ -122.474659402380809, 37.726996944487716 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_006", "location": "Winston Dr Intersection - NEC", "run_no": "25", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 9, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474659402380809, 37.726996944487716 ], [ -122.474623553996381, 37.726998628640011 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_007", "location": "Winston Dr Intersection - NEC", "run_no": "37", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 12, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474607313956568, 37.727008733553703 ], [ -122.474548484746236, 37.727006526445329 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_008", "location": "Winston Dr Intersection - SEC", "run_no": "14", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 5, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474712444447846, 37.726767651507878 ], [ -122.474726729159528, 37.726763149216417 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_009", "location": "Winston Dr Intersection - SEC", "run_no": "15", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 31, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474712444447846, 37.726767651507878 ], [ -122.474687327062767, 37.726789391096929 ], [ -122.47466880557964, 37.726811740261354 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_39_E_02_010", "location": "Winston Dr Intersection - SEC", "run_no": "16", "STATUS": "Post-Construction", "PP_HISTORY": { "E-39": { "PP24": { "SFMTA": { "QTY": 5, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474671533112584, 37.726827127842022 ], [ -122.47466880557964, 37.726811740261354 ] ] ] } },
+
 // E-40 - 2-2” PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench	
 
 { "type": "Feature", "properties": { "install_id": "E_40_E_16_001", "location": "Moraga St Intersection - West Side", "run_no": "14, 15", "STATUS": "Post-Construction",  "PP_HISTORY": {"E-40": {"PP05":{"SFMTA":{"QTY":45.0, "UNIT":"LF"}}}}, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476697255860486, 37.755989776686526 ], [ -122.476703364614409, 37.756168560366937 ] ] ] } },
@@ -83,6 +105,8 @@ var json_550_E_conduit = {
 { "type": "Feature", "properties": { "install_id": "E_40_E_06_001", "location": "Wawona St Intersection - East", "run_no": "2, 3", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-40": { "PP18": { "SFMTA": { "QTY": 93, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475177414038001, 37.73740061387781 ], [ -122.475178486207724, 37.737432218869181 ], [ -122.475179671307728, 37.737459244725159 ], [ -122.475181268550671, 37.737481887992686 ], [ -122.475182912771331, 37.737506034547692 ], [ -122.475185919346274, 37.737545307932841 ], [ -122.475188925921245, 37.737575185771306 ], [ -122.475191612664474, 37.737602443178247 ] ] ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_40_E_02_001", "location": "Winston Dr Intersection - NWC", "run_no": "5A, 5B", "STATUS": "Post-Construction", 'PP_HISTORY': { "E-40": { "PP23": { "SFMTA": { "QTY": 17, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475049768400567, 37.727089049523038 ], [ -122.475065274445797, 37.727080291754781 ], [ -122.475071632823173, 37.727053688543201 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_40_E_02_002", "location": "Winston Dr Intersection - SEC", "run_no": "17, 18", "STATUS": "Post-Construction", "PP_HISTORY": { "E-40": { "PP24": { "SFMTA": { "QTY": 10, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47466880557964, 37.726811740261354 ], [ -122.474662064778457, 37.726847634696867 ] ] ] } },
 
 // E-41 - 1-3” PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench	
 
@@ -98,6 +122,10 @@ var json_550_E_conduit = {
 { "type": "Feature", "properties": { "install_id": "E_42_E_06_001", "location": "Wawona St Intersection - SWC", "run_no": "7, 8", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-42": { "PP18": { "SFMTA": { "QTY": 7, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475430265166764, 37.737285474551996 ], [ -122.475432650344075, 37.737286899119553 ], [ -122.475434051837809, 37.737288814674713 ], [ -122.475436681667802, 37.737294447705565 ], [ -122.475437398648182, 37.737298589958321 ], [ -122.475437915415199, 37.737302304728424 ], [ -122.475437761196744, 37.737306728362171 ], [ -122.475437387825835, 37.737309845197665 ], [ -122.475436657317516, 37.737312312692453 ], [ -122.475437060981051, 37.737315797964435 ] ] ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_42_E_06_002", "location": "Wawona St Intersection - SWC", "run_no": "17, 18", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-42": { "PP18": { "SFMTA": { "QTY": 24, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475430265166764, 37.737285474551996 ], [ -122.475432706743462, 37.73728607658461 ], [ -122.475435650014035, 37.737289722226542 ], [ -122.475438392607046, 37.737294270917396 ], [ -122.475439931134829, 37.737299354748352 ], [ -122.475440466274932, 37.737306846709757 ], [ -122.475440633506196, 37.737317148156684 ], [ -122.475440482998039, 37.737325375935733 ], [ -122.4754412857082, 37.73733335286785 ], [ -122.475442063333603, 37.737337015232931 ], [ -122.475444320955901, 37.737341718612726 ], [ -122.475448773488765, 37.73734648470424 ], [ -122.475453288733362, 37.737349306732114 ], [ -122.47545780397796, 37.737351752489609 ], [ -122.475468788647319, 37.737355731601632 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_42_E_02_001", "location": "Winston Dr Intersection - NEC", "run_no": "12, 13", "STATUS": "Post-Construction", "PP_HISTORY": { "E-42": { "PP24": { "SFMTA": { "QTY": 11, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474607313956568, 37.727008733553703 ], [ -122.474623553996381, 37.726998628640011 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_42_E_02_002", "location": "Winston Dr Intersection - NEC", "run_no": "23, 24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-42": { "PP24": { "SFMTA": { "QTY": 21, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474607313956568, 37.727008733553703 ], [ -122.47461026205859, 37.726999346242508 ], [ -122.474621840605536, 37.726992015668948 ], [ -122.474631614703625, 37.726989572144419 ], [ -122.474642140655419, 37.726989872885902 ], [ -122.474659402380809, 37.726996944487716 ] ] ] } },
 
 // E-43 - 1-2” GRS Conduit and 1-2” PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench
 
@@ -236,9 +264,30 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_46_E_04_004", "location": "Ocean Ave Intersection - SEC", "run_no": "14", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-46": { "PP23": { "SFMTA": { "QTY": 18, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474821404507878, 37.732235735840533 ], [ -122.474807242766531, 37.732217621284867 ], [ -122.474793003898668, 37.732214697030805 ], [ -122.474778577578107, 37.732220980427961 ] ] ] } },
 
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_001", "location": "Winston Dr Intersection - Island at NWC", "run_no": "28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 6, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475063274396291, 37.727051147168879 ], [ -122.475062410175852, 37.727063496041495 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_002", "location": "Winston Dr Intersection - Island at NWC", "run_no": "29", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 9, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475062410175852, 37.727063496041495 ], [ -122.475052808787694, 37.727079437276217 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_003", "location": "Winston Dr Intersection - NEC", "run_no": "31", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 18, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474673958268568, 37.726995019742198 ], [ -122.474760205526579, 37.727008075106319 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_004", "location": "Winston Dr Intersection - NEC", "run_no": "34", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 52, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474709758116788, 37.727099350979344 ], [ -122.474706800073648, 37.727056988359493 ], [ -122.474691562505342, 37.727016989742687 ], [ -122.474673958268568, 37.726995019742198 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_005", "location": "Winston Dr Intersection - NEC", "run_no": "35", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 11, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474644571780615, 37.72697025108851 ], [ -122.474673958268568, 37.726995019742198 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_006", "location": "Winston Dr Intersection - NEC", "run_no": "36", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 22, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474548484746236, 37.727006526445329 ], [ -122.474627855435187, 37.72698009878782 ], [ -122.474673958268568, 37.726995019742198 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_007", "location": "Winston Dr Intersection - SEC", "run_no": "32", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 5, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474726729159528, 37.726763149216417 ], [ -122.474717708105231, 37.726781755410158 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_46_E_02_008", "location": "Winston Dr Intersection - SEC", "run_no": "33", "STATUS": "Post-Construction", "PP_HISTORY": { "E-46": { "PP24": { "SFMTA": { "QTY": 27, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474717708105231, 37.726781755410158 ], [ -122.474696324245414, 37.726807473178404 ], [ -122.474675472836154, 37.726844163638937 ] ] ] } },
+
 // E-47 - 2-2” GRS Conduit (Underground) in the Same Roadway T-Trench
 
-{ "type": "Feature", "properties": { "install_id": "E_47_E_02_001", "location": "Winston Dr Intersection - NWC", "run_no": "39, 40", "STATUS": "Post-Construction", "PP_HISTORY": { "E-47": { "PP23": { "SFMTA": { "QTY": 14, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475082505050693, 37.727150406365105 ], [ -122.475056951569044, 37.727126472470331 ] ] ] } },
+//{ "type": "Feature", "properties": { "install_id": "E_47_E_02_001", "location": "Winston Dr Intersection - NWC", "run_no": "39, 40", "STATUS": "Post-Construction", "PP_HISTORY": { "E-47": { "PP23": { "SFMTA": { "QTY": 14, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475082505050693, 37.727150406365105 ], [ -122.475056951569044, 37.727126472470331 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_47_E_02_001", "location": "Winston Dr Intersection - NWC", "run_no": "39, 40", "STATUS": "Post-Construction", "PP_HISTORY": { "E-47": { "PP23": { "SFMTA": { "QTY": 14, "UNIT": "LF" } }, "PP24": { "SFMTA": { "QTY": 55, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475091665628568, 37.727159269701467 ], [ -122.475041174475521, 37.727112859443203 ], [ -122.47501003102451, 37.727092141696801 ], [ -122.474979823213673, 37.727075834825484 ], [ -122.474961310904817, 37.727067948715565 ] ] ] } },
+
+{ "type": "Feature", "properties": { "install_id": "E_47_E_02_002", "location": "Winston Dr Intersection - NEC", "run_no": "39, 40", "STATUS": "Post-Construction", "PP_HISTORY": { "E-47": { "PP24": { "SFMTA": { "QTY": 22, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474693559094391, 37.727074122269933 ], [ -122.474748920588752, 37.727054114607505 ] ] ] } },
+
 
 // E-48 - 3-2” GRS Conduit (Underground) in the Same Roadway T-Trench
 
@@ -246,9 +295,9 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_48_E_01_002", "location": "Holloway Ave Intersection - South Side", "run_no": "15, 16 and 17", "STATUS": "Post-Construction", "PP_HISTORY": { "E-48": { "PP04": { "SFMTA": { "QTY": 160, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475413961319433, 37.720787138293055 ], [ -122.475342994260089, 37.720913653572516 ], [ -122.475072113458296, 37.720930583622611 ] ] ] } },
 
+{"type": "Feature", "properties": { "install_id": "E_48_E_02_001", "location": "Winston Dr Intersection - NEC", "run_no": "10A, 10B and 11", "STATUS": "Post-Construction", "PP_HISTORY": { "E-48": { "PP24": { "SFMTA": { "QTY": 33, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474760205526579, 37.727008075106319 ], [ -122.474623553996381, 37.726998628640011 ] ] ] } },
 
 // E-49 - 6-2” GRS Conduit (Underground) in the Same Roadway T-Trench
-
 
 { "type": "Feature", "properties": { "install_id": "E_49_E_02_001", "location": "Winston St Intersection - North Side", "run_no": "10A, 10B, 11, 31, 39, 40", "STATUS": "Post-Construction", "PP_HISTORY": { "E-49": { "PP04": { "SFMTA": { "QTY": 145.0, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474760205526579, 37.727008075106319 ], [ -122.474881940292562, 37.72702124209183 ], [ -122.475043594964561, 37.727033391628453 ] ] ] } },
 
@@ -260,7 +309,9 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_50_E_06_001", "location": "Wawona St Intersection - SWC", "run_no": "30, 31", "STATUS": "Post-Construction", 'PP_HISTORY': { "E-50": { "PP18": { "SFMTA": { "QTY": 6, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475430798278524, 37.737302777487798 ], [ -122.475430265166764, 37.737285474551996 ] ] ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_50_E_05_001", "location": "Sloat Blvd Intersection - North", "run_no": "50, 51", "STATUS": "Post-Construction", "PP_HISTORY": { "E-50": { "PP19": { "SFMTA": { "QTY": 89, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474975389508813, 37.734804443873053 ], [ -122.475004766858135, 37.73478267631905 ], [ -122.475079095091445, 37.734775420467692 ], [ -122.475162271923921, 37.734783915122911 ], [ -122.475294485275839, 37.734868680267219 ] ] ] } }
+{ "type": "Feature", "properties": { "install_id": "E_50_E_05_001", "location": "Sloat Blvd Intersection - North", "run_no": "50, 51", "STATUS": "Post-Construction", "PP_HISTORY": { "E-50": { "PP19": { "SFMTA": { "QTY": 89, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474975389508813, 37.734804443873053 ], [ -122.475004766858135, 37.73478267631905 ], [ -122.475079095091445, 37.734775420467692 ], [ -122.475162271923921, 37.734783915122911 ], [ -122.475294485275839, 37.734868680267219 ] ] ] } },
+
+{"type": "Feature", "properties": { "install_id": "E_50_E_02_001", "location": "Winston Dr Intersection - NEC", "run_no": "41, 42", "STATUS": "Post-Construction", "PP_HISTORY": { "E-50": { "PP24": { "SFMTA": { "QTY": 52, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474693559094391, 37.727074122269933 ], [ -122.474690108921635, 37.727050505709819 ], [ -122.474685608937989, 37.72703455527283 ], [ -122.474680440639986, 37.727024886991188 ], [ -122.474671128792693, 37.727015842469648 ], [ -122.474658297156239, 37.727010139520097 ], [ -122.474607313956568, 37.727008733553703 ] ] ] } }
 
 ]
 }

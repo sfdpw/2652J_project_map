@@ -5,9 +5,9 @@ var json_203_drains_4 = {
 "features": [
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-394881", "NODE_ID": "300152", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP18":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475470644982565, 37.741370463213023 ] } },
 
-{ "type": "Feature", "properties": {"MAXIMO_ID": "N-394887", "NODE_ID": "300155", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP12":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475592575164939, 37.743642172741986 ] } },
+{ "type": "Feature", "properties": {"MAXIMO_ID": "N-394887", "NODE_ID": "300155", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP12":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475592575164939, 37.743642172741986 ] } },
 
-{ "type": "Feature", "properties": {"MAXIMO_ID": "N-394910", "NODE_ID": "300171", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Pre-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP12":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475695616447439, 37.74510276265886 ] } },
+{ "type": "Feature", "properties": {"MAXIMO_ID": "N-394910", "NODE_ID": "300171", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP12":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.475695616447439, 37.74510276265886 ] } },
 
 { "type": "Feature", "properties": {"MAXIMO_ID": "N-394911", "NODE_ID": "300170", "SCOPE": "Install (N) per SFPW STD Plan 87,188", "BID_ITEM": "SW-09", "STATUS": "Post-Construction", "SUBMITTALS": 'none', "PP_HISTORY": {"SW-09": {"PP11":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}} }, "geometry": { "type": "Point", "coordinates": [ -122.47558876207863, 37.744998493312629 ] } },
 

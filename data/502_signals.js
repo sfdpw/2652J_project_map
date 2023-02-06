@@ -146,9 +146,10 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at SWC", "POLE_ID": "J", "SIG_TYPE": "3S12\"", "SIG_NO": "64", "MNTG_TYPE": "MAS", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-01": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1" }, "geometry": { "type": "Point", "coordinates": [ -122.474989164694506, 37.726782499499691 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-09": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475109633033355, 37.721261269458346 ] } },
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "3S12\"", "SIG_NO": "24", "MNTG_TYPE": "MAS", "STATUS": "Post-Construction", "PP_HISTORY": { "E-01": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475109633033355, 37.721261269458346 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "3S12\"", "SIG_NO": "21", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": { "E-09": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475057046265306, 37.721232951279966 ] } },
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "3S12\"", "SIG_NO": "21", "MNTG_TYPE": "SV-1-T", "STATUS": "Post-Construction", "PP_HISTORY": {"E-01": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-09": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-1, E-9" }, "geometry": { "type": "Point", "coordinates": [ -122.475057046265306, 37.721232951279966 ] } },
+
 
 
 // 3S12"LA
@@ -242,7 +243,9 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "I", "SIG_TYPE": "1S-Count", "SIG_NO": "29", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.474741929676995, 37.726775963995536 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at SWC", "POLE_ID": "J", "SIG_TYPE": "1S-Count", "SIG_NO": "68", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475045018880834, 37.726793410007858 ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at SWC", "POLE_ID": "J", "SIG_TYPE": "1S-Count", "SIG_NO": "68", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475045018880834, 37.726793410007858 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10" }, "geometry": { "type": "Point", "coordinates": [ -122.475042278952685, 37.721246088415128 ] } }
 
 ]
 }

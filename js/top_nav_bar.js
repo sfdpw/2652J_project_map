@@ -98,6 +98,9 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                    <li>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP25.html">PP25 - Dec 2022 / Jan 2023</a>\
 	      		    </li>\
+	      		    <li>\
+	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP26.html">PP26 - Feb 2023</a>\
+	      		    </li>\
 	      		  </ul>\
 	              </li>\
 	            </ul>\
@@ -155,6 +158,9 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                  <ul class="submenu dropdown-menu">\
 	                    <li>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP25.html">PP25 - Dec 2022 / Jan 2023</a>\
+	                    </li>\
+	                    <li>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP26.html">PP26 - Feb 2023</a>\
 	                    </li>\
 	                  </ul>\
 	              </li>\

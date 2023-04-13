@@ -2,10 +2,10 @@ var WD_rel_sheet_list_non_corrosion = [,'WD-2775-01.1','General Notes and Legend
 
 var WD_rel_sheet_list_corrosion = [,'WD-2775-01.1','General Notes and Legend',,'WD-2775-01.1_rev02',,,'WD-2775-06','Steel Nozzle Layout Details',,'WD-2775-06_rev01',,,'WD-2775-07','Typical Steel Pipe Details',,'WD-2775-07_rev01',,,'WD-2775-08','Manhole Plan, Section and Details',,'WD-2775-08_rev01',,,'WD-2775-08.1','Typical 27\" Manhole in Paved Area',,'WD-2775-08.2_rev01', 'Thrust Block Details - I',,'WD-2775-08.3_rev01', 'Thrust Block Details - II',,'WD-2775-10_rev01', '54\" Tee x 36\" Tee  and 36\" GV',,'WD-2775-10.1_rev01','Valve Details',,'WD-2775-11','Typical Air Release/Vacuum Valve Details',,'WD-2775-11_rev01',,,'WD-2775-12_rev01','8\" Blow-Off Detail',,'WD-2775-13','Trench Detail for Caltrans ROW',,'WD-2775-13_rev01',, 'layer_2652J_dwg_WD277514pdf1_modified_168', 'WD-2775-14','Corrosion Control Plan',,'WD-2775-14_rev01',,,'WD-2775-15','Galvanic Anode Bed Details',,'WD-2775-15_rev01',,,'WD-2775-16','Terminal Box Details',,'WD-2775-17','Insulating Flange Joint Details',,'WD-2775-18','Test Station Details',,'WD-2775-18.1','Dielectric Coating and Lining Details',,'WD-2775-18.1_rev01',];
 
-var WD_spec_list_non_corrosion = ['01 69 50 - 00',,'01 69 50 - 01','Appendix A','01 69 50 - 02','Appendix B','09 97 72',,'33 11 41',];
+var WD_spec_list_non_corrosion = ['01 69 50 - 00',,'01 69 50 - 01','Appendix A','01 69 50 - 02','Appendix B','09 97 72',,'33 11 00',,'33 11 41',,'33 11 50',,'33 11 55',,'33 11 56',,'33 12 24',];
 
 
-var WD_spec_list_corrosion = ['01 69 50 - 00',,'01 69 50 - 01','Appendix A','01 69 50 - 02','Appendix B','09 97 72',,'26 42 40',,'33 11 41',];
+var WD_spec_list_corrosion = ['01 69 50 - 00',,'01 69 50 - 01','Appendix A','01 69 50 - 02','Appendix B','09 97 72',,'26 42 40',,'33 11 00',,'33 11 41',,'33 11 50',,'33 11 55',,'33 11 56',,'33 12 24',];
 
 
 var json_105_WD_321 = {

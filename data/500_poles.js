@@ -46,7 +46,7 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NWC", "POLE_ID": "A", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475485383291797, 37.737519130648863 ], [ -122.475484255753798, 37.737499962503009 ] ] ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SEC", "POLE_ID": "D", "POLE_TYPE": "15TS", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475194341513941, 37.737414492864239 ], [ -122.475214279206639, 37.73741382169537 ] ] ] } },
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - SEC", "POLE_ID": "D", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475194341513941, 37.737414492864239 ], [ -122.475214279206639, 37.73741382169537 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - Island at NWC", "POLE_ID": "B", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475052808787694, 37.727079437276217 ], [ -122.475030675763193, 37.727079335280713 ] ] ] } },
 
@@ -54,6 +54,7 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "I", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-24": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474726729159528, 37.726763149216417 ], [ -122.474748352206504, 37.726763761189446 ] ] ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Sloat Blvd Intersection - NEC", "POLE_ID": "E", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474990491506233, 37.734803818130906 ], [ -122.474989836415546, 37.734779133356021 ] ] ] } },
 
 // E-25
 
@@ -83,6 +84,8 @@ var json_500_poles = {
 { "type": "Feature", "properties": { "SHEET": "E-07.0", "LOCATION": "Vicente St Interserction - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-28": { "PP21": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475340464075089, 37.739456541963776 ], [ -122.475407354047562, 37.739452899880277 ] ] ] } },
 
 { "type": "Feature", "properties": { "SHEET": "E-04.0", "LOCATION": "Ocean Ave Intersection - SEC", "POLE_ID": "E", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474793077258084, 37.732222389945676 ], [ -122.474749040636723, 37.732307379954591 ] ] ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-03.0", "LOCATION": "Eucalyptus Dr Intersection - NEC", "POLE_ID": "C", "POLE_TYPE": "19-2-100, 25ft Signal Arm, 8ft Luminaire Arm", "BID_ITEM": "E-28", "STATUS": "Post-Construction", "PP_HISTORY": { "E-28": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47475882239776, 37.73119478078948 ], [ -122.474823634480515, 37.731190997640752 ] ] ] } },
 
 // E-29
 

@@ -30,6 +30,10 @@ var json_503_point_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-02.0", "LOCATION": "Winston Dr Intersection - SEC", "POLE_ID": "-", 'STATUS': "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", 'PP_HISTORY': { "E-14": { "PP24": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474701875834768, 37.726782271970315 ] } },
 
+{ "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - SWC - L CR", "POLE_ID": "K", "STATUS": "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", "PP_HISTORY": { "E-14": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476828409165634, 37.75788713739216 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-17.0", "LOCATION": "Lawton St Intersection - SWC - R CR", "POLE_ID": "J", "STATUS": "Post-Construction", "POLE_TYPE": "5ft PBA Post", "BID_ITEM": "E-14", "PP_HISTORY": { "E-14": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.476802199688606, 37.757866494388225 ] } },
+
 // E-15: 7ft Type 1-A
 
 { "type": "Feature", "properties": { "SHEET": "E-16.0", "LOCATION": "Moraga St Intersection - NEC", "POLE_ID": "C", "STATUS": "Post-Construction", "POLE_TYPE": "7ft Type 1-A Pole", "BID_ITEM": "E-15", "PP_HISTORY": { "E-15": { "PP13": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.47643245160468, 37.756188333074007 ] } },

@@ -251,7 +251,9 @@ var json_502_signals = {
 
 { "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - NEC", "POLE_ID": "D", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10" }, "geometry": { "type": "Point", "coordinates": [ -122.475042278952685, 37.721246088415128 ] } },
 
-{ "type": "Feature", "properties": { "SHEET": "E-03.0", "LOCATION": "Eucalyptus Dr Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10" }, "geometry": { "type": "Point", "coordinates": [ -122.474778529963217, 37.731185278927569 ] } }
+{ "type": "Feature", "properties": { "SHEET": "E-03.0", "LOCATION": "Eucalyptus Dr Intersection - NEC", "POLE_ID": "C", "SIG_TYPE": "1S-Count", "SIG_NO": "28", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10" }, "geometry": { "type": "Point", "coordinates": [ -122.474778529963217, 37.731185278927569 ] } },
+
+{ "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Wawona St Intersection - NWC", "POLE_ID": "A", "SIG_TYPE": "1S-Count", "SIG_NO": "88", "MNTG_TYPE": "SP-1", "STATUS": "Post-Construction", "PP_HISTORY": { "E-10": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } }, "E-11": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none", "BID_ITEM": "E-10, E-11" }, "geometry": { "type": "Point", "coordinates": [ -122.475475962807522, 37.737503379175351 ] } }
 
 ]
 }

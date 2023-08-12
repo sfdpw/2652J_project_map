@@ -1,4 +1,4 @@
-var funds = ["SFMTA", "SFPUC-SW", "SFPUC-AWSS", "SFPUC-WD"];
+var funds = ["SFMTA", "SFPUC-SW", "SFPUC-AWSS", "SFPUC-WD", 'SFPUC-PEFWS'];
 
 
 function zeroPad(num, places) {
@@ -106,7 +106,7 @@ function qty_or_blank(input_num, unit) {
         if (unit == 'LF' || unit == 'SF' || unit == 'CY' || unit == 'TON')
 
         {
-
+ 
             return_block = input_num.toFixed(2);
 
         } else if (unit == 'EA')

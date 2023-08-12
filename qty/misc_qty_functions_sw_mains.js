@@ -20,8 +20,11 @@ function qty_table_generator_sw_mains(qty_bid_item) {
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - AWSS</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - WD</th>\
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - PEFWS</th>\
                     </tr>\
                     <tr class="qty_tr">\
+                        <td class="qty_tdh">QTY</td>\
+                        <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
                         <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
@@ -47,7 +50,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
 
     var period_totals = [];
-    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     for (pp = 1; pp < latest_pp; pp++)
 
@@ -55,7 +58,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
         is_qty_in_pp = false;
         payment_block = '';
-        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
         for (const sw_main of json_202_SW_mains_0["features"])
@@ -64,7 +67,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
             sw_main_properties = sw_main["properties"];
             sw_main_coordinates = sw_main["geometry"]["coordinates"];
-            sw_main_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            sw_main_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
             if (sw_main_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
@@ -198,7 +201,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
 
             }
 
-            return_block += '</tr><tr><td  colspan="11">&nbsp;</td></tr>';
+            return_block += '</tr><tr><td  colspan="13">&nbsp;</td></tr>';
 
 
 
@@ -219,7 +222,7 @@ function qty_table_generator_sw_mains(qty_bid_item) {
     return_block +=
     
         '<tr class="qty_tr">\
-          <td colspan="11">&nbsp;</td>\
+          <td colspan="13">&nbsp;</td>\
          </tr>\
          <tr class="qty_tr">\
           <td style="padding:5px; text-align:right"><strong>To Date Totals:</strong></td>\
@@ -252,6 +255,12 @@ function qty_table_generator_sw_mains(qty_bid_item) {
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-WD" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[9]) + '</strong>\
+          </td>\
+          <td class="qty_td" style="padding:5px; text-align:right">\
+            <strong>' + qty_or_blank(to_date_totals[10], base_sov[NN]['Unit']) + '</strong>\
+          </td>\
+          <td class="qty_td funding_td_amt_SFPUC-PEFWS" style="padding:5px; text-align:right">\
+            <strong>' + amount_or_blank(to_date_totals[11]) + '</strong>\
           </td>\
          </tr><br>';    
 

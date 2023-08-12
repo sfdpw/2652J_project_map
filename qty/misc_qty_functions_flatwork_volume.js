@@ -30,8 +30,11 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - AWSS</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - WD</th>\
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - PEFWS</th>\
                     </tr>\
                     <tr class="qty_tr">\
+                        <td class="qty_tdh">QTY</td>\
+                        <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
                         <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
@@ -58,7 +61,7 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
 
 
     var period_totals = [];
-    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     var agg_depth = 0;
       
     if (qty_bid_item == 'CR-04') {agg_depth = 1;}  
@@ -70,7 +73,7 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
 
         is_qty_in_pp = false;
         payment_block = '';
-        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
         for (const flatwork_instance of json_400_flatwork["features"])
@@ -79,7 +82,7 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
 
             flatwork_instance_properties = flatwork_instance["properties"];
             flatwork_instance_coordinates = flatwork_instance["geometry"]["coordinates"];
-            flatwork_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            flatwork_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
             if (flatwork_instance_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
 
@@ -103,14 +106,14 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
                     
                     flatwork_instance_extracted_details[2] = flatwork_instance_properties["pp_qty_id"];
 
-                    flatwork_instance_extracted_details[13] = flatwork_instance_properties["mdfr_instl"].toFixed(1);
-                    flatwork_instance_extracted_details[14] = flatwork_instance_properties["wdth_instl"].toFixed(2);
-                    flatwork_instance_extracted_details[15] = flatwork_instance_properties["lnth_instl"].toFixed(2);
-                    flatwork_instance_extracted_details[16] = (flatwork_instance_extracted_details[13]*           
-                                                              flatwork_instance_extracted_details[14]*
-                                                              flatwork_instance_extracted_details[15]).toFixed(2);
-                    flatwork_instance_extracted_details[17] = (flatwork_instance_extracted_details[16]*agg_depth).toFixed(2);
-                    flatwork_instance_extracted_details[18] = (flatwork_instance_extracted_details[17]/27).toFixed(2);      
+                    flatwork_instance_extracted_details[15] = flatwork_instance_properties["mdfr_instl"].toFixed(1);
+                    flatwork_instance_extracted_details[16] = flatwork_instance_properties["wdth_instl"].toFixed(2);
+                    flatwork_instance_extracted_details[17] = flatwork_instance_properties["lnth_instl"].toFixed(2);
+                    flatwork_instance_extracted_details[18] = (flatwork_instance_extracted_details[15]*           
+                                                              flatwork_instance_extracted_details[16]*
+                                                              flatwork_instance_extracted_details[17]).toFixed(2);
+                    flatwork_instance_extracted_details[19] = (flatwork_instance_extracted_details[18]*agg_depth).toFixed(2);
+                    flatwork_instance_extracted_details[20] = (flatwork_instance_extracted_details[19]/27).toFixed(2);      
 
                     for (ff = 0; ff < funds.length; ff++)
 
@@ -152,10 +155,6 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
                         <td class="qty_td" style="text-align:center; padding:5px">' +
                         flatwork_instance_extracted_details[2] + '</td>\
                         <td class="qty_td" style="text-align:center; padding:5px">' +
-                        flatwork_instance_extracted_details[13] + '</td>\
-                        <td class="qty_td" style="text-align:center; padding:5px">' +
-                        flatwork_instance_extracted_details[14] + '</td>\
-                        <td class="qty_td" style="text-align:center; padding:5px">' +
                         flatwork_instance_extracted_details[15] + '</td>\
                         <td class="qty_td" style="text-align:center; padding:5px">' +
                         flatwork_instance_extracted_details[16] + '</td>\
@@ -163,6 +162,10 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
                         flatwork_instance_extracted_details[17] + '</td>\
                         <td class="qty_td" style="text-align:center; padding:5px">' +
                         flatwork_instance_extracted_details[18] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        flatwork_instance_extracted_details[19] + '</td>\
+                        <td class="qty_td" style="text-align:center; padding:5px">' +
+                        flatwork_instance_extracted_details[20] + '</td>\
                         <td class="qty_td" style="text-align:right; padding:5px">' +
                         qty_or_blank(flatwork_instance_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
                         <td class="qty_td funding_td_amt" style="text-padding:5px">' +
@@ -291,6 +294,12 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-WD" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[9]) + '</strong>\
+          </td>\
+          <td class="qty_td" style="padding:5px; text-align:right">\
+            <strong>' + qty_or_blank(to_date_totals[10], base_sov[NN]['Unit']) + '</strong>\
+          </td>\
+          <td class="qty_td funding_td_amt_SFPUC-PEFWS" style="padding:5px; text-align:right">\
+            <strong>' + amount_or_blank(to_date_totals[11]) + '</strong>\
           </td>\
          </tr><br>';    
 

@@ -23,8 +23,11 @@ function qty_table_generator_MHs(qty_bid_item) {
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - AWSS</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - WD</th>\
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - PEFWS</th>\
                     </tr>\
                     <tr class="qty_tr">\
+                        <td class="qty_tdh">QTY</td>\
+                        <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
                         <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
@@ -50,7 +53,7 @@ function qty_table_generator_MHs(qty_bid_item) {
 
 
     var period_totals = [];
-    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     for (pp = 1; pp < latest_pp; pp++)
 
@@ -58,7 +61,7 @@ function qty_table_generator_MHs(qty_bid_item) {
 
         is_qty_in_pp = false;
         payment_block = '';
-        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
         for (const manhole of json_201_MHs_5["features"])
@@ -67,7 +70,7 @@ function qty_table_generator_MHs(qty_bid_item) {
 
             MH_properties = manhole["properties"];
             MH_coordinates = manhole["geometry"]["coordinates"];
-            MH_extracted_details = ['', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            MH_extracted_details = ['', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
             if (MH_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
@@ -262,6 +265,12 @@ function qty_table_generator_MHs(qty_bid_item) {
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-WD" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[9]) + '</strong>\
+          </td>\
+          <td class="qty_td" style="padding:5px; text-align:right">\
+            <strong>' + fixed_qty_or_blank(to_date_totals[10], 2) + '</strong>\
+          </td>\
+          <td class="qty_td funding_td_amt_SFPUC-PEFWS" style="padding:5px; text-align:right">\
+            <strong>' + amount_or_blank(to_date_totals[11]) + '</strong>\
           </td>\
          </tr><br>';    
 

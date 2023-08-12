@@ -25,8 +25,11 @@ function qty_table_generator_E_conduits(qty_bid_item) {
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - SW</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - AWSS</th>\
                         <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - WD</th>\
+                        <th class="qty_thead" colspan="2" style="text-align:center">SFPUC - PEFWS</th>\
                     </tr>\
                     <tr class="qty_tr">\
+                        <td class="qty_tdh">QTY</td>\
+                        <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
                         <td class="qty_tdh">AMT</td>\
                         <td class="qty_tdh">QTY</td>\
@@ -53,7 +56,7 @@ function qty_table_generator_E_conduits(qty_bid_item) {
 
 
     var period_totals = [];
-    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var to_date_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     for (pp = 1; pp < latest_pp; pp++)
 
@@ -61,7 +64,7 @@ function qty_table_generator_E_conduits(qty_bid_item) {
 
         is_qty_in_pp = false;
         payment_block = '';
-        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        period_totals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
         for (const conduit_instance of json_550_E_conduit["features"])
@@ -70,7 +73,7 @@ function qty_table_generator_E_conduits(qty_bid_item) {
 
             conduit_instance_properties = conduit_instance["properties"];
             conduit_instance_coordinates = conduit_instance["geometry"]["coordinates"];
-            conduit_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            conduit_instance_extracted_details = ['', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
             if (conduit_instance_properties["PP_HISTORY"].hasOwnProperty(qty_bid_item))
 
@@ -216,7 +219,7 @@ function qty_table_generator_E_conduits(qty_bid_item) {
 
             }
 
-            return_block += '</tr><tr><td  colspan="13">&nbsp;</td></tr>';
+            return_block += '</tr><tr><td  colspan="15">&nbsp;</td></tr>';
 
 
 
@@ -270,6 +273,12 @@ function qty_table_generator_E_conduits(qty_bid_item) {
           </td>\
           <td class="qty_td funding_td_amt_SFPUC-WD" style="padding:5px; text-align:right">\
             <strong>' + amount_or_blank(to_date_totals[9]) + '</strong>\
+          </td>\
+          <td class="qty_td" style="padding:5px; text-align:right">\
+            <strong>' + qty_or_blank(to_date_totals[10], base_sov[NN]['Unit']) + '</strong>\
+          </td>\
+          <td class="qty_td funding_td_amt_SFPUC-PEFWS" style="padding:5px; text-align:right">\
+            <strong>' + amount_or_blank(to_date_totals[11]) + '</strong>\
           </td>\
          </tr><br>';
 

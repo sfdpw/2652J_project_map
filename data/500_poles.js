@@ -56,6 +56,38 @@ var json_500_poles = {
 
 { "type": "Feature", "properties": { "SHEET": "E-06.0", "LOCATION": "Sloat Blvd Intersection - NEC", "POLE_ID": "E", "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm", "BID_ITEM": "E-24", "STATUS": "Post-Construction", "PP_HISTORY": { "E-24": { "PP27": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474990491506233, 37.734803818130906 ], [ -122.474989836415546, 37.734779133356021 ] ] ] } },
 
+{
+    "type": "Feature",
+    "properties": {
+        "SHEET": "E-07.0",
+        "LOCATION": "Vicente St Intersection - SWC",
+        "POLE_ID": "J",
+        "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm",
+        "BID_ITEM": "E-24",
+        "STATUS": "Post-Construction",
+        "PP_HISTORY": {
+            "E-24": {
+                "PP31": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "RLVNT": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475592233593957, 37.7392451831332],
+                [-122.475593645645674, 37.73926821302468]
+            ]
+        ]
+    }
+},
+
 // E-25
 
 { "type": "Feature", "properties": { "SHEET": "E-01.0", "LOCATION": "Holloway Ave Intersection - SEC", "POLE_ID": "G", "POLE_TYPE": "Caltrans Type 21TS, 8ft Luminaire Arm", "BID_ITEM": "E-25", "STATUS": "Post-Construction", "PP_HISTORY": { "E-25": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "RLVNT": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475055477487345, 37.720949889032816 ], [ -122.475073574728981, 37.7209507938949 ] ] ] } },

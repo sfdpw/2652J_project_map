@@ -262,7 +262,104 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_05_004", "location": "Sloat Blvd Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-36": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474969603828967, 37.734812775888159 ] } },
 
-
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_36_E_07_001",
+        "location": "Vicente St Intersection - SWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-36": {
+                "PP31": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.475605513604393, 37.739232508287785]
+    }
+}, 
+  
+  
+  {
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_36_E_07_002",
+        "location": "Vicente St Intersection - SWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-36": {
+                "PP31": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.475562748608823, 37.739198484564895]
+    }
+}, 
+  
+  
+  {
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_36_E_07_003",
+        "location": "Vicente St Intersection - SWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-36": {
+                "PP31": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.47558218113042, 37.739237719431124]
+    }
+}, 
+  
+  
+  {
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_36_E_07_004",
+        "location": "Vicente St Intersection - SWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-36": {
+                "PP31": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.475619970324615, 37.739222623925627]
+    }
+},
 
 // E-37: Type 48X PB
 
@@ -296,7 +393,7 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_08_001", "location": "Ulloa St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP17": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475751667590671, 37.741111261507214 ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_37_E_07_001", "location": "Vicente St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475620019680477, 37.739222981496368 ] } },
+{ "type": "Feature", "properties": { "install_id": "E_37_E_07_001", "location": "Vicente St Intersection - SWC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-37": { "PP18": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475581373768705, 37.739207932575916 ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_37_E_01_001", "location": "Holloway Ave Intersection - SEC", 'STATUS': "Post-Construction", "PP_HISTORY": { "E-37": { "PP23": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475043649961634, 37.720887921352741 ] } },
 

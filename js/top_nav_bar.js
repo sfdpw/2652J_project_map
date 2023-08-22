@@ -229,6 +229,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null)
 	                    <a class="dropdown-item" href="' + nav_path +
         'qty/qty_CR-16.html">CR-16: Dark Concrete Paving</a>\
 	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+        'qty/qty_CR-17.html">CR-17: 2in AC on 4in Ag Base</a>\
+	                  </li>\
 	                </ul>\
 	              </li>\
 	              <li>\

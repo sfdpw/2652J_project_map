@@ -40,6 +40,30 @@ var json_590_E_PB = {
 
 { "type": "Feature", "properties": { "install_id": "E_35_E_05_001", "location": "Sloat Blvd Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-35": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475026446892016, 37.734823749102311 ] } },
 
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_35_E_05_002",
+        "location": "Sloat Blvd Intersection - NWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-35": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.475321974605237, 37.734812837030873]
+    }
+},
+
 // E-36: Type III PB
 
 { "type": "Feature", "properties": { "install_id": "E_36_E_01_001", "location": "Holloway St Intersection - North Side", 'STATUS': "Post-Construction", 'PP_HISTORY': {"E-36": {"PP04":{"SFMTA":{"QTY":1, "UNIT":"EA"}}}}, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.475192, 37.721152 ] } },
@@ -358,6 +382,54 @@ var json_590_E_PB = {
     "geometry": {
         "type": "Point",
         "coordinates": [-122.475619970324615, 37.739222623925627]
+    }
+},
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_36_E_05_005",
+        "location": "Sloat Blvd Intersection - NWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-36": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.475301844853263, 37.734850102026307]
+    }
+},
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_36_E_05_006",
+        "location": "Sloat Blvd Intersection - NWC",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-36": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 1,
+                        "UNIT": "EA"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.475346097035356, 37.734807513460098]
     }
 },
 

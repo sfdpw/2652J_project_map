@@ -106,6 +106,67 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_39_E_05_004", "location": "Sloat Blvd Intersection - NEC", "run_no": "46", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-39": { "PP25": { "SFMTA": { "QTY": 6, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474943715981354, 37.734803216331109 ], [ -122.474950418849176, 37.734818987680754 ], [ -122.474960209327904, 37.73482479366232 ], [ -122.474990263820743, 37.734827867417273 ], [ -122.475004608010494, 37.734832022678603 ], [ -122.475016020748768, 37.734840091285342 ], [ -122.475020844836408, 37.73484666570566 ], [ -122.475026223907548, 37.734859643782109 ], [ -122.475028785370014, 37.734872878004808 ], [ -122.475031005304174, 37.734879452425112 ], [ -122.475037238196151, 37.734885343788761 ] ] ] } },
 
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_39_E_05_005",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "10",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-39": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 15,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475346097035356, 37.734807513460098],
+                [-122.475342547988163, 37.734791556611228]
+            ]
+        ]
+    }
+},
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_39_E_05_006",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "12",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-39": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 16,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475301844853263, 37.734850102026307],
+                [-122.475296008334311, 37.734839343977043]
+            ]
+        ]
+    }
+},
+
+
 // E-40 - 2-2” PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench	
 
 { "type": "Feature", "properties": { "install_id": "E_40_E_16_001", "location": "Moraga St Intersection - West Side", "run_no": "14, 15", "STATUS": "Post-Construction",  "PP_HISTORY": {"E-40": {"PP05":{"SFMTA":{"QTY":45.0, "UNIT":"LF"}}}}, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.476697255860486, 37.755989776686526 ], [ -122.476703364614409, 37.756168560366937 ] ] ] } },
@@ -119,6 +180,66 @@ var json_550_E_conduit = {
 { "type": "Feature", "properties": { "install_id": "E_40_E_02_001", "location": "Winston Dr Intersection - NWC", "run_no": "5A, 5B", "STATUS": "Post-Construction", 'PP_HISTORY': { "E-40": { "PP23": { "SFMTA": { "QTY": 17, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475049768400567, 37.727089049523038 ], [ -122.475065274445797, 37.727080291754781 ], [ -122.475071632823173, 37.727053688543201 ] ] ] } },
 
 {"type": "Feature", "properties": { "install_id": "E_40_E_02_002", "location": "Winston Dr Intersection - SEC", "run_no": "17, 18", "STATUS": "Post-Construction", "PP_HISTORY": { "E-40": { "PP24": { "SFMTA": { "QTY": 10, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47466880557964, 37.726811740261354 ], [ -122.474662064778457, 37.726847634696867 ] ] ] } },
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_40_E_05_001",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "8, 9",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-40": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 17,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475346097035356, 37.734807513460098],
+                [-122.475320296106787, 37.73478192713754]
+            ]
+        ]
+    }
+},
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_40_E_05_002",
+        "location": "Sloat  Blvd Intersection - NWC",
+        "run_no": "11A, 11B",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-40": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 9,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475346097035356, 37.734807513460098],
+                [-122.475301844853263, 37.734850102026307]
+            ]
+        ]
+    }
+},
 
 // E-41 - 1-3” PVC Schedule 80 Conduit (Underground) in the Same Sidewalk Trench	
 
@@ -194,13 +315,47 @@ var json_550_E_conduit = {
 
 // E-45 - 1-2” GRS Conduit and 3-2” PVC Schedule 80 Conduit (Underground) in the Same Roadway T-Trench
 
-{ "type": "Feature", "properties": { "install_id": "E_45_E_04_001", "location": "Ocean Ave Intersection - North Side", "run_no": "10A, 10B, 11, 12", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP17": { "SFMTA": { "QTY": 55, "UNIT": "LF" } }, "PP23": { "SFMTA": { "QTY": 12, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475133195241881, 37.732697218239551 ], [ -122.474989400534938, 37.732586041938504 ] ] ] } },
+{ "type": "Feature", "properties": { "install_id": "E_45_E_04_001", "location": "Ocean Ave Intersection - North Side", "run_no": "10A, 10B, 11 and 12", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP17": { "SFMTA": { "QTY": 55, "UNIT": "LF" } }, "PP23": { "SFMTA": { "QTY": 12, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475133195241881, 37.732697218239551 ], [ -122.474989400534938, 37.732586041938504 ] ] ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_45_E_05_001", "location": "Sloat Blvd Intersection - NWC", "run_no": "13A, 13B, 14 and 38", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP19": { "SFMTA": { "QTY": 46, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47516380568095, 37.73483370324108 ], [ -122.475289337808306, 37.73482815811893 ] ] ] } },
 
 { "type": "Feature", "properties": { "install_id": "E_45_E_05_002", "location": "Sloat Blvd Intersection - NEC", "run_no": "13A, 13B, 14 and 39", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP19": { "SFMTA": { "QTY": 43, "UNIT": "LF" } }, "PP25": { "SFMTA": { "QTY": 40, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.47516380568095, 37.73483370324108 ], [ -122.475030765166849, 37.734817497055779 ], [ -122.474969603828967, 37.734812775888159 ] ], [ [ -122.475026446892016, 37.734823749102311 ], [ -122.475030765166849, 37.734817497055779 ] ] ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_45_E_04_002", "location": "Ocean Ave Intersection - North Side", "run_no": "10A, 10B, 11, 12", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP21": { "SFMTA": { "QTY": 49, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474989400534938, 37.732586041938504 ], [ -122.474883270806544, 37.732555597693654 ], [ -122.474856527253991, 37.732555796530463 ] ] ] } },
+{ "type": "Feature", "properties": { "install_id": "E_45_E_04_002", "location": "Ocean Ave Intersection - North Side", "run_no": "10A, 10B, 11 and 12", "STATUS": "Post-Construction", "PP_HISTORY": { "E-45": { "PP21": { "SFMTA": { "QTY": 49, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474989400534938, 37.732586041938504 ], [ -122.474883270806544, 37.732555597693654 ], [ -122.474856527253991, 37.732555796530463 ] ] ] } },
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_45_E_05_003",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "13A, 13B, 14 and 38",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-45": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 22,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475321974605237, 37.734812837030873],
+                [-122.475289337808306, 37.73482815811893],
+                [-122.475290263660625, 37.73483874611513],
+                [-122.47529234318047, 37.734844028095509],
+                [-122.475296793352896, 37.734848353496766],
+                [-122.475301844853263, 37.734850102026307]
+            ]
+        ]
+    }
+},
 
 // E-46 - 1-2” GRS Conduit (Underground) in Sidewalk Trench
 
@@ -340,6 +495,96 @@ var json_550_E_conduit = {
     }
 },
 
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_46_E_05_004",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "35",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-46": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 20,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475321974605237, 37.734812837030873],
+                [-122.475320296106787, 37.73478192713754]
+            ]
+        ]
+    }
+},
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_46_E_05_005",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "36",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-46": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 19,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475321974605237, 37.734812837030873],
+                [-122.475342547988163, 37.734791556611228]
+            ]
+        ]
+    }
+},
+
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_46_E_05_006",
+        "location": "Sloat Blvd Intersection - NWC",
+        "run_no": "37",
+        'STATUS': "Post-Construction",
+        'PP_HISTORY': {
+            "E-46": {
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 17,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.475321974605237, 37.734812837030873],
+                [-122.475296008334311, 37.734839343977043]
+            ]
+        ]
+    }
+},
+
 // E-47 - 2-2” GRS Conduit (Underground) in the Same Roadway T-Trench
 
 { "type": "Feature", "properties": { "install_id": "E_47_E_02_001", "location": "Winston Dr Intersection - NWC", "run_no": "39, 40", "STATUS": "Post-Construction", "PP_HISTORY": { "E-47": { "PP23": { "SFMTA": { "QTY": 14, "UNIT": "LF" } }, "PP24": { "SFMTA": { "QTY": 55, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475091665628568, 37.727159269701467 ], [ -122.475041174475521, 37.727112859443203 ], [ -122.47501003102451, 37.727092141696801 ], [ -122.474979823213673, 37.727075834825484 ], [ -122.474961310904817, 37.727067948715565 ] ] ] } },
@@ -367,7 +612,50 @@ var json_550_E_conduit = {
 
 { "type": "Feature", "properties": { "install_id": "E_50_E_06_001", "location": "Wawona St Intersection - SWC", "run_no": "30, 31", "STATUS": "Post-Construction", 'PP_HISTORY': { "E-50": { "PP18": { "SFMTA": { "QTY": 6, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.475430798278524, 37.737302777487798 ], [ -122.475430265166764, 37.737285474551996 ] ] ] } },
 
-{ "type": "Feature", "properties": { "install_id": "E_50_E_05_001", "location": "Sloat Blvd Intersection - North", "run_no": "50, 51", "STATUS": "Post-Construction", "PP_HISTORY": { "E-50": { "PP19": { "SFMTA": { "QTY": 89, "UNIT": "LF" } }, "PP25": { "SFMTA": { "QTY": 36, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474975389508813, 37.734804443873053 ], [ -122.475004766858135, 37.73478267631905 ], [ -122.475079095091445, 37.734775420467692 ], [ -122.475162271923921, 37.734783915122911 ], [ -122.475294485275839, 37.734868680267219 ] ] ] } },
+{
+    "type": "Feature",
+    "properties": {
+        "install_id": "E_50_E_05_001",
+        "location": "Sloat Blvd Intersection - North",
+        "run_no": "50, 51",
+        "STATUS": "Post-Construction",
+        "PP_HISTORY": {
+            "E-50": {
+                "PP19": {
+                    "SFMTA": {
+                        "QTY": 89,
+                        "UNIT": "LF"
+                    }
+                },
+                "PP25": {
+                    "SFMTA": {
+                        "QTY": 36,
+                        "UNIT": "LF"
+                    }
+                },
+                "PP30": {
+                    "SFMTA": {
+                        "QTY": 27,
+                        "UNIT": "LF"
+                    }
+                }
+            }
+        },
+        "rlvnt": "none"
+    },
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-122.474975389508813, 37.734804443873053],
+                [-122.475004766858135, 37.73478267631905],
+                [-122.475079095091445, 37.734775420467692],
+                [-122.475162271923921, 37.734783915122911],
+                [-122.475294485275839, 37.734868680267219]
+            ]
+        ]
+    }
+},
 
 {"type": "Feature", "properties": { "install_id": "E_50_E_02_001", "location": "Winston Dr Intersection - NEC", "run_no": "41, 42", "STATUS": "Post-Construction", "PP_HISTORY": { "E-50": { "PP24": { "SFMTA": { "QTY": 52, "UNIT": "LF" } } } }, "rlvnt": "none" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -122.474693559094391, 37.727074122269933 ], [ -122.474690108921635, 37.727050505709819 ], [ -122.474685608937989, 37.72703455527283 ], [ -122.474680440639986, 37.727024886991188 ], [ -122.474671128792693, 37.727015842469648 ], [ -122.474658297156239, 37.727010139520097 ], [ -122.474607313956568, 37.727008733553703 ] ] ] } }
 

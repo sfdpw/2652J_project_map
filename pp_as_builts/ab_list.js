@@ -279,7 +279,8 @@ var json_ab_list = {
 '2652J_L-08_AB_PP25',
 '2652J_L-09_AB_PP25',
 '2652J_L-13_AB_PP25',
-'2652J_L-15_AB_PP25'
+'2652J_L-15_AB_PP25',
+'2652J_L-13_AB_PP32' 
  
 ],
  

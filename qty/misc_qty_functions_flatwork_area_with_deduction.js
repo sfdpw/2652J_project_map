@@ -160,7 +160,7 @@ function qty_table_generator_flatwork_area_with_deduction(qty_bid_item) {
                         <td class="qty_td" style="text-align:center; padding:5px">' +
                         flatwork_instance_extracted_details[17] + '</td>\
                         <td class="qty_td" style="text-align:center; padding:5px">' +
-                        flatwork_instance_extracted_details[19] + '</td>\
+                        flatwork_instance_extracted_details[18] + '</td>\
                         <td rowspan="2" class="qty_td" style="text-align:right; padding:5px">' +
                         qty_or_blank(flatwork_instance_extracted_details[3], base_sov[NN]['Unit']) + '</td>\
                         <td rowspan="2" class="qty_td funding_td_amt" style="text-padding:5px">' +
@@ -209,9 +209,6 @@ function qty_table_generator_flatwork_area_with_deduction(qty_bid_item) {
         if (is_qty_in_pp)
 
         {
-
-
-
 
             return_block += '<tr class="qty_tr">\
                                           <td style="padding:5px" colspan="7"><strong>Payment Period ' + pp + '</strong></td>\

@@ -3360,6 +3360,150 @@ var json_590_E_PB = {
             }
         },
 
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_08_001",
+                "location": "Ulloa St Intersection - NEC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475452795844177, 37.741324140703675]
+            }
+        }, 
+        
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_08_002",
+                "location": "Ulloa St Intersection - NEC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475422588616311, 37.741293528930377]
+            }
+        }, 
+        
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_08_003",
+                "location": "Ulloa St Intersection - SWC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475681396306641, 37.741052084934545]
+            }
+        }, 
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_08_004",
+                "location": "Ulloa St Intersection - SWC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475689450802946, 37.741079539507979]
+            }
+        }, 
+        
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_08_005",
+                "location": "Ulloa St Intersection - SWC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475700103523863, 37.741106387828999]
+            }
+        }, 
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_08_006",
+                "location": "Ulloa St Intersection - SWC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.47572335763418, 37.741108769534883]
+            }
+        },
+
         // E-37: Type 48X PB
 
         {

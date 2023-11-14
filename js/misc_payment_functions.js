@@ -167,7 +167,7 @@ function return_pp_history_from_spatial_file(work_type, bid_item_id, unit_price)
 
 
     var return_object = {};
-    var pp_no_ceiling = 33;
+    var pp_no_ceiling = 34;
 
 
 

@@ -391,6 +391,33 @@ var json_503_point_poles = {
             }
         },
 
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC - L CR",
+                "POLE_ID": "I",
+                "STATUS": "Post-Construction",
+                "POLE_TYPE": "5ft PBA Post",
+                "BID_ITEM": "E-14",
+                "PP_HISTORY": {
+                    "E-14": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475013235062903, 37.734440708567583]
+            }
+        },
+
         // E-15: 7ft Type 1-A
 
         {

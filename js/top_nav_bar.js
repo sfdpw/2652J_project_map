@@ -53,12 +53,12 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
                  <a class="dropdown-item" href="#">2021 &raquo;</a>\
 	             <ul class="submenu dropdown-menu">\
 	               <li>\
-			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP02.html">PP02 - Jan 2021</a>\
-			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03 - Feb 2021</a>\
-			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04 - Mar 2021</a>\
-			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05 - Apr 2021</a>\
-                  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
-			      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07 - Jun 2021</a>\
+			          <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP02.html">PP02 - Jan 2021</a>\
+			          <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP03.html">PP03 - Feb 2021</a>\
+			          <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP04.html">PP04 - Mar 2021</a>\
+			          <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP05.html">PP05 - Apr 2021</a>\
+                      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP06.html">PP06 - May 2021</a>\
+			          <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP07.html">PP07 - Jun 2021</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP08.html">PP08 - Jul 2021</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP09.html">PP09 - Aug 2021</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP10.html">PP10 - Sep 2021</a>\
@@ -98,6 +98,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP30.html">PP30 - Jun 2023</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP31.html">PP31 - Jul 2023</a>\
 	      		      <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP32.html">PP32 - Aug / Sep 2023</a>\
+					  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP33.html">PP33 - Oct 2023</a>\
 					  </li>\
 	      		  </ul>\
 	              </li>\
@@ -163,6 +164,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP30.html">PP30 - Jun 2023</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP31.html">PP31 - Jul 2023</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP32.html">PP32 - Aug / Sep 2023</a>\
+						  <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP33.html">PP33 - Oct 2023</a>\
 						  </li>\
 	                  </ul>\
 	              </li>\
@@ -272,6 +274,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_E-02.html">E-02 - 3S12"LA</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_E-03.html">E-03 - 5S12"GYRA</a>\
+					</li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_E-09.html">E-09 - Signal Backplate</a>\
@@ -349,6 +355,14 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_E-21.html">E-21 - 19-2-100 Pole; 25\' SMA; 8\' LA (New)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+		'qty/qty_E-22.html">E-22 - 26-3-100 Pole; 45\' SMA; 8\' LA (New)</a>\
+	                  </li>\
+	                  <li>\
+	                    <a class="dropdown-item" href="' + nav_path +
+		'qty/qty_E-23.html">E-23 - 26-4-100 Pole; 45\' SMA; 8\' LA (New)</a>\
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +

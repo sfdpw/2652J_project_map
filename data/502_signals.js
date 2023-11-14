@@ -41,7 +41,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -79,7 +79,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -117,7 +117,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -155,7 +155,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -193,7 +193,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -231,7 +231,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -269,7 +269,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -307,7 +307,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -345,7 +345,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -382,7 +382,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -456,7 +456,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -530,7 +530,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -604,7 +604,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -678,7 +678,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -781,7 +781,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -818,7 +818,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -929,7 +929,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -966,7 +966,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1040,7 +1040,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1077,7 +1077,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1114,7 +1114,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1151,7 +1151,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1188,7 +1188,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1225,7 +1225,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1262,7 +1262,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1299,7 +1299,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1336,7 +1336,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1373,7 +1373,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1595,7 +1595,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1632,7 +1632,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1669,7 +1669,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1706,7 +1706,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1743,7 +1743,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1780,7 +1780,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1817,7 +1817,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -1957,7 +1957,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -2031,7 +2031,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -2311,7 +2311,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -2747,7 +2747,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -2784,7 +2784,7 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
@@ -2821,11 +2821,205 @@ var json_502_signals = {
                     }
                 },
                 "RLVNT": "none",
-                "BID_ITEM": "E-01"
+                "BID_ITEM": "E-1, E-9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-122.475062969944304, 37.734812847793435]
+            }
+        },
+
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "A",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "84",
+                "MNTG_TYPE": "MAS",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-1, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475337166790979, 37.734718999748083]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NEC",
+                "POLE_ID": "D",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "24",
+                "MNTG_TYPE": "MAS",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-1, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475116834928386, 37.734838040835733]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "41",
+                "MNTG_TYPE": "SV-1-T",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-1, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474951962615819, 37.7344852682373]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "44",
+                "MNTG_TYPE": "MAS",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-1, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474924515547457, 37.734529186587558]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "J",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "25",
+                "MNTG_TYPE": "SV-2-TA",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-1, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475029125547209, 37.734393708543976]
             }
         },
 
@@ -2897,8 +3091,241 @@ var json_502_signals = {
             }
         },
 
+        // ########
 
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NEC",
+                "POLE_ID": "E",
+                "SIG_TYPE": "3S12\"LA",
+                "SIG_NO": "72",
+                "MNTG_TYPE": "SV-2-TA",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-02": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-2, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475015000672244, 37.734790140066288]
+            }
+        },
 
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "SIG_TYPE": "3S12\"LA",
+                "SIG_NO": "74",
+                "MNTG_TYPE": "MAS",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-02": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-2, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474927824331999, 37.73462440157013]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "SIG_TYPE": "3S12\"LA",
+                "SIG_NO": "77",
+                "MNTG_TYPE": "MAS",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-02": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-2, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474926604917982, 37.734589311196849]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "J",
+                "SIG_TYPE": "3S12\"LA",
+                "SIG_NO": "12",
+                "MNTG_TYPE": "SV-2-TA",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-02": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-2, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475027752847993, 37.734443503701307]
+            }
+        },
+
+        // 5S12"GYRA
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "A",
+                "SIG_TYPE": "5S12\"GYRA",
+                "SIG_NO": "91",
+                "MNTG_TYPE": "SV-1-T",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-03": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-3, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475314288865292, 37.734784450327979]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NEC",
+                "POLE_ID": "E",
+                "SIG_TYPE": "5S12\"GYRA",
+                "SIG_NO": "85",
+                "MNTG_TYPE": "SV-2-TA",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-03": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-3, E-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474962967418662, 37.734794297951971]
+            }
+        },
 
         // Pedestrian Signals
 
@@ -4568,6 +4995,154 @@ var json_502_signals = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-122.475285829304241, 37.734476887111931]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "A",
+                "SIG_TYPE": "1S-Count",
+                "SIG_NO": "88",
+                "MNTG_TYPE": "SP-1",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-10": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-11": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-10, E-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.4753252704581, 37.734772125877228]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NEC",
+                "POLE_ID": "E",
+                "SIG_TYPE": "1S-Count",
+                "SIG_NO": "89",
+                "MNTG_TYPE": "SP-1",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-10": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-11": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-10, E-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474997702674202, 37.734785554455421]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "SIG_TYPE": "1S-Count",
+                "SIG_NO": "48",
+                "MNTG_TYPE": "SP-1",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-10": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-11": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-10, E-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474936334071884, 37.734503240980018]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "J",
+                "SIG_TYPE": "1S-Count",
+                "SIG_NO": "29",
+                "MNTG_TYPE": "SP-1",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-10": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-11": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-10, E-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.47503069221456, 37.734424997131114]
             }
         }
 

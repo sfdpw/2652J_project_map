@@ -1141,6 +1141,72 @@ var json_501_signal_mountings = {
             }
         },
 
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "A",
+                "MNTG_TYPE": "SV-1-T",
+                "SIG_NO": "91",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-05",
+                "PP_HISTORY": {
+                    "E-05": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475314288865292, 37.734784450327979],
+                        [-122.475342547988163, 37.734791556611228]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "MNTG_TYPE": "SV-1-T",
+                "SIG_NO": "41",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-05",
+                "PP_HISTORY": {
+                    "E-05": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.474951962615819, 37.7344852682373],
+                        [-122.474922930361259, 37.73448357059975]
+                    ]
+                ]
+            }
+        },
+
         // E-06: SV-2-TA
 
         {
@@ -1410,6 +1476,74 @@ var json_501_signal_mountings = {
                         [-122.474672671542194, 37.726966617498675],
                         [-122.474644571780615, 37.72697025108851],
                         [-122.474617479224818, 37.726959388567295]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NEC",
+                "POLE_ID": "E",
+                "MNTG_TYPE": "SV-2-TA",
+                "SIG_NO": "72, 85",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-06",
+                "PP_HISTORY": {
+                    "E-06": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475015000672244, 37.734790140066288],
+                        [-122.474990491506233, 37.734803818130906],
+                        [-122.474962967418662, 37.734794297951971]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "J",
+                "MNTG_TYPE": "SV-2-TA",
+                "SIG_NO": "12, 25",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-06",
+                "PP_HISTORY": {
+                    "E-06": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475027752847993, 37.734443503701307],
+                        [-122.475013727444249, 37.734417924746658],
+                        [-122.475029125547209, 37.734393708543976]
                     ]
                 ]
             }
@@ -2884,6 +3018,142 @@ var json_501_signal_mountings = {
                     [
                         [-122.475230379933052, 37.734403198887343],
                         [-122.47525073579618, 37.734391473910179]
+                    ]
+                ]
+            }
+        },
+
+
+
+
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "A",
+                "MNTG_TYPE": "SP-1",
+                "SIG_NO": "88",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-12",
+                "PP_HISTORY": {
+                    "E-12": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475342547988163, 37.734791556611228],
+                        [-122.4753252704581, 37.734772125877228]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NEC",
+                "POLE_ID": "E",
+                "MNTG_TYPE": "SP-1",
+                "SIG_NO": "89",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-12",
+                "PP_HISTORY": {
+                    "E-12": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.474990491506233, 37.734803818130906],
+                        [-122.474997702674202, 37.734785554455421]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "MNTG_TYPE": "SP-1",
+                "SIG_NO": "48",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-12",
+                "PP_HISTORY": {
+                    "E-12": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.474922930361259, 37.73448357059975],
+                        [-122.474936334071884, 37.734503240980018]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "J",
+                "MNTG_TYPE": "SP-1",
+                "SIG_NO": "29",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-12",
+                "PP_HISTORY": {
+                    "E-12": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475013727444249, 37.734417924746658],
+                        [-122.47503069221456, 37.734424997131114]
                     ]
                 ]
             }

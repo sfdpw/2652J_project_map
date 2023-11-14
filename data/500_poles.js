@@ -371,6 +371,74 @@ var json_500_poles = {
             }
         },
 
+        // E-22
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SWC",
+                "POLE_ID": "L",
+                "POLE_TYPE": "26-3-100, 45ft Signal Arm, 8ft Luminaire Arm",
+                "BID_ITEM": "E-22",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-22": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.47525073579618, 37.734391473910179],
+                        [-122.475150519893859, 37.734396931402685]
+                    ]
+                ]
+            }
+        },
+
+        // E-23
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "H",
+                "POLE_TYPE": "26-4-100, 45ft Signal Arm, 8ft Luminaire Arm",
+                "BID_ITEM": "E-23",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-23": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.474922930361259, 37.73448357059975],
+                        [-122.474927824331999, 37.73462440157013]
+                    ]
+                ]
+            }
+        },
+
         // E-24
 
         {
@@ -789,7 +857,72 @@ var json_500_poles = {
                     ]
                 ]
             }
-        },         
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "B",
+                "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm",
+                "BID_ITEM": "E-24",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-24": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475296008334311, 37.734839343977043],
+                        [-122.475270785398351, 37.734840622417401]
+                    ]
+                ]
+            }
+        },
+
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SEC",
+                "POLE_ID": "J",
+                "POLE_TYPE": "Caltrans Type 15TS, 8ft Luminaire Arm",
+                "BID_ITEM": "E-24",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-24": {
+                        "PP33": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475038941966645, 37.734417525596335],
+                        [-122.475013727444249, 37.734417924746658]
+                    ]
+                ]
+            }
+        },
 
         // E-25
 

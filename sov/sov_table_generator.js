@@ -42,10 +42,7 @@ function period_sov_details(bid_item_id, pp_no) {
 
     return return_array
 
-
 }
-
-
 
 function to_date_sov_details(bid_item_id, pp_no) {
 
@@ -192,7 +189,7 @@ function generate_sov_table(pp_no) {
 
         } else {
 
-            return_block += base_sov[ii]["Contract QTY"] + '</td>';
+            return_block += format_unit(base_sov[ii]["Contract QTY"], base_sov[ii]["Unit"])  + '</td>';
 
         }
 

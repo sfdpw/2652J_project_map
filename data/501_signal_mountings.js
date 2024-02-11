@@ -178,6 +178,39 @@ var json_501_signal_mountings = {
             }
         },
 
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "B",
+                "MNTG_TYPE": "TV-1-T",
+                "SIG_NO": "65",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-04",
+                "PP_HISTORY": {
+                    "E-04": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475296008334311, 37.734839343977043],
+                        [-122.475284034610226, 37.734866007506916]
+                    ]
+                ]
+            }
+        },
+
         // E-05: SV-1-T
 
         {
@@ -2922,8 +2955,6 @@ var json_501_signal_mountings = {
             }
         },
 
-
-
         {
             "type": "Feature",
             "properties": {
@@ -3022,10 +3053,6 @@ var json_501_signal_mountings = {
                 ]
             }
         },
-
-
-
-
 
         {
             "type": "Feature",
@@ -3154,6 +3181,39 @@ var json_501_signal_mountings = {
                     [
                         [-122.475013727444249, 37.734417924746658],
                         [-122.47503069221456, 37.734424997131114]
+                    ]
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "B",
+                "MNTG_TYPE": "SP-1",
+                "SIG_NO": "69",
+                "STATUS": "Post-Construction",
+                "BID_ITEM": "E-12",
+                "PP_HISTORY": {
+                    "E-12": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [-122.475296008334311, 37.734839343977043],
+                        [-122.475289215302851, 37.734825481121149]
                     ]
                 ]
             }

@@ -181,7 +181,30 @@ var json_548_E_TS_cabinets = {
             }
         },
 
-        //{ "type": "Feature", "properties": { "install_id": "E_52_E_05_001", "location": "Sloat Blvd Intersection - NEC", 'STATUS': "Post-Construction", 'PP_HISTORY': { "E-52": { "PP25": { "SFMTA": { "QTY": 1, "UNIT": "EA" } } } }, "rlvnt": "none" }, "geometry": { "type": "Point", "coordinates": [ -122.474943715981354, 37.734803216331109 ] } }
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_52_E_05_001",
+                "location": "Sloat Blvd Intersection - NEC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-52": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474943715981354, 37.734803216331109]
+            }
+        },
+
 
 
     ]

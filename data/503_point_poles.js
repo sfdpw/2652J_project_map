@@ -418,6 +418,33 @@ var json_503_point_poles = {
             }
         },
 
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-2.0",
+                "LOCATION": "Winston Dr Intersection - NEC - L",
+                "POLE_ID": "-",
+                "STATUS": "Post-Construction",
+                "POLE_TYPE": "5ft PBA Post",
+                "BID_ITEM": "E-14",
+                "PP_HISTORY": {
+                    "CO-23: PCO-038 - E-14": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.474632611812112, 37.726977053304033]
+            }
+        },
+
         // E-15: 7ft Type 1-A
 
         {
@@ -554,6 +581,32 @@ var json_503_point_poles = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-122.475002653960345, 37.721219802525958]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-5.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "B",
+                "STATUS": "Post-Construction",
+                "POLE_TYPE": "10ft Type 1-A Pole",
+                "BID_ITEM": "E-16",
+                'PP_HISTORY': {
+                    "E-0": {
+                        "PP0": {
+                            "SFMTA": {
+                                "QTY": 0,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                }, "RLVNT": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475296008334311, 37.734839343977043]
             }
         },
 

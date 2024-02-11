@@ -2990,6 +2990,84 @@ var json_502_signals = {
             "type": "Feature",
             "properties": {
                 "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "B",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "65",
+                "MNTG_TYPE": "SV-1-T",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-01"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475284034610226, 37.734866007506916]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - SWC",
+                "POLE_ID": "L",
+                "SIG_TYPE": "3S12\"",
+                "SIG_NO": "64",
+                "MNTG_TYPE": "MAS",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-01": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-09": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-01"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475187661655298, 37.73439490876077]
+            }
+        },
+
+        // ########
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
                 "LOCATION": "Sloat Blvd Intersection - SEC",
                 "POLE_ID": "J",
                 "SIG_TYPE": "3S12\"",
@@ -5143,6 +5221,43 @@ var json_502_signals = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-122.47503069221456, 37.734424997131114]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "SHEET": "E-05.0",
+                "LOCATION": "Sloat Blvd Intersection - NWC",
+                "POLE_ID": "B",
+                "SIG_TYPE": "1S-Count",
+                "SIG_NO": "69",
+                "MNTG_TYPE": "SP-1",
+                "STATUS": "Post-Construction",
+                "PP_HISTORY": {
+                    "E-10": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
+                    "E-11": {
+                        "PP34": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "RLVNT": "none",
+                "BID_ITEM": "E-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475289215302851, 37.734825481121149]
             }
         }
 

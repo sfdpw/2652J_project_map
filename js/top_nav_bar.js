@@ -213,6 +213,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-07.html">CR-07: 3.5in Sidewalk</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_CO-23_PCO-038_CR-07.html">CR-07: 3.5in Sidewalk (PCO 38 - Winston NEC)</a>\
+					</li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-08.html">CR-08: 4in Sidewalk</a>\
@@ -221,6 +225,14 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-09.html">CR-09: 6in Sidewalk</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_CR-10.html">CR-10: Curb</a>\
+					</li>\
+					<li>\
+					<a class="dropdown-item" href="' + nav_path +
+	'qty/qty_CO-23_PCO-038_CR-10.html">CR-10: Curb (PCO 38 - Winston NEC)</a>\
+				  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CO-05_PCO-009_CR-15_Add.html">CR-15: 8in Shelter Foundations (Unreinforced per PCO 9)</a>\
@@ -248,16 +260,20 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
-		'qty/qty_CR-10.html">CR-10: Curb</a>\
-	                  </li>\
-	                  <li>\
-	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-11.html">CR-11: Parking Strip, Gutter</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_CO-23_PCO-038_CR-11.html">CR-11: Parking Strip, Gutter (PCO 38 - Winston NEC)</a>\
+					</li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-12.html">CR-12: Curb Ramps</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_CO-23_PCO-038_CR-12.html">CR-12: Curb Ramps (PCO 38 - Winston NEC)</a>\
+					</li>\
 	                </ul>\
 	              </li>\
 	            </ul>\
@@ -330,6 +346,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_E-14.html">E-14 - PPB Poles</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_CO-23_PCO-038_E-14.html">E-14 - PPB Poles (PCO 38 - Winston NEC)</a>\
+					</li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_E-15.html">E-15 - Type 1-A Pole - 7\'</a>\

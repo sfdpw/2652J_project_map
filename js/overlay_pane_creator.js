@@ -3102,6 +3102,15 @@
                                               {pane: 'pane_2652J_dwg_C05Apdf1_modified_b_307r'});
         bounds_group.addLayer(layer_2652J_dwg_C05Apdf1_modified_b_307r);      
         
+        map.createPane('pane_2652J_dwg_C05B_rev01_modified_109');
+        map.getPane('pane_2652J_dwg_C05B_rev01_modified_109').style.zIndex = 509;
+        var img_2652J_dwg_C05B_rev01_modified_109 = 'data/2652J_dwg_C05B_rev01_modified_109.png';
+        var img_bounds_2652J_dwg_C05B_rev01_modified_109 = [[37.72679670222963,-122.47495488296659],[37.727201728573554,-122.47433944558601]];
+        var layer_2652J_dwg_C05B_rev01_modified_109 = new L.imageOverlay(img_2652J_dwg_C05B_rev01_modified_109,
+                                              img_bounds_2652J_dwg_C05B_rev01_modified_109,
+                                              {pane: 'pane_2652J_dwg_C05B_rev01_modified_109'});
+        bounds_group.addLayer(layer_2652J_dwg_C05B_rev01_modified_109);
+        //map.addLayer(layer_2652J_dwg_C05B_rev01_modified_109); 
         
         
         map.createPane('pane_2652J_dwg_C01Cpdf1_modified_309');

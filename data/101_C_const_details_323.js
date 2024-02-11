@@ -181,7 +181,7 @@ var json_101_C_const_details_323 = {
             "type": "Feature",
             "properties": {
                 "id": "503",
-                "sheet": popup_sheet_entry_creator([, 'C-05B_rev01', ]),
+                "sheet": popup_sheet_entry_creator(['layer_2652J_dwg_C05B_rev01_modified_109', 'C-05B_rev01', ]),
                 "as_built": popup_AB_entry_creator("C-05B"),
                 "tcp": popup_tcp_entry_creator([]),
                 "relevant": popup_sheet_entry_creator([, 'L-G01', 'General Notes', , 'L-G02', 'Legend and Abbreviations', , 'X-01', 'Typical Cross Sections', , 'X-02', 'Typical Cross Sections', , 'SFPW-87171_rev01', 'Standard Driveway Construction']),

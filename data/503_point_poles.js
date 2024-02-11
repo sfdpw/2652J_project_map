@@ -260,8 +260,8 @@ var json_503_point_poles = {
             "type": "Feature",
             "properties": {
                 "SHEET": "E-02.0",
-                "LOCATION": "Winston Dr Intersection - NEC",
-                "POLE_ID": "E, G",
+                "LOCATION": "Winston Dr Intersection - NEC - R",
+                "POLE_ID": "E",
                 'STATUS': "Post-Construction",
                 "POLE_TYPE": "5ft PBA Post",
                 "BID_ITEM": "E-14",
@@ -279,7 +279,7 @@ var json_503_point_poles = {
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-122.474677838938035, 37.727032343457672]
+                "coordinates":  [ -122.474713167342358, 37.727063776366961 ]
             }
         },
 
@@ -423,7 +423,7 @@ var json_503_point_poles = {
             "properties": {
                 "SHEET": "E-2.0",
                 "LOCATION": "Winston Dr Intersection - NEC - L",
-                "POLE_ID": "-",
+                "POLE_ID": "G",
                 "STATUS": "Post-Construction",
                 "POLE_TYPE": "5ft PBA Post",
                 "BID_ITEM": "E-14",

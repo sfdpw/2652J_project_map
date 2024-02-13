@@ -24,7 +24,7 @@ var flatwork_feature_menu =
                 </tr>'
  
  
- let CR_index = [853, 854, 852, 851, 856, 855, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866];
+ let CR_index = [852, 853, 851, 850, 855, 854, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866];
  for (var ll of CR_index)
 
 // for (var ll = CR_fltwrk_index_limits[0]; ll <= CR_fltwrk_index_limits[1]; ll++) // Flatwork              

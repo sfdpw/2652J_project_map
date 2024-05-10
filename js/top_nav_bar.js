@@ -228,6 +228,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 					  <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CO-23_PCO-039_CR-06.html">CR-06: 6in Ag Base (PCO 39 - Taraval NEC)</a>\
 					</li>\
+					<li>\
+					<a class="dropdown-item" href="' + nav_path +
+		'qty/qty_CO-25_PCO-043_CR-06.html">CR-06: 6in Ag Base (PCO 43 - Winston NEC)</a>\
+				  </li>\
 	                </ul>\
 	              </li>\
 	              <li>\
@@ -265,6 +269,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 				  <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CO-23_PCO-039_CR-10.html">CR-10: Curb (PCO 39 - Taraval NEC)</a>\
 				</li>\
+				<li>\
+				<a class="dropdown-item" href="' + nav_path +
+		'qty/qty_CO-25_PCO-043_CR-10.html">CR-10: Curb (PCO 43 - Winston NEC)</a>\
+			  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CO-05_PCO-009_CR-15_Add.html">CR-15: 8in Shelter Foundations (Unreinforced per PCO 9)</a>\
@@ -286,6 +294,10 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-03.html">CR-03: 9in JPCP Base</a>\
 	                  </li>\
+					  <li>\
+					  <a class="dropdown-item" href="' + nav_path +
+	  'qty/qty_CO-25_PCO-043_CR-03.html">CR-03: 9in JPCP Base (PCO 43 - Winston NEC)</a>\
+					</li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
 		'qty/qty_CR-05.html">CR-05: Bus Pad</a>\

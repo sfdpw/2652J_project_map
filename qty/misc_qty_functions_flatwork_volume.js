@@ -65,7 +65,7 @@ function qty_table_generator_flatwork_volume(qty_bid_item) {
     var agg_depth = 0;
       
     if (qty_bid_item == 'CR-04') {agg_depth = 1;}  
-    else if (qty_bid_item == 'CR-06') {agg_depth = 0.5;} 
+    else if (qty_bid_item.includes('CR-06') || qty_bid_item.includes('CR-6')) {agg_depth = 0.5;} 
 
     for (pp = 1; pp < latest_pp; pp++)
 

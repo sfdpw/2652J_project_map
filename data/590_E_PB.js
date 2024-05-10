@@ -448,6 +448,31 @@ var json_590_E_PB = {
         {
             "type": "Feature",
             "properties": {
+                "install_id": "E_35_E_05_005",
+                "location": "Sloat Blvd Intersection - North Median",
+                'STATUS': "Post-Construction",
+                "PP_HISTORY": {
+                    "E-35": {
+                        "PP35": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.47516380568095, 37.73483370324108],
+
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
                 "install_id": "E_35_E_05_003",
                 "location": "Sloat Blvd Intersection - SEC",
                 'STATUS': "Post-Construction",
@@ -3092,7 +3117,7 @@ var json_590_E_PB = {
                 "coordinates": [-122.475017885971184, 37.734830242343079]
             }
         },
-
+        
         {
             "type": "Feature",
             "properties": {
@@ -3114,6 +3139,30 @@ var json_590_E_PB = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-122.474969603828967, 37.734812775888159]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_05_005",
+                "location": "Sloat Blvd Intersection - NEC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP25": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475017885971184, 37.734830242343079]
             }
         },
 
@@ -3219,30 +3268,6 @@ var json_590_E_PB = {
         {
             "type": "Feature",
             "properties": {
-                "install_id": "E_36_E_05_005",
-                "location": "Sloat Blvd Intersection - NWC",
-                'STATUS': "Post-Construction",
-                'PP_HISTORY': {
-                    "E-36": {
-                        "PP30": {
-                            "SFMTA": {
-                                "QTY": 1,
-                                "UNIT": "EA"
-                            }
-                        }
-                    }
-                },
-                "rlvnt": "none"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-122.475301844853263, 37.734850102026307]
-            }
-        },
-
-        {
-            "type": "Feature",
-            "properties": {
                 "install_id": "E_36_E_05_006",
                 "location": "Sloat Blvd Intersection - NWC",
                 'STATUS': "Post-Construction",
@@ -3309,6 +3334,30 @@ var json_590_E_PB = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-122.475264224948106, 37.734405790867285]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "install_id": "E_36_E_05_011",
+                "location": "Sloat Blvd Intersection - NEC",
+                'STATUS': "Post-Construction",
+                'PP_HISTORY': {
+                    "E-36": {
+                        "PP35": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    }
+                },
+                "rlvnt": "none"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.475037238196151, 37.734885343788761]
             }
         },
 
@@ -3382,8 +3431,8 @@ var json_590_E_PB = {
                 "type": "Point",
                 "coordinates": [-122.475452795844177, 37.741324140703675]
             }
-        }, 
-        
+        },
+
         {
             "type": "Feature",
             "properties": {
@@ -3406,8 +3455,8 @@ var json_590_E_PB = {
                 "type": "Point",
                 "coordinates": [-122.475422588616311, 37.741293528930377]
             }
-        }, 
-        
+        },
+
         {
             "type": "Feature",
             "properties": {
@@ -3430,8 +3479,8 @@ var json_590_E_PB = {
                 "type": "Point",
                 "coordinates": [-122.475681396306641, 37.741052084934545]
             }
-        }, 
-    
+        },
+
         {
             "type": "Feature",
             "properties": {
@@ -3454,8 +3503,8 @@ var json_590_E_PB = {
                 "type": "Point",
                 "coordinates": [-122.475689450802946, 37.741079539507979]
             }
-        }, 
-        
+        },
+
         {
             "type": "Feature",
             "properties": {
@@ -3478,8 +3527,8 @@ var json_590_E_PB = {
                 "type": "Point",
                 "coordinates": [-122.475700103523863, 37.741106387828999]
             }
-        }, 
-    
+        },
+
         {
             "type": "Feature",
             "properties": {

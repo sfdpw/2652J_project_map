@@ -102,7 +102,15 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 					  <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP34.html">PP34 - Nov / Dec 2023</a>\
 					  </li>\
 	      		  </ul>\
-	              </li>\
+	            </li>\
+				<li>\
+				<a class="dropdown-item" href="#">2024 &raquo;</a>\
+					 <ul class="submenu dropdown-menu">\
+					   <li>\
+					   <a class="dropdown-item" href="' + nav_path + 'sov/sov_PP35.html">PP35 - Jan 2024</a>\
+					 </li>\
+				   </ul>\
+			   </li>\
 	            </ul>\
 	          </li>\
 	          <li>\
@@ -157,7 +165,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
                         <a class="dropdown-item" href="#">2023 &raquo;</a>\
 	                  <ul class="submenu dropdown-menu">\
 	                    <li>\
-	           <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP25.html">PP25 - Dec 2022 / Jan 2023</a>\
+	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP25.html">PP25 - Dec 2022 / Jan 2023</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP26.html">PP26 - Feb 2023</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP27.html">PP27 - Mar 2023</a>\
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP28.html">PP28 - Apr 2023</a>\
@@ -167,9 +175,17 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 	                      <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP32.html">PP32 - Aug / Sep 2023</a>\
 						  <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP33.html">PP33 - Oct 2023</a>\
 						  <a class="dropdown-item" href="' + nav_path + 'funding/funding_PP34.html">PP34 - Nov / Dec 2023</a>\
-						  </li>\
+						</li>\
 	                  </ul>\
 	              </li>\
+				  <li>\
+				  <a class="dropdown-item" href="#">2024 &raquo;</a>\
+				<ul class="submenu dropdown-menu">\
+				  <li>\
+					<a class="dropdown-item" href="' + nav_path + 'funding/funding_PP35.html">PP35 - Jan 2024</a>\
+				  </li>\
+				</ul>\
+			</li>\
 	            </ul>\
 	          </li>\
 	        </ul>\
@@ -284,7 +300,7 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 					</li>\
 					<li>\
 					<a class="dropdown-item" href="' + nav_path +
-	  'qty/qty_CO-23_PCO-039_CR-11.html">CR-11: Parking Strip, Gutter (PCO 39 - Taraval NEC)</a>\
+		'qty/qty_CO-23_PCO-039_CR-11.html">CR-11: Parking Strip, Gutter (PCO 39 - Taraval NEC)</a>\
 				  </li>\
 	                  <li>\
 	                    <a class="dropdown-item" href="' + nav_path +
@@ -296,11 +312,11 @@ function top_nav(nav_element, pp_no = null, bid_item_id = null) {
 					</li>\
 					<li>\
 					<a class="dropdown-item" href="' + nav_path +
-	  'qty/qty_CO-23_PCO-039_CR-12.html">CR-12: Curb Ramps (PCO 39 - Taraval NEC)</a>\
+		'qty/qty_CO-23_PCO-039_CR-12.html">CR-12: Curb Ramps (PCO 39 - Taraval NEC)</a>\
 				  </li>\
 				  <li>\
 				  <a class="dropdown-item" href="' + nav_path +
-	'qty/qty_CO-23_PCO-039_CR-18.html">CR-18: Detectable Surface Tiles (PCO 39 - Taraval NEC)</a>\
+		'qty/qty_CO-23_PCO-039_CR-18.html">CR-18: Detectable Surface Tiles (PCO 39 - Taraval NEC)</a>\
 				</li>\
 	                </ul>\
 	              </li>\

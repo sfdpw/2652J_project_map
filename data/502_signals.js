@@ -778,6 +778,14 @@ var json_502_signals = {
                                 "UNIT": "EA"
                             }
                         }
+                    },
+                    "E-09": {
+                        "PP35": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
                     }
                 },
                 "RLVNT": "none",
@@ -1954,6 +1962,14 @@ var json_502_signals = {
                                 "UNIT": "EA"
                             }
                         }
+                    },
+                    "E-09": {
+                        "PP35": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
                     }
                 },
                 "RLVNT": "none",
@@ -2057,6 +2073,14 @@ var json_502_signals = {
                                 "UNIT": "EA"
                             }
                         }
+                    },                    
+                    "E-09": {
+                        "PP35": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
                     }
                 },
                 "RLVNT": "none",
@@ -2081,6 +2105,14 @@ var json_502_signals = {
                 "PP_HISTORY": {
                     "E-01": {
                         "PP23": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },                    
+                    "E-09": {
+                        "PP35": {
                             "SFMTA": {
                                 "QTY": 1,
                                 "UNIT": "EA"
@@ -2517,6 +2549,14 @@ var json_502_signals = {
                 'PP_HISTORY': {
                     "E-01": {
                         "PP24": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },                    
+                    "E-09": {
+                        "PP35": {
                             "SFMTA": {
                                 "QTY": 1,
                                 "UNIT": "EA"
@@ -3062,6 +3102,46 @@ var json_502_signals = {
             }
         },
 
+                // ########
+
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "SHEET": "E-05.0",
+                        "LOCATION": "Sloat Blvd Intersection - South Median",
+                        "POLE_ID": "K",
+                        "SIG_TYPE": "3S12\"LA",
+                        "SIG_NO": "-",
+                        "MNTG_TYPE": "-",
+                        "STATUS": "Post-Construction",
+                        "PP_HISTORY": {
+                            "E-02": {
+                                "PP35": {
+                                    "SFMTA": {
+                                        "QTY": 1,
+                                        "UNIT": "EA"
+                                    }
+                                }
+                            },
+                            // "E-09": {
+                            //     "PP36": {
+                            //         "SFMTA": {
+                            //             "QTY": 1,
+                            //             "UNIT": "EA"
+                            //         }
+                            //     }
+                            // }
+                        },
+                        "RLVNT": "none",
+                        "BID_ITEM": "E-02"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-122.475141, 37.734459]
+                    }
+                },
+        
+
         // ########
 
         {
@@ -3158,7 +3238,15 @@ var json_502_signals = {
                                 "UNIT": "EA"
                             }
                         }
-                    }
+                    },
+                    "E-09": {
+                        "PP35": {
+                            "SFMTA": {
+                                "QTY": 1,
+                                "UNIT": "EA"
+                            }
+                        }
+                    },
                 },
                 "RLVNT": "none",
                 "BID_ITEM": "E-2"
